@@ -47,7 +47,7 @@ const SongSelector = ({ songBank, onSongSelect }) => {
 
             {/* Dropdown menu */}
             {isFocused && filteredSongs.length > 0 && (
-            <ul className="absolute z-10 mt-2 w-full bg-white border border-gray-300 rounded-lg shadow-lg max-h-48 overflow-auto">
+            <ul className="absolute z-10 mt-2 w-full max-w-[375px] bg-white border border-gray-300 rounded-lg shadow-lg max-h-48 overflow-auto">
                 {filteredSongs.map((song, index) => (
                 <li
                     key={index}
@@ -66,7 +66,7 @@ const SongSelector = ({ songBank, onSongSelect }) => {
 
             {/* No results message */}
             {isFocused && searchTerm && filteredSongs.length === 0 && (
-            <p className="absolute z-10 mt-2 w-full bg-white border border-gray-300 rounded-lg shadow-lg px-4 py-2 text-sm text-gray-500 italic">
+            <p className="absolute z-10 mt-2 w-full max-w-[375px] bg-white border border-gray-300 rounded-lg shadow-lg px-4 py-2 text-sm text-gray-500 italic">
                 No matching songs found.
             </p>
             )}

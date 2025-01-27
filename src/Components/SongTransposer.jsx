@@ -6,69 +6,145 @@ const SongTransposer = ({ selectedSong }) => {
   const [showLyrics, setShowLyrics] = useState(true);
   const [showChords, setShowChords] = useState(true);
   const [showChordNumbers, setShowChordNumbers] = useState(false);
-
-  const chordMap = [
-    "C", "Db", "D", "Eb", "E", "F", "Gb", "G", "Ab", "A", "Bb", "B",
-  ];
-
+  const chordMap = selectedSong.chordMap; 
+  
+  // Calculate steps for transposing between keys
   const calculateSteps = (fromKey, toKey) => {
     const fromIndex = chordMap.indexOf(fromKey);
     const toIndex = chordMap.indexOf(toKey);
     return toIndex - fromIndex;
   };
-
-  const steps = calculateSteps(selectedSong.originalKey, selectedKey);
-
+  
+  // Transpose a chord with steps
   const transposeChord = (chord, steps) => {
-    const baseChord = chord.match(/[A-G#b]+/)[0];
-    const modifier = chord.replace(baseChord, "");
-
-    let index = chordMap.indexOf(baseChord);
-    if (index === -1) return chord;
-
-    let newIndex = (index + steps + chordMap.length) % chordMap.length;
-    return chordMap[newIndex] + modifier;
+    // Check if the chord has a slash (e.g., D/F#)
+    const [baseChord, afterSlash] = chord.split('/');
+  
+    // Handle chord with modifiers (e.g., C#m)
+    const chordMatch = baseChord.match(/^([A-G#b]+)(.*)$/); // Match base chord + modifiers
+    if (!chordMatch) return chord; // Return original if no match
+  
+    const baseChordName = chordMatch[1]; // Extract base chord name (e.g., "C#")
+    const modifier = chordMatch[2] || ''; // Extract modifier (e.g., "m")
+  
+    // Standardize the base chord and find its index
+    const baseChordStandardized = baseChordName;
+    let baseChordIndex = chordMap.indexOf(baseChordStandardized);
+    if (baseChordIndex === -1) return chord; // Return the chord if not found
+  
+    // Transpose the base chord
+    let newBaseChordIndex = (baseChordIndex + steps + chordMap.length) % chordMap.length;
+    const newBaseChord = chordMap[newBaseChordIndex];
+  
+    // If there's an afterslash part (e.g., "D/F#"), handle it similarly
+    let newAfterSlash = afterSlash || ''; // Default to empty string if no afterslash
+  
+    if (afterSlash) {
+      const afterSlashStandardized = afterSlash;
+      let afterSlashIndex = chordMap.indexOf(afterSlashStandardized);
+      if (afterSlashIndex !== -1) {
+        let newAfterSlashIndex = (afterSlashIndex + steps + chordMap.length) % chordMap.length;
+        newAfterSlash = chordMap[newAfterSlashIndex];
+      }
+    }
+  
+    // Return the transposed chord, keeping the afterslash if it exists
+    return newAfterSlash ? `${newBaseChord}/${newAfterSlash}${modifier}` : `${newBaseChord}${modifier}`;
   };
-
-  const majorScaleDegrees = [0, 2, 4, 5, 7, 9, 11]; // Major scale intervals
-
-  // Generate the 1-7 chords for the selected key
+  
+  // Generate scale chords for the selected key
+  const majorScaleDegrees = [0, 2, 4, 5, 7, 9, 11];
   const generateScaleChords = (key) => {
     const rootIndex = chordMap.indexOf(key);
     if (rootIndex === -1) return [];
     return majorScaleDegrees.map((interval) => chordMap[(rootIndex + interval) % chordMap.length]);
   };
   
-  const scaleChords = generateScaleChords(selectedKey); // Scale chords for the selected key
+  const scaleChords = generateScaleChords(selectedKey);
   
-  // Function to map chords to numbers
+  // Function to convert chord to its scale degree (1-7)
   const getChordNumber = (chord) => {
-    const baseChordMatch = chord.match(/[A-G#b]+/); // Extract base chord
-    const baseChord = baseChordMatch ? baseChordMatch[0] : null;
+    const [baseChord, afterSlash] = chord.split('/');
+    
+    const baseChordMatch = baseChord.match(/[A-G#b]+/);
+    const baseChordName = baseChordMatch ? baseChordMatch[0] : null;
+    
+    if (!baseChordName) return chord;
+    
+    const baseChordIndex = scaleChords.indexOf(baseChordName);
+    const baseChordNumber = baseChordIndex !== -1 ? `${baseChordIndex + 1}` : baseChord;
   
-    if (!baseChord) return chord; // If no valid chord, return as is
+    let result = baseChordNumber;
   
-    const chordIndex = scaleChords.indexOf(baseChord); // Find chord in the scale
-    return chordIndex !== -1 ? `${chordIndex + 1}` : chord; // Return chord number or original chord
+    if (afterSlash) {
+      const afterSlashMatch = afterSlash.match(/[A-G#b]+/);
+      let afterSlashNumber = afterSlash;  
+  
+      if (afterSlashMatch) {
+        const afterSlashChord = afterSlashMatch[0];
+        const scalePosition = chordMap.indexOf(afterSlashChord) - chordMap.indexOf('C');
+        const degreeInScale = (scalePosition + chordMap.length) % chordMap.length;
+        
+        if(scaleChords.includes(chordMap[degreeInScale])) {
+          afterSlashNumber = `${scaleChords.indexOf(chordMap[degreeInScale]) + 1}`;
+        } else {
+          // If the chord isn't in the natural scale, check for sharps or flats:
+          if (afterSlashChord.includes('#')) {
+            // Find the natural note below the sharp
+            const naturalNote = afterSlashChord.replace('#', '');
+            const naturalPosition = chordMap.indexOf(naturalNote) - chordMap.indexOf('C');
+            const naturalDegree = (naturalPosition + chordMap.length) % chordMap.length;
+            if(scaleChords.includes(chordMap[naturalDegree])) {
+              // If the natural note is in the scale, we add sharp to its degree
+              afterSlashNumber = `${scaleChords.indexOf(chordMap[naturalDegree]) + 1}#`;
+            } else {
+              // Here you might decide to just use the sharp notation or another convention
+              afterSlashNumber = `${scaleChords.indexOf(chordMap[naturalDegree]) + 1}#`;
+            }
+          } else if (afterSlashChord.includes('b')) {
+            // For flat chords, calculate similarly to sharp but adjust for flat degree
+            const naturalNote = afterSlashChord.replace('b', '');
+            const naturalPosition = chordMap.indexOf(naturalNote) - chordMap.indexOf('C');
+            const naturalDegree = (naturalPosition + chordMap.length) % chordMap.length;
+
+            // Check if the flat note is part of the scale and assign flat notation
+            if (scaleChords.includes(chordMap[naturalDegree])) {
+              afterSlashNumber = `${scaleChords.indexOf(chordMap[naturalDegree]) + 1}b`;
+            } else {
+              afterSlashNumber = `${scaleChords.indexOf(chordMap[naturalDegree]) + 1}b`;
+            }
+          } else {
+            if (scaleChords.includes(chordMap)) {
+              afterSlashNumber = afterSlashChord; // Keep as-is if not in scale
+            }
+          }
+        }
+      }
+  
+      result = `${baseChordNumber}/${afterSlashNumber}`;
+    }
+  
+    return result;
   };
   
-  // Map and transpose chords
+  // Main logic to map and transpose chords using calculateSteps
   const transposedSections = selectedSong.sections.map((section) => ({
     ...section,
     chords: section.chords.map((line) =>
       line.map((chordObj) => {
-        const transposedChord = transposeChord(chordObj.chord, steps); // Transpose chord if necessary
-  
+        const steps = calculateSteps(selectedSong.originalKey, selectedKey);  // Calculate steps
+        const transposedChord = transposeChord(chordObj.chord, steps);  // Transpose chord based on steps
+        
         return {
           ...chordObj,
           chord: showChordNumbers
-            ? getChordNumber(transposedChord) // Convert transposed chord to chord number only
-            : transposedChord, // Display transposed chord
+            ? getChordNumber(transposedChord)  // Convert transposed chord to number if needed
+            : transposedChord,  // Else display transposed chord
         };
       })
     ),
   }));
-
+  
   useEffect(() => {
     setSelectedKey(selectedSong.originalKey);
   }, [selectedSong]);
@@ -110,7 +186,7 @@ const SongTransposer = ({ selectedSong }) => {
               id="chords"
               className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500"
               checked={showChords}
-              onChange={() => setShowChords(!showChords)}
+              onChange={() => {setShowChords(!showChords); showChords && setShowChordNumbers(false) }}
             />
             <label
               htmlFor="chords"
@@ -123,7 +199,7 @@ const SongTransposer = ({ selectedSong }) => {
               id="chordNumbers"
               className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500"
               checked={showChordNumbers}
-              onChange={() => setShowChordNumbers(!showChordNumbers)}
+              onChange={() => {setShowChordNumbers(!showChordNumbers); setShowChords(true)}}
             />
             <label
               htmlFor="chordNumbers"
@@ -248,6 +324,7 @@ SongTransposer.propTypes = {
     title: PropTypes.string.isRequired,
     artist: PropTypes.string.isRequired,
     originalKey: PropTypes.string.isRequired,
+    chordMap: PropTypes.array.isRequired,
     bpm: PropTypes.number.isRequired,
     sections: PropTypes.arrayOf(
       PropTypes.shape({

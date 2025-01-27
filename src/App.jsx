@@ -1,6 +1,7 @@
 import { useState } from "react";
 import SongTransposer from "./Components/SongTransposer";
 import SongSelector from "./Components/SongSelector";
+import MusicInformation from "./Components/MusicInformation";
 import Header from "./Components/Header";
 import Footer from "./Components/Footer";
 import songBank from './songBank'; // Import your songBank
@@ -17,8 +18,17 @@ const App = () => {
         {/* Song Selector */}
         <SongSelector songBank={songBank} onSongSelect={setSelectedSong} />
 
-        {/* Song Transposer */}
-        <SongTransposer selectedSong={selectedSong} />
+        {selectedSong && (
+          <>
+            {/* Song Transposer */}
+            <SongTransposer selectedSong={selectedSong} />
+
+            {/* Music Information */}
+            <MusicInformation selectedSong={selectedSong} />
+          </>
+        )}
+
+
       </div>
 
       {/* Footer */}
