@@ -12,7 +12,7 @@ const SongSelector = ({ songBank, onSongSelect }) => {
 
   return (
     <div className="flex justify-center">
-        <div className="relative p-3.5 w-full max-w-[400px]">
+        <div className="relative p-3 w-full max-w-[400px]">
             {/* Label */}
             <label htmlFor="songSearch" className="block text-sm font-medium text-gray-700 mb-2">
             Search for a worship song

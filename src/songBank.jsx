@@ -147,11 +147,6 @@ export default [
           ],
         },
         {
-          type: "",
-          lyrics: ['[VERSE 1]','[VERSE 2]','[CHORUS]'],
-          chords: [],
-        },
-        {
           type: "INSTRUMENTAL:",
           lyrics: ['',''],
           chords: [
@@ -176,11 +171,6 @@ export default [
             [{ chord: "E", position: 33 }, { chord: "G#m7", position: 74 }, { chord: "B", position: 74, dash: true }],
           ],
           times: [2]
-        },
-        {
-          type: "[REPEAT BRIDGE 2x]",
-          lyrics: [''],
-          chords: [],
         },
         {
           type: "BRIDGE TAG:",
@@ -210,7 +200,107 @@ export default [
           chords: [
               [{ chord: "A", position: 0, left: true }, { chord: "E", position: 3, left: true }, { chord: "C#m", position: 5, left: true }, { chord: "B", position: 7, leftRight: true,  }],
               [{ chord: "A", position: 0, left: true }, { chord: "E", position: 3, left: true }, { chord: "C#m", position: 5, left: true }, { chord: "B", position: 7, leftRight: true,  }],
-
+          ],
+        },
+    ],
+  },
+  {
+    title: "Wonderstruck",
+    artist: "AWAKE84",
+    originalKey: "Eb",
+    bpm: 130,
+    sections: [
+          {
+            type: "INTRO-ENDING:",
+            lyrics: [""],
+            italize: [false, true],
+            addBreak: [false, true],
+            chords: [
+                [
+                  { chord: "Ab", position: 0, leftRight: true }, { chord: "Ab", position: 4 }, { chord: "Cm7", position: 8 },
+                  { chord: "Bb", position: 12, leftRight: true }, { chord: "Bb", position: 16 }, { chord: "Gm7", position: 20, right: true  },
+                ],
+            ],
+        },
+        {
+            type: "Verse",
+            lyrics: [
+                "Grace, You make creation bloom",
+                "Faith, You make mountains move",
+                "Power that shaped the galaxies",
+                "Jesus, You’re our reality",
+            ],
+            chords: [
+                [{ chord: "Ab", position: 0 }, { chord: "Cm7", position: 70 }, { chord: "Bb", position: 77 }, { chord: "Gm7", position: 86 }],
+                [{ chord: "Ab", position: 0 }, { chord: "Cm7", position: 53 }, { chord: "Bb", position: 81 }, { chord: "Gm7", position: 96 }],
+                [{ chord: "Ab", position: 0 }, { chord: "Cm7", position: 81 }, { chord: "Bb", position: 90 }, { chord: "Gm7", position: 100 }],
+                [{ chord: "Ab", position: 0 }, { chord: "Cm7", position: 64 }, { chord: "Bb", position: 70 }, { chord: "Gm7", position: 80 }],
+            ],
+        },
+        {
+          type: "PRE-CHORUS:",
+          lyrics: [
+              "Generations will know",
+              "That Your love is sweet",
+              "This is life in the light of eternity",
+              "Let your joy overflow",
+              "Show why we believe",
+              "Get up on your feet!",
+          ],
+          chords: [
+              [{ chord: "Ab", position: 0 }],
+              [{ chord: "Cm7", position: 42 }, { chord: "Bb", position: 65 }],
+              [{ chord: "Gm7", position: 104 }, { chord: "Ab", position: 108 }],
+              [{ chord: "Ab", position: 72 }],
+              [{ chord: "Cm7", position: 43 }, { chord: "Bb", position: 51 }],
+              [{ chord: "Bb", position: 67 }],
+          ],
+        },
+        {
+          type: "CHORUS:",
+          lyrics: [
+              "Let’s dance!",
+              "We’re caught up in Your song of life",
+              "Your love’s taking us by surprise",
+              "Nothing You do is as it seems",
+              "You surpass all our wildest dreams",
+          ],
+          chords: [
+              [{ chord: "Ab", position: 22 }],
+              [{ chord: "Cm7", position: 99 }, { chord: "Bb", position: 108 }],
+              [{ chord: "Gm7", position: 90 }, { chord: "Ab", position: 101 }],
+              [{ chord: "Ab", position: 35 }, { chord: "Cm7", position: 63 }, { chord: "Bb", position: 80 }],
+              [{ chord: "Bb", position: 29 }, { chord: "Gm7", position: 67 }],
+          ],
+        },
+        {
+          type: "HOOK:",
+          lyrics: [
+              "Hallelujah",
+              "Hallelujah (Wooah)",
+              "Hallelujah",
+              "Hallelujah",
+          ],
+          chords: [
+              [{ chord: "Ab", position: 0 }],
+              [{ chord: "Cm7", position: 41 }, { chord: "Bb", position: 54 }],
+              [{ chord: "Bb", position: 0 }],
+              [{ chord: "Bb", position: 28 }, { chord: "Gm7", position: 33 }],
+          ],
+        },
+        {
+          type: "BRIDGE:",
+          lyrics: [
+              "Wonderstruck",
+              "God Your goodness has swept us up",
+              "Compelled by love",
+              "We’ll tell the world about what You’ve done",
+          ],
+          chords: [
+              [{ chord: "Ab", position: 0 }],
+              [{ chord: "Cm7", position: 42 }, { chord: "Bb", position: 80 }, { chord: "Gm7", position: 120 }],
+              [{ chord: "Ab", position: 20 }],
+              [{ chord: "Cm7", position: 54 }, { chord: "Bb", position: 86 }, { chord: "Gm7", position: 147 }],
           ],
         },
     ],

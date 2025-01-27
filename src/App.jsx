@@ -6,7 +6,7 @@ import Footer from "./Components/Footer";
 import songBank from './songBank'; // Import your songBank
 
 const App = () => {
-  const [selectedSong, setSelectedSong] = useState(songBank[2]); // Default to first song
+  const [selectedSong, setSelectedSong] = useState(songBank[3]); // Default to first song
 
   return (
     <div className="bg-gray-100 flex flex-col min-h-screen">

@@ -4,10 +4,11 @@ import PropTypes from "prop-types";
 const SongTransposer = ({ selectedSong }) => {
   const [selectedKey, setSelectedKey] = useState(selectedSong.originalKey);
   const [showLyrics, setShowLyrics] = useState(true);
+  const [showChords, setShowChords] = useState(true);
   const [showChordNumbers, setShowChordNumbers] = useState(false);
 
   const chordMap = [
-    "C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A", "A#", "B",
+    "C", "Db", "D", "Eb", "E", "F", "Gb", "G", "Ab", "A", "Bb", "B",
   ];
 
   const calculateSteps = (fromKey, toKey) => {
@@ -89,6 +90,7 @@ const SongTransposer = ({ selectedSong }) => {
           <p className="text-lg"><strong>By:</strong> {selectedSong.artist}</p>
           <p className="text-lg"><strong>Original Key:</strong> {selectedSong.originalKey}</p>
           <p className="text-lg"><strong>BPM:</strong> {selectedSong.bpm}</p>
+
           <div className="flex items-center space-x-3">
             <input
               type="checkbox"
@@ -101,7 +103,20 @@ const SongTransposer = ({ selectedSong }) => {
               htmlFor="lyrics"
               className="text-sm font-medium text-gray-900 cursor-pointer"
             >
-              Show Lyrics
+              Lyrics
+            </label>
+            <input
+              type="checkbox"
+              id="chords"
+              className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500"
+              checked={showChords}
+              onChange={() => setShowChords(!showChords)}
+            />
+            <label
+              htmlFor="chords"
+              className="text-sm font-medium text-gray-900 cursor-pointer"
+            >
+              Chords
             </label>
             <input
               type="checkbox"
@@ -114,7 +129,7 @@ const SongTransposer = ({ selectedSong }) => {
               htmlFor="chordNumbers"
               className="text-sm font-medium text-gray-900 cursor-pointer"
             >
-              Show Chord Numbers
+              Chord No.
             </label>
           </div>
 
@@ -182,7 +197,7 @@ const SongTransposer = ({ selectedSong }) => {
                     {section.lyrics.map((line, lineIndex) => (
                       <div key={lineIndex}>
                         <div className="flex mt-1">
-                          {section.chords[lineIndex]?.map((chordObj, chordIndex) => (
+                          {showChords && section.chords[lineIndex]?.map((chordObj, chordIndex) => (
                             <span
                               key={chordIndex}
                               className="text-base font-semibold"
