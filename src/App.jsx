@@ -11,7 +11,7 @@ const App = () => {
   const lastSelectedSong = localStorage.getItem('selectedSong');
   const defaultSong = lastSelectedSong ? JSON.parse(lastSelectedSong) : songBank[5];
 
-  const [selectedSong, setSelectedSong] = useState(songBank[6]);
+  const [selectedSong, setSelectedSong] = useState(defaultSong);
 
   // Save the selected song to localStorage whenever it changes
   useEffect(() => {
