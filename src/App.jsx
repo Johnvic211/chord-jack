@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import SongTransposer from "./Components/SongTransposer";
 import SongSelector from "./Components/SongSelector";
 import MusicInformation from "./Components/MusicInformation";
@@ -7,7 +7,18 @@ import Footer from "./Components/Footer";
 import songBank from './songBank'; // Import your songBank
 
 const App = () => {
-  const [selectedSong, setSelectedSong] = useState(songBank[3]); // Default to first song
+  // Check if there's a stored song in localStorage, or default to the first song
+  const lastSelectedSong = localStorage.getItem('selectedSong');
+  const defaultSong = lastSelectedSong ? JSON.parse(lastSelectedSong) : songBank[5];
+
+  const [selectedSong, setSelectedSong] = useState(songBank[6]);
+
+  // Save the selected song to localStorage whenever it changes
+  useEffect(() => {
+    if (selectedSong) {
+      localStorage.setItem('selectedSong', JSON.stringify(selectedSong));
+    }
+  }, [selectedSong]);
 
   return (
     <div className="bg-gray-100 flex flex-col min-h-screen">
@@ -27,8 +38,6 @@ const App = () => {
             <MusicInformation selectedSong={selectedSong} />
           </>
         )}
-
-
       </div>
 
       {/* Footer */}
@@ -37,4 +46,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default App 

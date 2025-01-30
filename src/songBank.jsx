@@ -483,4 +483,601 @@ export default [
             },
         ],
     },
+    {
+        title: "This Is Who You Are",
+        artist: "AWAKE84",
+        composer: "Gilbert Espiridion, Barbie Honasan, Myka Magsaysay Sigua, and Elle Cabiling Tumaliuan",
+        album: "Living Awake",
+        releaseDate: "2024",
+        originalKey: "Bm",
+        bpm: 140,
+        chordMap: ["C", "C#", "D", "Eb", "E", "F", "F#", "G", "Ab", "A", "Bb", "B"],
+        sections: [
+            {
+                type: "INTRO:",
+                lyrics: ['',''],
+                chords: [
+                    [{ chord: "Bm", position: 0 }, { chord: "A", position: 0, dash: true }, { chord: "F#m", position: 0, dash: true }, { chord: "E", position: 0, dash: true }],
+                    [{ chord: "Bm", position: 0 }, { chord: "A", position: 0, dash: true }, { chord: "Em", position: 0, dash: true }, { chord: "D", position: 0, dash: true }],
+                ],
+                times: [3],
+            },
+            {
+                type: "VERSE 1:",
+                lyrics: [
+                    "You called us out of darkness",
+                    "Into Your wonderful light",
+                    "You called us Your possession",
+                    "In whom is Your delight",
+                    "You took our guilt and shame",
+                    "And made us righteous in Your eyes",
+                    "You conquered sin and death",
+                    "To give us everlasting life"
+                ],
+                chords: [
+                    [{ chord: "Bm", position: 0 }, { chord: "A", position: 0, dash: true }, { chord: "F#m", position: 0, dash: true }, { chord: "E", position: 0, dash: true }],
+                    [{ chord: "Bm", position: 0 }, { chord: "A", position: 0, dash: true }, { chord: "F#m", position: 0, dash: true }, { chord: "E", position: 0, dash: true }],
+                    [{ chord: "Bm", position: 0 }, { chord: "A", position: 0, dash: true }, { chord: "F#m", position: 0, dash: true }, { chord: "E", position: 0, dash: true }],
+                    [{ chord: "Bm", position: 0 }, { chord: "A", position: 0, dash: true }, { chord: "Em", position: 0, dash: true }, { chord: "D", position: 0, dash: true }],
+                    [{ chord: "Bm", position: 0 }, { chord: "A", position: 0, dash: true }, { chord: "F#m", position: 0, dash: true }, { chord: "E", position: 0, dash: true }],
+                    [{ chord: "Bm", position: 0 }, { chord: "A", position: 0, dash: true }, { chord: "F#m", position: 0, dash: true }, { chord: "E", position: 0, dash: true }],
+                    [{ chord: "Bm", position: 0 }, { chord: "A", position: 0, dash: true }, { chord: "F#m", position: 0, dash: true }, { chord: "E", position: 0, dash: true }],
+                    [{ chord: "Bm", position: 0 }, { chord: "A", position: 0, dash: true }, { chord: "Em", position: 0, dash: true }, { chord: "D", position: 0, dash: true }],
+                ]
+            },
+            {
+                type: "PRE-CHORUS:",
+                lyrics: [
+                    "Jesus, Your love has set us free",
+                    "We shine Your light for the world to see",
+                    "That You're the God of victory",
+                    "Oh, this is who You are"
+                ],
+                chords: [
+                    [{ chord: "G", position: 0 }, { chord: "A", position: 71 }],
+                    [{ chord: "G", position: 0 }, { chord: "A", position: 99 }],
+                    [{ chord: "G", position: 0 }, { chord: "A", position: 84 }],
+                    [{ chord: "G", position: 0 }, { chord: "A", position: 85 }]
+                ],
+            },
+            {
+                type: "CHORUS:",
+                lyrics: [
+                    "",
+                    "This is who You are"
+                ],
+                chords: [
+                    [{ chord: "Bm", position: 0 }, { chord: "A", position: 0, dash: true }, { chord: "F#m", position: 0, dash: true }, { chord: "E", position: 0, dash: true }],
+                    [{ chord: "Bm", position: 0 }, { chord: "A", position: 0, dash: true }, { chord: "Em", position: 0, dash: true }, { chord: "D", position: 0, dash: true }]
+                ]
+            },
+            {
+                type: "VERSE 2:",
+                lyrics: [
+                    "You chose us as Your people",
+                    "We follow where You lead",
+                    "We are a holy nation",
+                    "You made us Your hands and feet"
+                ],
+                chords: [
+                    [{ chord: "Bm", position: 0 }, { chord: "A", position: 0, dash: true }, { chord: "F#m", position: 0, dash: true }, { chord: "E", position: 0, dash: true }],
+                    [{ chord: "Bm", position: 0 }, { chord: "A", position: 0, dash: true }, { chord: "F#m", position: 0, dash: true }, { chord: "E", position: 0, dash: true }],
+                    [{ chord: "Bm", position: 0 }, { chord: "A", position: 0, dash: true }, { chord: "F#m", position: 0, dash: true }, { chord: "E", position: 0, dash: true }],
+                    [{ chord: "Bm", position: 0 }, { chord: "A", position: 0, dash: true }, { chord: "Em", position: 0, dash: true }, { chord: "D", position: 0, dash: true }]
+                ]
+            },
+            {
+                type: "",
+                lyrics: [
+                    "[REPEAT CHORUS]", 
+                ],
+                chords: []
+            },
+            {
+                type: "INSTRUMENTAL:",
+                lyrics: ['',''],
+                chords: [
+                    [{ chord: "Bm", position: 0 }, { chord: "A", position: 0, dash: true }, { chord: "F#m", position: 0, dash: true }, { chord: "E", position: 0, dash: true }],
+                    [{ chord: "Bm", position: 0 }, { chord: "A", position: 0, dash: true }, { chord: "Em", position: 0, dash: true }, { chord: "D", position: 0, dash: true }]
+                ],
+                times: [3],
+            },
+            {
+                type: "EXHORTATION:",
+                lyrics: [
+                    "You are the Alpha and Omega",
+                    "King of Kings, Lord of lords",
+                    "Our everlasting God",
+                    "Creator of the ends of the earth",
+                    "The Word that became flesh",
+                    "Our almighty savior",
+                    "JESUS"
+                ],
+                chords: [
+                    [{ chord: "G", position: 0 }, { chord: "A", position: 5 }],
+                    [],
+                    [],
+                    [],
+                    [],
+                    [],
+                    [],
+                ],
+                times: [4],
+            },
+            {
+                type: "BRIDGE: (same as verse chords)",
+                lyrics: [
+                    "Jesus, You have overcome",
+                    "No power on earth can ever hold You",
+                    "Your Kingdom come",
+                    "You're victorious",
+                    "You're victorious"
+                ],
+                chords: [
+                    [],
+                    [],
+                    [],
+                    [],
+                    [],
+                ]
+            }
+        ]
+    },
+    {
+        title: "Can't Get Enough",
+        artist: "AWAKE84",
+        composer: "Bryson Breakey, Sarah Bulahan, Elle Cabiling Tumaliuan, Jose Villanueva III",
+        album: "Living Awake",
+        releaseDate: "2024",
+        originalKey: "Eb",
+        chordMap: ["C", "C#", "D", "Eb", "E", "F", "F#", "G", "Ab", "A", "Bb", "B"],
+        bpm: 120,
+        sections: [
+            {
+                type: "INTRO:",
+                lyrics: [""],
+                chords: [
+                    [{ chord: "Eb", position: 0 }, { chord: "Ab", position: 4 }, { chord: "Cm", position: 8 }, { chord: "Ab", position: 12 }]
+                ],
+            },
+            {
+                type: "VERSE 1:",
+                lyrics: [
+                    "There's a new song burning in our hearts",
+                    "It's brighter than the morning",
+                    "All the melodies are pouring out",
+                    "They're overflowing",
+                ],
+                chords: [
+                    [{ chord: "Eb", position: 36 }],
+                    [{ chord: "Ab", position: 80 }],
+                    [{ chord: "Eb", position: 30 }],
+                    [{ chord: "Ab", position: 46 }]
+                ],
+            },
+            {
+                type: "VERSE 2:",
+                lyrics: [
+                    "There's joy that's rising in our souls",
+                    "It's new every morning",
+                    "Bringing flavor, color",
+                    "Like we've never seen",
+                ],
+                chords: [
+                    [{ chord: "Eb", position: 28 }],
+                    [{ chord: "Ab", position: 52 }],
+                    [{ chord: "Eb", position: 32 }],
+                    [{ chord: "Ab", position: 42 }]
+                ],
+            },
+            {
+                type: "PRE-CHORUS:",
+                lyrics: [
+                    "You're marvelous in all that You are",
+                    "We've seen a glimpse now we're after Your heart",
+                ],
+                chords: [
+                    [{ chord: "Fm", position: 0 }, { chord: "Gm", position: 115 }, { chord: "Ab", position: 115, dash: true }],
+                    []
+                ],
+            },
+            {
+                type: "CHORUS:",
+                lyrics: [
+                    "Let our praise fill the air",
+                    "Changing the atmosphere",
+                    "Had a taste of Your love",
+                    "And we can't get enough",
+                    "With our hands lifted up",
+                    "And a hope that won't stop",
+                    "We've been changed by Your love",
+                    "And we can't get enough",
+                ],
+                chords: [
+                    [{ chord: "Eb", position: 31 }],
+                    [],
+                    [{ chord: "Ab", position: 28 }],
+                    [],
+                    [{ chord: "Cm", position: 40 }],
+                    [],
+                    [{ chord: "Ab", position: 47 }],
+                    []
+                ],
+            },
+            {
+                type: "INSTRUMENTAL:",
+                lyrics: [""],
+                chords: [
+                    [{ chord: "Eb", position: 0 }]
+                ],
+            },
+            {
+                type: "BRIDGE:",
+                lyrics: [
+                    "You are our treasure",
+                    "You hold our future",
+                    "We are forever Yours",
+                ],
+                chords: [
+                    [{ chord: "Eb", position: 0 }],
+                    [{ chord: "Bb/D", position: 0 }],
+                    [{ chord: "Db", position: 0 }, { chord: "Ab", position: 70 }, { chord: "Bb", position: 70, dash: true }]
+                ],
+            },
+        ],
+    },
+    {
+        title: "Dwelling Place",
+        artist: "Sofia Paderez, Raya Rabanal, Josiah Tumaliuan",
+        composer: "Sofia Paderez, Raya Rabanal, Josiah Tumaliuan",
+        album: "Living Awake",
+        releaseDate: "2024",
+        originalKey: "E",
+        chordMap: ["C", "C#", "D", "Eb", "E", "F", "F#", "G", "Ab", "A", "Bb", "B"],
+        bpm: 68,
+        sections: [
+            {
+                type: "INTRO:",
+                lyrics: [""],
+                chords: [
+                    [{ chord: "E", position: 0 }, { chord: "B/E", position: 4 }, { chord: "A", position: 8 }, { chord: "F#m", position: 12 }]
+                ],
+                times: [2],
+            },
+            {
+                type: "VERSE 1:",
+                lyrics: [
+                    "There will come a day",
+                    "When this earth will fade away",
+                    "And Your holy city takes its place",
+                    "Where Your glory reigns",
+                    "There's no need for moon and stars",
+                    "For the light will be right where You are",
+                ],
+                chords: [
+                    [{ chord: "E", position: 0 }, { chord: "B/E", position: 60 }],
+                    [{ chord: "F#m", position: 115 }],
+                    [{ chord: "A", position: 80 }, { chord: "B", position: 110 }],
+                    [{ chord: "E", position: 0 }, { chord: "B/E", position: 70 }],
+                    [{ chord: "F#m", position: 130 }],
+                    [{ chord: "A", position: 100 }, { chord: "B", position: 144 }]
+                ],
+            },
+            {
+                type: "PRE-CHORUS:",
+                lyrics: [
+                    "Tears have dried",
+                    "Death has lost its sting",
+                    "God enthroned, making new all things",
+                ],
+                chords: [
+                    [{ chord: "F#m", position: 0 }, { chord: "A", position: 40 }],
+                    [{ chord: "E", position: 45 }, { chord: "B", position: 70 }],
+                    [{ chord: "F#m", position: 0 }, { chord: "A", position: 18 }, { chord: "E", position: 75 },{ chord: "B", position: 100 }]
+                ],
+            },
+            {
+                type: "CHORUS:",
+                lyrics: [
+                    "Holy, Holy",
+                    "All creation praising God Almighty",
+                    "Holy, Holy",
+                    "Your dwelling place is with Your people",
+                ],
+                chords: [
+                    [{ chord: "E", position: 0 }, { chord: "B", position: 20 },],
+                    [{ chord: "F#m", position: 15 }, { chord: "C#m", position: 65 }, { chord: "B", position: 80 }],
+                    [{ chord: "E", position: 0 }, { chord: "B", position: 20 }],
+                    [{ chord: "A", position: 15 }, { chord: "C#m", position: 85 }, { chord: "B", position: 105 }]
+                ],
+            },
+            {
+                type: "VERSE 2:",
+                lyrics: [
+                    "Shining from the sky",
+                    "Is the brilliance of Your bride",
+                    "Free from every curse and every lie",
+                    "No temple will stand",
+                    "For the Lord our God and Lamb",
+                    "Will be the temple of His people",
+                ],
+                chords: [
+                    [{ chord: "E", position: 0 }, { chord: "B/E", position: 65 }],
+                    [{ chord: "F#m", position: 104 }],
+                    [{ chord: "A", position: 70 }, { chord: "B", position: 85 }],
+                    [{ chord: "E", position: 0 }, { chord: "B/E", position: 40 }],
+                    [{ chord: "F#m", position: 0 }],
+                    [{ chord: "A", position: 0 }, { chord: "B", position: 40 }],
+                ],
+            },
+            {
+                type: "INSTRUMENTAL:",
+                lyrics: [""],
+                chords: [
+                    [{ chord: "A", position: 0 }, { chord: "E", position: 4 }, { chord: "C#m", position: 8 }, { chord: "B", position: 12 }]
+                ],
+            },
+            {
+                type: "BRIDGE:",
+                lyrics: [
+                    "Behold the Lord",
+                    "In all His majesty",
+                    "Behold the Lord",
+                    "He is the King of Kings",
+                ],
+                chords: [
+                    [{ chord: "A", position: 0 }, { chord: "E", position: 40 }],
+                    [{ chord: "E", position: 0 }, { chord: "C#m", position: 40 }],
+                    [{ chord: "A", position: 0 }, { chord: "E", position: 40 }],
+                    [{ chord: "E", position: 0 }, { chord: "C#m", position: 40 }],
+                ],
+            },
+            {
+                type: "CHORUS:",
+                lyrics: [
+                    "Holy, Holy",
+                    "All creation praising God Almighty",
+                    "Holy, Holy",
+                    "Your dwelling place is with Your people",
+                    "Your dwelling place is with Your people",
+                    "Your dwelling place is we Your people",
+                ],
+                chords: [
+                    [{ chord: "E", position: 0 }, { chord: "D", position: 40 }],
+                    [{ chord: "F#m", position: 0 }, , { chord: "C#m", position: 40 }, { chord: "B", position: 80 }],
+                    [{ chord: "E", position: 0 }, { chord: "Bm", position: 40 }],
+                    [{ chord: "F#m", position: 0 }, { chord: "A", position: 40 }, { chord: "B", position: 80 }],
+                    [{ chord: "F#m", position: 0 }, { chord: "A", position: 40 }, { chord: "B", position: 80 }],
+                    [{ chord: "F#m", position: 0 }, { chord: "A", position: 40 }, { chord: "B", position: 80 }]
+                ],
+            }
+        ],
+    },
+    //VICTORY WORSHIP
+    {
+        title: "Beautiful Love",
+        artist: "Victory Worship",
+        composer: "Franklin Asuncion, Lee Simon Brown, Moira Hernandez, James Murrell & Kensho Yo",
+        album: "Beautiful Love",
+        releaseDate: "2017",
+        originalKey: "B",
+        chordMap: ["C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A", "Bb", "B"],
+        bpm: 68,
+        sections: [
+            {
+                type: "INTRO:",
+                lyrics: [""],
+                chords: [
+                    [{ chord: "E", position: 0, left: true, leftColon: true }, { chord: "F#", position: 4, right: true }, { chord: "B", position: 8, right: true, forwardSlash: 3, rightColon: true }]
+                ],
+            },
+            {
+                type: "VERSE 1",
+                lyrics: [
+                    "They curse and laugh, You do not fight",
+                    "A thousand men yell 'crucify'",
+                    "As crimson stains, I fill Your mind",
+                    "You look upon me with delight",
+                    "From throne to cross You came to die",
+                    "A crown for thorns to bring new life",
+                    "With every nail I fill Your mind",
+                    "You look upon me with delight",
+                ],
+                chords: [
+                    [{ chord: "E", position: 0 }, { chord: "F#", position: 59 }, { chord: "B", position: 118 }],
+                    [{ chord: "E", position: 0 }, { chord: "F#", position: 41 }, { chord: "B", position: 77 }],
+                    [{ chord: "E", position: 0 }, { chord: "F#", position: 41 }, { chord: "G#m", position: 93 }],
+                    [{ chord: "E", position: 44 }, { chord: "F#", position: 74 }, { chord: "B", position: 91 }],
+                    [],
+                    [],
+                    [],
+                    [],
+                ],
+            },
+            {
+                type: "CHORUS",
+                lyrics: [
+                    "Oh what love",
+                    "How can it be",
+                    "From that cross You looked at me",
+                    "Oh what love",
+                    "Poured out for me",
+                    "What a beautiful love",
+                ],
+                chords: [
+                    [{ chord: "E", position: 39 }],
+                    [{ chord: "F#", position: 22 }, { chord: "B", position: 45 }],
+                    [{ chord: "E", position: 49 }, { chord: "F#", position: 78 }, { chord: "B", position: 110 }],
+                    [{ chord: "E", position: 40 }],
+                    [{ chord: "F#", position: 29 }, { chord: "G#m", position: 52 }],
+                    [{ chord: "E", position: 0 }, { chord: "F#", position: 24 }, { chord: "B", position: 55 }],
+                ],
+            },
+            {
+                type: "VERSE 2",
+                lyrics: [
+                    "Your death gives way to glorious light",
+                    "And tears away the chains that bind",
+                    "Now sons and daughters in Your eyes",
+                    "You look upon us with delight",
+                ],
+                chords: [
+                    [],
+                    [],
+                    [],
+                    [],
+                ],
+            },
+            {
+                type: "BRIDGE",
+                lyrics: [
+                    "(Love) so glorious",
+                    "Came down unashamed",
+                    "You called me Yours",
+                    "Caught up in Your grace, You're all I need",
+                    "There's nothing more beautiful than Your love",
+                    "So glorious",
+                    "Came down unashamed",
+                    "You called me Yours",
+                    "Caught up in Your grace, You're all I need",
+                    "There's nothing more beautiful than Your love",
+                ],
+                chords: [
+                    [{ chord: "B/D#", position: 0 }, { chord: "E", position: 35 }, { chord: "F#", position: 40 }],
+                    [{ chord: "B/D#", position: 65 }],
+                    [{ chord: "E", position: 45 }, { chord: "F#", position: 60 }],
+                    [{ chord: "B/D#", position: 75 }, { chord: "E", position: 117 }, { chord: "F#", position: 125 }],
+                    [{ chord: "C#m", position: 88 }, { chord: "F#", position: 95 }],
+                    [{ chord: "B", position: 0 }, { chord: "F#", position: 60 }],
+                    [{ chord: "B/D#", position: 64 }],
+                    [{ chord: "E", position: 43 }, { chord: "F#", position: 80 }],
+                    [{ chord: "B/D#", position: 0 }, { chord: "E", position: 40 }, { chord: "F#", position: 80 }],
+                    [{ chord: "C#m", position: 0 }, { chord: "F#", position: 40 }],
+                ],
+            },
+            {
+                type: "BRIDGE TAG:",
+                lyrics: [
+                    "(More beautiful) than Your love",
+                ],
+                chords: [
+                    [{ chord: "C#m", position: 0 }, { chord: "F#", position: 40 }, { chord: "B", position: 80 }],
+                ],
+            },
+            {
+                type: "CHORUS",
+                lyrics: [""],
+                chords: [[]],
+            },
+            {
+                type: "TAG:",
+                lyrics: [
+                    "What a beautiful love",
+                    "What a beautiful love",
+                ],
+                chords: [
+                    [{ chord: "E", position: 0 }, { chord: "F#", position: 40 }, { chord: "G#m", position: 80 }],
+                    [{ chord: "E", position: 0 }, { chord: "F#", position: 40 }],
+                ],
+            },
+        ],
+    },
+    //Jesus Culture
+    {
+        title: "One Thing Remains",
+        artist: "Jesus Culture",
+        composer: "Brian Johnson, Jeremy Riddle, Christa Black Gifford",
+        album: "Come Away",
+        releaseDate: "2010",
+        originalKey: "B",
+        chordMap: ["C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A", "Bb", "B"],
+
+        bpm: 74,
+        sections: [
+            {
+                type: "INTRO:",
+                lyrics: [""],
+                chords: [
+                    [{ chord: "E", position: 0 }, { chord: "B", position: 4 }, { chord: "F#", position: 8 }]
+                ],
+            },
+            {
+                type: "VERSE 1:",
+                lyrics: [
+                    "Higher than the mountains that I face",
+                    "Stronger than the power of the grave",
+                    "Constant through the trial and the change",
+                    "One thing remains",
+                    "One thing remains",
+                ],
+                chords: [
+                    [{ chord: "E", position: 0 }, { chord: "B", position: 61 }, { chord: "F#", position: 124 }],
+                    [{ chord: "E", position: 0 }, { chord: "B", position: 69 }, { chord: "F#", position: 114 }],
+                    [{ chord: "E", position: 0 }, { chord: "B", position: 73 }, { chord: "F#", position: 127 }],
+                    [{ chord: "E", position: 20 }, { chord: "B", position: 35 }, { chord: "F#", position: 50 }],
+                    [{ chord: "E", position: 20 }, { chord: "B", position: 35 }, { chord: "F#", position: 50 }],
+                ],
+            },
+            {
+                type: "CHORUS:",
+                lyrics: [
+                    "Your love never fails, it never gives up",
+                    "It ever runs out on me",
+                    "Your love never fails, it never gives up",
+                    "Never runs out on me",
+                    "Your love never fails, it never gives up",
+                    "It never runs out on me",
+                ],
+                chords: [
+                    [{ chord: "G#m7", position: 0 }, { chord: "E", position: 40 }],
+                    [{ chord: "B", position: 0 }, { chord: "F#", position: 40 }],
+                    [{ chord: "G#m7", position: 0 }, { chord: "E", position: 40 }],
+                    [{ chord: "B", position: 0 }, { chord: "F#", position: 40 }],
+                    [{ chord: "G#m7", position: 0 }, { chord: "E", position: 40 }],
+                    [{ chord: "B", position: 0 }, { chord: "F#", position: 40 }],
+                ],
+            },
+            {
+                type: "VERSE 2:",
+                lyrics: [
+                    "On and on and on and on it goes",
+                    "It overwhelms and satisfies my soul",
+                    "And I never, ever, have to be afraid",
+                    "One thing remains",
+                    "One thing remains",
+                ],
+                chords: [
+                    [{ chord: "E", position: 0 }, { chord: "B", position: 61 }, { chord: "F#", position: 100 }],
+                    [{ chord: "E", position: 0 }, { chord: "B", position: 69 }, { chord: "F#", position: 105 }],
+                    [{ chord: "E", position: 0 }, { chord: "B", position: 73 }, { chord: "F#", position: 110 }],
+                    [{ chord: "E", position: 20 }, { chord: "B", position: 35 }, { chord: "F#", position: 50 }],
+                    [{ chord: "E", position: 20 }, { chord: "B", position: 35 }, { chord: "F#", position: 50 }],
+                ],
+            },
+            {
+                type: "BRIDGE:",
+                lyrics: [
+                    "In death, In life, I'm confident and",
+                    "Covered by the power of Your great love",
+                    "My debt is paid, there's nothing that can",
+                    "Separate my heart from Your great love",
+                ],
+                chords: [
+                    [{ chord: "E", position: 0 }, { chord: "B", position: 40 }, { chord: "F#", position: 80 }],
+                    [{ chord: "C#m", position: 0 }, { chord: "E", position: 40 }, { chord: "B", position: 80 }, { chord: "F#", position: 120 }],
+                    [{ chord: "E", position: 0 }, { chord: "B", position: 40 }, { chord: "F#", position: 80 }],
+                    [{ chord: "C#m", position: 0 }, { chord: "E", position: 40 }, { chord: "B", position: 80 }, { chord: "F#", position: 120 }],
+                ],
+            },
+            {
+                type: "TAG:",
+                lyrics: [
+                    "Your love",
+                ],
+                chords: [
+                    [{ chord: "E", position: 0 }, { chord: "F#", position: 10 }, { chord: "D#m7", position: 20 }]
+                ],
+            }
+        ],
+    }
 ]

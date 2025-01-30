@@ -284,10 +284,13 @@ const SongTransposer = ({ selectedSong }) => {
                                }}
                             >
                               {(chordObj.left || chordObj.leftRight) && ' | '}
+                              {(chordObj.leftColon) && ' |: '}
                               {chordObj.dash && '-'}
                               {chordObj.chord}
+                              {chordObj.forwardSlash && Array.from({ length: chordObj.forwardSlash }, () => ' /').join('')}
+                              {(chordObj.rightColon) && ' :| '}
                               {(chordObj.right || chordObj.leftRight) && ' | '} 
-                              {chordIndex == section.chords[lineIndex].length - 1 && section.times?.[lineIndex] ? section.times[lineIndex] + 'x' : ''}
+                              {chordIndex == section.chords[lineIndex].length - 1 && section.times?.[lineIndex] ? ' ' + section.times[lineIndex] + 'x' : ''}
                             </span>
                           ))}
                         </div>
