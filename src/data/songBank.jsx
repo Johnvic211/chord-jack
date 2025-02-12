@@ -770,7 +770,7 @@ export default [
     },
     {
         title: "Dwelling Place",
-        artist: "Sofia Paderez, Raya Rabanal, Josiah Tumaliuan",
+        artist: "AWAKE84",
         composer: "Sofia Paderez, Raya Rabanal, Josiah Tumaliuan",
         album: "Living Awake",
         releaseDate: "2024",
