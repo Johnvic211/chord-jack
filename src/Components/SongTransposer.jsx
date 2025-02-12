@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import PropTypes from "prop-types";
+import Url from './Url'; 
 
 const SongTransposer = ({ selectedSong }) => {
   const [selectedKey, setSelectedKey] = useState(selectedSong.originalKey);
@@ -170,9 +171,7 @@ const SongTransposer = ({ selectedSong }) => {
 
           <div className="flex">
             {selectedSong.link.map((element, index) => (
-              <a href={element.url} target="_blank" rel="noreferrer" key={index}>
-                <img key={index} src={'/song-chords/src/assets/' + element.platform +'.png'} alt={element.platform + '-icon'} className="w-8 mt-2 mr-3 mb-3" />
-              </a>
+              <Url key={index} platform={element.platform} url={element.url} />
             ))}
           </div>
 
