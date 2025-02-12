@@ -4,7 +4,7 @@ import SongSelector from "./Components/SongSelector";
 import MusicInformation from "./Components/MusicInformation";
 import Header from "./Components/Header";
 import Footer from "./Components/Footer";
-import songBank from './songBank'; // Import your songBank
+import songBank from './data/songBank'; // Import your songBank
 
 const App = () => {
   // Retrieve the last selected song index from localStorage or default to index 5

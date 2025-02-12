@@ -168,6 +168,14 @@ const SongTransposer = ({ selectedSong }) => {
           <p className="text-lg"><strong>Original Key:</strong> {selectedSong.originalKey}</p>
           <p className="text-lg"><strong>BPM:</strong> {selectedSong.bpm}</p>
 
+          <div className="flex">
+            {selectedSong.link.map((element, index) => (
+              <a href={element.url} target="_blank" rel="noreferrer" key={index}>
+                <img key={index} src={'/song-chords/src/assets/' + element.platform +'.png'} alt={element.platform + '-icon'} className="w-8 mt-2 mr-3 mb-3" />
+              </a>
+            ))}
+          </div>
+
           <div className="flex items-center space-x-3">
             <input
               type="checkbox"
@@ -268,9 +276,9 @@ const SongTransposer = ({ selectedSong }) => {
 
               // Render the column content
               const renderColumn = (sections) =>
-                sections.map((section, sectionIndex) => (
-                  <div key={sectionIndex} className="mb-4">
-                    <h5 className="text-lg text-blue-600 font-semibold">{section.type}</h5>
+                sections.map((section, sectionIndex) => ((showLyrics || showChords) &&
+                  <div key={sectionIndex} className={`mb-4 ${!showChords && section.isNotLyric ? "hidden" : ""}`}>
+                    {<h5 className="text-lg text-blue-600 font-semibold">{section.type}</h5>}
                     {section.lyrics.map((line, lineIndex) => (
                       <div key={lineIndex}>
                         <div className="flex mt-1">
@@ -297,7 +305,10 @@ const SongTransposer = ({ selectedSong }) => {
                         </div>
                         {showLyrics && (
                           <span className="text-base whitespace-pre-wrap">
-                            {(section?.italize && section.italize[lineIndex] === true) ? italizeText(line) : line}
+                            {(section?.italize && section.italize[lineIndex] === true) 
+                              ? italizeText(showChords ? line : line.trim()) 
+                              : (showChords ? line : line.trim())
+                            }
                           </span>
                         )}
                       </div>
@@ -327,6 +338,12 @@ SongTransposer.propTypes = {
   selectedSong: PropTypes.shape({
     title: PropTypes.string.isRequired,
     artist: PropTypes.string.isRequired,
+    link: PropTypes.arrayOf(
+      PropTypes.shape({
+        platform: PropTypes.string,
+        link: PropTypes.string,
+      }) 
+    ),
     originalKey: PropTypes.string.isRequired,
     chordMap: PropTypes.array.isRequired,
     bpm: PropTypes.number.isRequired,

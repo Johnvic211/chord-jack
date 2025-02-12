@@ -8,6 +8,11 @@ export default [
         originalKey: "E",
         chordMap: ["C", "C#", "D", "Eb", "E", "F", "F#", "G", "G#", "A", "Bb", "B"],
         bpm: 130,
+        link: [
+            { platform: 'youtube', url: 'https://youtu.be/ZavV3JgdK8Q?si=QEaiqMYobdpbv_-T' },
+            { platform: 'spotify', url: 'https://open.spotify.com/track/6LxaXoGSuy4hjTGiKWyfTr?si=5e5ddcdc67c04af2' },
+            { platform: 'pdf', url: 'https://drive.google.com/file/d/1a9OQVknWEx3R8hU8yqQKVRiaeXdDtvu0/view' },
+        ],
         sections: [
             {
                 type: "Intro",
@@ -26,6 +31,7 @@ export default [
                     ],
                 ],
                 times: [2, '', 4],
+                isNotLyric: true,
             },
             {
                 type: "Verse 1",
@@ -77,46 +83,47 @@ export default [
                 ],
             },
             {
-            type: "DROP:",
-            lyrics: ['',''],
-            chords: [
-                [{ chord: "A", position: 0, left: true }, { chord: "E", position: 3, left: true }, { chord: "C#m", position: 5, left: true }, { chord: "B", position: 7, leftRight: true,  }],
-                [{ chord: "A", position: 0, left: true }, { chord: "E", position: 3, left: true }, { chord: "C#m", position: 5, left: true }, { chord: "B", position: 7, leftRight: true,  }],
-
-            ],
-            },
-            {
-            type: "INSTRUMENTAL:",
-            lyrics: ['',''],
-            chords: [
-                [{ chord: "A", position: 0, left: true }, { chord: "E", position: 4, left: true }, { chord: "C#m7", position: 8, left: true }, { chord: "B", position: 12, leftRight: true }],
-                [{ chord: "A", position: 0, left: true }, { chord: "E", position: 4, left: true }, { chord: "C#m7", position: 8, left: true }, { chord: "B", position: 12, leftRight: true }],
-            ],
-            },
-            {
-            type: "BRIDGE:",
-            lyrics: [
-                    '',
-                    'A grace so bright, I’m brought to life',
-                    'I fix my eyes, You’re my delight',
-                    'A grace so bright, I’m brought to life',
-                    'I fix my eyes on You'
+                type: "DROP:",
+                lyrics: ['',''],
+                chords: [
+                    [{ chord: "A", position: 0, left: true }, { chord: "E", position: 3, left: true }, { chord: "C#m", position: 5, left: true }, { chord: "B", position: 7, leftRight: true,  }],
+                    [{ chord: "A", position: 0, left: true }, { chord: "E", position: 3, left: true }, { chord: "C#m", position: 5, left: true }, { chord: "B", position: 7, leftRight: true,  }],
                 ],
-            chords: [
-                [{ chord: "A", position: 0, left: true }, { chord: "C#m7", position: 4, right: true }, { chord: "B", position: 7, right: true }, { chord: "E", position: 11 }, { chord: "G#m7", position: 15 }, { chord: "A", position: 19, leftRight: true }],
-                [{ chord: "A", position: 0 }, { chord: "C#m7", position: 60 }, { chord: "B", position: 60, dash: true }],
-                [{ chord: "E", position: 0 }, { chord: "G#m7", position: 44 }, { chord: "A", position: 44, dash: true }],
-                [{ chord: "A", position: 0 }, { chord: "C#m7", position: 60 }, { chord: "B", position: 60, dash: true }],
-                [{ chord: "E", position: 33 }, { chord: "G#m7", position: 74 }, { chord: "B", position: 74, dash: true }],
-            ],
-            times: [2]
+                isNotLyric: true,
             },
             {
-            type: "BRIDGE TAG:",
-            lyrics: ['I fix my eyes on You'],
-            chords: [
-                [{ chord: "A", position: 30 }, { chord: "C#m7", position: 60 }, { chord: "B", position: 60, dash: true }],
-            ],
+                type: "INSTRUMENTAL:",
+                lyrics: ['',''],
+                chords: [
+                    [{ chord: "A", position: 0, left: true }, { chord: "E", position: 4, left: true }, { chord: "C#m7", position: 8, left: true }, { chord: "B", position: 12, leftRight: true }],
+                    [{ chord: "A", position: 0, left: true }, { chord: "E", position: 4, left: true }, { chord: "C#m7", position: 8, left: true }, { chord: "B", position: 12, leftRight: true }],
+                ],
+                isNotLyric: true,
+            },
+            {
+                type: "BRIDGE:",
+                lyrics: [
+                        '',
+                        'A grace so bright, I’m brought to life',
+                        'I fix my eyes, You’re my delight',
+                        'A grace so bright, I’m brought to life',
+                        'I fix my eyes on You'
+                    ],
+                chords: [
+                    [{ chord: "A", position: 0, left: true }, { chord: "C#m7", position: 4, right: true }, { chord: "B", position: 7, right: true }, { chord: "E", position: 11 }, { chord: "G#m7", position: 15 }, { chord: "A", position: 19, leftRight: true }],
+                    [{ chord: "A", position: 0 }, { chord: "C#m7", position: 60 }, { chord: "B", position: 60, dash: true }],
+                    [{ chord: "E", position: 0 }, { chord: "G#m7", position: 44 }, { chord: "A", position: 44, dash: true }],
+                    [{ chord: "A", position: 0 }, { chord: "C#m7", position: 60 }, { chord: "B", position: 60, dash: true }],
+                    [{ chord: "E", position: 33 }, { chord: "G#m7", position: 74 }, { chord: "B", position: 74, dash: true }],
+                ],
+                times: [2]
+            },
+            {
+                type: "BRIDGE TAG:",
+                lyrics: ['I fix my eyes on You'],
+                chords: [
+                    [{ chord: "A", position: 30 }, { chord: "C#m7", position: 60 }, { chord: "B", position: 60, dash: true }],
+                ],
             },
             {
             type: "[REPEAT CHORUS]",
@@ -133,13 +140,14 @@ export default [
                 [{ chord: "C#m7", position: 27 }, { chord: "B", position: 56 }],
             ],
             },
-            {
-            type: "DROP:",
-            lyrics: ['',''],
-            chords: [
-                [{ chord: "A", position: 0, left: true }, { chord: "E", position: 3, left: true }, { chord: "C#m", position: 5, left: true }, { chord: "B", position: 7, leftRight: true,  }],
-                [{ chord: "A", position: 0, left: true }, { chord: "E", position: 3, left: true }, { chord: "C#m", position: 5, left: true }, { chord: "B", position: 7, leftRight: true,  }],
-            ],
+                {
+                type: "DROP:",
+                lyrics: ['',''],
+                chords: [
+                    [{ chord: "A", position: 0, left: true }, { chord: "E", position: 3, left: true }, { chord: "C#m", position: 5, left: true }, { chord: "B", position: 7, leftRight: true,  }],
+                    [{ chord: "A", position: 0, left: true }, { chord: "E", position: 3, left: true }, { chord: "C#m", position: 5, left: true }, { chord: "B", position: 7, leftRight: true,  }],
+                ],
+                isNotLyric: true,
             },
         ],
     },
@@ -152,6 +160,11 @@ export default [
         originalKey: "Eb",
         chordMap: ["C", "C#", "D", "Eb", "E", "F", "F#", "G", "Ab", "A", "Bb", "B"],
         bpm: 128,
+        link: [
+            { platform: 'youtube', url: 'https://youtu.be/nXkVsMmgyGs?si=GAF6ezCJpG9zuppz' },
+            { platform: 'spotify', url: 'https://open.spotify.com/track/66kjME9bCPZyk8mL6cgEys?si=27255301f59f4cfe' },
+            { platform: 'pdf', url: 'https://drive.google.com/file/d/1vrzwqnDG7VSuwDy5Vrwrg7AbBN9Gmj8K/view' },
+        ],
         sections: [
             {
                 type: "INTRO-ENDING:",
@@ -164,6 +177,7 @@ export default [
                     { chord: "Bb", position: 12, leftRight: true }, { chord: "Bb", position: 16 }, { chord: "Gm7", position: 20, right: true  },
                     ],
                 ],
+                isNotLyric: true,
             },
             {
                 type: "Verse",
@@ -257,6 +271,11 @@ export default [
         originalKey: "F",
         chordMap: ["C", "C#", "D", "Eb", "E", "F", "F#", "G", "Ab", "A", "Bb", "B"],
         bpm: 70,
+        link: [
+            { platform: 'youtube', url: 'https://youtu.be/waoT01SNhkc?si=I4tC-e4SKpIC7ynr' },
+            { platform: 'spotify', url: 'https://open.spotify.com/track/5dPe8ahss4C7NvjP1iiXOI?si=e7eb5c06850c4ecf' },
+            { platform: 'pdf', url: 'https://drive.google.com/file/d/1EVplBKIoh4rf1nZv6l2buBRXve3Ac8Ou/view' },
+        ],
         sections: [
             {
                 type: "INTRO:",
@@ -267,6 +286,7 @@ export default [
                         { chord: "Bb", position: 12, leftRight: true }
                     ],
                 ],
+                isNotLyric: true,
             },
             {
                 type: "VERSE 1",
@@ -342,6 +362,7 @@ export default [
                         { chord: "Gm7", position: 16, right: true }, { chord: "Dm7", position: 20 }, { chord: "C", position: 24, right: true }
                     ],
                 ],
+                isNotLyric: true,
             },
             {
                 type: "BRIDGE",
@@ -377,6 +398,11 @@ export default [
         originalKey: "C",
         chordMap: ["C", "C#", "D", "Eb", "E", "F", "F#", "G", "Ab", "A", "Bb", "B"],
         bpm: 145,
+        link: [
+            { platform: 'youtube', url: 'https://youtu.be/kRGzCtnpJ3o?si=VhxjSG89Roq8Qrdi' },
+            { platform: 'spotify', url: 'https://open.spotify.com/track/2fp3evS8EUjNT8qD7smgtO?si=b925cf48a9964c7b' },
+            { platform: 'pdf', url: 'https://drive.google.com/file/d/1cXVT4y7nG75FkxpvMtfVg-UzImSvMAwM/view' },
+        ],
         sections: [
             {
                 type: "CHORUS:",
@@ -465,6 +491,7 @@ export default [
                         { chord: "Am", position: 0 }, { chord: "G", position: 4 }, { chord: "D/F#", position: 8, number: "2/#4" }, { chord: "F", position: 12 }, { chord: "G", position: 16 }
                     ],
                 ],
+                isNotLyric: true,
             },
             {
                 type: "BRIDGE:",
@@ -491,6 +518,11 @@ export default [
         releaseDate: "2024",
         originalKey: "Bm",
         bpm: 140,
+        link: [
+            { platform: 'youtube', url: 'https://youtu.be/0fmZDVvJGsw?si=uBrCrPl3TqR74q_n' },
+            { platform: 'spotify', url: 'https://open.spotify.com/track/70AKiyIR3bXTBqMNPamwYC?si=1b0e4e20579e4e7f' },
+            { platform: 'pdf', url: 'https://drive.google.com/file/d/1rzC-CGF3PIqI6WzIKcFx4DV0XWl47vEh/view' },
+        ],
         chordMap: ["C", "C#", "D", "Eb", "E", "F", "F#", "G", "Ab", "A", "Bb", "B"],
         sections: [
             {
@@ -501,6 +533,7 @@ export default [
                     [{ chord: "Bm", position: 0 }, { chord: "A", position: 0, dash: true }, { chord: "Em", position: 0, dash: true }, { chord: "D", position: 0, dash: true }],
                 ],
                 times: [3],
+                isNotLyric: true,
             },
             {
                 type: "VERSE 1:",
@@ -571,7 +604,8 @@ export default [
                 lyrics: [
                     "[REPEAT CHORUS]", 
                 ],
-                chords: []
+                chords: [],
+                isNotLyric: true,
             },
             {
                 type: "INSTRUMENTAL:",
@@ -581,6 +615,7 @@ export default [
                     [{ chord: "Bm", position: 0 }, { chord: "A", position: 0, dash: true }, { chord: "Em", position: 0, dash: true }, { chord: "D", position: 0, dash: true }]
                 ],
                 times: [3],
+                isNotLyric: true,
             },
             {
                 type: "EXHORTATION:",
@@ -632,6 +667,11 @@ export default [
         originalKey: "Eb",
         chordMap: ["C", "C#", "D", "Eb", "E", "F", "F#", "G", "Ab", "A", "Bb", "B"],
         bpm: 120,
+        link: [
+            { platform: 'youtube', url: 'https://youtu.be/ip_nZZ00vE8?si=_s9F1Y8jEBJ7tZOx' },
+            { platform: 'spotify', url: 'https://open.spotify.com/track/44NQoRiwxvjJeqca7W3lPe?si=617bcc2ecd764a7a' },
+            { platform: 'pdf', url: 'https://drive.google.com/file/d/1euejMbFHewE8tENDPEHPreAkkNEBtbNX/view' },
+        ],
         sections: [
             {
                 type: "INTRO:",
@@ -639,6 +679,7 @@ export default [
                 chords: [
                     [{ chord: "Eb", position: 0 }, { chord: "Ab", position: 4 }, { chord: "Cm", position: 8 }, { chord: "Ab", position: 12 }]
                 ],
+                isNotLyric: true,
             },
             {
                 type: "VERSE 1:",
@@ -710,6 +751,7 @@ export default [
                 chords: [
                     [{ chord: "Eb", position: 0 }]
                 ],
+                isNotLyric: true,
             },
             {
                 type: "BRIDGE:",
@@ -735,6 +777,11 @@ export default [
         originalKey: "E",
         chordMap: ["C", "C#", "D", "Eb", "E", "F", "F#", "G", "Ab", "A", "Bb", "B"],
         bpm: 68,
+        link: [
+            { platform: 'youtube', url: 'https://youtu.be/JIgJRFSOYj0?si=oIPp8-bucpZu0Mzs' },
+            { platform: 'spotify', url: 'https://open.spotify.com/track/3iqYa7x1JcfhYumSRjXmSy?si=2d31644b432544aa' },
+            { platform: 'pdf', url: 'https://drive.google.com/file/d/1PpmMspPyC4jRCzbPHPcFYeV7WH6Cvmr4/view' },
+        ],
         sections: [
             {
                 type: "INTRO:",
@@ -743,6 +790,7 @@ export default [
                     [{ chord: "E", position: 0 }, { chord: "B/E", position: 4, number: "5/1" }, { chord: "A", position: 8 }, { chord: "F#m", position: 12 }]
                 ],
                 times: [2],
+                isNotLyric: true,
             },
             {
                 type: "VERSE 1:",
@@ -816,7 +864,8 @@ export default [
                 chords: [
                     [{ chord: "A", position: 0 }, { chord: "E", position: 4 }, { chord: "C#m", position: 8 }, { chord: "B", position: 12 }]
                 ],
-                times: [2]
+                times: [2],
+                isNotLyric: true,
             },
             {
                 type: "BRIDGE:",
@@ -854,6 +903,157 @@ export default [
             }
         ],
     },
+    {
+        title: "Everything You Are (Live)",
+        artist: "AWAKE84",
+        composer: "Nathan Earl Huang, Daniel Kelvin Monong, & Ron Timothy Marquez",
+        album: "Wonderstruck",
+        releaseDate: "2023",
+        originalKey: "B",
+        chordMap: ["C", "C#", "D", "D#", "E", "F", "F#", "G", "Ab", "A", "Bb", "B"],
+        bpm: 120,
+        link: [
+            { platform: 'youtube', url: 'https://youtu.be/2Sxidc7gy-w?si=RLXnCYYnuUrsbhgq' },
+            { platform: 'spotify', url: 'https://open.spotify.com/track/72ghj0myktpqOCFAax5ZHE?si=a1f959157f884ecc' },
+            { platform: 'pdf', url: 'https://drive.google.com/file/d/1bCuQCWnGTCOpnV-rLlOwv496HhO8Dtb0/view' },
+        ],
+        sections: [
+            {
+                type: "INTRO:",
+                lyrics: [""],
+                chords: [
+                    [{ chord: "E", position: 0, left: true, leftColon: true }, { chord: "F#", position: 4, left: true }, { chord: "D#m7", position: 7, left: true }, { chord: "E", position: 11, leftRight: true, rightColon: true }],
+                ],
+                isNotLyric: true,
+            },
+            {
+                type: "VERSE 1:",
+                lyrics: [
+                    "I was broken with blinded eyes",
+                    "I was caught up in the chains of darkness",
+                    "Fragile heart, meant to die",
+                    "Till You found me and saved my life",
+                ],
+                chords: [
+                    [{ chord: "E", position: 0 }, { chord: "F#", position: 48 }],
+                    [{ chord: "D#m7", position: 0 }, { chord: "E", position: 73 }],
+                    [{ chord: "E", position: 0 }, { chord: "F#", position: 46 }],
+                    [{ chord: "D#m7", position: 0 }, { chord: "E", position: 43.5 }],
+                ],
+            },
+            {
+                type: "PRE CHORUS:",
+                lyrics: [
+                    "I'm never lost, 'cause in You, I take refuge",
+                    "Wherever I go",
+                    "Your love surrounds, in You, I'm found",
+                ],
+                chords: [
+                    [{ chord: "F#", position: 0 }, { chord: "D#m7", position: 37 }, { chord: "E", position: 95 }],
+                    [{ chord: "E", position: 22 }, { chord: "F#", position: 42 }],
+                    [{ chord: "D#m7", position: 20 }, { chord: "E", position: 70 }]
+                ],
+            },
+            {
+                type: "CHORUS:",
+                lyrics: [
+                    "I'll sing Your praises",
+                    "I'll scream hallelujah",
+                    "Found in Your freedom",
+                    "All I need is",
+                    "Everything You are",
+                ],
+                chords: [
+                    [{ chord: "C#m7", position: 0 }, { chord: "B", position: 36 }],
+                    [{ chord: "F#", position: 0 }, { chord: "D#m7", position: 38 }],
+                    [{ chord: "C#m7", position: 0 }, { chord: "B", position: 34 }],
+                    [{ chord: "F#", position: 0 }],
+                    [{ chord: "D#m7", position: 0 }]
+                ],
+            },
+            {
+                type: "INSTRUMENTAL:",
+                lyrics: [""],
+                chords: [
+                    [{ chord: "E", position: 0, left: true, leftColon: true }, { chord: "F#", position: 4, left: true }, { chord: "D#m7", position: 7, left: true }, { chord: "E", position: 11, leftRight: true, rightColon: true }]
+                ],
+                isNotLyric: true,
+            },
+            {
+                type: "VERSE 2:",
+                lyrics: [
+                    "You are my strength, my cup, my portion",
+                    "You, oh Lord, are my heart’s devotion",
+                    "As I hold on to Your embrace",
+                    "My life has fallen into Your grace",
+                ],
+                chords: [
+                    [{ chord: "E", position: 0 }, { chord: "F#", position: 90 }],
+                    [{ chord: "D#m7", position: 0 }, { chord: "E", position: 57 }],
+                    [{ chord: "F#", position: 57 }],
+                    [{ chord: "D#m7", position: 0 }, { chord: "E", position: 51 }],
+                ],
+            },
+            {
+                type: "",
+                lyrics: ["[PRE-CHORUS]", "[CHORUS]"],
+                chords: [[]],
+                isNotLyric: true,
+            },
+            {
+                type: "INSTRUMENTAL:",
+                lyrics: [""],
+                chords: [
+                    [{ chord: "E", position: 0, left: true, leftColon: true }, { chord: "F#", position: 4, left: true }, { chord: "D#m7", position: 7, left: true }, { chord: "E", position: 11, leftRight: true, rightColon: true }]
+                ],
+                isNotLyric: true,
+            },
+            {
+                type: "BRIDGE:",
+                lyrics: [
+                    "I will not be shaken",
+                    "'Cause Jesus You have risen",
+                    "In Your presence, there is freedom",
+                    "Joy's awakening",
+                ],
+                chords: [
+                    [{ chord: "E", position: 0 }, { chord: "F#", position: 40 }],
+                    [{ chord: "D#m7", position: 0 }, { chord: "E", position: 67}],
+                    [{ chord: "E", position: 0 }, { chord: "F#", position: 85 }],
+                    [{ chord: "D#m7", position: 0 }, { chord: "E", position: 5 }],
+                ],
+            },
+            {
+                type: "",
+                lyrics: ["[REPEAT BRIDGE]"],
+                chords: [[]],
+                isNotLyric: true,
+            },
+            {
+                type: "INSTRUMENTAL:",
+                lyrics: [""],
+                chords: [
+                    [{ chord: "D#m7", position: 0, left: true, leftColon: true }, { chord: "B", position: 4, left: true }, { chord: "F#", position: 8, left: true }, { chord: "D#m7", position: 11, leftRight: true, rightColon: true }]
+                ],
+                isNotLyric: true,
+            },
+            {
+                type: "",
+                lyrics: ["[CHORUS]"],
+                chords: [[]],
+                isNotLyric: true,
+            },
+            {
+                type: "CHORUS DROP:",
+                lyrics: [
+                    "All I need is everything You are",
+                ],
+                chords: [
+                    [{ chord: "F#", position: 48 }, { chord: "E", position: 48, dash: true }, { chord: "D#m7", position: 48, dash: true }, { chord: "C#m7", position: 48, dash: true }, { chord: "E", position: 57 }]
+                ],
+            }
+        ],
+    },
     //VICTORY WORSHIP
     {
         title: "Beautiful Love",
@@ -864,6 +1064,11 @@ export default [
         originalKey: "B",
         chordMap: ["C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A", "Bb", "B"],
         bpm: 68,
+        link: [
+            { platform: 'youtube', url: 'https://youtu.be/4r2U8RWY1ck?si=3Qat8UHJEvaVzX_8' },
+            { platform: 'spotify', url: 'https://open.spotify.com/track/5kQgNSiqglNC0c5lc4K073?si=8dd10827ff3b4bd5' },
+            { platform: 'pdf', url: 'https://www.everynationmusic.org/wp-content/uploads/2022/03/beautiful-love-for-your-purpose-victory-worship.pdf' },
+        ],
         sections: [
             {
                 type: "INTRO:",
@@ -871,6 +1076,7 @@ export default [
                 chords: [
                     [{ chord: "E", position: 0, left: true, leftColon: true }, { chord: "F#", position: 4, right: true }, { chord: "B", position: 8, right: true, forwardSlash: 3, rightColon: true }]
                 ],
+                isNotLyric: true,
             },
             {
                 type: "VERSE 1",
@@ -969,6 +1175,7 @@ export default [
                 type: "CHORUS",
                 lyrics: [""],
                 chords: [[]],
+                isNotLyric: true,
             },
             {
                 type: "TAG:",
@@ -992,6 +1199,11 @@ export default [
         originalKey: "D",
         chordMap: ["C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A", "Bb", "B"],
         bpm: 71,
+        link: [
+            { platform: 'youtube', url: 'https://youtu.be/JiOsxqP-M1A?si=4wsIY9UGSM6qhIUP' },
+            { platform: 'spotify', url: 'https://open.spotify.com/track/033eMXabq63pwdFsDtBjzE?si=e93fc9fd04a6406d' },
+            { platform: 'pdf', url: 'https://drive.google.com/file/d/1hJhCe7B_bQdaO_hqImYbPqkRp7xkTYHm/view' },
+        ],
         sections: [
             {
                 type: "INTRO:",
@@ -999,6 +1211,7 @@ export default [
                 chords: [
                     [{ chord: "G", position: 0, left: true, leftColon: true }, { chord: "D", position: 4, left: true }, { chord: "Bm", position: 8, left: true }, { chord: "D/F#", position: 12, number: "1/3", leftRight: true, rightColon: true }]
                 ],
+                isNotLyric: true,
             },
             {
                 type: "VERSE 1:",
@@ -1046,11 +1259,13 @@ export default [
                 chords: [
                     [{ chord: "G", position: 0, left: true, leftColon: true }, { chord: "D", position: 4, left: true }, { chord: "Bm", position: 8, left: true }, { chord: "D/F#", position: 12, leftRight: true, rightColon: true }]
                 ],
+                isNotLyric: true,
             },
             {
                 type: "",
                 lyrics: ["[VERSE]", "[CHORUS]"],
                 chords: [[]],
+                isNotLyric: true,
             },
             {
                 type: "INSTRUMENTAL:",
@@ -1058,6 +1273,7 @@ export default [
                 chords: [
                     [{ chord: "G", position: 0, left: true, leftColon: true }, { chord: "A", position: 4, left: true }, { chord: "Bm", position: 8, left: true }, { chord: "A", position: 12, leftRight: true, rightColon: true }]
                 ],
+                isNotLyric: true,
             },
             {
                 type: "BRIDGE:",
@@ -1078,6 +1294,7 @@ export default [
                 type: "",
                 lyrics: ["[CHORUS]"],
                 chords: [[]],
+                isNotLyric: true,
             },
             {
                 type: "TAG:",
@@ -1093,13 +1310,17 @@ export default [
     //EVERY NATION MUSIC
     {
         title: "The Beat",
-        artist: "Every Nation Worship",
+        artist: "Every Nation Music",
         composer: "Franklin Asuncion, Lee Simon Brown, Moira Hernandez, James Murrell & Kensho Yo",
-        album: "Beautiful Love",
+        album: "Doxology",
         releaseDate: "2017",
         originalKey: "E",
         chordMap: ["C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A", "Bb", "B"],
         bpm: 68,
+        link: [
+            { platform: 'youtube', url: 'https://youtu.be/HPTRq91CiYA?si=A6hjoiaP2TFyRUh8' },
+            { platform: 'spotify', url: 'https://open.spotify.com/track/5Mu324S2iRxxqv9U6Gq1h1?si=e2e46ad82a764ae9' },
+        ],
         sections: [
             {
                 type: "INTRO:",
@@ -1107,6 +1328,7 @@ export default [
                 chords: [
                     [{ chord: "E", position: 0 }, { chord: "A", position: 4 }]
                 ],
+                isNotLyric: true,
             },
             {
                 type: "VERSE 1",
@@ -1152,6 +1374,7 @@ export default [
                 chords: [
                     [{ chord: "E", position: 0 }, { chord: "A", position: 4 }, { chord: "B", position: 8 }, { chord: "A", position: 12 }]
                 ],
+                isNotLyric: true,
             },
             {
                 type: "VERSE 2",
@@ -1174,6 +1397,7 @@ export default [
                     "[CHORUS]",
                 ],
                 chords: [[]],
+                isNotLyric: true,
             },
             {
                 type: "BRIDGE 1",
@@ -1211,6 +1435,7 @@ export default [
                     "[CHORUS]",
                 ],
                 chords: [[]],
+                isNotLyric: true,
             },
         ],
     },
@@ -1223,7 +1448,10 @@ export default [
         releaseDate: "2010",
         originalKey: "B",
         chordMap: ["C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A", "Bb", "B"],
-
+        link: [
+            { platform: 'youtube', url: 'https://youtu.be/zglFV4mtewU?si=zN5T48sC3j5N7y5R' },
+            { platform: 'spotify', url: 'https://open.spotify.com/track/29YUMVIUxuMi2QtK6sg0lI?si=2bd88516c5624cde' },
+        ],
         bpm: 74,
         sections: [
             {
@@ -1232,6 +1460,7 @@ export default [
                 chords: [
                     [{ chord: "E", position: 0 }, { chord: "B", position: 4 }, { chord: "F#", position: 8 }]
                 ],
+                isNotLyric: true,
             },
             {
                 type: "VERSE 1:",
@@ -1322,6 +1551,10 @@ export default [
         originalKey: "Bb",
         chordMap: ["C", "C#", "D", "Eb", "E", "F", "F#", "G", "Ab", "A", "Bb", "B"],
         bpm: 123,
+        link: [
+            { platform: 'youtube', url: 'https://youtu.be/M4WKGVZaGrA?si=BbiOP6jOu_yaAALz' },
+            { platform: 'spotify', url: 'https://open.spotify.com/track/5mqMY3RLWtcn9xYj4Kizkz?si=384e82eff7fd4f89' },
+        ],
         sections: [
             {
                 type: "WHOLE SONG:",
@@ -1329,6 +1562,7 @@ export default [
                 chords: [
                     [{ chord: "Bb", position: 0, number: 1 }, { chord: "Fm7", position: 4, number: 5 }, { chord: "Ab", position: 8, number: "♭7"  }, { chord: "Eb", position: 12, number: 4  }],
                 ],
+                isNotLyric: true,
             },
             {
                 type: "VERSE 1:",
@@ -1411,5 +1645,4 @@ export default [
             }
         ],
     }
-
 ]
