@@ -79,7 +79,7 @@ const SongSelector = ({ songBank, onSongSelect }) => {
                   className="px-4 py-2 text-gray-800 hover:bg-indigo-100 hover:text-indigo-600 cursor-pointer transition-colors duration-200"
                   onMouseDown={() => {
                     onSongSelect(originalIndex); // Use original index
-                    setSearchTerm(song.title); // Update input field
+                    setSearchTerm(''); // Update input field
                     setIsFocused(false); // Close dropdown
                   }}
                 >

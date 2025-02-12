@@ -1062,6 +1062,153 @@ export default [
             }
         ],
     },
+    {
+        title: "Everlasting",
+        artist: "AWAKE84",
+        composer: "Chino Celeste, Andrew James Jiao, & Ian Tumaliuan",
+        album: "Living Awake",
+        releaseDate: "2024",
+        originalKey: "D",
+        chordMap: ["C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A", "Bb", "B"],
+        bpm: 72,
+        link: [
+            { platform: 'youtube', url: 'https://youtu.be/DeIq8pWd2rU?si=sQvjTZybSuhZQVfH' },
+            { platform: 'spotify', url: 'https://open.spotify.com/track/4W9fda6lW3g85sD4iFALlW?si=9ae7b14b29604b95' },
+            { platform: 'appleMusic', url: 'https://music.apple.com/us/album/everlasting/1746738986?i=1746739640' },
+            { platform: 'pdf', url: 'https://drive.google.com/file/d/1-ysKFqRYaFsXC5tGlEq2pJnY8WAJVEK_/view' },
+        ],
+        sections: [
+            {
+                type: "INTRO:",
+                lyrics: [""],
+                chords: [
+                    [{ chord: "G", position: 0 }, { chord: "A", position: 4 }, { chord: "Bm", position: 8 }, { chord: "F#m", position: 12 }],
+                    [{ chord: "G", position: 0 }, { chord: "A", position: 4 }, { chord: "Bm", position: 8 }, { chord: "D/F#", position: 12, number: '1/3' }]
+                ],
+                isNotLyric: true,
+            },
+            {
+                type: "VERSE 1:",
+                lyrics: [
+                    "Gracious Father",
+                    "I look to You",
+                    "Mighty Savior",
+                    "I run to You",
+                ],
+                chords: [
+                    [{ chord: "G", position: 0 }, { chord: "A", position: 57 }],
+                    [{ chord: "Bm", position: 35 }, { chord: "D/F#", position: 40, number: "1/3" }],
+                    [{ chord: "G", position: 0 }, { chord: "A", position: 55 }],
+                    [{ chord: "Bm", position: 32 }, { chord: "F#m", position: 40 }],
+                ],
+            },
+            {
+                type: "PRE-CHORUS 1:",
+                lyrics: [
+                    "My Defender",
+                    "My fortress and my strength",
+                    "My Redeemer",
+                    "In You my soul will rest",
+                ],
+                chords: [
+                    [{ chord: "G", position: 0 }, { chord: "A", position: 46 }],
+                    [{ chord: "Bm", position: 78 }, { chord: "D/F#", position: 103, number: "1/3" }],
+                    [{ chord: "G", position: 0 }, { chord: "A", position: 52 }],
+                    [{ chord: "Bm", position: 77 }, { chord: "D/F#", position: 84, number: "1/3" }],
+                ],
+            },
+            {
+                type: "CHORUS:",
+                lyrics: [
+                    "For as high as the heavens",
+                    "For as high as the heavens are above the earth",
+                    "For as high as the heavens",
+                    "So great is Your love for us",
+                ],
+                chords: [
+                    [{ chord: "G", position: 74 }, { chord: "A", position: 102 }],
+                    [{ chord: "Bm", position: 74 }, { chord: "D/F#", position: 120 }],
+                    [{ chord: "G", position: 74 }, { chord: "A", position: 102 }],
+                    [{ chord: "Bm", position: 65 }, { chord: "D", position: 86 }],
+                ],
+            },
+            {
+                type: "VERSE 2:",
+                lyrics: [
+                    "In the darkness",
+                    "You hold my hand",
+                    "In my weakness",
+                    "You are my strength",
+                ],
+                chords: [
+                    [{ chord: "G", position: 0 }, { chord: "A", position: 57 }],
+                    [{ chord: "Bm", position: 53 }, { chord: "F#m", position: 62 }],
+                    [{ chord: "G", position: 0 }, { chord: "A", position: 59 }],
+                    [{ chord: "Bm", position: 5 }, { chord: "D/F#", position: 19, number: "1/3" }],
+                ],
+            },
+            {
+                type: "PRE-CHORUS 2:",
+                lyrics: [
+                    "You are founder",
+                    "Perfector of my faith",
+                    "You are with us",
+                    "Forever You remain",
+                ],
+                chords: [
+                    [{ chord: "G", position: 0 }, { chord: "A", position: 60 }],
+                    [{ chord: "Bm", position: 64 }, { chord: "F#m", position: 72 }],
+                    [{ chord: "G", position: 0 }, { chord: "A", position: 56 }],
+                    [{ chord: "Bm", position: 62 }, { chord: "D", position: 68 }]
+                ],
+            },
+            {
+                type: "[REPEAT CHORUS]",
+                lyrics: [""],
+                chords: [[]],
+                isNotLyric: true,
+            },
+            {
+                type: "BRIDGE:",
+                lyrics: [
+                    "With times and seasons constantly changing",
+                    "Our eyes behold your kingdom coming",
+                    "From everlasting to everlasting",
+                    "Your presence with us, Your love unfailing",
+                ],
+                chords: [
+                    [{ chord: "G", position: 0 }, { chord: "A", position: 87.5 }, { chord: "Bm", position: 166 }],
+                    [{ chord: "F#m", position: 86 }],
+                    [{ chord: "G", position: 0 }, { chord: "A", position: 60 }, { chord: "Bm", position: 113 }],
+                    [{ chord: "F#m", position: 88 }],
+                ],
+            },
+            {
+                type: "BRIDGE 2:",
+                lyrics: [
+                    "With times and seasons constantly changing",
+                    "Our eyes behold your kingdom coming",
+                    "From everlasting to everlasting",
+                    "Your presence with us, Your love unfailing",
+                ],
+                chords: [
+                    [{ chord: "G", position: 0 }, { chord: "A", position: 87.5 }, { chord: "Bm", position: 166 }],
+                    [{ chord: "F#m", position: 86 }],
+                    [{ chord: "G", position: 0 }, { chord: "A", position: 60 }, { chord: "Bm", position: 113 }],
+                    [{ chord: "D", position: 90 }],
+                ],
+            },
+            {
+                type: "INSTRUMENTAL:",
+                lyrics: ["",""],
+                chords: [
+                    [{ chord: "G", position: 0 }, { chord: "A", position: 4 }, { chord: "Bm", position: 8 }, { chord: "D/F#", position: 12 }, { chord: "A/C#m", position: 16, number: "5/7" }, { chord: "D", position: 20, dash: true }],
+                    [{ chord: "G", position: 0 }, { chord: "A", position: 4 }, { chord: "Bm", position: 8 }, { chord: "D/F#", position: 12 }],
+                ],
+                isNotLyric: true,
+            }
+        ],
+    },
     //VICTORY WORSHIP
     {
         title: "Beautiful Love",
