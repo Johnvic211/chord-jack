@@ -7,18 +7,17 @@ import Footer from "./Components/Footer";
 import songBank from './songBank'; // Import your songBank
 
 const App = () => {
-  // Check if there's a stored song in localStorage, or default to the first song
-  const lastSelectedSong = localStorage.getItem('selectedSong');
-  const defaultSong = lastSelectedSong ? JSON.parse(lastSelectedSong) : songBank[5];
+  // Retrieve the last selected song index from localStorage or default to index 5
+  const lastSelectedIndex = localStorage.getItem('selectedSongIndex');
+  const defaultIndex = lastSelectedIndex !== null ? parseInt(lastSelectedIndex, 10) : 5;
 
-  const [selectedSong, setSelectedSong] = useState(defaultSong);
+  const [selectedSongIndex, setSelectedSongIndex] = useState(defaultIndex);
+  const selectedSong = songBank[selectedSongIndex]; // Get the song from the array
 
-  // Save the selected song to localStorage whenever it changes
+  // Save the selected song index to localStorage whenever it changes
   useEffect(() => {
-    if (selectedSong) {
-      localStorage.setItem('selectedSong', JSON.stringify(selectedSong));
-    }
-  }, [selectedSong]);
+    localStorage.setItem('selectedSongIndex', selectedSongIndex);
+  }, [selectedSongIndex]);
 
   return (
     <div className="bg-gray-100 flex flex-col min-h-screen">
@@ -27,7 +26,10 @@ const App = () => {
         <Header />
 
         {/* Song Selector */}
-        <SongSelector songBank={songBank} onSongSelect={setSelectedSong} />
+        <SongSelector 
+          songBank={songBank} 
+          onSongSelect={(index) => setSelectedSongIndex(index)} 
+        />
 
         {selectedSong && (
           <>
@@ -45,5 +47,6 @@ const App = () => {
     </div>
   );
 };
+
 
 export default App 

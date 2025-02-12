@@ -134,11 +134,12 @@ const SongTransposer = ({ selectedSong }) => {
       line.map((chordObj) => {
         const steps = calculateSteps(selectedSong.originalKey, selectedKey);  // Calculate steps
         const transposedChord = transposeChord(chordObj.chord, steps);  // Transpose chord based on steps
-        
+        const chordNumber = chordObj.number ? chordObj.number : getChordNumber(transposedChord)
+
         return {
           ...chordObj,
           chord: showChordNumbers
-            ? getChordNumber(transposedChord)  // Convert transposed chord to number if needed
+            ? chordNumber  // Convert transposed chord to number if needed
             : transposedChord,  // Else display transposed chord
         };
       })

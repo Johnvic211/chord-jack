@@ -16,13 +16,13 @@ export default [
                 addBreak: [false, true],
                 chords: [
                     [
-                    { chord: "A", position: 0, left: true }, { chord: "C#m7", position: 4 }, { chord: "B", position: 4, right: true, dash: true },
-                    { chord: "E", position: 8 }, { chord: "G#m7", position: 12 }, { chord: "A", position: 12, right: true, dash: true  },
+                    { chord: "A", position: 0, left: true, number: 4 }, { chord: "C#m7", position: 4, number: 6 }, { chord: "B", position: 4, right: true, dash: true, number: 5 },
+                    { chord: "E", position: 8, number: 1 }, { chord: "G#m7", position: 12, number: 3 }, { chord: "A", position: 12, right: true, dash: true, number: 4  },
                     ],
                     [],
                     [
-                    { chord: "A", position: 0, left: true }, { chord: "C#m7", position: 4 }, { chord: "B", position: 4, right: true, dash: true },
-                    { chord: "E", position: 8 }, { chord: "G#m7", position: 12 }, { chord: "A", position: 12, right: true, dash: true  },
+                    { chord: "A", position: 0, left: true, number: 4 }, { chord: "C#m7", position: 4, number: 6 }, { chord: "B", position: 4, right: true, dash: true, number: 5 },
+                    { chord: "E", position: 8, number: 1 }, { chord: "G#m7", position: 12, number: 3 }, { chord: "A", position: 12, right: true, dash: true, number: 4  },
                     ],
                 ],
                 times: [2, '', 4],
@@ -37,11 +37,11 @@ export default [
                     "You carry me through",
                 ],
                 chords: [
-                    [{ chord: "G#m7", position: 25 }, { chord: "A", position: 40 }, { chord: "B", position: 70 }],
-                    [{ chord: "G#m7", position: 30 }, { chord: "A", position: 40 }, { chord: "B", position: 67 }],
-                    [{ chord: "G#m7", position: 28 }, { chord: "A", position: 42 }, { chord: "B", position: 60 }],
-                    [{ chord: "G#m7", position: 57 }],
-                    [{ chord: "A", position: 17 }, { chord: "B", position: 52 }],
+                    [{ chord: "G#m7", position: 25, number: 3 }, { chord: "A", position: 40, number: 4 }, { chord: "B", position: 70, number: 5 }],
+                    [{ chord: "G#m7", position: 30, number: 3 }, { chord: "A", position: 40, number: 4 }, { chord: "B", position: 67, number: 5 }],
+                    [{ chord: "G#m7", position: 28, number: 3 }, { chord: "A", position: 42, number: 4 }, { chord: "B", position: 60, number: 5 }],
+                    [{ chord: "G#m7", position: 57, number: 3 }],
+                    [{ chord: "A", position: 17, number: 4 }, { chord: "B", position: 52, number: 5 }],
                 ],
             },
             {
@@ -54,11 +54,11 @@ export default [
                 "You fill me anew",
             ],
             chords: [
-                [{ chord: "G#m7", position: 46 }, { chord: "A", position: 56 }, { chord: "B", position: 70 }],
-                [{ chord: "G#m7", position: 28 }, { chord: "A", position: 40 }, { chord: "B", position: 68 }],
-                [{ chord: "G#m7", position: 32 }, { chord: "A", position: 38 }, { chord: "B", position: 50 }],
-                [{ chord: "G#m7", position: 49 }],
-                [{ chord: "A", position: 18 }, { chord: "B", position: 44 }],
+                [{ chord: "G#m7", position: 46, number: 3 }, { chord: "A", position: 56, number: 4 }, { chord: "B", position: 70, number: 5 }],
+                [{ chord: "G#m7", position: 28, number: 3 }, { chord: "A", position: 40, number: 4 }, { chord: "B", position: 68, number: 5 }],
+                [{ chord: "G#m7", position: 32, number: 3 }, { chord: "A", position: 38, number: 4 }, { chord: "B", position: 50, number: 5 }],
+                [{ chord: "G#m7", position: 49, number: 3 }],
+                [{ chord: "A", position: 18, number: 4 }, { chord: "B", position: 44, number: 5 }],
             ],
             },
             {
@@ -70,10 +70,10 @@ export default [
                     "Ooohh..      ooohh..",
                 ],
                 chords: [
-                    [{ chord: "A", position: 18 }, { chord: "E", position: 40 }],
-                    [{ chord: "C#m", position: 16 }, { chord: "B", position: 20 }],
-                    [{ chord: "A", position: 8 }, { chord: "E", position: 44 }],
-                    [{ chord: "C#m7", position: 27 }, { chord: "B", position: 56 }],
+                    [{ chord: "A", position: 18, number: 4 }, { chord: "E", position: 40, number: 1 }],
+                    [{ chord: "C#m", position: 16, number: 6 }, { chord: "B", position: 20, number: 5 }],
+                    [{ chord: "A", position: 8, number: 4 }, { chord: "E", position: 44, number: 1 }],
+                    [{ chord: "C#m7", position: 27, number: 6 }, { chord: "B", position: 56, number: 5 }],
                 ],
             },
             {
@@ -129,7 +129,7 @@ export default [
             chords: [
                 [{ chord: "A", position: 18 }, { chord: "E", position: 40 }],
                 [{ chord: "C#m", position: 16 }, { chord: "B", position: 20 }],
-                [{ chord: "A", position: 8 }, { chord: "E/G#", position: 44 }],
+                [{ chord: "A", position: 8 }, { chord: "E/G#", position: 44, number: "1/3" }],
                 [{ chord: "C#m7", position: 27 }, { chord: "B", position: 56 }],
             ],
             },
@@ -462,7 +462,7 @@ export default [
                 lyrics: [""],
                 chords: [
                     [
-                        { chord: "Am", position: 0 }, { chord: "G", position: 4 }, { chord: "D/F#", position: 8 }, { chord: "F", position: 12 }, { chord: "G", position: 16 }
+                        { chord: "Am", position: 0 }, { chord: "G", position: 4 }, { chord: "D/F#", position: 8, number: "2/#4" }, { chord: "F", position: 12 }, { chord: "G", position: 16 }
                     ],
                 ],
             },
@@ -477,7 +477,7 @@ export default [
                 chords: [
                     [{ chord: "Am", position: 0 }],
                     [{ chord: "G", position: 0 }],
-                    [{ chord: "D/F#", position: 0 }],
+                    [{ chord: "D/F#", position: 0, number: "2/#4" }],
                     [{ chord: "F", position: 0 }, { chord: "G", position: 70 }],
                 ],
             },
@@ -720,8 +720,8 @@ export default [
                 ],
                 chords: [
                     [{ chord: "Eb", position: 0 }],
-                    [{ chord: "Bb/D", position: 0 }],
-                    [{ chord: "Db", position: 0 }, { chord: "Ab", position: 70 }, { chord: "Bb", position: 70, dash: true }]
+                    [{ chord: "Bb/D", position: 0, number: "5/7" }],
+                    [{ chord: "Db", position: 0, number: "♭7" }, { chord: "Ab", position: 70 }, { chord: "Bb", position: 70, dash: true }]
                 ],
             },
         ],
@@ -740,7 +740,7 @@ export default [
                 type: "INTRO:",
                 lyrics: [""],
                 chords: [
-                    [{ chord: "E", position: 0 }, { chord: "B/E", position: 4 }, { chord: "A", position: 8 }, { chord: "F#m", position: 12 }]
+                    [{ chord: "E", position: 0 }, { chord: "B/E", position: 4, number: "5/1" }, { chord: "A", position: 8 }, { chord: "F#m", position: 12 }]
                 ],
                 times: [2],
             },
@@ -755,10 +755,10 @@ export default [
                     "For the light will be right where You are",
                 ],
                 chords: [
-                    [{ chord: "E", position: 0 }, { chord: "B/E", position: 60 }],
+                    [{ chord: "E", position: 0 }, { chord: "B/E", position: 60, number: "5/1" }],
                     [{ chord: "F#m", position: 115 }],
                     [{ chord: "A", position: 80 }, { chord: "B", position: 110 }],
-                    [{ chord: "E", position: 0 }, { chord: "B/E", position: 70 }],
+                    [{ chord: "E", position: 0 }, { chord: "B/E", position: 70, number: "5/1" }],
                     [{ chord: "F#m", position: 130 }],
                     [{ chord: "A", position: 100 }, { chord: "B", position: 144 }]
                 ],
@@ -772,7 +772,7 @@ export default [
                 ],
                 chords: [
                     [{ chord: "F#m", position: 0 }, { chord: "A", position: 40 }],
-                    [{ chord: "E", position: 45 }, { chord: "B", position: 70 }],
+                    [{ chord: "E", position: 45 }, { chord: "B", position: 74 }],
                     [{ chord: "F#m", position: 0 }, { chord: "A", position: 18 }, { chord: "E", position: 75 },{ chord: "B", position: 100 }]
                 ],
             },
@@ -802,12 +802,12 @@ export default [
                     "Will be the temple of His people",
                 ],
                 chords: [
-                    [{ chord: "E", position: 0 }, { chord: "B/E", position: 65 }],
+                    [{ chord: "E", position: 0 }, { chord: "B/E", position: 65, number: "5/1" }],
                     [{ chord: "F#m", position: 104 }],
-                    [{ chord: "A", position: 70 }, { chord: "B", position: 85 }],
-                    [{ chord: "E", position: 0 }, { chord: "B/E", position: 40 }],
-                    [{ chord: "F#m", position: 0 }],
-                    [{ chord: "A", position: 0 }, { chord: "B", position: 40 }],
+                    [{ chord: "A", position: 106 }, { chord: "B", position: 125 }],
+                    [{ chord: "E", position: 0 }, { chord: "B/E", position: 65, number: "5/1" }],
+                    [{ chord: "F#m", position: 110 }],
+                    [{ chord: "A", position: 102 }, { chord: "B", position: 115 }],
                 ],
             },
             {
@@ -816,6 +816,7 @@ export default [
                 chords: [
                     [{ chord: "A", position: 0 }, { chord: "E", position: 4 }, { chord: "C#m", position: 8 }, { chord: "B", position: 12 }]
                 ],
+                times: [2]
             },
             {
                 type: "BRIDGE:",
@@ -826,10 +827,10 @@ export default [
                     "He is the King of Kings",
                 ],
                 chords: [
-                    [{ chord: "A", position: 0 }, { chord: "E", position: 40 }],
-                    [{ chord: "E", position: 0 }, { chord: "C#m", position: 40 }],
-                    [{ chord: "A", position: 0 }, { chord: "E", position: 40 }],
-                    [{ chord: "E", position: 0 }, { chord: "C#m", position: 40 }],
+                    [{ chord: "A", position: 10 }, { chord: "E", position: 40 }],
+                    [{ chord: "C#m", position: 38 }, { chord: "B", position: 45 }],
+                    [{ chord: "A", position: 10 }, { chord: "E", position: 42 }],
+                    [{ chord: "C#m", position: 38 }, { chord: "B", position: 51 }],
                 ],
             },
             {
@@ -843,12 +844,12 @@ export default [
                     "Your dwelling place is we Your people",
                 ],
                 chords: [
-                    [{ chord: "E", position: 0 }, { chord: "D", position: 40 }],
-                    [{ chord: "F#m", position: 0 }, , { chord: "C#m", position: 40 }, { chord: "B", position: 80 }],
-                    [{ chord: "E", position: 0 }, { chord: "Bm", position: 40 }],
-                    [{ chord: "F#m", position: 0 }, { chord: "A", position: 40 }, { chord: "B", position: 80 }],
-                    [{ chord: "F#m", position: 0 }, { chord: "A", position: 40 }, { chord: "B", position: 80 }],
-                    [{ chord: "F#m", position: 0 }, { chord: "A", position: 40 }, { chord: "B", position: 80 }]
+                    [{ chord: "E", position: 0 }, { chord: "D", position: 18 }],
+                    [{ chord: "F#m", position: 15 }, { chord: "C#m", position: 64 }, { chord: "B", position: 76 }],
+                    [{ chord: "E", position: 0 }, { chord: "Bm", position: 20 }],
+                    [{ chord: "F#m", position: 22 }, { chord: "C#m", position: 72 }, { chord: "B", position: 94 }],
+                    [{ chord: "F#m", position: 22 }, { chord: "A", position: 38 }, { chord: "C#m", position: 66 }, { chord: "B", position: 87 }],
+                    [{ chord: "A", position: 22 }, { chord: "C#m", position: 85 }, { chord: "B", position: 105 }]
                 ],
             }
         ],
@@ -943,15 +944,15 @@ export default [
                     "There's nothing more beautiful than Your love",
                 ],
                 chords: [
-                    [{ chord: "B/D#", position: 0 }, { chord: "E", position: 35 }, { chord: "F#", position: 40 }],
-                    [{ chord: "B/D#", position: 65 }],
+                    [{ chord: "B/D#", position: 0, number: "1/3" }, { chord: "E", position: 35 }, { chord: "F#", position: 40 }],
+                    [{ chord: "B/D#", position: 65, number: "1/3" }],
                     [{ chord: "E", position: 45 }, { chord: "F#", position: 60 }],
-                    [{ chord: "B/D#", position: 75 }, { chord: "E", position: 117 }, { chord: "F#", position: 125 }],
+                    [{ chord: "B/D#", position: 75, number: "1/3" }, { chord: "E", position: 117 }, { chord: "F#", position: 125 }],
                     [{ chord: "C#m", position: 88 }, { chord: "F#", position: 95 }],
                     [{ chord: "B", position: 0 }, { chord: "F#", position: 60 }],
-                    [{ chord: "B/D#", position: 64 }],
+                    [{ chord: "B/D#", position: 64, number: "1/3" }],
                     [{ chord: "E", position: 43 }, { chord: "F#", position: 80 }],
-                    [{ chord: "B/D#", position: 0 }, { chord: "E", position: 40 }, { chord: "F#", position: 80 }],
+                    [{ chord: "B/D#", position: 0, number: "1/3" }, { chord: "E", position: 40 }, { chord: "F#", position: 80 }],
                     [{ chord: "C#m", position: 0 }, { chord: "F#", position: 40 }],
                 ],
             },
@@ -979,6 +980,237 @@ export default [
                     [{ chord: "E", position: 0 }, { chord: "F#", position: 40 }, { chord: "G#m", position: 80 }],
                     [{ chord: "E", position: 0 }, { chord: "F#", position: 40 }],
                 ],
+            },
+        ],
+    },
+    {
+        title: "A Thousand Hallelujahs",
+        artist: "Victory Worship",
+        composer: "Jacqueline de Villiers, Albertus Mostert, Alesia Post, & Brian O'Neill",
+        album: "Tribe",
+        releaseDate: "2019",
+        originalKey: "D",
+        chordMap: ["C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A", "Bb", "B"],
+        bpm: 71,
+        sections: [
+            {
+                type: "INTRO:",
+                lyrics: [""],
+                chords: [
+                    [{ chord: "G", position: 0, left: true, leftColon: true }, { chord: "D", position: 4, left: true }, { chord: "Bm", position: 8, left: true }, { chord: "D/F#", position: 12, number: "1/3", leftRight: true, rightColon: true }]
+                ],
+            },
+            {
+                type: "VERSE 1:",
+                lyrics: [
+                    "May Your praises live in every word we speak",
+                    "And with every gift of breath we breathe You in",
+                    "All the works that You have done",
+                    "Consume our hearts",
+                    "Who in all the earth compares to who You are",
+                    "Who in all the earth compares to who You are",
+                ],
+                chords: [
+                    [{ chord: "G", position: 40 }, { chord: "D", position: 170 }],
+                    [{ chord: "Bm", position: 39 }, { chord: "D/F#", position: 72, number: "1/3" }],
+                    [{ chord: "G", position: 29 }],
+                    [{ chord: "D", position: 58 }],
+                    [{ chord: "Bm", position: 31 }, { chord: "D/F#", position: 154, number: "1/3" }],
+                    [{ chord: "G", position: 33 }, { chord: "A", position: 167.5 }]
+                ],
+            },
+            {
+                type: "CHORUS:",
+                lyrics: [
+                    "A thousand hallelujahs",
+                    "God we lift unto Your name",
+                    "A thousand hallelujahs",
+                    "God we lift up once again",
+                    "All creation lifts its voice",
+                    "Declaring till the end",
+                    "O Lord, how great You are",
+                ],
+                chords: [
+                    [{ chord: "G", position: 10 }],
+                    [{ chord: "A", position: 37 }, { chord: "Bm", position: 76 }],
+                    [{ chord: "G", position: 35 }],
+                    [{ chord: "A", position: 20 }, { chord: "Bm", position: 40 }],
+                    [{ chord: "G", position: 14 }],
+                    [{ chord: "A", position: 20 }, { chord: "Bm", position: 78 }],
+                    [{ chord: "D/F#", position: 0, number: "1/3" }, { chord: "G", position: 12 }, { chord: "A", position: 36 }],
+                ],
+            },
+            {
+                type: "INTERLUDE:",
+                lyrics: [""],
+                chords: [
+                    [{ chord: "G", position: 0, left: true, leftColon: true }, { chord: "D", position: 4, left: true }, { chord: "Bm", position: 8, left: true }, { chord: "D/F#", position: 12, leftRight: true, rightColon: true }]
+                ],
+            },
+            {
+                type: "",
+                lyrics: ["[VERSE]", "[CHORUS]"],
+                chords: [[]],
+            },
+            {
+                type: "INSTRUMENTAL:",
+                lyrics: [""],
+                chords: [
+                    [{ chord: "G", position: 0, left: true, leftColon: true }, { chord: "A", position: 4, left: true }, { chord: "Bm", position: 8, left: true }, { chord: "A", position: 12, leftRight: true, rightColon: true }]
+                ],
+            },
+            {
+                type: "BRIDGE:",
+                lyrics: [
+                    "You are holy, strong and mighty",
+                    "Everlasting God",
+                    "You are holy, strong and mighty",
+                    "Ever faithful God",
+                ],
+                chords: [
+                    [{ chord: "G", position: 0 }, { chord: "A", position: 58 }],
+                    [{ chord: "Bm", position: 0 }, { chord: "A", position: 37 }],
+                    [{ chord: "G", position: 0 }, { chord: "A", position: 51 }],
+                    [{ chord: "Bm", position: 0 }, { chord: "A", position: 43 }],
+                ],
+            },
+            {
+                type: "",
+                lyrics: ["[CHORUS]"],
+                chords: [[]],
+            },
+            {
+                type: "TAG:",
+                lyrics: [
+                    "      O Lord, how great You are",
+                ],
+                chords: [
+                    [{ chord: "Bm", position: 0 }, { chord: "G", position: 32 }, { chord: "A", position: 54 }, { chord: "D", position: 87 }],
+                ],
+            }
+        ],
+    },
+    //EVERY NATION MUSIC
+    {
+        title: "The Beat",
+        artist: "Every Nation Worship",
+        composer: "Franklin Asuncion, Lee Simon Brown, Moira Hernandez, James Murrell & Kensho Yo",
+        album: "Beautiful Love",
+        releaseDate: "2017",
+        originalKey: "E",
+        chordMap: ["C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A", "Bb", "B"],
+        bpm: 68,
+        sections: [
+            {
+                type: "INTRO:",
+                lyrics: [""],
+                chords: [
+                    [{ chord: "E", position: 0 }, { chord: "A", position: 4 }]
+                ],
+            },
+            {
+                type: "VERSE 1",
+                lyrics: [
+                    "For freedom sake, you gave your son to die",
+                    "Adopted us, from darkness into light",
+                    "And now I am safe, within Your loving arms",
+                    "And I can hear, the yearning of Your heart",
+                ],
+                chords: [
+                    [{ chord: "E", position: 15 }, { chord: "A", position: 158 }],
+                    [{ chord: "E", position: 16 }, { chord: "A", position: 127 }],
+                    [{ chord: "C#m", position: 36 }, { chord: "B", position: 72 }, { chord: "A", position: 135 }],
+                    [{ chord: "C#m", position: 17 }, { chord: "B", position: 133 }],
+                ],
+            },
+            {
+                type: "CHORUS",
+                lyrics: [
+                    "For the lost, it beats, it beats,",
+                    "We can hear it calling",
+                    "Make our hearts beat, and beat, and beat",
+                    "For those sons and daughters",
+                    "For the lost, it beats, it beats,",
+                    "We can hear it calling",
+                    "Make our hearts beat, and beat, and beat",
+                    "And beat with You",
+                ],
+                chords: [
+                    [{ chord: "E", position: 30 }],
+                    [{ chord: "A", position: 60 }],
+                    [{ chord: "C#m", position: 66 }, { chord: "B", position: 134 }],
+                    [{ chord: "A", position: 80 }],
+                    [{ chord: "E", position: 30 }],
+                    [{ chord: "A", position: 60 }],
+                    [{ chord: "C#m", position: 68 }, { chord: "B", position: 130 }],
+                    [{ chord: "A", position: 59 }],
+                ],
+            },
+            {
+                type: "INTERLUDE:",
+                lyrics: [""],
+                chords: [
+                    [{ chord: "E", position: 0 }, { chord: "A", position: 4 }, { chord: "B", position: 8 }, { chord: "A", position: 12 }]
+                ],
+            },
+            {
+                type: "VERSE 2",
+                lyrics: [
+                    "The orphaned and abandoned find a home",
+                    "The widow has a place before Your throne",
+                    "For strong and deep and uncontainable",
+                    "Is Your heart of love that beats for all the world",
+                ],
+                chords: [
+                    [{ chord: "E", position: 18 }, { chord: "A", position: 150 }],
+                    [{ chord: "E", position: 18 }, { chord: "A", position: 149 }],
+                    [{ chord: "C#m", position: 15 }, { chord: "B", position: 89 }, { chord: "A", position: 127 }],
+                    [{ chord: "C#m", position: 30 }, { chord: "E", position: 106 }, { chord: "B", position: 149 }],
+                ],
+            },
+            {
+                type: "",
+                lyrics: [
+                    "[CHORUS]",
+                ],
+                chords: [[]],
+            },
+            {
+                type: "BRIDGE 1",
+                lyrics: [
+                    "Make our hearts beat",
+                    "Make our hearts beat with You",
+                    "Make our hearts beat",
+                    "Make our hearts beat with You",
+                ],
+                chords: [
+                    [{ chord: "C#m", position: 68 }],
+                    [{ chord: "A", position: 68 }],
+                    [{ chord: "C#m", position: 68 }],
+                    [{ chord: "B", position: 68 }],
+                ],
+            },
+            {
+                type: "BRIDGE 2",
+                lyrics: [
+                    "Naririnig ang iyong tinig",
+                    "Diringgin ang iyong tawag",
+                    "Naririnig ang iyong tinig",
+                    "Diringgin ang iyong tawag",
+                ],
+                chords: [
+                    [{ chord: "C#m", position: 10 }],
+                    [{ chord: "A", position: 21 }],
+                    [{ chord: "C#m", position: 10 }],
+                    [{ chord: "B", position: 21 }],
+                ],
+            },
+            {
+                type: "",
+                lyrics: [
+                    "[CHORUS]",
+                ],
+                chords: [[]],
             },
         ],
     },
@@ -1079,5 +1311,105 @@ export default [
                 ],
             }
         ],
+    },
+    //Mid-Cities Worship
+    {
+        title: "Hands to the Sky",
+        artist: "Mid-Cities Worship",
+        composer: "Erich Herzberger, Lane Oliver, & Chris Davis",
+        album: "Hands to the Sky",
+        releaseDate: "2015",
+        originalKey: "Bb",
+        chordMap: ["C", "C#", "D", "Eb", "E", "F", "F#", "G", "Ab", "A", "Bb", "B"],
+        bpm: 123,
+        sections: [
+            {
+                type: "WHOLE SONG:",
+                lyrics: [""],
+                chords: [
+                    [{ chord: "Bb", position: 0, number: 1 }, { chord: "Fm7", position: 4, number: 5 }, { chord: "Ab", position: 8, number: "♭7"  }, { chord: "Eb", position: 12, number: 4  }],
+                ],
+            },
+            {
+                type: "VERSE 1:",
+                lyrics: [
+                    "I’m waking up to Your glory",
+                    "Your mercy falls like the sun still rises",
+                    "Your grace is new every morning",
+                    "To light the world with the hope inside us",
+                ],
+                chords: [
+                    [],
+                    [],
+                    [],
+                    [],
+                ],
+            },
+            {
+                type: "PRE-CHORUS:",
+                lyrics: [
+                    "I hear the sound of",
+                    "A roarin’ anthem",
+                    "Burning with Your love",
+                    "Let every voice sing",
+                    "Let every part of me",
+                    "Speak of all You’ve done",
+                ],
+                chords: [
+                    [],
+                    [],
+                    [],
+                    [],
+                    [],
+                    [],
+                ],
+            },
+            {
+                type: "CHORUS:",
+                lyrics: [
+                    "I am alive",
+                    "You have made this heart brand new",
+                    "Hands to the sky",
+                    "Pouring out my love for You",
+                ],
+                chords: [
+                    [],
+                    [],
+                    [],
+                    [],
+                ],
+            },
+            {
+                type: "VERSE 2:",
+                lyrics: [
+                    "Our praises echo Your goodness",
+                    "We lift you up as You rain down on us",
+                    "We’re overwhelmed by Your freedom",
+                    "There’s nothing like living in Your purpose",
+                ],
+                chords: [
+                    [],
+                    [],
+                    [],
+                    [],
+                ],
+            },
+            {
+                type: "BRIDGE:",
+                lyrics: [
+                    "I’m alive ‘cause You’re alive",
+                    "Forever I will shine Your light",
+                    "I’m alive ‘cause You’re alive",
+                    "You have opened up my eyes",
+                ],
+                chords: [
+                    [],
+                    [],
+                    [],
+                    [],
+                ],
+            }
+        ],
     }
+
 ]
