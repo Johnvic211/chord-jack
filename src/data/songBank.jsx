@@ -11,6 +11,7 @@ export default [
         link: [
             { platform: 'youtube', url: 'https://youtu.be/ZavV3JgdK8Q?si=QEaiqMYobdpbv_-T' },
             { platform: 'spotify', url: 'https://open.spotify.com/track/6LxaXoGSuy4hjTGiKWyfTr?si=5e5ddcdc67c04af2' },
+            { platform: 'appleMusic', url: 'https://music.apple.com/us/album/grace-abounds-live/1681953784?i=1681954098' },
             { platform: 'pdf', url: 'https://drive.google.com/file/d/1a9OQVknWEx3R8hU8yqQKVRiaeXdDtvu0/view' },
         ],
         sections: [
@@ -163,6 +164,7 @@ export default [
         link: [
             { platform: 'youtube', url: 'https://youtu.be/nXkVsMmgyGs?si=GAF6ezCJpG9zuppz' },
             { platform: 'spotify', url: 'https://open.spotify.com/track/66kjME9bCPZyk8mL6cgEys?si=27255301f59f4cfe' },
+            { platform: 'appleMusic', url: 'https://music.apple.com/us/album/wonderstruck/1666486248?i=1666486258' },
             { platform: 'pdf', url: 'https://drive.google.com/file/d/1vrzwqnDG7VSuwDy5Vrwrg7AbBN9Gmj8K/view' },
         ],
         sections: [
@@ -274,6 +276,7 @@ export default [
         link: [
             { platform: 'youtube', url: 'https://youtu.be/waoT01SNhkc?si=I4tC-e4SKpIC7ynr' },
             { platform: 'spotify', url: 'https://open.spotify.com/track/5dPe8ahss4C7NvjP1iiXOI?si=e7eb5c06850c4ecf' },
+            { platform: 'appleMusic', url: 'https://music.apple.com/us/album/have-all-of-me-live/1681953784?i=1681954112' },
             { platform: 'pdf', url: 'https://drive.google.com/file/d/1EVplBKIoh4rf1nZv6l2buBRXve3Ac8Ou/view' },
         ],
         sections: [
@@ -401,6 +404,7 @@ export default [
         link: [
             { platform: 'youtube', url: 'https://youtu.be/kRGzCtnpJ3o?si=VhxjSG89Roq8Qrdi' },
             { platform: 'spotify', url: 'https://open.spotify.com/track/2fp3evS8EUjNT8qD7smgtO?si=b925cf48a9964c7b' },
+            { platform: 'appleMusic', url: 'https://music.apple.com/us/album/new-gen/1746738986?i=1746738998' },
             { platform: 'pdf', url: 'https://drive.google.com/file/d/1cXVT4y7nG75FkxpvMtfVg-UzImSvMAwM/view' },
         ],
         sections: [
@@ -521,6 +525,7 @@ export default [
         link: [
             { platform: 'youtube', url: 'https://youtu.be/0fmZDVvJGsw?si=uBrCrPl3TqR74q_n' },
             { platform: 'spotify', url: 'https://open.spotify.com/track/70AKiyIR3bXTBqMNPamwYC?si=1b0e4e20579e4e7f' },
+            { platform: 'appleMusic', url: 'https://music.apple.com/us/album/this-is-who-you-are-feat-bishop-ferdie-cabiling/1746738986?i=1746739217' },
             { platform: 'pdf', url: 'https://drive.google.com/file/d/1rzC-CGF3PIqI6WzIKcFx4DV0XWl47vEh/view' },
         ],
         chordMap: ["C", "C#", "D", "Eb", "E", "F", "F#", "G", "Ab", "A", "Bb", "B"],
@@ -670,6 +675,7 @@ export default [
         link: [
             { platform: 'youtube', url: 'https://youtu.be/ip_nZZ00vE8?si=_s9F1Y8jEBJ7tZOx' },
             { platform: 'spotify', url: 'https://open.spotify.com/track/44NQoRiwxvjJeqca7W3lPe?si=617bcc2ecd764a7a' },
+            { platform: 'appleMusic', url: 'https://music.apple.com/us/album/cant-get-enough/1746738986?i=1746739373' },
             { platform: 'pdf', url: 'https://drive.google.com/file/d/1euejMbFHewE8tENDPEHPreAkkNEBtbNX/view' },
         ],
         sections: [
@@ -780,6 +786,7 @@ export default [
         link: [
             { platform: 'youtube', url: 'https://youtu.be/JIgJRFSOYj0?si=oIPp8-bucpZu0Mzs' },
             { platform: 'spotify', url: 'https://open.spotify.com/track/3iqYa7x1JcfhYumSRjXmSy?si=2d31644b432544aa' },
+            { platform: 'appleMusic', url: 'https://music.apple.com/us/album/dwelling-place/1746738986?i=1746739387' },
             { platform: 'pdf', url: 'https://drive.google.com/file/d/1PpmMspPyC4jRCzbPHPcFYeV7WH6Cvmr4/view' },
         ],
         sections: [
@@ -915,6 +922,7 @@ export default [
         link: [
             { platform: 'youtube', url: 'https://youtu.be/2Sxidc7gy-w?si=RLXnCYYnuUrsbhgq' },
             { platform: 'spotify', url: 'https://open.spotify.com/track/72ghj0myktpqOCFAax5ZHE?si=a1f959157f884ecc' },
+            { platform: 'appleMusic', url: 'https://music.apple.com/us/album/everything-you-are-live/1681953784?i=1681954100' },
             { platform: 'pdf', url: 'https://drive.google.com/file/d/1bCuQCWnGTCOpnV-rLlOwv496HhO8Dtb0/view' },
         ],
         sections: [
@@ -1067,6 +1075,7 @@ export default [
         link: [
             { platform: 'youtube', url: 'https://youtu.be/4r2U8RWY1ck?si=3Qat8UHJEvaVzX_8' },
             { platform: 'spotify', url: 'https://open.spotify.com/track/5kQgNSiqglNC0c5lc4K073?si=8dd10827ff3b4bd5' },
+            { platform: 'appleMusic', url: 'https://music.apple.com/us/album/beautiful-love-feat-joe-ramos/1291497116?i=1291497122' },
             { platform: 'pdf', url: 'https://www.everynationmusic.org/wp-content/uploads/2022/03/beautiful-love-for-your-purpose-victory-worship.pdf' },
         ],
         sections: [
@@ -1202,6 +1211,7 @@ export default [
         link: [
             { platform: 'youtube', url: 'https://youtu.be/JiOsxqP-M1A?si=4wsIY9UGSM6qhIUP' },
             { platform: 'spotify', url: 'https://open.spotify.com/track/033eMXabq63pwdFsDtBjzE?si=e93fc9fd04a6406d' },
+            { platform: 'appleMusic', url: 'https://music.apple.com/us/album/a-thousand-hallelujahs/1450243207?i=1450243491' },
             { platform: 'pdf', url: 'https://drive.google.com/file/d/1hJhCe7B_bQdaO_hqImYbPqkRp7xkTYHm/view' },
         ],
         sections: [
@@ -1319,6 +1329,7 @@ export default [
         bpm: 68,
         link: [
             { platform: 'youtube', url: 'https://youtu.be/HPTRq91CiYA?si=A6hjoiaP2TFyRUh8' },
+            { platform: 'appleMusic', url: 'https://music.apple.com/us/album/the-beat-feat-langelihle-mbonambi/1154127453?i=1154127596' },
             { platform: 'spotify', url: 'https://open.spotify.com/track/5Mu324S2iRxxqv9U6Gq1h1?si=e2e46ad82a764ae9' },
         ],
         sections: [
@@ -1450,6 +1461,7 @@ export default [
         chordMap: ["C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A", "Bb", "B"],
         link: [
             { platform: 'youtube', url: 'https://youtu.be/zglFV4mtewU?si=zN5T48sC3j5N7y5R' },
+            { platform: 'appleMusic', url: 'https://music.apple.com/us/album/one-thing-remains-live/1440851609?i=1440851911' },
             { platform: 'spotify', url: 'https://open.spotify.com/track/29YUMVIUxuMi2QtK6sg0lI?si=2bd88516c5624cde' },
         ],
         bpm: 74,
@@ -1553,6 +1565,7 @@ export default [
         bpm: 123,
         link: [
             { platform: 'youtube', url: 'https://youtu.be/M4WKGVZaGrA?si=BbiOP6jOu_yaAALz' },
+            { platform: 'appleMusic', url: 'https://music.apple.com/us/album/hands-to-the-sky/1008501635?i=1008501822' },
             { platform: 'spotify', url: 'https://open.spotify.com/track/5mqMY3RLWtcn9xYj4Kizkz?si=384e82eff7fd4f89' },
         ],
         sections: [

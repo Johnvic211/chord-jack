@@ -1,11 +1,13 @@
 import PropTypes from "prop-types";
 import spotify from "../assets/spotify.png";
 import youtube from "../assets/youtube.png";
+import appleMusic from "../assets/apple-music.svg";
 import pdf from "../assets/pdf.png";
 
 const platformIcons = {
     spotify,
     youtube,
+    appleMusic,
     pdf,
 };
 
@@ -24,7 +26,7 @@ const Url = ({ url, platform }) => {
 // Define PropTypes
 Url.propTypes = {
   url: PropTypes.string.isRequired,       
-  platform: PropTypes.oneOf(["spotify", "youtube", "pdf"]).isRequired,  
+  platform: PropTypes.oneOf(["spotify", "youtube", "appleMusic", "pdf"]).isRequired,  
 };
 
 export default Url;
