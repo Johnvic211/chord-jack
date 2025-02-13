@@ -164,7 +164,7 @@ const SongTransposer = ({ selectedSong }) => {
       {/* Main Content */}
       <div className="container mx-auto mt-4 px-4">
         <div className="bg-white shadow-lg rounded-lg p-4">
-          <h3 className="text-left mb-3 text-2xl font-semibold">{selectedSong.title} Chords</h3>
+          <h3 className="text-left mb-3 text-2xl font-semibold">{selectedSong.title}</h3>
           <p className="text-lg"><strong>By:</strong> {selectedSong.artist}</p>
           <p className="text-lg"><strong>Original Key:</strong> {selectedSong.originalKey}</p>
           <p className="text-lg"><strong>BPM:</strong> {selectedSong.bpm}</p>
@@ -293,12 +293,12 @@ const SongTransposer = ({ selectedSong }) => {
                             >
                               {(chordObj.left || chordObj.leftRight) && ' | '}
                               {(chordObj.leftColon) && ' |: '}
-                              {chordObj.dash && '-'}
+                              {chordObj.dash ? chordObj.spaceBetween ? ' - ':'-': ''}
                               {chordObj.chord}
                               {chordObj.forwardSlash && Array.from({ length: chordObj.forwardSlash }, () => ' /').join('')}
                               {(chordObj.rightColon) && ' :| '}
                               {(chordObj.right || chordObj.leftRight) && ' | '} 
-                              {chordIndex == section.chords[lineIndex].length - 1 && section.times?.[lineIndex] ? ' ' + section.times[lineIndex] + 'x' : ''}
+                              {chordIndex == section.chords[lineIndex].length - 1 && section.times?.[lineIndex] ? '  (' + section.times[lineIndex] + 'x)' : ''}
                             </span>
                           ))}
                         </div>
