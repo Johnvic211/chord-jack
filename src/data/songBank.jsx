@@ -2,6 +2,7 @@ export default [
     {
         title: "Grace Abounds",
         artist: "AWAKE84",
+        publisher: "VICTORY",
         composer: "Elle Tumaliuan, Isa Cuna, Joe Ramos, and Charles Bautista",
         album: "Wonderstruck",
         releaseDate: "2023",
@@ -155,6 +156,7 @@ export default [
     {
         title: "Wonderstruck",
         artist: "AWAKE84",
+        publisher: "VICTORY",
         composer: "Chrysse Colleen Manuel-Pili, Francesca Nicole Torres, & Nathan Gabriel M. Punzalan",
         album: "Wonderstruck",
         releaseDate: "2023",
@@ -267,6 +269,7 @@ export default [
     {
         title: "Have All of Me (Live)",
         artist: "AWAKE84",
+        publisher: "VICTORY",
         composer: "Hosanna Myrran Matienzo, Jazer Ambion, Jomer Christian Dula, Zeid Mitzi Cabales, Elizabeth Anne Tumaliuan, & Ian Tumaliuan",
         album: "Wonderstruck",
         releaseDate: "2023",
@@ -395,6 +398,7 @@ export default [
     {
         title: "New Gen",
         artist: "AWAKE84",
+        publisher: "VICTORY",
         composer: "Simon Calma, RN Noriega, Elle Cabiling Tumaliuan, & Ian Tumaliuan",
         album: "Living Awake",
         releaseDate: "2024",
@@ -517,6 +521,7 @@ export default [
     {
         title: "This Is Who You Are",
         artist: "AWAKE84",
+        publisher: "VICTORY",
         composer: "Gilbert Espiridion, Barbie Honasan, Myka Magsaysay Sigua, and Elle Cabiling Tumaliuan",
         album: "Living Awake",
         releaseDate: "2024",
@@ -666,6 +671,7 @@ export default [
     {
         title: "Can't Get Enough",
         artist: "AWAKE84",
+        publisher: "VICTORY",
         composer: "Bryson Breakey, Sarah Bulahan, Elle Cabiling Tumaliuan, Jose Villanueva III",
         album: "Living Awake",
         releaseDate: "2024",
@@ -777,6 +783,7 @@ export default [
     {
         title: "Dwelling Place",
         artist: "AWAKE84",
+        publisher: "VICTORY",
         composer: "Sofia Paderez, Raya Rabanal, Josiah Tumaliuan",
         album: "Living Awake",
         releaseDate: "2024",
@@ -913,6 +920,7 @@ export default [
     {
         title: "Everything You Are (Live)",
         artist: "AWAKE84",
+        publisher: "VICTORY",
         composer: "Nathan Earl Huang, Daniel Kelvin Monong, & Ron Timothy Marquez",
         album: "Wonderstruck",
         releaseDate: "2023",
@@ -1065,6 +1073,7 @@ export default [
     {
         title: "Everlasting",
         artist: "AWAKE84",
+        publisher: "VICTORY",
         composer: "Chino Celeste, Andrew James Jiao, & Ian Tumaliuan",
         album: "Living Awake",
         releaseDate: "2024",
@@ -1212,6 +1221,7 @@ export default [
     {
         title: "Where Your Heart Is",
         artist: "AWAKE84",
+        publisher: "VICTORY",
         composer: "Laean Angeles, Zeid Mitzi Cabales, & RM Noriega",
         album: "Living Awake",
         releaseDate: "2024",
@@ -1242,7 +1252,8 @@ export default [
                     "Always more than I’ll ever ask or think",
                     "Even when the lies try",
                     "To take hold of my mind",
-                    "Lord, Your truth is the one that reminds me that",
+                    "Lord, Your truth is the one that reminds me",
+                    "that",
                 ],
                 chords: [
                     [{ chord: "D", position: 0 }],
@@ -1293,7 +1304,8 @@ export default [
             {
                 type: "VERSE 2:",
                 lyrics: [
-                    "Every good thing, every good thing comes from You",
+                    "Every good thing, every good thing comes",
+                    "from You",
                     "So what can I do but let my heart sing to You",
                     "I won’t be shaken",
                     "My faith is strengthened",
@@ -1302,6 +1314,7 @@ export default [
                 ],
                 chords: [
                     [{ chord: "D", position: 0 }],
+                    [],
                     [{ chord: "A", position: 0 }],
                     [{ chord: "Bm", position: 0 }],
                     [{ chord: "F#m", position: 0 }],
@@ -1314,6 +1327,7 @@ export default [
     {
         title: "Best Friend",
         artist: "AWAKE84",
+        publisher: "VICTORY",
         composer: "Aubrey Alamani & Lee Simon Brown",
         album: "Living Awake",
         releaseDate: "2024",
@@ -1438,6 +1452,7 @@ export default [
     {
         title: "Holy, Holy, Holy",
         artist: "AWAKE84",
+        publisher: "VICTORY",
         composer: "Laean Angeles, Sofia Paderes, Elle Cabiling Tumaliuan, & Ian Tumaliuan",
         album: "Living Awake",
         releaseDate: "2024",
@@ -1445,10 +1460,10 @@ export default [
         chordMap: ["C", "Db", "D", "Eb", "E", "F", "F#", "G", "Ab", "A", "Bb", "B"],
         bpm: 68,
         link: [
-            { platform: 'youtube', url: 'https://youtu.be/N6S2sNp85ZA?si=RMIBDSAomoE_h4KJ' },
-            { platform: 'spotify', url: 'https://open.spotify.com/track/7elnl9RJME8faLaChg3XIb?si=943af9a148c54df9' },
-            { platform: 'appleMusic', url: 'https://music.apple.com/us/album/best-friend/1746738986?i=1746739658' },
-            { platform: 'pdf', url: 'https://drive.google.com/file/d/1r3Zhy1c4SiZS1v65C6O_cB_t318ZHdr3/view' },
+            { platform: 'youtube', url: 'https://youtu.be/eTr4rJRLeAY?si=sSMkJJxM-Rhhq0a9' },
+            { platform: 'spotify', url: 'https://open.spotify.com/track/2BfabJI0M9UkwUq6bBtoTG?si=0f34354c0f414de6' },
+            { platform: 'appleMusic', url: 'https://music.apple.com/us/album/holy-holy-holy/1746738986?i=1746739666' },
+            { platform: 'pdf', url: 'https://drive.google.com/file/d/1HJLwPvp2K0XYuUIsyyWmw6lK1gPZY2W_/view' },
         ],
         sections: [
             {
@@ -1464,13 +1479,15 @@ export default [
                 type: "VERSE 1:",
                 lyrics: [
                     "Holy, holy, holy!   Lord God Almighty!",
-                    "Early in the morning our song shall rise to Thee",
+                    "Early in the morning our song shall rise to",
+                    "Thee",
                     "Holy, holy, holy!   Merciful and mighty!",
                     "God in three Persons, blessed Trinity!",
                 ],
                 chords: [
                     [{ chord: "Fm", position: 0 }, { chord: "Eb/Gm", position: 5, number: "5/7" }, { chord: "Ab", position: 11 }, { chord: "Bbm", position: 18.5 }, { chord: "Cm", position: 43 }],
                     [{ chord: "Fm", position: 0 }, { chord: "Eb/Gm", position: 5, number: "5/7" }, { chord: "Ab", position: 11 }, { chord: "Eb", position: 48 }],
+                    [],
                     [{ chord: "Fm", position: 0 }, { chord: "Eb/Gm", position: 5, number: "5/7" }, { chord: "Ab", position: 11 }, { chord: "Bbm", position: 19 }, { chord: "Cm", position: 46 }],
                     [{ chord: "Fm", position: 0 }, { chord: "Eb/Gm", position: 5, number: "5/7" }, { chord: "Ab", position: 11 }, { chord: "Bbm", position: 37 }],
                 ],
@@ -1487,14 +1504,18 @@ export default [
             {
                 type: "VERSE 2:",
                 lyrics: [
-                    "Holy, holy, holy!   Though the darkness hide Thee",
-                    "Though the eye of sinful man, Thy glory may not see",
+                    "Holy, holy, holy!   Though the darkness hide",
+                    "Thee",
+                    "Though the eye of sinful man, Thy glory may",
+                    "not see",
                     "Only Thou art holy, there is none beside Thee",
                     "Perfect   in   pow'r, in love, and purity",
                 ],
                 chords: [
                     [{ chord: "Fm", position: 0 }, { chord: "Eb/Gm", position: 5, number: "5/7" }, { chord: "Ab", position: 11 }, { chord: "Bbm", position: 18.5 }, { chord: "Cm", position: 81 }],
+                    [],
                     [{ chord: "Fm", position: 0 }, { chord: "Eb/Gm", position: 30, number: "5/7" }, { chord: "Ab", position: 35 }, { chord: "Eb", position: 82 }],
+                    [],
                     [{ chord: "Fm", position: 0 }, { chord: "Eb/Gm", position: 8, number: "5/7" }, { chord: "Ab", position: 17.2 }, { chord: "Bbm", position: 27 }, { chord: "Cm", position: 67 }],
                     [{ chord: "Fm", position: 0 }, { chord: "Eb/Gm", position: 8, number: "5/7" }, { chord: "Ab", position: 17 }, { chord: "Bbm", position: 34 }],
                 ],
@@ -1582,10 +1603,279 @@ export default [
             },
         ],
     },
+    {
+        title: "As Above, So Here On Earth",
+        artist: "AWAKE84",
+        publisher: "VICTORY",
+        composer: "Joseph Paul Cruz, Leilani Estrella, Yanie Ollica, & Josiah Tumaliuan",
+        album: "Living Awake",
+        releaseDate: "2024",
+        originalKey: "Ab",
+        chordMap: ["C", "Db", "D", "Eb", "E", "F", "F#", "G", "G#", "A", "Bb", "B"],
+        bpm: 99,
+        link: [
+            { platform: 'youtube', url: 'https://youtu.be/Pd9Ku0mKQQ4?si=-eqa5fpSriqDYQK1' },
+            { platform: 'spotify', url: 'https://open.spotify.com/track/73aYAohSN9vCRxpYUdD1k0?si=ce9a4916a56a4211' },
+            { platform: 'appleMusic', url: 'https://music.apple.com/us/album/as-above-so-here-on-earth/1746738986?i=1746739912' },
+            { platform: 'pdf', url: 'https://drive.google.com/file/d/1_jtx-yHi_LF2-Qfnaai8ck5zUqVAbTls/view' },
+        ],
+        sections: [
+            {
+                type: "INTRO:",
+                lyrics: ["", ""],
+                chords: [
+                    [{ chord: "Db", position: 0 }, { chord: "Eb", position: 4 }, { chord: "Cm", position: 8 }, { chord: "Db", position: 12 }],
+                ],
+                isNotLyric: true,
+            },
+            {
+                type: "VERSE 1:",
+                lyrics: [
+                    "Always longed to see Your face",
+                    "My spirit cries Your holy praise",
+                    "God Your glory will remain",
+                    "Your throne will never be replaced",
+                ],
+                chords: [
+                    [{ chord: "Db", position: 0 }, { chord: "Eb", position: 102 }],
+                    [{ chord: "Cm", position: 20 }, { chord: "Db", position: 88 }],
+                    [{ chord: "Db", position: 0 }, { chord: "Eb", position: 78 }],
+                    [{ chord: "Cm", position: 20 }, { chord: "Db", position: 98 }],
+                ],
+            },
+            {
+                type: "VERSE 2:",
+                lyrics: [
+                    "My awe can not be contained",
+                    "Your presence sets my heart ablaze",
+                    "Beauty shining from Your face",
+                    "Dazzling light of saving grace",
+                ],
+                chords: [
+                    [{ chord: "Db", position: 0 }, { chord: "Eb", position: 78 }],
+                    [{ chord: "Cm", position: 22 }, { chord: "Db", position: 102 }],
+                    [{ chord: "Db", position: 0 }, { chord: "Eb", position: 92 }],
+                    [{ chord: "Cm", position: 0 }, { chord: "Db", position: 84 }],
+                ],
+            },
+            {
+                type: "PRE-CHORUS:",
+                lyrics: [
+                    "You dealt with the curse and shackles of",
+                    "fear",
+                    "The weight of the past has now disappeared",
+                    "Here in Your presence we have Your peace",
+                    "Your kingdom on earth we’re ready to see",
+                ],
+                chords: [
+                    [{ chord: "Db", position: 18 }],
+                    [],
+                    [{ chord: "Eb", position: 17.5 }],
+                    [{ chord: "Cm", position: 0 }],
+                    [{ chord: "Db", position: 20.5 }],
+                ],
+            },
+            {
+                type: "",
+                lyrics: ["[REPEAT VERSE 2]", "[REPEAT PRE-CHORUS]", "[REPEAT CHORUS]"],
+                chords: [[]],
+                isNotLyric: true,
+            },
+            {
+                type: "BRIDGE:",
+                lyrics: [
+                    "Hearts are turning into Yours",
+                    "Joy of salvation You restore",
+                    "Oh, Let your kingdom come",
+                    "Jesus, Let Your will be done",
+                ],
+                chords: [
+                    [{ chord: "Db", position: 0 }, { chord: "Eb", position: 59 }],
+                    [{ chord: "Cm", position: 18 }, { chord: "Fm", position: 76 }],
+                    [{ chord: "Db", position: 0 }, { chord: "Eb", position: 7 }],
+                    [{ chord: "Cm", position: 0 }, { chord: "Fm", position: 12 }],
+                ],
+            },
+            {
+                type: "",
+                lyrics: ["[REPEAT CHORUS]"],
+                chords: [[]],
+                isNotLyric: true,
+            },
+        ],
+    },
+    {
+        title: "W.O.W.",
+        artist: "AWAKE84",
+        publisher: "VICTORY",
+        composer: "Laean Angeles, Simon Calma, RM Noriega, Elle Cabiling Tumaliuan, Ian Tumaliuan, & Josiah Tumaliuan",
+        album: "Living Awake",
+        releaseDate: "2024",
+        originalKey: "A",
+        chordMap: ["C", "C#", "D", "Eb", "E", "F", "F#", "G", "G#", "A", "Bb", "B"],
+        bpm: 136,
+        link: [
+            { platform: 'youtube', url: 'https://youtu.be/jAIfevrvQsE?si=kGaFU3vqFQ9tPFWQ' },
+            { platform: 'spotify', url: 'https://open.spotify.com/track/7fPJl3EfTuDJOliQa8i4qb?si=4a6905b5a4974dca' },
+            { platform: 'appleMusic', url: 'https://music.apple.com/us/album/w-o-w/1746738986?i=1746739921' },
+            { platform: 'pdf', url: 'https://drive.google.com/file/d/1O3_okLiRQsze9sWoSoMZyI6uzZVpntuC/view' },
+        ],
+        sections: [
+            {
+                type: "INTRO:",
+                lyrics: ["", ""],
+                chords: [
+                    [{ chord: "Bm7", position: 0 }, { chord: "C#m7", position: 4 }],
+                ],
+                isNotLyric: true,
+            },
+            {
+                type: "VERSE 1:",
+                lyrics: [
+                    "Look at all the birds of the air, do they worry?",
+                    "How about the flowers of the fields, don’t they",
+                    "grow?",
+                    "‘Cause every day is passing by at speed of light",
+                    "Lord, I’m getting tired of just standing by",
+                    "Then You come out of nowhere, by surprise",
+                    "Performing miracles before my eyes",
+                ],
+                chords: [
+                    [{ chord: "Bm7", position: 58 }, { chord: "C#m7", position: 150 }],
+                    [{ chord: "Bm7", position: 62 }],
+                    [{ chord: "C#m7", position: 25 }],
+                    [{ chord: "Bm7", position: 80 }],
+                    [{ chord: "C#m7", position: 69 }],
+                    [{ chord: "Bm7", position: 92 }],
+                    [{ chord: "C#m7", position: 95 }],
+                ],
+            },
+            {
+                type: "CHORUS:",
+                lyrics: [
+                    "WOW",
+                    "I’m in awe of Your ways and Your wonders",
+                    "Like when You walked",
+                    "When You walked through the storm on the",
+                    "water",
+                    "You’re the cloud by day, in the night my light",
+                    "Robbed the grave for my eternity",
+                    "I can’t help but say",
+                    "WOW",
+                    "I’m in awe of Your ways and Your wonders",
+                ],
+                chords: [
+                    [{ chord: "Bm7", position: 0 }],
+                    [{ chord: "C#m7", position: 135 }],
+                    [{ chord: "Bm7", position: 53 }],
+                    [],
+                    [{ chord: "C#m7", position: 0 }],
+                    [{ chord: "Bm7", position: 43 }],
+                    [{ chord: "C#m7", position: 50 }],
+                    [],
+                    [{ chord: "Bm7", position: 0 }],
+                    [{ chord: "C#m7", position: 136 }],
+                ],
+            },
+            {
+                type: "VERSE 2:",
+                lyrics: [
+                    "I’ve been wandering on my own",
+                    "Everything I've seen all day long, same",
+                    "phase, same places",
+                    "But You've been showing new ways yeah",
+                    "Over and over You run after me",
+                    "Working Your wonders now it’s clear to me",
+                    "That I've been raised from my lows",
+                    "Blown away by what You’ve shown",
+                    "So I'll say"
+                ],                
+                chords: [
+                    [{ chord: "Bm7", position: 0 }, { chord: "C#m7", position: 92 }],
+                    [{ chord: "Bm7", position: 110 }],
+                    [],
+                    [{ chord: "C#m7", position: 67 }],
+                    [{ chord: "Bm7", position: 38 }],
+                    [{ chord: "C#m7", position: 58 }],
+                    [{ chord: "Bm7", position: 56 }],
+                    [{ chord: "C#m7", position: 26 }],
+                ],
+            },
+            {
+                type: "",
+                lyrics: ["[REPEAT CHORUS]"],
+                chords: [[]],
+                isNotLyric: true,
+            },
+            {
+                type: "BRIDGE:",
+                lyrics: [
+                    "When in high and low I know",
+                    "You're everywhere I go",
+                    "I'm confident, it’s evident",
+                    "Your love for me it never ends",
+                    "You’re always by my side",
+                    "I'm always on Your mind",
+                    "You’ve shown me time and time again",
+                    "Your love for me, it never ends",
+                ],                               
+                chords: [
+                    [{ chord: "Bm7", position: 37 }],
+                    [],
+                    [{ chord: "C#m7", position: 15 }],
+                    [],
+                    [{ chord: "Bm7", position: 27 }],
+                    [],
+                    [{ chord: "C#m7", position: 32 }],
+                ],
+            },
+            {
+                type: "",
+                lyrics: [
+                    "(How deep, how wide, how high)",
+                    "Your love for me, it never ends",
+                    "(How deep, how wide, how high)",
+                    "Your love for me, it never ends",
+                    "(How deep, how wide, how high)",
+                    "Deep, wide, high"
+                ],                               
+                chords: [
+                    [{ chord: "Bm7", position: 0 }],
+                    [],
+                    [{ chord: "C#m7", position: 0 }],
+                    [],
+                    [{ chord: "Bm7", position: 0 }],
+                    [],
+                    [{ chord: "C#m7", position: 0 }],
+                ],
+            },
+            {
+                type: "",
+                lyrics: ["[REPEAT CHORUS]"],
+                chords: [[]],
+                isNotLyric: true,
+            },
+            {
+                type: "OUTRO:",
+                lyrics: [
+                    "Every day You show me",
+                    "Wonders on wonders",
+                    "Wonders on wonders",
+                    "Wonders on wonders"
+                ],                
+                chords: [
+                    [{ chord: "Bm7", position: 0 }],
+                    [],
+                    [{ chord: "C#m7", position: 0 }]
+                ],
+            },
+        ],
+    },
     //VICTORY WORSHIP
     {
         title: "Beautiful Love",
         artist: "Victory Worship",
+        publisher: "VICTORY",
         composer: "Franklin Asuncion, Lee Simon Brown, Moira Hernandez, James Murrell & Kensho Yo",
         album: "Beautiful Love",
         releaseDate: "2017",
@@ -1722,6 +2012,7 @@ export default [
     {
         title: "A Thousand Hallelujahs",
         artist: "Victory Worship",
+        publisher: "VICTORY",
         composer: "Jacqueline de Villiers, Albertus Mostert, Alesia Post, & Brian O'Neill",
         album: "Tribe",
         releaseDate: "2019",
