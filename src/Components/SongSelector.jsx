@@ -72,7 +72,7 @@ const SongSelector = ({ songBank }) => {
 								className="px-4 py-2 text-gray-800 hover:bg-indigo-100 hover:text-indigo-600 cursor-pointer transition-colors duration-200"
 								onMouseDown={() => {
 									const encodedTitle = encodeURIComponent(song.title); // ✅ Encode title for URL safety
-									navigate(`/song-chords/song/${encodedTitle}`); // ✅ Navigate using title
+									navigate(`/song/${encodedTitle}`); // ✅ Navigate using title
 									setSearchTerm('');
 									setIsFocused(false);
 								}}

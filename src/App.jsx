@@ -16,12 +16,12 @@ const App = () => {
 
 					<Routes>
 						{/* Song Page with Dynamic Song Title */}
-						<Route path="/song-chords" element={<Navigate to="/song-chords/song" replace />} />
-						<Route path="/song-chords/song" element={<SongPage />} />
-						<Route path="/song-chords/song/:title" element={<SongPage />} />
-						<Route path="/song-chords/playlist" element={<Playlist />} />
-						<Route path="/song-chords/playlist/:playlistName" element={<PlaylistSongManager />} />
-						<Route path="/song-chords/playlist/:playlistName/:title" element={<PlaylistSong />} />
+						<Route path="" element={<Navigate to="/song" replace />} />
+						<Route path="/song" element={<SongPage />} />
+						<Route path="/song/:title" element={<SongPage />} />
+						<Route path="/playlist" element={<Playlist />} />
+						<Route path="/playlist/:playlistName" element={<PlaylistSongManager />} />
+						<Route path="/playlist/:playlistName/:title" element={<PlaylistSong />} />
 					</Routes>
 				</div>
 				<Footer />

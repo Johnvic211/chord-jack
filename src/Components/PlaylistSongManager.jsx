@@ -116,8 +116,8 @@ const PlaylistSongManager = () => {
     };
 
     const handleSongClick = (songTitle) => {
-        // Navigate to song page with URL: /song-chords/playlist/PlaylistName/SongName
-        navigate(`/song-chords/playlist/${encodeURIComponent(playlistName)}/${encodeURIComponent(songTitle)}`);
+        // Navigate to song page with URL: /playlist/PlaylistName/SongName
+        navigate(`/playlist/${encodeURIComponent(playlistName)}/${encodeURIComponent(songTitle)}`);
     };
 
     const exportPlaylists = () => {
@@ -178,7 +178,7 @@ const PlaylistSongManager = () => {
             <div className="flex items-center justify-between p-4 bg-white rounded-md shadow-md">
                 <ArrowLeft
                     className="cursor-pointer text-black hover:text-gray-400 transition"
-                    onClick={() => navigate(`/song-chords/playlist`)}
+                    onClick={() => navigate(`/playlist`)}
                 />
                 <h3 className="text-lg font-semibold text-black">{String(playlistName)}</h3>
 

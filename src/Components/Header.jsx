@@ -27,10 +27,10 @@ const Header = () => {
 
                 {/* Desktop Menu */}
                 <nav className="hidden lg:flex space-x-6">
-                    <NavLink to="/song-chords/song" className={`px-3 py-2 rounded-md transition-all duration-200 ${getActiveClass('/song-chords/song')}`}>
+                    <NavLink to="/song" className={`px-3 py-2 rounded-md transition-all duration-200 ${getActiveClass('/song')}`}>
                         Song
                     </NavLink>
-                    <NavLink to="/song-chords/playlist" className={`px-3 py-2 rounded-md transition-all duration-200 ${getActiveClass('/song-chords/playlist')}`}>
+                    <NavLink to="/playlist" className={`px-3 py-2 rounded-md transition-all duration-200 ${getActiveClass('/playlist')}`}>
                         Playlist
                     </NavLink>
                 </nav>
@@ -40,15 +40,15 @@ const Header = () => {
             {isOpen && (
                 <nav className="lg:hidden flex flex-col mt-3 bg-white border rounded-lg shadow-md">
                     <NavLink 
-                        to="/song-chords/song" 
-                        className={`block px-4 py-3 ${getActiveClass('/song-chords/song')}`}
+                        to="/song" 
+                        className={`block px-4 py-3 ${getActiveClass('/song')}`}
                         onClick={() => setIsOpen(false)}
                     >
                         Song
                     </NavLink>
                     <NavLink 
-                        to="/song-chords/playlist" 
-                        className={`block px-4 py-3 ${getActiveClass('/song-chords/playlist')}`}
+                        to="/playlist" 
+                        className={`block px-4 py-3 ${getActiveClass('/playlist')}`}
                         onClick={() => setIsOpen(false)}
                     >
                         Playlist

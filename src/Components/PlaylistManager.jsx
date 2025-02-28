@@ -88,7 +88,7 @@ const PlaylistManager = () => {
     
 
     const handlePlaylistClick = (name) => {
-        navigate(`/song-chords/playlist/${encodeURIComponent(name)}`);
+        navigate(`/playlist/${encodeURIComponent(name)}`);
     };
 
     const exportPlaylists = () => {

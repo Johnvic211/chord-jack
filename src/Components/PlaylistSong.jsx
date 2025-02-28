@@ -35,7 +35,7 @@ const PlaylistSong = () => {
         if (playlistSongs.length > 0) {
             setCurrentIndex(index);
             setSwipeOffset(0); // Reset animation
-            navigate(`/song-chords/playlist/${encodeURIComponent(playlistName)}/${encodeURIComponent(playlistSongs[index])}`);
+            navigate(`/playlist/${encodeURIComponent(playlistName)}/${encodeURIComponent(playlistSongs[index])}`);
         }
     };
 
@@ -73,7 +73,7 @@ const PlaylistSong = () => {
             <div className="flex items-center justify-between p-4 bg-white rounded-md shadow-md">
                 <ArrowLeft
                     className="cursor-pointer text-black hover:text-gray-400 transition"
-                    onClick={() => navigate(`/song-chords/playlist/${encodeURIComponent(playlistName)}`)} // Go back to the playlist
+                    onClick={() => navigate(`/playlist/${encodeURIComponent(playlistName)}`)} // Go back to the playlist
                 />
                 <h3 className="text-lg font-semibold text-black">
                     {selectedSong ? playlistName : "Loading..."}
