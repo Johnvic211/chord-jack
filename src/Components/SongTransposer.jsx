@@ -29,6 +29,7 @@ const SongTransposer = ({ selectedSong, page }) => {
 			setShowChords(true);
 			setShowChordNumbers(false);
 		}
+	// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [selectedSong]);
 
 	// Save settings when values change
