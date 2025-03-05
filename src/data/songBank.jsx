@@ -2128,6 +2128,138 @@ export default [
             }
         ],
     },
+    {
+        title: "My God",
+        artist: "Victory Worship",
+        publisher: "VICTORY",
+        composer: "PJ Corpuz",
+        album: "Rise Heart",
+        releaseDate: "2015",
+        originalKey: "B",
+        chordMap: ["C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A", "Bb", "B"],
+        bpm: 160,
+        link: [
+            { platform: 'youtube', url: 'https://youtu.be/-wieKLN7eUE?si=mFyM4IlOZh7GJmh3' },
+            { platform: 'spotify', url: 'https://open.spotify.com/track/7IIP0Zt1iUp3Javlwlvnk2?si=c864564a8a524dc7' },
+            { platform: 'appleMusic', url: 'https://music.apple.com/us/album/my-god-feat-joe-ramos/1225095814?i=1225096398' },
+        ],
+        sections: [
+            {
+                type: "INTRO Riff (4x):",
+                lyrics: ["",""],
+                chords: [
+                    [{ chord: "G#m", position: 0, left: true, forwardSlash: 3 }, { chord: "G#m", position: 4, left: true, forwardSlash: 1 }, { chord: "B", position: 8, right: true, forwardSlash: 1 }],
+                    [{ chord: "G#m", position: 0, left: true, forwardSlash: 3 }, { chord: "G#m", position: 4, left: true, forwardSlash: 1 }, { chord: "C#m", position: 8, right: true, forwardSlash: 1 }],
+                ],
+                isNotLyric: true,
+            },
+            {
+                type: "INTRO 2:",
+                lyrics: ["",""],
+                chords: [
+                    [{ chord: "E", position: 0, leftRight: true, forwardSlash: 3 }, { chord: "E", position: 4, forwardSlash: 3, right: true },{ chord: "E", position: 8, right: true, forwardSlash: 3 }, { chord: "E", position: 12, forwardSlash: 3, right: true }],
+                    [{ chord: "B", position: 0, leftRight: true, forwardSlash: 3 }, { chord: "B", position: 4, forwardSlash: 3, right: true },{ chord: "B", position: 8, right: true, forwardSlash: 3 }, { chord: "B", position: 12, forwardSlash: 3, right: true }],
+                ],
+                isNotLyric: true,
+            },
+            {
+                type: "VERSE:",
+                lyrics: [
+                    "We cry out blessed be Your Name",
+                    "Blessed be Your Name",
+                    "Lord, You are worthy of all praise",
+                    "Worthy of all praise",
+                ],
+                chords: [
+                    [{ chord: "E", position: 0 }],
+                    [{ chord: "B", position: 80 }],
+                    [{ chord: "E ", position: 0 }],
+                    [{ chord: "B", position: 68 }],
+                ],
+            },
+            {
+                type: "PRE-CHORUS:",
+                lyrics: [
+                    "We lift our hands and raise our voices",
+                    "All the earth will hear rejoicing",
+                    "When Your people sing",
+                    "(Blessed be Your name)",
+                ],
+                chords: [
+                    [{ chord: "E", position: 0 }],
+                    [],
+                    [{ chord: "C#m", position: 0 }, { chord: "B/D#", position: 35, chordNumber: "1/3" }, { chord: "E", position: 43 }],
+                ],
+            },
+            {
+                type: "CHORUS:",
+                lyrics: [
+                    "My God You alone are truly great",  
+                    "Your words will never ever break",  
+                    "Your plans won’t deviate",  
+                    "From the promises",
+                    "The promises You’ve made",  
+                    "And I will never be the same",  
+                    "Your blood has washed away the shame",
+                    "You took away my pain",  
+                    "And Your love, and Your love will remain",
+                ],
+                chords: [
+                    [{ chord: "E", position: 0 }, { chord: "B", position: 110 }],
+                    [{ chord: "G#m", position: 107 }],
+                    [],
+                    [{ chord: "C#m", position: 42 }],
+                    [{ chord: "B/D#", position: 20, chordNumber: "1/3" }, { chord: "E", position: 75 }],
+                    [{ chord: "E", position: 0}, { chord: "B", position: 92 }],
+                    [{ chord: "G#m", position: 134 }],
+                    [],
+                    [{ chord: "C#m", position: 25 }, { chord: "B/D#", position: 62, chordNumber: "1/3" }, { chord: "E", position: 73 }],
+                ],
+            },
+            {
+                type: "",
+                lyrics: [
+                    "INTRO 2", "VERSE", "PRE-CHORUS", "CHORUS"
+                ],
+                chords: [[]],
+                isNotLyric: true,
+            },
+            {
+                type: "INTERLUDE Riff (2x)",
+                lyrics: ["",""],
+                chords: [
+                    [{ chord: "G#m", leftRight: true, forwardSlash: 3 }, { chord: "G#m", position: 4, forwardSlash: 1 }, { chord: "B", position: 8, forwardSlash: 1, right: true }],
+                    [{ chord: "G#m", leftRight: true, forwardSlash: 3 }, { chord: "G#m", position: 4, forwardSlash: 1 }, { chord: "C#m", position: 8, forwardSlash: 1, right: true }],
+                ],
+                isNotLyric: true,
+            },
+            {
+                type: "BRIDGE: (4x)",
+                lyrics: [
+                    "God You are so worthy",
+                    "God You are so holy",
+                ],
+                chords: [
+                    [{ chord: "G#m", position: 0 }, { chord: "E", position: 46 }],
+                    [{ chord: "G#m", position: 0 }, { chord: "E", position: 46 }],
+                ],
+            },
+            {
+                type: "",
+                lyrics: ["CHORUS (2x)"],
+                chords: [[]],
+                isNotLyric: true,
+            },
+            {
+                type: "OUTRO (2x)",
+                lyrics: ["Your love and Your love will remain"],
+                chords: [
+                    [{ chord: "C#m", position: 0 }, { chord: "B/D#", position: 61, chordNumber: "1/3" }, { chord: "E", position: 89 }],
+                ],
+                isNotLyric: true,
+            },
+        ],
+    },
     //EVERY NATION MUSIC
     {
         title: "The Beat",
