@@ -10,7 +10,7 @@ import { Navigate } from "react-router-dom";
 const App = () => {
 	return (
 		<Router>
-			<div className="bg-gray-100 flex flex-col min-h-screen">
+			<div className="dark:bg-gray-800 bg-gray-100 flex flex-col min-h-screen">
 				<div className="flex-grow">
 					<Header />
 

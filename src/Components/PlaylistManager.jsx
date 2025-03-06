@@ -172,8 +172,8 @@ const PlaylistManager = () => {
 
     return (
         <div className="m-4 px-2 min-w-[350px] max-w-[600px] mx-auto">
-            <div className="flex items-center justify-between p-4 bg-white rounded-md shadow-md">
-                <h3 className="text-lg font-semibold text-black">Playlists</h3>
+            <div className="flex items-center justify-between p-4 bg-white dark:bg-gray-900 rounded-md shadow-md">
+                <h3 className="text-lg font-semibold dark:text-white">Playlists</h3>
                 <div className="ml-auto flex gap-3">
                     {/* Import Button */}
                     <label className="relative cursor-pointer text-[#1DB954] group">
@@ -204,12 +204,12 @@ const PlaylistManager = () => {
             </div>
 
             {playlists.length > 0 ? (
-                <table className="mt-4 w-full bg-white rounded-md shadow-md">
+                <table className="mt-4 w-full bg-white dark:bg-gray-900 rounded-md shadow-md">
                     <tbody>
                         {playlists.map((playlist, index) => (
                             <tr key={index} className="hover:bg-gray-100 transition cursor-pointer" onClick={() => handlePlaylistClick(playlist.name)}>
-                                <td className="px-4 py-3 text-black">{index + 1}</td>
-                                <td className="px-4 py-3 text-black flex items-center gap-2">
+                                <td className="px-4 py-3 dark:text-white">{index + 1}</td>
+                                <td className="px-4 py-3 dark:text-white flex items-center gap-2">
                                     <Music size={18} className="text-[#1DB954]" />
                                     {playlist.name}
                                 </td>

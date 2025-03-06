@@ -1,25 +1,35 @@
 import { useState } from "react";
 import { NavLink, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
+import useDarkMode from "./UseDarkMode";
+import { Sun, Moon } from "lucide-react"
 
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
+    const { isDarkMode, toggleDarkMode } = useDarkMode();
     const location = useLocation(); // Get current route
 
     // Function to determine active link
     const getActiveClass = (path) => 
         location.pathname.startsWith(path)
             ? "text-indigo-600 font-bold" 
-            : "text-gray-600 hover:text-indigo-500";
+            : "text-white-600 hover:text-indigo-500";
 
     return (
-        <header className="px-4 py-5 shadow-md w-full sticky top-0 bg-white z-50">
+        <header className="px-4 py-5 shadow-md w-full sticky top-0 bg-white dark:bg-black dark:text-white z-50">
             <div className="flex justify-between items-center">
                 <h4 className="text-lg font-semibold">🎵 Song Transposer</h4>
-
+                
+                {/* <button
+                    onClick={toggleDarkMode}
+                    className="p-2 bg-gray-200 dark:bg-gray-800 rounded-full"
+                >
+                    {isDarkMode ? <Sun className="w-6 h-6 text-yellow-400" /> : <Moon className="w-6 h-6 text-gray-400" />}
+                </button> */}
+                
                 {/* Hamburger Icon (Mobile) */}
                 <button 
-                    className="lg:hidden text-gray-600 hover:text-indigo-500 focus:outline-none"
+                    className="lg:hidden text-gray-600 dark:text-gray-300 hover:text-indigo-500 dark:hover:text-indigo-400 focus:outline-none"
                     onClick={() => setIsOpen(!isOpen)}
                 >
                     {isOpen ? <X size={28} /> : <Menu size={28} />}
@@ -38,7 +48,7 @@ const Header = () => {
 
             {/* Mobile Dropdown Menu */}
             {isOpen && (
-                <nav className="lg:hidden flex flex-col mt-3 bg-white border rounded-lg shadow-md">
+                <nav className="lg:hidden flex flex-col mt-3 bg-white dark:bg-gray-900 border dark:border-gray-700 rounded-lg shadow-md">
                     <NavLink 
                         to="/song" 
                         className={`block px-4 py-3 ${getActiveClass('/song')}`}
@@ -56,6 +66,7 @@ const Header = () => {
                 </nav>
             )}
         </header>
+
     );
 };
 

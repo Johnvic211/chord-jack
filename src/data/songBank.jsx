@@ -1871,6 +1871,192 @@ export default [
             },
         ],
     },
+    {
+        title: "Draw near to the cross",
+        artist: "AWAKE84",
+        publisher: "VICTORY",
+        composer: "Noel Biroan Jr., Chrysse Pili, Ivan Emperador, & Josh Tumaliuan",
+        album: "",
+        releaseDate: "2025",
+        originalKey: "A",
+        chordMap: ["C", "C#", "D", "Eb", "E", "F", "F#", "G", "G#", "A", "Bb", "B"],
+        timeSignature: "4/4",
+        sections: [
+            {
+                type: "VERSE:",
+                lyrics: [
+                    "      Your cross is our way to the Father's arms",
+                    "      We once were dead but You gave new life",
+                    "      Holy, Chosen, called to bear Your light",
+                    "      Let the world know God be glorified",
+                ],
+                chords: [
+                    [{ chord: "A/C#", position: 0, number: "1/3" }, { chord: "D", position: 25 }, { chord: "F#m", position: 51 }, { chord: "E", position: 60 }],
+                    [{ chord: "A/C#", position: 0, number: "1/3" }, { chord: "D", position: 22 }, { chord: "F#m", position: 60 }, { chord: "E", position: 108 }],
+                    [{ chord: "A/C#", position: 0, number: "1/3" }, { chord: "D", position: 26 }, { chord: "F#m", position: 55 }, { chord: "E", position: 88 }],
+                    [{ chord: "A/C#", position: 0, number: "1/3" }, { chord: "D", position: 33 }, { chord: "F#m", position: 77 }, { chord: "E", position: 105 }]
+                ],
+            },
+            {
+                type: "CHORUS:",
+                lyrics: [
+                    "We draw near to the cross",
+                    "Where your blood was shed for us",
+                    "And all things we count as lost",
+                    "In the light of my Sa - vior...     Woohh",
+                ],
+                chords: [
+                    [{ chord: "D", position: 40 }, { chord: "E", position: 82 }],
+                    [{ chord: "A", position: 50 }, { chord: "E/G#", position: 87, number: "5/7" }, { chord: "F#m", position: 114 }, { chord: "A/C#", position: 120, number: "1/3" }],
+                    [{ chord: "D", position: 35 }, { chord: "E", position: 103 }],
+                    [{ chord: "A", position: 26 }, { chord: "E/G#", position: 65, number: "5/7" }, { chord: "F#m", position: 74 }, { chord: "A/C#", position: 90, number: "1/3" }, { chord: "D", position: 100 }],
+                ],
+            },
+            {
+                type: "REPEAT VERSE",
+                lyrics: [""],
+                chords: [[]],
+            },
+            {
+                type: "CHORUS:",
+                lyrics: [
+                    "We draw near to the cross",
+                    "Where your blood was shed for us",
+                    "And all things we count as lost",
+                    "In the light of my Sa - vior, Woohh",
+                    "We draw near to the cross",
+                    "Where your blood was shed for us",
+                    "And all things we count as lost",
+                    "In the light of my Sa - vior, Woooohh",
+                ],
+                chords: [
+                    [{ chord: "D", position: 40 }, { chord: "E", position: 82 }],
+                    [{ chord: "A", position: 50 }, { chord: "E/G#", position: 87, number: "5/7" }, { chord: "F#m", position: 114 }, { chord: "A/C#", position: 120, number: "1/3" }],
+                    [{ chord: "D", position: 35 }, { chord: "E", position: 103 }],
+                    [{ chord: "A", position: 26 }, { chord: "E/G#", position: 65, number: "5/7" }, { chord: "F#m", position: 74 }, { chord: "A/C#", position: 90, number: "1/3" }],
+                    [{ chord: "D", position: 40 }, { chord: "E", position: 82 }],
+                    [{ chord: "A", position: 50 }, { chord: "E/G#", position: 87, number: "5/7" }, { chord: "F#m", position: 114 }, { chord: "A/C#", position: 120, number: "1/3" }],
+                    [{ chord: "D", position: 35 }, { chord: "E", position: 103 }],
+                    [{ chord: "A", position: 26 }, { chord: "E/G#", position: 65, number: "5/7" }, { chord: "F#m", position: 74 }, { chord: "A/C#", position: 90, number: "1/3" }, { chord: "D", position: 100 }, { chord: "E", position: 110 }],
+                ],
+            },
+            {
+                type: "BRIDGE: (4x)",
+                lyrics: [
+                    "If the Son sets us free",
+                    "We are free indeed",
+                    "We are free indeed",
+                ],
+                chords: [
+                    [{ chord: "D", position: 23 }, { chord: "F#m", position: 64 }],
+                    [{ chord: "A", position: 50 }],
+                    [{ chord: "E", position: 50 }],
+                    [{ chord: "D", position: 23 }, { chord: "F#m", position: 64 }],
+                    [{ chord: "A", position: 50 }],
+                    [{ chord: "E", position: 50 }],
+                    [{ chord: "D", position: 23 }, { chord: "F#m", position: 64 }],
+                    [{ chord: "A", position: 50 }],
+                    [{ chord: "E", position: 50 }],
+                    [{ chord: "D", position: 23 }, { chord: "F#m", position: 64 }],
+                    [{ chord: "A", position: 50 }],
+                    [{ chord: "E", position: 50 }],
+                ],
+            },
+            {
+                type: "CHORUS:",
+                lyrics: [
+                    "We draw near to the cross",
+                    "Where your blood was shed for us",
+                    "And all things we count as lost",
+                    "In the light of my Sa - vior, Woohh",
+                ],
+                chords: [
+                    [{ chord: "D", position: 40 }, { chord: "E", position: 82 }],
+                    [{ chord: "A", position: 50 }, { chord: "E/G#", position: 87, number: "5/7" }, { chord: "F#m", position: 114 }, { chord: "A/C#", position: 120, number: "1/3" }],
+                    [{ chord: "D", position: 35 }, { chord: "E", position: 103 }],
+                    [{ chord: "A", position: 26 }, { chord: "E/G#", position: 65, number: "5/7" }, { chord: "F#m", position: 74 }, { chord: "A/C#", position: 90, number: "1/3" }, { chord: "D", position: 100 }],
+                ],
+            },
+        ],
+    },
+    {
+        title: "I Have Decided (Hymn)",
+        artist: "AWAKE84",
+        album: "Move in Miracles",
+        publisher: "VICTORY",
+        composer: "Simon Marak",
+        releaseDate: "2023",
+        originalKey: "F",
+        chordMap: ["C", "C#", "D", "Eb", "E", "F", "F#", "G", "G#", "A", "Bb", "B"],
+        timeSignature: "4/4",
+        link: [
+            { platform: 'youtube', url: 'https://youtu.be/KYQXkDjtzsU?si=9VOyZbxZi4f6JYIM' },
+            { platform: 'spotify', url: 'https://open.spotify.com/track/2CKAPp91zotBZPPidbx5Rx?si=f4f80c180b1b4f58' },
+            { platform: 'appleMusic', url: 'https://music.apple.com/us/album/i-have-decided-hymn-live-from-moa-arena/1706762891?i=1706763218' },
+        ],
+        sections: [
+            {
+                type: "VERSE 1: (2x)",
+                lyrics: [
+                    "I have decided to follow Jesus",
+                    "I have decided to follow Jesus",
+                    "I have decided to follow Jesus",
+                    "No turning back, no turning back.",
+                ],
+                chords: [
+                    [{ chord: "F", position: 37 }],
+                    [{ chord: "Bb", position: 36 }, { chord: "F/A", position: 88, number: "1/3" }],
+                    [{ chord: "F", position: 37 }, { chord: "Dm7", position: 94 }],
+                    [{ chord: "Gm7", position: 47 }, { chord: "C", position: 63 }, { chord: "F", position: 89 }],
+                ],
+            },
+            {
+                type: "VERSE 2:",
+                lyrics: [
+                    "Though none go with me, I still will follow",
+                    "Though none go with me, I still will follow",
+                    "Though none go with me, I still will follow",
+                    "No turning back, no turning back.",
+                ],
+                chords: [
+                    [{ chord: "F", position: 71 }],
+                    [{ chord: "Bb", position: 70 }, { chord: "F/A", position: 132, number: "1/3" }],
+                    [{ chord: "F", position: 71 }, { chord: "Dm7", position: 138 }],
+                    [{ chord: "Gm7", position: 47 }, { chord: "C", position: 63 }, { chord: "F", position: 89 }],
+                ],
+            },
+            {
+                type: "VERSE 3:",
+                lyrics: [
+                    "My cross I'll carry till I see Jesus",
+                    "My cross I'll carry till I see Jesus",
+                    "My cross I'll carry till I see Jesus",
+                    "No turning back, no turning back.",
+                ],
+                chords: [
+                    [{ chord: "F", position: 51 }],
+                    [{ chord: "Bb", position: 50 }, { chord: "F/A", position: 95, number: "1/3" }],
+                    [{ chord: "F", position: 51 }, { chord: "Dm7", position: 100 }],
+                    [{ chord: "Gm7", position: 47 }, { chord: "C", position: 63 }, { chord: "F", position: 89 }],
+                ],
+            },
+            {
+                type: "VERSE 4:",
+                lyrics: [
+                    "The world behind me, the cross before me",
+                    "The world behind me, the cross before me",
+                    "The world behind me, the cross before me",
+                    "No turning back, no turning back.",
+                ],
+                chords: [
+                    [{ chord: "F", position: 52 }],
+                    [{ chord: "Bb", position: 51 }, { chord: "F/A", position: 126, number: "1/3" }],
+                    [{ chord: "F", position: 52 }, { chord: "Dm7", position: 132 }],
+                    [{ chord: "Gm7", position: 47 }, { chord: "C", position: 63 }, { chord: "F", position: 89 }],
+                ],
+            },
+        ],
+    },
     //VICTORY WORSHIP
     {
         title: "Beautiful Love",
@@ -2188,7 +2374,7 @@ export default [
                 chords: [
                     [{ chord: "E", position: 0 }],
                     [],
-                    [{ chord: "C#m", position: 0 }, { chord: "B/D#", position: 35, chordNumber: "1/3" }, { chord: "E", position: 43 }],
+                    [{ chord: "C#m", position: 0 }, { chord: "B/D#", position: 35, number: "1/3" }, { chord: "E", position: 43 }],
                 ],
             },
             {
@@ -2209,11 +2395,11 @@ export default [
                     [{ chord: "G#m", position: 107 }],
                     [],
                     [{ chord: "C#m", position: 42 }],
-                    [{ chord: "B/D#", position: 20, chordNumber: "1/3" }, { chord: "E", position: 75 }],
+                    [{ chord: "B/D#", position: 20, number: "1/3" }, { chord: "E", position: 75 }],
                     [{ chord: "E", position: 0}, { chord: "B", position: 92 }],
                     [{ chord: "G#m", position: 134 }],
                     [],
-                    [{ chord: "C#m", position: 25 }, { chord: "B/D#", position: 62, chordNumber: "1/3" }, { chord: "E", position: 73 }],
+                    [{ chord: "C#m", position: 25 }, { chord: "B/D#", position: 62, number: "1/3" }, { chord: "E", position: 73 }],
                 ],
             },
             {
@@ -2254,7 +2440,316 @@ export default [
                 type: "OUTRO (2x)",
                 lyrics: ["Your love and Your love will remain"],
                 chords: [
-                    [{ chord: "C#m", position: 0 }, { chord: "B/D#", position: 61, chordNumber: "1/3" }, { chord: "E", position: 89 }],
+                    [{ chord: "C#m", position: 0 }, { chord: "B/D#", position: 61, number: "1/3" }, { chord: "E", position: 89 }],
+                ],
+                isNotLyric: true,
+            },
+        ],
+    },
+    {
+        title: "Great God",
+        artist: "Victory Worship",
+        publisher: "VICTORY",
+        composer: "Archie Castillo & James Murrell",
+        album: "Radical Love",
+        releaseDate: "2014",
+        originalKey: "B",
+        bpm: 84,
+        chordMap: ["C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A", "Bb", "B"],
+        link: [
+            { platform: 'youtube', url: 'https://youtu.be/ywresPZeZ24?si=pPt6jSdAsGNQfy_E' },
+            { platform: 'spotify', url: 'https://open.spotify.com/track/5QrFx6Dl2CPR3Ksxs7vFXn?si=efe94bd6438c4d7c' },
+            { platform: 'appleMusic', url: 'https://music.apple.com/us/album/great-god-feat-jam-capistrano/1225096250?i=1225096451' },
+            { platform: 'pdf', url: 'https://www.everynationmusic.org/wp-content/uploads/2022/03/great-god-radical-love-victory-worship.pdf' },
+        ],
+        sections: [
+            {
+                type: "CHORUS:",
+                lyrics: [
+                    "He is a great God",
+                    "He is awesome, wonderful God",
+                    "Mighty in power, author of wisdom",
+                    "Better than life"
+                ],
+                chords: [
+                    [{ chord: "B", position: 38 }],
+                    [{ chord: "E", position: 38 }],
+                    [{ chord: "G#m", position: 47 }],
+                    [{ chord: "E", position: 53 }]
+                ],
+            },
+            {
+                type: "INSTRUMENTAL:",
+                lyrics: [""],
+                chords: [
+                    [{ chord: "B", position: 0, leftColon: true, left: true }, { chord: "E", position: 4, left: true }, { chord: "C#m", position: 8, left: true }, { chord: "B", position: 12, leftRight: true, rightColon: true }]
+                ],
+            },
+            {
+                type: "VERSE 1:",
+                lyrics: [
+                    "When the wind blows and it storms",
+                    "And the darkness begins to form",
+                    "I will worship the name of Jesus",
+                    "He calms the raging seas",
+                    "Overcomes our enemies",
+                    "And turns our darkness into light"
+                ],
+                chords: [
+                    [{ chord: "B", position: 46 }],
+                    [{ chord: "E", position: 40 }],
+                    [{ chord: "C#m", position: 21 }, { chord: "B", position: 99 }],
+                    [{ chord: "B", position: 14 }],
+                    [{ chord: "E", position: 17 }],
+                    [{ chord: "C#m", position: 65 }, { chord: "B", position: 110 }],
+                ],
+            },
+            {
+                type: "PRE-CHORUS 1:",
+                lyrics: [
+                    "We will lift up our hands",
+                    "We will rise and take a stand"
+                ],
+                chords: [
+                    [{ chord: "E", position: 33 }, { chord: "F#", position: 41 }],
+                    [{ chord: "E", position: 40 }, { chord: "F#", position: 98 }],
+                ],
+            },
+            {
+                type: "[REPEAT CHORUS]",
+                lyrics: [""],
+                chords: [[]],
+            },
+            {
+                type: "VERSE 2:",
+                lyrics: [
+                    "Our God who sits on the throne",
+                    "He will reign forevermore",
+                    "And His kingdom will never end",
+                    "Come all let’s worship the Lord",
+                    "Every tribe confessing He's King",
+                    "As we worship the name of Jesus"
+                ],
+                chords: [
+                    [{ chord: "B", position: 18 }],
+                    [{ chord: "E", position: 39 }],
+                    [{ chord: "C#m", position: 41 }, { chord: "B", position: 109 }],
+                    [{ chord: "B", position: 27 }],
+                    [{ chord: "E", position: 21 }],
+                    [{ chord: "C#m", position: 28 }, { chord: "B", position: 110 }],
+                ],
+            },
+            {
+                type: "PRE-CHORUS 2:",
+                lyrics: [
+                    "We will lift up our hands",
+                    "We will rise and take a stand"
+                ],
+                chords: [
+                    [{ chord: "E", position: 33 }, { chord: "F#", position: 77 }],
+                    [{ chord: "E/G#", position: 40, number: "4" }, { chord: "F#/A#", position: 80, number: "5" }],
+                ],
+            },
+            {
+                type: "[REPEAT CHORUS]",
+                lyrics: [""],
+                chords: [[]],
+            },
+            {
+                type: "BRIDGE (x2):",
+                lyrics: [
+                    "There is power, power",
+                    "Power in the name of Jesus",
+                    "There is power, power",
+                    "Power in the name of God",
+                    "His kingdom shall reign forever",
+                    "Jesus reigns",
+                    "There is power, power",
+                    "Power in the name of Jesus",
+                    "There is power, power",
+                    "Power in the name of God"
+                ],
+                chords: [
+                    [{ chord: "B", position: 40 }, { chord: "C#m", position: 74 }],
+                    [{ chord: "B/D#", position: 0, number: "1/3" }, { chord: "E", position: 67 }],
+                    [{ chord: "B", position: 40 }, { chord: "C#m", position: 74 }],
+                    [{ chord: "B/D#", position: 0, number: "1/3" }, { chord: "E", position: 67 }],
+                    [{ chord: "B", position: 16 }, { chord: "C#m", position: 74 }],
+                    [{ chord: "B/D#", position: 0, number: "1/3" }, { chord: "E", position: 18 }],
+                    [{ chord: "B/F#", position: 40, number: "1/5" }, { chord: "G#m", position: 55 }],
+                    [{ chord: "B/D#", position: 0, number: "1/3" }, { chord: "E", position: 78 }],
+                    [{ chord: "B/F#", position: 40, number: "1/5" }, { chord: "G#m", position: 55 }],
+                    [{ chord: "B/D#", position: 0, number: "1/3" }, { chord: "E", position: 78 }],
+                ],
+            },
+            {
+                type: "OUTRO:",
+                lyrics: [
+                    []
+                ],
+                chords: [
+                    [{ chord: "B", position: 0, leftColon: true, left: true },{ chord: "C#m", position: 4, left: true }, { chord: "B/D#", position: 8, left: true }, { chord: "E", position: 12, left: true }, { chord: "F", position: 16, leftRight: true, rightColon: true }],
+                ],
+            }
+        ],
+    },
+    {
+        title: "Dance in Freedom",
+        artist: "Victory Worship",
+        composer: "Victor Asuncion",
+        publisher: "VICTORY",
+        album: "Rise Heart",
+        releaseDate: "2015",
+        originalKey: "B",
+        bpm: 150,
+        chordMap: ["C", "C#", "D", "Eb", "E", "F", "F#", "G", "G#", "A", "Bb", "B"],
+        link: [
+            { platform: 'youtube', url: 'https://youtu.be/PPAU2BgO54c?si=76uhQr2KpzVuB74z' },
+            { platform: 'spotify', url: 'https://open.spotify.com/track/3AXNYwo2ZAdI6KvNj2kPeW?si=da547f587aaa4796' },
+            { platform: 'appleMusic', url: 'https://music.apple.com/us/album/dance-in-freedom-feat-victor-asuncion/1225095814?i=1225096508' },
+            { platform: 'pdf', url: 'https://www.everynationmusic.org/wp-content/uploads/2022/03/dance-in-freedom-rise-heart-victory-worship.pdf'}
+        ],
+        sections: [
+            {
+                type: "INTRO:",
+                lyrics: ["",""],
+                chords: [
+                    [{ chord: "B", position: 0, forwardSlash: 3, left: true }, { chord: "B", position: 4, forwardSlash: 3, left: true }, { chord: "B", position: 8, forwardSlash: 3, left: true }, { chord: "B", position: 12, forwardSlash: 3, leftRight: true }],
+                    [{ chord: "G#m", position: 0, forwardSlash: 3, left: true }, { chord: "E", position: 4, forwardSlash: 3, left: true }, { chord: "B", position: 8, forwardSlash: 3, left: true }, { chord: "B", position: 12, forwardSlash: 3, leftRight: true }],
+                ],
+                isNotLyric: true,
+            },
+            {
+                type: "VERSE 1:",
+                lyrics: [
+                    "He did not hold back",
+                    "He did not hesitate",
+                    "He gave His life away, He is love",
+                    "",
+                    "Our Savior came",
+                    "To seek and save the lost",
+                    "He's the only way, He is love",
+                    ""
+                ],
+                chords: [
+                    [{ chord: "B", position: 51 }],
+                    [{ chord: "E", position: 51 }],
+                    [{ chord: "G#m", position: 51 }, { chord: "E", position: 69 }],
+                    [{ chord: "B", position: 30 }],
+                    [{ chord: "B", position: 50 }],
+                    [{ chord: "E", position: 53 }],
+                    [{ chord: "G#m", position: 35 }, { chord: "E", position: 56 }],
+                    [{ chord: "B", position: 30 }],
+                ],
+            },
+            {
+                type: "PRE-CHORUS:",
+                lyrics: [
+                    "Through Him, we overcome",
+                    "Through Him, we overcome",
+                ],
+                chords: [
+                    [{ chord: "F#", position: 0 }, { chord: "G#m", position: 59 }, { chord: "E", position: 83 }],
+                    [{ chord: "F#", position: 0 }, { chord: "G#m", position: 59 }, { chord: "E", position: 83 }],
+                ],
+            },
+            {
+                type: "CHORUS:",
+                lyrics: [
+                    "Jesus, You’re alive, You’re alive in us",
+                    "Nothing can separate us from",
+                    "The love that You give away",
+                    "Jesus, You're the truth, You are the life",
+                    "We dance in freedom",
+                    "We dance in freedom",
+                    "Cause You set us free"
+                ],
+                chords: [
+                    [{ chord: "B", position: 0 }, { chord: "E", position: 125 }],
+                    [{ chord: "G#m", position: 50 }, { chord: "F#", position: 81 }],
+                    [{ chord: "E", position: 78 }],
+                    [{ chord: "B", position: 0 }, { chord: "E", position: 125 }],
+                    [{ chord: "G#m", position: 70 }, { chord: "F#", position: 75 }],
+                    [{ chord: "E", position: 70 }],
+                ],
+            },
+            {
+                type: "INTERLUDE:",
+                lyrics: ["", ""],
+                chords: [
+                    [{ chord: "B", position: 0, forwardSlash: 3, left: true }, { chord: "B", position: 4, forwardSlash: 3, left: true }, { chord: "B", position: 8, forwardSlash: 3, left: true }, { chord: "B", position: 12, forwardSlash: 3, leftRight: true }],
+                    [{ chord: "G#m", position: 0, forwardSlash: 3, left: true }, { chord: "E", position: 4, forwardSlash: 3, left: true }, { chord: "B", position: 8, forwardSlash: 3, left: true }, { chord: "B", position: 12, forwardSlash: 3, leftRight: true }],
+                ],
+                isNotLyric: true,
+            },
+            {
+                type: "VERSE 2:",
+                lyrics: [
+                    "He paid the price",
+                    "He took our guilt and shame",
+                    "He made a way for us to see His light",
+                    "",
+                    "Now standing strong",
+                    "We fix our eyes on Him",
+                    "He alone is good, He is love",
+                    "",
+                ],
+                chords: [
+                    [{ chord: "B", position: 51 }],
+                    [{ chord: "E", position: 51 }],
+                    [{ chord: "G#m", position: 51 }, { chord: "E", position: 81 }],
+                    [{ chord: "B", position: 30 }],
+                    [{ chord: "B", position: 50 }],
+                    [{ chord: "E", position: 53 }],
+                    [{ chord: "G#m", position: 35 }, { chord: "E", position: 56 }],
+                    [{ chord: "B", position: 30 }],
+                ],
+            },
+            {
+                type: "",
+                lyrics: ["[PRE-CHORUS (2x)]", "[CHORUS]"],
+                chords: [],
+                isNotLyric: true,
+            },
+            {
+                type: "INTERLUDE:",
+                lyrics: ["", ""],
+                chords: [
+                    [{ chord: "B", position: 0, forwardSlash: 3, left: true }, { chord: "B", position: 4, forwardSlash: 3, left: true }, { chord: "B", position: 8, forwardSlash: 3, left: true }, { chord: "B", position: 12, forwardSlash: 3, leftRight: true }],
+                    [{ chord: "G#m", position: 0, forwardSlash: 3, left: true }, { chord: "E", position: 4, forwardSlash: 3, left: true }, { chord: "B", position: 8, forwardSlash: 3, left: true }, { chord: "B", position: 12, forwardSlash: 3, leftRight: true }],
+                ],
+                isNotLyric: true,
+            },
+            {
+                type: "BRIDGE (x4):",
+                lyrics: [
+                    "Whoa",
+                    "I am living in freedom",
+                    "Living in freedom",
+                    "Whoa",
+                    "Jesus lives inside of me",
+                    "Now I am alive and free"
+                ],
+                chords: [
+                    [{ chord: "B", position: 0 }],
+                    [{ chord: "E", position: 23 }],
+                    [],
+                    [{ chord: "G#m", position: 0 }, { chord: "F#", position: 15 }],
+                    [{ chord: "E", position: 25 }]
+                ],
+            },
+            {
+                type: "",
+                lyrics: ["[PRE-CHORUS]", "[CHORUS]"],
+                chords: [],
+                isNotLyric: true,
+            },
+            {
+                type: "OUTRO:",
+                lyrics: ["", ""],
+                chords: [
+                    [{ chord: "B", position: 0, forwardSlash: 3, left: true }, { chord: "B", position: 4, forwardSlash: 3, left: true }, { chord: "B", position: 8, forwardSlash: 3, left: true }, { chord: "B", position: 12, forwardSlash: 3, leftRight: true }],
+                    [{ chord: "G#m", position: 0, forwardSlash: 3, left: true }, { chord: "E", position: 4, forwardSlash: 3, left: true }, { chord: "B", position: 8, forwardSlash: 3, left: true }, { chord: "B", position: 12, forwardSlash: 3, leftRight: true }],
                 ],
                 isNotLyric: true,
             },
