@@ -16,24 +16,28 @@ const Header = () => {
             : "text-white-600 hover:text-indigo-500";
 
     return (
-        <header className="px-4 py-5 shadow-md w-full sticky top-0 bg-white dark:bg-black dark:text-white z-50">
+        <header className="px-4 py-5 shadow-md w-full sticky top-0 bg-white dark:bg-black dark:text-gray-300 z-50">
             <div className="flex justify-between items-center">
                 <h4 className="text-lg font-semibold">🎵 Song Transposer</h4>
-                
-                {/* <button
-                    onClick={toggleDarkMode}
-                    className="p-2 bg-gray-200 dark:bg-gray-800 rounded-full"
-                >
-                    {isDarkMode ? <Sun className="w-6 h-6 text-yellow-400" /> : <Moon className="w-6 h-6 text-gray-400" />}
-                </button> */}
-                
-                {/* Hamburger Icon (Mobile) */}
-                <button 
-                    className="lg:hidden text-gray-600 dark:text-gray-300 hover:text-indigo-500 dark:hover:text-indigo-400 focus:outline-none"
-                    onClick={() => setIsOpen(!isOpen)}
-                >
-                    {isOpen ? <X size={28} /> : <Menu size={28} />}
-                </button>
+
+                {/* Buttons Wrapper */}
+                <div className="flex items-center gap-2">
+                    {/* Dark Mode Toggle */}
+                    <button
+                        onClick={toggleDarkMode}
+                        className="p-2 bg-gray-200 dark:bg-gray-800 rounded-full cursor-pointer"
+                    >
+                        {isDarkMode ? <Sun className="w-6 h-6 text-yellow-600" /> : <Moon className="w-6 h-6 text-gray-600" />}
+                    </button>
+
+                    {/* Hamburger Icon (Mobile) */}
+                    <button 
+                        className="lg:hidden text-gray-600 dark:text-gray-300 hover:text-indigo-500 dark:hover:text-indigo-400 focus:outline-none cursor-pointer"
+                        onClick={() => setIsOpen(!isOpen)}
+                    >
+                        {isOpen ? <X size={28} /> : <Menu size={28} />}
+                    </button>
+                </div>
 
                 {/* Desktop Menu */}
                 <nav className="hidden lg:flex space-x-6">
@@ -45,6 +49,7 @@ const Header = () => {
                     </NavLink>
                 </nav>
             </div>
+
 
             {/* Mobile Dropdown Menu */}
             {isOpen && (

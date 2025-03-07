@@ -207,7 +207,7 @@ const SongTransposer = ({ selectedSong, page }) => {
 		<main>
 		{/* Main Content */}
 			<div className="container mx-auto mt-4 px-4">
-				<div className="bg-white shadow-lg rounded-lg p-4">
+				<div className="bg-white dark:bg-gray-900 dark:text-gray-300 shadow-lg rounded-lg p-4">
 					<h3 className="text-left mb-3 text-2xl font-semibold flex">{selectedSong.title} &nbsp; <ExternalLink size={28} className="cursor-pointer" onClick={copyPath} /> </h3>
 					<p className="text-lg"><strong>By:</strong> {selectedSong.artist}</p>
 					<p className="text-lg"><strong>Original Key:</strong> {selectedSong.originalKey}</p>
@@ -230,7 +230,7 @@ const SongTransposer = ({ selectedSong, page }) => {
 
 						<label
 							htmlFor="lyrics"
-							className="text-sm font-medium text-gray-900 cursor-pointer"
+							className="text-sm font-medium text-gray-900 dark:text-gray-300 cursor-pointer"
 						>
 							Lyrics
 						</label>
@@ -245,7 +245,7 @@ const SongTransposer = ({ selectedSong, page }) => {
 
 						<label
 							htmlFor="chords"
-							className="text-sm font-medium text-gray-900 cursor-pointer"
+							className="text-sm font-medium text-gray-900 dark:text-gray-300 cursor-pointer"
 						>
 							Chords
 						</label>
@@ -260,7 +260,7 @@ const SongTransposer = ({ selectedSong, page }) => {
 
 						<label
 							htmlFor="chordNumbers"
-							className="text-sm font-medium text-gray-900 cursor-pointer"
+							className="text-sm font-medium text-gray-900 dark:text-gray-300 cursor-pointer"
 						>
 							Chord No.
 						</label>
@@ -268,7 +268,7 @@ const SongTransposer = ({ selectedSong, page }) => {
 
 					{/* Key Dropdown */}
 					<div className="mb-5">
-						<label htmlFor="keySelector" className="block text-lg mt-2 font-medium text-gray-700 mb-2">
+						<label htmlFor="keySelector" className="block text-lg mt-2 font-medium text-gray-700 dark:text-gray-300 mb-2">
 							Transpose Key
 						</label>
 
@@ -288,14 +288,17 @@ const SongTransposer = ({ selectedSong, page }) => {
 
 							<select
 								id="keySelector"
-								className="block px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-blue-500 sm:text-sm w-[75px]"
+								className="block px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-md shadow-sm bg-white dark:bg-gray-800 text-black dark:text-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-blue-500 sm:text-sm w-[75px] cursor-pointer"
 								value={selectedKey}
-								onChange={(e) => {setSelectedKey(e.target.value); setShowChordNumbers(false);}}
+								onChange={(e) => {
+									setSelectedKey(e.target.value);
+									setShowChordNumbers(false);
+								}}
 							>
 								{chordMap.map((key) => (
-								<option key={key} value={key}>
-									{key}
-								</option>
+									<option key={key} value={key} className="bg-white dark:bg-gray-700 text-black dark:text-gray-300 cursor-pointer">
+										{key}
+									</option>
 								))}
 							</select>
 
@@ -324,14 +327,14 @@ const SongTransposer = ({ selectedSong, page }) => {
 							const renderColumn = (sections) =>
 								sections.map((section, sectionIndex) => ((showLyrics || showChords) &&
 								<div key={sectionIndex} className={`mb-4 ${!showChords && section.isNotLyric ? "hidden" : ""}`}>
-									{<h5 className="text-lg text-blue-600 font-semibold">{section.type}</h5>}
+									{<h5 className="text-lg text-blue-600 dark:text-blue-700 font-semibold">{section.type}</h5>}
 									{section.lyrics.map((line, lineIndex) => (
 										<div key={lineIndex}>
 											<div className="flex mt-1">
 												{showChords && section.chords[lineIndex]?.map((chordObj, chordIndex) => (
 													<span
 														key={chordIndex}
-														className="text-base font-semibold"
+														className="text-base dark:text-gray-300 font-semibold"
 														style={{ 
 															position: "relative", 
 															left: showLyrics ? `${chordObj.position / 2}%` : 0,
@@ -350,10 +353,10 @@ const SongTransposer = ({ selectedSong, page }) => {
 												))}
 											</div>
 											{showLyrics && (
-												<span className="text-base whitespace-pre-wrap">
+												<span className="text-base dark:text-gray-300 whitespace-pre-wrap">
 													{(section?.italize && section.italize[lineIndex] === true) 
-													? italizeText(showChords ? line : line.trim()) 
-													: (showChords ? line : line.trim())
+														? italizeText(showChords ? line : line.trim()) 
+														: (showChords ? line : line.trim())
 													}
 												</span>
 											)}

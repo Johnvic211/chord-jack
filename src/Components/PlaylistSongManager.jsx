@@ -175,12 +175,12 @@ const PlaylistSongManager = () => {
     return (
         <div className="m-4 px-2 min-w-[350px] max-w-[600px] mx-auto">
             {/* Header */}
-            <div className="flex items-center justify-between p-4 bg-white rounded-md shadow-md">
+            <div className="flex items-center justify-between p-4 bg-white dark:bg-gray-900 rounded-md shadow-md">
                 <ArrowLeft
-                    className="cursor-pointer text-black hover:text-gray-400 transition"
+                    className="cursor-pointer dark:text-gray-300 hover:text-gray-400 transition"
                     onClick={() => navigate(`/playlist`)}
                 />
-                <h3 className="text-lg font-semibold text-black">{String(playlistName)}</h3>
+                <h3 className="text-lg font-semibold dark:text-gray-300">{String(playlistName)}</h3>
 
                 {/* Buttons aligned to the right */}
                 <div className="flex items-center gap-4">
@@ -211,11 +211,8 @@ const PlaylistSongManager = () => {
                         onChange={(option) => setSelectedSong(option)}
                         value={selectedSong}
                         placeholder="Search song..."
-                        className="flex-1 text-black"
+                        className="flex-1 dark:text-gray-300 dark:bg-gray-900"
                         classNamePrefix="react-select"
-                        styles={{
-                            control: (base) => ({ ...base, minHeight: "38px" }),
-                        }}
                         autoFocus
                         isSearchable
                     />
@@ -230,7 +227,7 @@ const PlaylistSongManager = () => {
 
             {/* Song List */}
             {songs.length > 0 ? (
-                <table className="mt-4 w-full border-collapse bg-white rounded-lg shadow-md overflow-hidden">
+                <table className="mt-4 w-full border-collapse bg-white dark:bg-gray-900 rounded-lg shadow-md overflow-hidden">
                     <tbody>
                     {songs.map((song, index) => {
                         const selectedSong = songBank.find(
@@ -238,19 +235,19 @@ const PlaylistSongManager = () => {
                         );
 
                         return (
-                            <tr key={index} className="hover:bg-gray-50 transition-colors">
-                                <td className="px-4 py-2 text-black w-12 text-center font-medium">
+                            <tr key={index} className="hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors">
+                                <td className="px-4 py-2 dark:text-gray-300 w-12 text-center font-medium">
                                     {index + 1}
                                 </td>
                                 <td 
-                                    className="px-4 py-2 text-black cursor-pointer" 
+                                    className="px-4 py-2 dark:text-gray-300 cursor-pointer" 
                                     onClick={() => handleSongClick(song)}
                                 >
                                     <div className="flex items-center gap-3">
                                         <Music size={18} className="text-[#1DB954] flex-shrink-0" />
                                         <div className="flex flex-col">
                                             <span>{song}</span>
-                                            <span className="text-sm text-gray-500">
+                                            <span className="text-sm text-gray-500 dark:text-gray-400">
                                                 { "By " + selectedSong?.artist || ""}
                                             </span>
                                         </div>
@@ -264,8 +261,8 @@ const PlaylistSongManager = () => {
                                             disabled={index === 0}
                                             className={`p-1 rounded-full ${
                                                 index === 0
-                                                    ? "text-gray-300 cursor-not-allowed"
-                                                    : "text-gray-600 hover:text-gray-800 hover:bg-gray-200 cursor-pointer"
+                                                    ? "text-gray-300 dark:text-gray-600 cursor-not-allowed"
+                                                    : "text-gray-600 dark:text-gray-300 hover:text-gray-800 hover:bg-gray-400 cursor-pointer"
                                             } transition-colors`}
                                         >
                                             <ChevronUp size={18} />
@@ -275,15 +272,15 @@ const PlaylistSongManager = () => {
                                             disabled={index === songs.length - 1}
                                             className={`p-1 rounded-full ${
                                                 index === songs.length - 1
-                                                    ? "text-gray-300 cursor-not-allowed"
-                                                    : "text-gray-600 hover:text-gray-800 hover:bg-gray-200 cursor-pointer"
+                                                    ? "text-gray-300 dark:text-gray-600 cursor-not-allowed"
+                                                    : "text-gray-600 dark:text-gray-300 hover:text-gray-800 hover:bg-gray-400 cursor-pointer"
                                             } transition-colors`}
                                         >
                                             <ChevronDown size={18} />
                                         </button>
                                         <button
                                             onClick={() => removeSong(index)}
-                                            className="p-1 rounded-full text-red-500 hover:text-red-700 hover:bg-red-100 transition-colors cursor-pointer"
+                                            className="p-1 rounded-full text-red-500 hover:text-red-700 hover:bg-red-100 dark:hover:bg-red-300 transition-colors cursor-pointer"
                                         >
                                             <Trash2 size={18} />
                                         </button>

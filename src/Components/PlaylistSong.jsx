@@ -70,12 +70,12 @@ const PlaylistSong = () => {
             onTouchEnd={handleTouchEnd}
         >
             {/* Header */}
-            <div className="flex items-center justify-between p-4 bg-white rounded-md shadow-md">
+            <div className="flex items-center justify-between p-4 bg-white dark:bg-gray-900 rounded-md shadow-md">
                 <ArrowLeft
-                    className="cursor-pointer text-black hover:text-gray-400 transition"
+                    className="cursor-pointer dark:text-gray-300 hover:text-gray-400 transition"
                     onClick={() => navigate(`/playlist/${encodeURIComponent(playlistName)}`)} // Go back to the playlist
                 />
-                <h3 className="text-lg font-semibold text-black">
+                <h3 className="text-lg font-semibold dark:text-gray-300">
                     {selectedSong ? playlistName : "Loading..."}
                 </h3>
                 <div className="w-6" />
@@ -83,22 +83,23 @@ const PlaylistSong = () => {
 
             {/* Left & Right Navigation Arrows (Fixed Position) */}
             {playlistSongs.length > 1 && (
-                <>
-                <button
-                    className="fixed left-4 top-1/2 transform -translate-y-1/2 bg-transparent p-2 rounded-full shadow-md hover:bg-gray-200 transition z-10"
-                    onClick={() => navigateToSong(currentIndex > 0 ? currentIndex - 1 : playlistSongs.length - 1)}
-                >
-                    <ChevronLeft className="w-6 h-6 text-gray-700" />
-                </button>
-            
-                <button
-                    className="fixed right-4 top-1/2 transform -translate-y-1/2 bg-transparent p-2 rounded-full shadow-md hover:bg-gray-200 transition z-10"
-                    onClick={() => navigateToSong(currentIndex < playlistSongs.length - 1 ? currentIndex + 1 : 0)}
-                >
-                    <ChevronRight className="w-6 h-6 text-gray-700" />
-                </button>
-            </>
-            
+                <div className="fixed left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full max-w-[640px] flex justify-between px-4 z-50">
+                    <button
+                        className="bg-white dark:bg-gray-800 p-2 rounded-full shadow-md 
+                                hover:bg-gray-200 dark:hover:bg-gray-600 transition opacity-80"
+                        onClick={() => navigateToSong(currentIndex > 0 ? currentIndex - 1 : playlistSongs.length - 1)}
+                    >
+                        <ChevronLeft className="w-6 h-6 text-gray-700 dark:text-white" />
+                    </button>
+                    
+                    <button
+                        className="bg-white dark:bg-gray-800 p-2 rounded-full shadow-md 
+                                hover:bg-gray-200 dark:hover:bg-gray-600 transition opacity-80"
+                        onClick={() => navigateToSong(currentIndex < playlistSongs.length - 1 ? currentIndex + 1 : 0)}
+                    >
+                        <ChevronRight className="w-6 h-6 text-gray-700 dark:text-white" />
+                    </button>
+                </div>
             )}
 
             {/* Song Content with Swipe Animation */}
