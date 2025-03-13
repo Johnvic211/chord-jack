@@ -2755,6 +2755,261 @@ export default [
             },
         ],
     },
+    {
+        title: "You Are With Me",
+        artist: "Victory Worship",
+        publisher: "VICTORY",
+        composer: "Catherine Go, Charles Bautista, & Lee Brown",
+        album: "Yahweh",
+        releaseDate: "2022",
+        originalKey: "G",
+        bpm: 85,
+        chordMap: ["C", "C#", "D", "Eb", "E", "F", "F#", "G", "G#", "A", "Bb", "B"],
+        link: [
+            { platform: 'youtube', url: 'https://youtu.be/Ip98WRC5z80?si=7Vt3pEXafHj_zmvq' },
+            { platform: 'spotify', url: 'https://open.spotify.com/track/2tREP1yKfVfad1rOqrsEIa?si=2656a72e1b3641bc' },
+            { platform: 'appleMusic', url: 'https://music.apple.com/us/album/you-are-with-me-live/1633604406?i=1633604415' },
+            { platform: 'pdf', url: 'https://www.everynationmusic.org/wp-content/uploads/2022/07/you-are-with-me-chord-chart.pdf'}
+        ],
+        sections: [
+            {
+                type: "INTRO:",
+                lyrics: [""],
+                chords: [
+                    [{ chord: "G", position: 0, left: true }, { chord: "A", position: 4 }, { chord: "Bm", position: 8, left: true }, { chord: "Em", position: 12, left: true }, { chord: "D/F#", position: 16, left: true }, { chord: "G", position: 20, right: true }]
+                ],
+                isNotLyric: true,
+            },
+            {
+                type: "VERSE 1:",
+                lyrics: [
+                    " Seems like I'm surrounded",
+                    " My enemies I see",
+                    " But Your love I hear resounding",
+                    " This freedom I shall see"
+                ],
+                chords: [
+                    [{ chord: "D/F#", position: 0, number: "5/7" }, { chord: "G", position: 54 }],
+                    [{ chord: "D/F#", position: 0, number: "5/7" }, { chord: "G", position: 45 }],
+                    [{ chord: "D/F#", position: 0, number: "5/7" }, { chord: "G", position: 73 }],
+                    [{ chord: "Bm", position: 0 }, { chord: "A/C#", position: 15, number: "2/#4" }, { chord: "D", position: 52 }]
+                ],
+            },
+            {
+                type: "VERSE 2:",
+                lyrics: [
+                    " No trouble can destroy my hope",
+                    " For Your scars have made me whole",
+                    " Turning down all the voices of despair",
+                    " On Your promises I stand"
+                ],
+                chords: [
+                    [{ chord: "D/F#", position: 0, number: "5/7" }, { chord: "G", position: 61 }],
+                    [{ chord: "D/F#", position: 0, number: "5/7" }, { chord: "G", position: 95 }],
+                    [{ chord: "D/F#", position: 0, number: "5/7" }, { chord: "G", position: 77 }],
+                    [{ chord: "Bm", position: 0 }, { chord: "A/C#", position: 29, number: "2/#4" }, { chord: "D", position: 49 }]
+                ],
+            },
+            {
+                type: "CHORUS:",
+                lyrics: [
+                    "I will not fear when the waters rise",
+                    "I will not fear though I walk through fire",
+                    "For You are with me, You are with me",
+                    "You have redeemed my life"
+                ],
+                chords: [
+                    [{ chord: "D", position: 39 }, { chord: "Dsus", position: 119 }],
+                    [{ chord: "D", position: 39 }, { chord: "Bm" , position: 139 }, { chord: "A" , position: 143 }],
+                    [{ chord: "G", position: 47 }],
+                    [{ chord: "Em", position: 47 }, { chord: "D/F#", position: 84, number: "5/7" }, { chord: "G", position: 88 }]
+                ],
+            },
+            {
+                type: "",
+                lyrics: ["[REPEAT VERSE 2]", "[REPEAT CHORUS]"],
+                chords: [[]],
+                isNotLyric: true,
+            },
+            {
+                type: "BRIDGE:",
+                lyrics: [
+                    "Your grace sustains me",
+                    "Your love, my victory",
+                    "I'll walk the valley, trusting You",
+                    "Your grace unfailing",
+                    "Your love, my victory",
+                    "I'll walk the valley, trusting You"
+                ],
+                chords: [
+                    [{ chord: "G", position: 20 }, { chord: "A", position: 76 }],
+                    [{ chord: "Bm7", position: 17 }],
+                    [{ chord: "Em", position: 8 }, { chord: "D/F#", position: 44, number: "5/7" }, { chord: "G", position: 47.5 }],
+                    [{ chord: "G", position: 20 }, { chord: "A", position: 76 }],
+                    [{ chord: "Bm7", position: 17 }],
+                    [{ chord: "Em", position: 8 }, { chord: "D/F#", position: 44, number: "5/7" }, { chord: "G", position: 47.5 }],
+                ],
+            },
+            {
+                type: "",
+                lyrics: ["[REPEAT CHORUS]"],
+                chords: [[]],
+                isNotLyric: true,
+            }
+        ],
+    },
+    {
+        title: "Tribes",
+        artist: "Victory Worship",
+        publisher: "VICTORY",
+        composer: "Bryson Brealey, Sarah Batson, Elle Tumaliuan, & Jzon Villanueva II",
+        album: "Tribes",
+        releaseDate: "2019",
+        originalKey: "Eb",
+        chordMap: ["C", "C#", "D", "Eb", "E", "F", "F#", "G", "Ab", "A", "Bb", "B"],
+        bpm: 124,
+        sections: [
+            {
+                type: "INTRO:",
+                lyrics: [""],
+                chords: [
+                    [{ chord: "Eb", position: 0, leftColon: true, left: true, percentage: true, leftRightPercentage: true }, { chord: "Ab", position: 4, right: true, percentage: true, leftPercentage: true, rightColon: true }],
+                ],
+                isNotLyric: true
+            },
+            {
+                type: "VERSE 1:",
+                lyrics: [
+                    "  Every tribe will see Your glory",
+                    "  Every nation bow before You",
+                    "  All our treasure turned to ashes",
+                    "In the light of You"
+                ],
+                chords: [
+                    [{ chord: "Eb", position: 0 }, { chord: "Ab", position: 92 }],
+                    [{ chord: "Eb", position: 0 }, { chord: "Ab", position: 81 }],
+                    [{ chord: "Eb", position: 0 }, { chord: "Ab", position: 100 }],
+                    [{ chord: "Eb/G", position: 57, number: '1/3' }, { chord: "Ab", position: 65 }]
+                ],
+            },
+            {
+                type: "PRE-CHORUS:",
+                lyrics: [
+                    "As we're singing",
+                    "Holy is the Lord Almighty",
+                    "Only You are worthy",
+                    "Worthy of it all"
+                ],
+                chords: [
+                    [],
+                    [{ chord: "Bb", position: 0 },{ chord: "Cm", position: 65 }],
+                    [{ chord: "Bb", position: 53 }],
+                    [{ chord: "Ab", position: 52 }]
+                ],
+            },
+            {
+                type: "",
+                lyrics: ["[VERSE]", "[PRE-CHORUS]"],
+                chords: [[]],
+                isNotLyric: true
+            },
+            {
+                type: "CHORUS:",
+                lyrics: [
+                    "Praise and glory, honor and strength",
+                    "Unto our God, unto our God",
+                    "Matchless, endless love unrestrained",
+                    "This our God, every tribe sing"
+                ],
+                chords: [
+                    [{ chord: "Eb", position: 0 }],
+                    [{ chord: "Ab", position: 34 }],
+                    [{ chord: "Cm", position: 0 }],
+                    [{ chord: "Ab", position: 25 }]
+                ],
+            },
+            {
+                type: "INTERLUDE",
+                lyrics: [""],
+                chords: [
+                    [{ chord: "Eb", position: 0, leftColon: true, left: true, percentage: true, leftRightPercentage: true }, { chord: "Ab", position: 4, right: true, percentage: true, leftPercentage: true, rightColon: true }],
+                ],
+                isNotLyric: true
+            },
+            {
+                type: "BRIDGE:",
+                lyrics: [
+                    "There is no one like our God",
+                    "There is no one like our God",
+                    "There is no one like our God",
+                    "There is no one like our God",
+                ],
+                chords: [
+                    [{ chord: "Eb", position: 0 }],
+                    [{ chord: "Ab", position: 0 }],
+                    [{ chord: "Eb", position: 0 }],
+                    [{ chord: "Ab", position: 0 }],
+                ],
+            },
+            {
+                type: "",
+                lyrics: [
+                    "Filipino:",
+                    "Wala Kang katulad O Diyos",
+                    "Wala Kang katulad O Diyos",
+                ],
+                italize: [true],
+                chords: [
+                    [],
+                    [{ chord: "Eb", position: 0 }],
+                    [{ chord: "Ab", position: 0 }],
+                ],
+            },
+            {
+                type: "",
+                lyrics: [
+                    "Spanish:",
+                    "No hay nadie como nuestro Dios",
+                    "No hay nadie como nuestro Dios",
+                ],
+                italize: [true],
+                chords: [
+                    [],
+                    [{ chord: "Eb", position: 0 }],
+                    [{ chord: "Ab", position: 0 }],
+                ],
+            },
+            {
+                type: "",
+                lyrics: [
+                    "There is no one like our God",
+                    "There is no one like our God",
+                    "There is no one like our God",
+                    "There is no one like our God",
+                ],
+                chords: [
+                    [{ chord: "Eb", position: 0 }],
+                    [{ chord: "Ab", position: 0 }],
+                    [{ chord: "Cm", position: 0 }],
+                    [{ chord: "Ab", position: 0 }],
+                ],
+            },
+            {
+                type: "",
+                lyrics: ["[CHORUS]"],
+                chords: [[]],
+                isNotLyric: true
+            },
+            {
+                type: "OUTRO",
+                lyrics: [""],
+                chords: [
+                    [{ chord: "Eb", position: 0, leftColon: true, left: true, percentage: true, leftRightPercentage: true }, { chord: "Ab", position: 4, right: true, percentage: true, leftPercentage: true, rightColon: true }],
+                ],
+                isNotLyric: true
+            },
+        ],
+    },
     //EVERY NATION MUSIC
     {
         title: "The Beat",

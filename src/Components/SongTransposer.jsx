@@ -4,7 +4,7 @@ import Url from './Url';
 import { ExternalLink } from "lucide-react";
 import Swal from "sweetalert2";
 
-const SongTransposer = ({ selectedSong, page }) => {
+const SongTransposer = ({ selectedSong, page, allowSwipe, setAllowSwipe }) => {
 	const chordMap = selectedSong.chordMap; 
 	const storageKey = `${page}_song_settings_${selectedSong.title}`;
 	const savedSettings = JSON.parse(localStorage.getItem(storageKey)) || {};
@@ -208,7 +208,10 @@ const SongTransposer = ({ selectedSong, page }) => {
 		{/* Main Content */}
 			<div className="container mx-auto mt-4 px-4">
 				<div className="bg-white dark:bg-gray-900 dark:text-gray-300 shadow-lg rounded-lg p-4">
-					<h3 className="text-left mb-3 text-2xl font-semibold flex">{selectedSong.title} &nbsp; <ExternalLink size={28} className="cursor-pointer" onClick={copyPath} /> </h3>
+					<h3 className="text-left mb-3 text-2xl font-semibold flex">
+						{selectedSong.title} &nbsp; 
+						{page === 'select' && <ExternalLink size={28} className="cursor-pointer" onClick={copyPath} />}
+					</h3>
 					<p className="text-lg"><strong>By:</strong> {selectedSong.artist}</p>
 					<p className="text-lg"><strong>Original Key:</strong> {selectedSong.originalKey}</p>
 					{selectedSong.bpm && <p className="text-lg"><strong>BPM:</strong> {selectedSong.bpm}</p>}
@@ -264,6 +267,27 @@ const SongTransposer = ({ selectedSong, page }) => {
 						>
 							Chord No.
 						</label>
+					</div>
+					<div className="flex items-center space-x-3 mt-2">
+						{page !== 'select' && 
+							<>
+								
+								<input
+									type="checkbox"
+									id="allowSwipe"
+									className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500"
+									checked={allowSwipe}
+									onChange={() => {setAllowSwipe(!allowSwipe)}}
+								/>
+
+								<label
+									htmlFor="allowSwipe"
+									className="text-sm font-medium text-gray-900 dark:text-gray-300 cursor-pointer"
+								>
+									Enable Swiping
+								</label>
+							</>
+						}
 					</div>
 
 					{/* Key Dropdown */}
@@ -345,6 +369,9 @@ const SongTransposer = ({ selectedSong, page }) => {
 														{(chordObj.leftColon) && ' |: '}
 														{chordObj.dash ? chordObj.spaceBetween ? ' - ':'-': ''}
 														{chordObj.chord}
+														{(chordObj.percentage && (chordObj.leftPercentage || chordObj.leftRightPercentage)) && ' |'}
+														{(chordObj.percentage) && ' % '} 
+														{(chordObj.percentage && chordObj.rightPercentage || chordObj.leftRightPercentage) && '| '}
 														{chordObj.forwardSlash && Array.from({ length: chordObj.forwardSlash }, () => ' /').join('')}
 														{(chordObj.rightColon) && ' :| '}
 														{(chordObj.right || chordObj.leftRight) && ' | '} 
@@ -412,6 +439,8 @@ SongTransposer.propTypes = {
 		).isRequired,
 	}).isRequired,
 	page: PropTypes.string.isRequired,
+	allowSwipe: PropTypes.bool,
+    setAllowSwipe: PropTypes.func,
 };
 
 export default SongTransposer;

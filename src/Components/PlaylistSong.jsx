@@ -14,6 +14,13 @@ const PlaylistSong = () => {
     const [swipeOffset, setSwipeOffset] = useState(0);
     const [touchStartX, setTouchStartX] = useState(null);
     const swipeThreshold = 50; // Minimum swipe distance
+	const [allowSwipe, setAllowSwipe] = useState(() => {
+        return JSON.parse(localStorage.getItem("allowSwipe")) ?? true;
+    });
+    
+    useEffect(() => {
+        localStorage.setItem("allowSwipe", JSON.stringify(allowSwipe));
+    }, [allowSwipe]);
 
     useEffect(() => {
         const savedPlaylists = JSON.parse(localStorage.getItem("playlists")) || [];
@@ -46,6 +53,7 @@ const PlaylistSong = () => {
             setSwipeOffset(e.touches[0].clientX - touchStartX);
         }
     };
+    
     const handleTouchEnd = () => {
         if (touchStartX !== null) {
             if (swipeOffset > swipeThreshold) {
@@ -65,9 +73,9 @@ const PlaylistSong = () => {
     return (
         <div
             className="relative m-4 px-2 min-w-[350px] max-w-[600px] mx-auto overflow-hidden"
-            onTouchStart={handleTouchStart}
-            onTouchMove={handleTouchMove}
-            onTouchEnd={handleTouchEnd}
+            onTouchStart={allowSwipe ? handleTouchStart : undefined}
+            onTouchMove={allowSwipe ? handleTouchMove : undefined}
+            onTouchEnd={allowSwipe ? handleTouchEnd : undefined}
         >
             {/* Header */}
             <div className="flex items-center justify-between p-4 bg-white dark:bg-gray-900 rounded-md shadow-md">
@@ -89,7 +97,7 @@ const PlaylistSong = () => {
                                 hover:bg-gray-200 dark:hover:bg-gray-600 transition opacity-80"
                         onClick={() => navigateToSong(currentIndex > 0 ? currentIndex - 1 : playlistSongs.length - 1)}
                     >
-                        <ChevronLeft className="w-6 h-6 text-gray-700 dark:text-white" />
+                        <ChevronLeft className="w-8 h-8 text-gray-700 dark:text-white" />
                     </button>
                     
                     <button
@@ -97,7 +105,7 @@ const PlaylistSong = () => {
                                 hover:bg-gray-200 dark:hover:bg-gray-600 transition opacity-80"
                         onClick={() => navigateToSong(currentIndex < playlistSongs.length - 1 ? currentIndex + 1 : 0)}
                     >
-                        <ChevronRight className="w-6 h-6 text-gray-700 dark:text-white" />
+                        <ChevronRight className="w-8 h-8 text-gray-700 dark:text-white" />
                     </button>
                 </div>
             )}
@@ -109,7 +117,12 @@ const PlaylistSong = () => {
             >
                 {selectedSong ? (
                     <>
-                        <SongTransposer selectedSong={selectedSong} page={playlistName} />
+                        <SongTransposer 
+                            selectedSong={selectedSong}
+                            page={playlistName}
+                            allowSwipe={allowSwipe}
+                            setAllowSwipe={setAllowSwipe}
+                        />
                         <MusicInformation selectedSong={selectedSong} />
                     </>
                 ) : (
