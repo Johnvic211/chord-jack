@@ -94,7 +94,7 @@ const PlaylistSong = () => {
                 <div className="fixed left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full max-w-[640px] flex justify-between px-4 z-50">
                     <button
                         className="bg-white dark:bg-gray-800 p-2 rounded-full shadow-md 
-                                hover:bg-gray-200 dark:hover:bg-gray-600 transition opacity-80"
+                                hover:bg-gray-200 dark:hover:bg-gray-600 transition opacity-80 cursor-pointer"
                         onClick={() => navigateToSong(currentIndex > 0 ? currentIndex - 1 : playlistSongs.length - 1)}
                     >
                         <ChevronLeft className="w-8 h-8 text-gray-700 dark:text-white" />
@@ -102,7 +102,7 @@ const PlaylistSong = () => {
                     
                     <button
                         className="bg-white dark:bg-gray-800 p-2 rounded-full shadow-md 
-                                hover:bg-gray-200 dark:hover:bg-gray-600 transition opacity-80"
+                                hover:bg-gray-200 dark:hover:bg-gray-600 transition opacity-80 cursor-pointer"
                         onClick={() => navigateToSong(currentIndex < playlistSongs.length - 1 ? currentIndex + 1 : 0)}
                     >
                         <ChevronRight className="w-8 h-8 text-gray-700 dark:text-white" />
