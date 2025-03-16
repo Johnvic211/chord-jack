@@ -2762,7 +2762,7 @@ export default [
         composer: "Catherine Go, Charles Bautista, & Lee Brown",
         album: "Yahweh",
         releaseDate: "2022",
-        originalKey: "G",
+        originalKey: "D",
         bpm: 85,
         chordMap: ["C", "C#", "D", "Eb", "E", "F", "F#", "G", "G#", "A", "Bb", "B"],
         link: [
@@ -2789,10 +2789,10 @@ export default [
                     " This freedom I shall see"
                 ],
                 chords: [
-                    [{ chord: "D/F#", position: 0, number: "5/7" }, { chord: "G", position: 54 }],
-                    [{ chord: "D/F#", position: 0, number: "5/7" }, { chord: "G", position: 45 }],
-                    [{ chord: "D/F#", position: 0, number: "5/7" }, { chord: "G", position: 73 }],
-                    [{ chord: "Bm", position: 0 }, { chord: "A/C#", position: 15, number: "2/#4" }, { chord: "D", position: 52 }]
+                    [{ chord: "D/F#", position: 0, number: "1/3" }, { chord: "G", position: 54 }],
+                    [{ chord: "D/F#", position: 0, number: "1/3" }, { chord: "G", position: 45 }],
+                    [{ chord: "D/F#", position: 0, number: "1/3" }, { chord: "G", position: 73 }],
+                    [{ chord: "Bm", position: 0 }, { chord: "A/C#", position: 15, number: "5/7" }, { chord: "D", position: 52 }]
                 ],
             },
             {
@@ -2804,10 +2804,10 @@ export default [
                     " On Your promises I stand"
                 ],
                 chords: [
-                    [{ chord: "D/F#", position: 0, number: "5/7" }, { chord: "G", position: 61 }],
-                    [{ chord: "D/F#", position: 0, number: "5/7" }, { chord: "G", position: 95 }],
-                    [{ chord: "D/F#", position: 0, number: "5/7" }, { chord: "G", position: 77 }],
-                    [{ chord: "Bm", position: 0 }, { chord: "A/C#", position: 29, number: "2/#4" }, { chord: "D", position: 49 }]
+                    [{ chord: "D/F#", position: 0, number: "1/3" }, { chord: "G", position: 61 }],
+                    [{ chord: "D/F#", position: 0, number: "1/3" }, { chord: "G", position: 95 }],
+                    [{ chord: "D/F#", position: 0, number: "1/3" }, { chord: "G", position: 77 }],
+                    [{ chord: "Bm", position: 0 }, { chord: "A/C#", position: 29, number: "5/7" }, { chord: "D", position: 49 }]
                 ],
             },
             {
@@ -2822,7 +2822,7 @@ export default [
                     [{ chord: "D", position: 39 }, { chord: "Dsus", position: 119 }],
                     [{ chord: "D", position: 39 }, { chord: "Bm" , position: 139 }, { chord: "A" , position: 143 }],
                     [{ chord: "G", position: 47 }],
-                    [{ chord: "Em", position: 47 }, { chord: "D/F#", position: 84, number: "5/7" }, { chord: "G", position: 88 }]
+                    [{ chord: "Em", position: 47 }, { chord: "D/F#", position: 84, number: "1/3" }, { chord: "G", position: 88 }]
                 ],
             },
             {
@@ -2844,10 +2844,10 @@ export default [
                 chords: [
                     [{ chord: "G", position: 20 }, { chord: "A", position: 76 }],
                     [{ chord: "Bm7", position: 17 }],
-                    [{ chord: "Em", position: 8 }, { chord: "D/F#", position: 44, number: "5/7" }, { chord: "G", position: 47.5 }],
+                    [{ chord: "Em", position: 8 }, { chord: "D/F#", position: 44, number: "1/3" }, { chord: "G", position: 47.5 }],
                     [{ chord: "G", position: 20 }, { chord: "A", position: 76 }],
                     [{ chord: "Bm7", position: 17 }],
-                    [{ chord: "Em", position: 8 }, { chord: "D/F#", position: 44, number: "5/7" }, { chord: "G", position: 47.5 }],
+                    [{ chord: "Em", position: 8 }, { chord: "D/F#", position: 44, number: "1/3" }, { chord: "G", position: 47.5 }],
                 ],
             },
             {
