@@ -121,37 +121,35 @@ const PlaylistManager = () => {
         document.body.removeChild(a);
     };
     
+    const importPlaylists = (file, isManualImport = false) => {
+        if (!file) {
+            // Check if YouthServicePlaylist is already imported
+            const isYouthServiceImported = playlists.some((p) =>
+                YouthServicePlaylist.playlists.some((y) => p.name.toLowerCase() === y.name.toLowerCase())
+            );
 
-    const importPlaylists = (event) => {
-        const file = event?.target?.files[0];
-
-        // Retrieve existing playlists from localStorage
-        const existingPlaylists = JSON.parse(localStorage.getItem("playlists")) || [];
-
-        // Check if YouthServicePlaylist is already imported
-        const isYouthServiceImported = existingPlaylists.some((p) =>
-            YouthServicePlaylist.playlists.some((y) => p.name.toLowerCase() === y.name.toLowerCase())
-        );
-
-        if (!file && isYouthServiceImported) return;
-
-        const dataFile = file || YouthServicePlaylist;
+            if (isYouthServiceImported) return; // Don't import again if already present
+        }
 
         const reader = new FileReader();
         reader.onload = (e) => {
             try {
-                const importedData = file ? JSON.parse(e.target.result) : dataFile;
+                const importedData = file ? JSON.parse(e.target.result) : YouthServicePlaylist;
                 const existingPlaylists = JSON.parse(localStorage.getItem("playlists")) || [];
 
+                // Merge playlists (avoid duplicates)
                 const newPlaylists = importedData.playlists.filter(
                     (importedPlaylist) =>
                         !existingPlaylists.some((p) => p.name.toLowerCase() === importedPlaylist.name.toLowerCase())
                 );
 
+                if (newPlaylists.length === 0) return; // If no new playlists, do nothing
+
                 const mergedPlaylists = [...existingPlaylists, ...newPlaylists];
                 localStorage.setItem("playlists", JSON.stringify(mergedPlaylists));
-                setPlaylists(mergedPlaylists);
+                setPlaylists(mergedPlaylists); // Update state
 
+                // Merge song settings (only for new playlists)
                 newPlaylists.forEach((playlist) => {
                     playlist.songs.forEach((song) => {
                         const key = `${playlist.name}_song_settings_${song}`;
@@ -161,7 +159,8 @@ const PlaylistManager = () => {
                     });
                 });
 
-                if (newPlaylists.length > 0 && !YouthServicePlaylist) {
+                // Show Swal alert only for manual imports
+                if (isManualImport) {
                     Swal.fire({
                         icon: "success",
                         title: "Import Successful!",
@@ -182,12 +181,13 @@ const PlaylistManager = () => {
         if (file) {
             reader.readAsText(file);
         } else {
+            // If using YouthServicePlaylist directly, simulate file read
             reader.onload({ target: { result: JSON.stringify(YouthServicePlaylist) } });
         }
     };
 
     useEffect(() => {
-        importPlaylists();
+        importPlaylists(); // Import YouthServicePlaylist only once when the component mounts (without alert)
     }, []);
     
     return (
@@ -198,7 +198,7 @@ const PlaylistManager = () => {
                     {/* Import Button */}
                     <label className="relative cursor-pointer text-[#1DB954] group">
                         <Upload size={20} />  {/* Change Import icon to Upload */}
-                        <input type="file" accept="application/json" className="hidden" onChange={importPlaylists} />
+                        <input type="file" accept="application/json" className="hidden" onChange={(event) => importPlaylists(event.target.files[0], true)} />
                         <span className="absolute top-full left-1/2 transform -translate-x-1/2 mb-2 text-xs bg-gray-800 text-white px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity">
                             Import Playlists
                         </span>
