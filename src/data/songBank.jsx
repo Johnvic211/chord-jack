@@ -3175,6 +3175,7 @@ export default [
                 chords: [
                     [{ chord: "G", position: 0, forwardSlash: 3, left: true }, { chord: "Am7", position: 4, forwardSlash: 3, left: true }, { chord: "G/B", position: 8, forwardSlash: 3, left: true, number: "1/3" }, { chord: "C", position: 12, forwardSlash: 3, leftRight: true }]
                 ],
+                isNotLyric: true,
             },
             {
                 type: "VERSE 1:",
@@ -3754,7 +3755,6 @@ export default [
                 ],
                 chords: [],
                 isNotLyric: true,
-
             },
             {
                 type: "BRIDGE:",
