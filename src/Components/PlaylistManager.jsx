@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { Plus, Trash2, Music, Upload, Download } from "lucide-react";
 import Swal from "sweetalert2";
+import YouthServicePlaylist from "./../data/youth_service.json";
 
 const PlaylistManager = () => {
     const [playlists, setPlaylists] = useState([]);
@@ -120,27 +121,37 @@ const PlaylistManager = () => {
         document.body.removeChild(a);
     };
     
+
     const importPlaylists = (event) => {
-        const file = event.target.files[0];
-        if (!file) return;
-    
+        const file = event?.target?.files[0];
+
+        // Retrieve existing playlists from localStorage
+        const existingPlaylists = JSON.parse(localStorage.getItem("playlists")) || [];
+
+        // Check if YouthServicePlaylist is already imported
+        const isYouthServiceImported = existingPlaylists.some((p) =>
+            YouthServicePlaylist.playlists.some((y) => p.name.toLowerCase() === y.name.toLowerCase())
+        );
+
+        if (!file && isYouthServiceImported) return;
+
+        const dataFile = file || YouthServicePlaylist;
+
         const reader = new FileReader();
         reader.onload = (e) => {
             try {
-                const importedData = JSON.parse(e.target.result);
+                const importedData = file ? JSON.parse(e.target.result) : dataFile;
                 const existingPlaylists = JSON.parse(localStorage.getItem("playlists")) || [];
-    
-                // Merge playlists (avoid duplicates)
+
                 const newPlaylists = importedData.playlists.filter(
                     (importedPlaylist) =>
                         !existingPlaylists.some((p) => p.name.toLowerCase() === importedPlaylist.name.toLowerCase())
                 );
-    
+
                 const mergedPlaylists = [...existingPlaylists, ...newPlaylists];
                 localStorage.setItem("playlists", JSON.stringify(mergedPlaylists));
-                setPlaylists(mergedPlaylists); // Update state
-    
-                // Merge song settings (only for new playlists)
+                setPlaylists(mergedPlaylists);
+
                 newPlaylists.forEach((playlist) => {
                     playlist.songs.forEach((song) => {
                         const key = `${playlist.name}_song_settings_${song}`;
@@ -149,16 +160,17 @@ const PlaylistManager = () => {
                         }
                     });
                 });
-    
-                Swal.fire({
-                    icon: "success",
-                    title: "Import Successful!",
-                    text: `${newPlaylists.length} new playlists imported.`,
-                    showConfirmButton: false,
-                    timer: 2000,
-                });
-            // eslint-disable-next-line no-unused-vars
-            } catch (error) {
+
+                if (newPlaylists.length > 0 && !YouthServicePlaylist) {
+                    Swal.fire({
+                        icon: "success",
+                        title: "Import Successful!",
+                        text: `${newPlaylists.length} new playlists imported.`,
+                        showConfirmButton: false,
+                        timer: 2000,
+                    });
+                }
+            } catch {
                 Swal.fire({
                     icon: "error",
                     title: "Import Failed!",
@@ -166,10 +178,18 @@ const PlaylistManager = () => {
                 });
             }
         };
-        reader.readAsText(file);
-    };
-    
 
+        if (file) {
+            reader.readAsText(file);
+        } else {
+            reader.onload({ target: { result: JSON.stringify(YouthServicePlaylist) } });
+        }
+    };
+
+    useEffect(() => {
+        importPlaylists();
+    }, []);
+    
     return (
         <div className="m-4 px-2 min-w-[350px] max-w-[600px] mx-auto">
             <div className="flex items-center justify-between p-4 bg-white dark:bg-gray-900 rounded-md shadow-md">

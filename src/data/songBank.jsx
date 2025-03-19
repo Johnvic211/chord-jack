@@ -1903,7 +1903,7 @@ export default [
                     "We draw near to the cross",
                     "Where your blood was shed for us",
                     "And all things we count as lost",
-                    "In the light of my Sa - vior...     Woohh",
+                    "In the light of our Sa - vior...     Woohh",
                 ],
                 chords: [
                     [{ chord: "D", position: 40 }, { chord: "E", position: 82 }],
@@ -1927,7 +1927,7 @@ export default [
                     "We draw near to the cross",
                     "Where your blood was shed for us",
                     "And all things we count as lost",
-                    "In the light of my Sa - vior, Woooohh",
+                    "In the light of our Sa - vior, Woooohh",
                 ],
                 chords: [
                     [{ chord: "D", position: 40 }, { chord: "E", position: 82 }],
@@ -1968,7 +1968,7 @@ export default [
                     "We draw near to the cross",
                     "Where your blood was shed for us",
                     "And all things we count as lost",
-                    "In the light of my Sa - vior, Woohh",
+                    "In the light of our Sa - vior, Woohh",
                 ],
                 chords: [
                     [{ chord: "D", position: 40 }, { chord: "E", position: 82 }],
@@ -2584,9 +2584,7 @@ export default [
             },
             {
                 type: "OUTRO:",
-                lyrics: [
-                    []
-                ],
+                lyrics: [""],
                 chords: [
                     [{ chord: "B", position: 0, leftColon: true, left: true },{ chord: "C#m", position: 4, left: true }, { chord: "B/D#", position: 8, left: true }, { chord: "E", position: 12, left: true }, { chord: "F", position: 16, leftRight: true, rightColon: true }],
                 ],
@@ -3010,6 +3008,335 @@ export default [
             },
         ],
     },
+    {
+        title: "Carry My Cross",
+        artist: "Victory Worship",
+        publisher: "VICTORY",
+        composer: "Lee Simon Brown, Madelene Jiao, Chrysse Pili, & Erle Refuerzo",
+        album: "Homecoming",
+        releaseDate: "2024",
+        originalKey: "Bb",
+        chordMap: ["C", "C#", "D", "Eb", "E", "F", "F#", "G", "Ab", "A", "Bb", "B"],
+        bpm: 70,
+        sections: [
+            {
+                type: "INTRO:",
+                lyrics: [""],
+                chords: [
+                    [{ chord: "Bb", position: 0, forwardSlash: 5, left: true }, { chord: "Bb", position: 4, forwardSlash: 5, left: true }, { chord: "Eb", position: 8, forwardSlash: 5, left: true }, { chord: "Eb", position: 12, forwardSlash: 5, leftRight: true }],
+                ],
+                isNotLyric: true
+            },
+            {
+                type: "VERSE 1:",
+                lyrics: [
+                    "Hide me in Your dwelling place as I wait",
+                    "Singing in spite of the pain, I stand in Your",
+                    "grace",
+                    "Embracing the dark of the night, this faith is",
+                    "sure",
+                    "The light of the morning will shine, I will endure",
+                ],
+                chords: [
+                    [{ chord: "Bb", position: 0 }, { chord: "BbM7", position: 90 }, { chord: "Eb", position: 108 }],
+                    [{ chord: "Bb", position: 0 }, { chord: "BbM7", position: 80 }],
+                    [{ chord: "Cm", position: 0 }],
+                    [{ chord: "Bb", position: 0 }, { chord: "BbM7", position: 96 }],
+                    [{ chord: "Eb", position: 0 }],
+                    [{ chord: "Bb", position: 0 }, { chord: "BbM7", position: 106 }, { chord: "Cm", position: 133 }],
+                ]
+            },
+            {
+                type: "CHORUS:",
+                lyrics: [
+                    "O, to live is Christ",
+                    "I’ll cling to the hope of Your promise",
+                    "For all of my days",
+                    "And to die is gain",
+                    "With gladness, I’ll carry my cross",
+                    "This life is Yours",
+                    "And Your love is mine"
+                ],
+                chords: [
+                    [{ chord: "Eb", position: 20 }, { chord: "F", position: 38 }],
+                    [{ chord: "Bb", position: 13 }, { chord: "Eb", position: 104 }],
+                    [{ chord: "Gm", position: 53 }],
+                    [{ chord: "Eb", position: 32 }, { chord: "F", position: 44 }],
+                    [{ chord: "Bb", position: 22 }, { chord: "Eb", position: 104 }],
+                    [{ chord: "F", position: 19 }, { chord: "Eb/G", position: 37, number: "4/6" }],
+                    [{ chord: "F/A", position: 40, number: "5/7" }, { chord: "Bb", position: 60 }, { chord: "Eb", position: 90 }],
+                ]
+            },
+            {
+                type: "VERSE 2:",
+                lyrics: [
+                    "Fill me with Your delight as I obey",
+                    "Let me see all of Your glory, Lord, this I pray",
+                    "Give me unshakable joy as I give You my life",
+                    "Nothing can ever compare, You are my prize"
+                ],
+                chords: [
+                    [{ chord: "Bb", position: 0 }, { chord: "BbM7", position: 67 }, { chord: "Eb", position: 90 }],
+                    [{ chord: "Bb", position: 0 }, { chord: "BbM7", position: 78 }, { chord: "Cm", position: 127 }],
+                    [{ chord: "Bb", position: 0 }, { chord: "BbM7", position: 73 }, { chord: "Eb", position: 127 }],
+                    [{ chord: "Gm7", position: 0 }, { chord: "F/A", position: 53.5, number: "5/7" }, { chord: "Cm", position: 125 }],
+                ]
+            },
+            {
+                type: "",
+                lyrics: ["[REPEAT CHORUS]"],
+                chords: [],
+                isNotLyric: true
+            },
+            {
+                type: "INSTRUMENTAL",
+                lyrics: ["", "", ""],
+                chords: [
+                    [{ chord: "Bb", position: 0, forwardSlash: 5, left: true }, { chord: "F", position: 4, forwardSlash: 5, left: true }, { chord: "Eb/G", position: 8, forwardSlash: 5, leftRight: true, number: "4/6" }],
+                    [{ chord: "F/A", position: 0, left: true, number: "5/7" }, { chord: "Bb", position: 4, spaceBetween: true, dash: true }, { chord: "Cm", position: 8, spaceBetween: true, dash: true }, { chord: "Bb/D", position: 12, right: true, spaceBetween: true, dash: true }],
+                    [{ chord: "Bb", position: 0, forwardSlash: 5, left: true }, { chord: "F", position: 4, forwardSlash: 5, left: true }, { chord: "Eb/G", position: 8, left: true, number: "4/6" }, { chord: "F/A", position:12, number: "5/7" }, { chord: "Bb", position: 16, forwardSlash: 5, leftRight: true }],
+                ],
+                isNotLyric: true
+            },
+            {
+                type: "BRIDGE:",
+                lyrics: [
+                    "I have decided",
+                    "Yes, I've decided to follow Jesus",
+                    "For all of my days",
+                    "I have decided",
+                    "Yes, I've decided to follow Jesus",
+                    "For all of my days",
+                ],
+                chords: [
+                    [{ chord: "Eb", position: 36 }],
+                    [{ chord: "F", position: 52 }, { chord: "Eb/G", position: 102, number: "4/6" }],
+                    [{ chord: "F/A", position: 52, number: "5/7" }, { chord: "F/A", position: 70, leftParenthesis: true, number: "5/7" }, { chord: "Bb", position: 74, spaceBetween: true, dash: true }, { chord: "Cm", position: 78, spaceBetween: true, dash: true }, { chord: "Bb/D", position: 82, spaceBetween: true, dash: true, rightParenthesis: true, number: "1/3" }],
+                    [{ chord: "Eb", position: 36 }],
+                    [{ chord: "F", position: 52 }, { chord: "Eb/G", position: 102, number: "4/6" }],
+                    [{ chord: "Bb", position: 52 }],
+                ]
+            },
+            {
+                type: "CHORUS 2:",
+                lyrics: [
+                    "O, to live is Christ",
+                    "I’ll cling to the hope of Your promise",
+                    "For all of my days",
+                    "And to die is gain",
+                    "With gladness, I’ll carry my cross",
+                    "This life",
+                    "O, to live is Christ",
+                    "I’ll cling to the hope of Your promise",
+                    "For all of my days",
+                    "And to die is gain",
+                    "With gladness, I’ll carry my cross",
+                    "This life is yours",
+                    "And Your love is mine"
+                ],
+                chords: [
+                    [{ chord: "Eb", position: 20 }, { chord: "F", position: 38 }],
+                    [{ chord: "Bb", position: 13 }, { chord: "Eb", position: 104 }],
+                    [{ chord: "Gm", position: 53 }],
+                    [{ chord: "Eb", position: 32 }, { chord: "F", position: 44 }],
+                    [{ chord: "Bb", position: 22 }, { chord: "Eb", position: 104 }],
+                    [{ chord: "F", position: 19 }],
+                    [{ chord: "Eb", position: 20 }, { chord: "F", position: 38 }],
+                    [{ chord: "Bb", position: 13 }, { chord: "Eb", position: 104 }],
+                    [{ chord: "Gm", position: 53 }],
+                    [{ chord: "Eb", position: 32 }, { chord: "F", position: 44 }],
+                    [{ chord: "Bb", position: 22 }, { chord: "Eb", position: 104 }],
+                    [{ chord: "F", position: 19 }, { chord: "Eb/G", position: 37, number: "4/6" }],
+                    [{ chord: "F/A", position: 40, number: "5/7" }, { chord: "Eb", position: 60 }],
+                ]
+            },
+            {
+                type: "",
+                lyrics: ["[REPEAT BRIDGE]"],
+                chords: [],
+                isNotLyric: true
+            },
+        ],
+    },
+    {
+        title: "Tanging Kailangan",
+        artist: "victory Worship",
+        composer: "Kelko Necesario Cubit, EJ de Perio, & Charles Bautista",
+        album: "Homecoming",
+        publisher: "VICTORY",
+        releaseDate: "2024",
+        originalKey: "G",
+        chordMap: ["C", "C#", "D", "Eb", "E", "F", "F#", "G", "Ab", "A", "Bb", "B"],
+        bpm: 63,
+        sections: [
+            {
+                type: "INTRO:",
+                lyrics: [""],
+                chords: [
+                    [{ chord: "G", position: 0, forwardSlash: 3, left: true }, { chord: "Am7", position: 4, forwardSlash: 3, left: true }, { chord: "G/B", position: 8, forwardSlash: 3, left: true, number: "1/3" }, { chord: "C", position: 12, forwardSlash: 3, leftRight: true }]
+                ],
+            },
+            {
+                type: "VERSE 1:",
+                lyrics: [
+                    "Kaya ko bang ibigay ang lahat?",
+                    "Kung sa sarili’y hindi na sapat",
+                    "Kay raming kulang, ‘di kayang punan",
+                ],
+                chords: [
+                    [{ chord: "G", position: 0 }, { chord: "C", position: 60 }],
+                    [{ chord: "G", position: 0 }, { chord: "C", position: 70 }],
+                    [{ chord: "Am", position: 0 }, { chord: "Dsus", position: 78, number: "5sus" }, { chord: "D", position: 80, dash: true, spaceBetween: true }],
+                    [{ chord: "G", position: 0 }]
+                ],
+            },
+            {
+                type: "",
+                lyrics: [""],
+                chords: [
+                    [{ chord: "G", position: 0, forwardSlash: 3, left: true }, { chord: "Am7", position: 4, forwardSlash: 3, left: true }, { chord: "G/B", position: 8, forwardSlash: 3, left: true, number: "1/3" }, { chord: "C", position: 12, forwardSlash: 3, leftRight: true }]
+                ],
+            },
+            {
+                type: "VERSE 2:",
+                lyrics: [
+                    "Laging sinusubok ang pusong pagal",
+                    "Ngunit umaapaw ‘Yong pagmamahal",
+                    "Kay raming kulang ang 'Yong pinunan",
+                ],
+                chords: [
+                    [{ chord: "G", position: 10 }, { chord: "C", position: 85 }],
+                    [{ chord: "G", position: 15 }, { chord: "C", position: 90 }],
+                    [{ chord: "Am", position: 0 }, { chord: "Dsus", position: 81, number: "5sus" }, { chord: "D", position: 83, dash: true, spaceBetween: true }],
+                ],
+            },
+            {
+                type: "PRE-CHORUS:",
+                lyrics: [
+                    "Ngayon pa ba magdududa?",
+                    "Katapatan Mo ay subok na"
+                ],
+                chords: [
+                    [{ chord: "Am7", position: 20 }, { chord: "G/B", position: 40, number: "1/3" }, { chord: "C", position: 56 }, {  chord: "G/B", position: 85, number: "1/3" }],
+                    [{ chord: "Am7", position: 20 }, { chord: "G/B", position: 42, number: "1/3" }, { chord: "D/F#", position: 80, number: "5/7" }, { chord: "C/E", position: 80, dash: true, spaceBetween: true, number: "1/3" }, { chord: "D", position: 80, dash: true, spaceBetween: true, number: "1/3" }],
+                ],
+            },
+            {
+                type: "CHORUS:",
+                lyrics: [
+                    "Ramdam Ka sa ihip ng hangin",
+                    "Tanaw Ka sa bilyong mga tala",
+                    "Liwanag ng buwan at araw ay patunay",
+                    "na Ika'y dakila",
+                    "Gaya ng ibon sa kalangitan",
+                    "Bawat kailanga’y tutugunan",
+                ],
+                chords: [
+                    [{ chord: "G", position: 22 }, { chord: "Am7", position: 56 }],
+                    [{ chord: "G/B", position: 10 }, { chord: "C", position: 50 }, { chord: "D", position: 83 }],
+                    [{ chord: "G", position: 10 }, { chord: "Am7", position: 52 }, { chord: "G/B", position: 81, number: "1/3" }],
+                    [{ chord: "C", position: 0 }, { chord: "Dsus", position: 37, number: "5sus" }, { chord: "D", position: 39, dash: true, spaceBetween: true }],
+                    [{ chord: "Am", position: 11 }, { chord: "G/B", position: 29 }, { chord: "C", position: 80 }],
+                    [{ chord: "Am", position: 11 }, { chord: "G/B", position: 40 }, { chord: "C", position: 80 }, { chord: "Cm6", position: 92, number: "4m6"}],
+                ],
+            },
+            {
+                type: "VERSE 3:",
+                lyrics: [
+                    "Sabihin Mo lang ang iyong salita",
+                    "Handang makinig at sa Iyo'y magtiwala",
+                    "O, aking Ama sa 'Yo lang aasa",
+                ],
+                chords: [
+                    [{ chord: "G", position: 13 }, { chord: "Am7", position: 79 }],
+                    [{ chord: "G/B", position: 20 }, { chord: "C", position: 79 }],
+                    [{ chord: "Am7", position: 13 }, { chord: "Dsus", position: 84, number: "5sus" }, { chord: "D", position: 86, dash: true, spaceBetween: true }],
+                ],
+            },
+            {
+                type: "PRE-CHORUS:",
+                lyrics: [
+                    "Hilumin Mo ang pagdududa",
+                    "Katapatan Mo ay sapat na"
+                ],
+                chords: [
+                    [{ chord: "Am7", position: 20 }, { chord: "G/B", position: 40, number: "1/3" }, { chord: "C", position: 56 }, {  chord: "G/B", position: 85, number: "1/3" }],
+                    [{ chord: "Am7", position: 20 }, { chord: "G/B", position: 42, number: "1/3" }, { chord: "D/F#", position: 80, number: "5/7" }, { chord: "C/E", position: 80, dash: true, spaceBetween: true, number: "4/6" }, { chord: "D", position: 80, dash: true, spaceBetween: true, number: "1/3" }],
+                ],
+            },
+            {
+                type: "CHORUS 2:",
+                lyrics: [
+                    "Ramdam Ka sa ihip ng hangin",
+                    "Tanaw Ka sa bilyong mga tala",
+                    "Liwanag ng buwan at araw ay patunay",
+                    "na Ika'y dakila",
+                    "Gaya ng ibon sa kalangitan",
+                    "Ikaw ang tanging kailangan",
+                ],
+                chords: [
+                    [{ chord: "G", position: 22 }, { chord: "Am7", position: 56 }],
+                    [{ chord: "G/B", position: 10, number: "1/3" }, { chord: "C", position: 50 }, { chord: "D", position: 83 }],
+                    [{ chord: "G", position: 10 }, { chord: "Am7", position: 52 }, { chord: "G/B", position: 85, number: "1/3" }],
+                    [{ chord: "C", position: 0 }, { chord: "Dsus", position: 37, number: "5sus" }, { chord: "D", position: 39, dash: true, spaceBetween: true }],
+                    [{ chord: "Am7", position: 11 }, { chord: "G/B", position: 27, number: "1/3" }, { chord: "C", position: 78 }],
+                    [{ chord: "Am7", position: 7 }, { chord: "G/B", position: 27, number: "1/3" }, { chord: "C", position: 78 }],
+                ],
+            },
+            {
+                type: "BRIDGE:",
+                lyrics: [
+                    " Panginoon, Ikaw ang",
+                    " Aming tanging kailangan",
+                    " Walang hanggan at tunay",
+                    " Ang Iyong katapatan"
+                ],
+                chords: [
+                    [{ chord: "G", position: 0 }, { chord: "Am7", position: 31 }],
+                    [{ chord: "G/B", position: 0, number: "1/3" }, { chord: "C", position: 32 }],
+                    [{ chord: "G", position: 0 }, { chord: "Am7", position: 52 }],
+                    [{ chord: "G/B", position: 0, number: "1/3" }, { chord: "C", position: 35 }],
+                ],
+            },
+            {
+                type: "",
+                lyrics: [
+                    " Panginoon, Ikaw ang",
+                    " Aming tanging kailangan",
+                    " Walang hanggan at tunay",
+                    " Ang Iyong katapatan"
+                ],
+                chords: [
+                    [{ chord: "G", position: 0 }, { chord: "Am7", position: 31 }],
+                    [{ chord: "G/B", position: 0, number: "1/3" }, { chord: "C", position: 32 }],
+                    [{ chord: "G/D", position: 0, number: "1/5" }, { chord: "C/D", position: 52, number: "4/5" }],
+                    [{ chord: "G/D", position: 0, number: "1/5" }, { chord: "Cm/D", position: 30, number: "4m6/5" }, { chord: "E/G#", position: 60, number: "6dom7/1#" }],
+                ],
+            },
+            {
+                type: "",
+                lyrics: [
+                    "Gaya ng ibon sa kalangitan",
+                    "Ikaw ang tanging kailangan"
+                ],
+                chords: [
+                    [{ chord: "Am7", position: 11 }, { chord: "G/B", position: 29, number: "1/3" }, { chord: "CM7", position: 80, number: "4M7" }],
+                    [{ chord: "Am7", position: 11 }, { chord: "G/B", position: 29, number: "1/3" }, { chord: "CM7", position: 80, number: "4M7" }, { chord: "Cm6", position: 92, number: "4m6" }],
+                ],
+            },
+            {
+                type: "CLOSING VERSE:",
+                lyrics: [
+                    "Aming Hesus, binigay Mong lahat",
+                    "Krus ng pag-ibig na higit sa sapat"
+                ],
+                chords: [
+                    [{ chord: "G", position: 0 }, { chord: "CM7", position: 72 }],
+                    [{ chord: "G", position: 23 }, { chord: "CM7", position: 76 }],
+                ]
+            }
+        ],
+    },
     //EVERY NATION MUSIC
     {
         title: "The Beat",
@@ -3349,6 +3676,109 @@ export default [
                     [],
                 ],
             }
+        ],
+    },
+    //CHRIS TOMLIN
+    {
+        title: "How Great Is Our God",
+        artist: "Chris Tomlin",
+        composer: "Chris Tomlin, Jesse Reeves, Ed Cash",
+        album: "Arriving",
+        releaseDate: "2004",
+        originalKey: "G",
+        chordMap: ["C", "C#", "D", "Eb", "E", "F", "F#", "G", "Ab", "A", "Bb", "B"],
+        sections: [
+            {
+                type: "VERSE 1:",
+                lyrics: [
+                    "The splendor of a King",
+                    "Clothed in majesty",
+                    "Let all the earth rejoice",
+                    "All the earth rejoice",
+                    "He wraps Himself in light",
+                    "And darkness tries to hide",
+                    "And trembles at His voice",
+                    "Trembles at His voice"
+                ],
+                chords: [
+                    [{ chord: "G", position: 0 }],
+                    [{ chord: "Em", position: 0 }],
+                    [{ chord: "C", position: 16 }],
+                    [{ chord: "C", position: 0 }],
+                    [{ chord: "G", position: 16 }],
+                    [{ chord: "Em", position: 20 }],
+                    [{ chord: "C", position: 83 }],
+                    [{ chord: "C", position: 64 }]
+                ],
+            },
+            {
+                type: "CHORUS:",
+                lyrics: [
+                    "How great is our God, sing with me",
+                    "How great is our God, and all will see",
+                    "How great, How great is our God"
+                ],
+                chords: [
+                    [{ chord: "G", position: 21 }],
+                    [{ chord: "Em", position: 21 }],
+                    [{ chord: "C", position: 21 }, { chord: "D", position: 62 }, { chord: "G", position: 103.5 }],
+                ],
+            },
+            {
+                type: "VERSE 2:",
+                lyrics: [
+                    "Age to age He stands",
+                    "And time is in His hands",
+                    "Beginning and the end",
+                    "Beginning and the end",
+                    "The Godhead three in one",
+                    "Father, Spirit, Son",
+                    "The Lion and the Lamb",
+                    "The Lion and the Lamb"
+                ],
+                chords: [
+                    [{ chord: "G", position: 0 }],
+                    [{ chord: "Em", position: 19 }],
+                    [{ chord: "C", position: 80 }],
+                    [{ chord: "C", position: 76 }],
+                    [{ chord: "G", position: 17 }],
+                    [{ chord: "Em", position: 0 }],
+                    [{ chord: "C", position: 70 }],
+                    [{ chord: "C", position: 70 }]
+                ],
+            },
+            {
+                type: "",
+                lyrics: [
+                    "[REPEAT CHORUS]",
+                ],
+                chords: [],
+                isNotLyric: true,
+
+            },
+            {
+                type: "BRIDGE:",
+                lyrics: [
+                    "Name above all names",
+                    "Worthy of all praise",
+                    "My heart will sing",
+                    "How great is our God",
+                ],
+                chords: [
+                    [{ chord: "G", position: 0 }],
+                    [{ chord: "Em", position: 0 }],
+                    [{ chord: "C", position: 0 }],
+                    [{ chord: "D", position: 21 }, { chord: "G", position: 63 }],
+                ],
+            },
+            {
+                type: "",
+                lyrics: [
+                    "[REPEAT CHORUS]",
+                ],
+                chords: [],
+                isNotLyric: true,
+            },
         ],
     }
 ]

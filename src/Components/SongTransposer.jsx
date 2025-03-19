@@ -265,7 +265,7 @@ const SongTransposer = ({ selectedSong, page, allowSwipe, setAllowSwipe }) => {
 							htmlFor="chordNumbers"
 							className="text-sm font-medium text-gray-900 dark:text-gray-300 cursor-pointer"
 						>
-							Chord No.
+							Number Chart
 						</label>
 					</div>
 					<div className="flex items-center space-x-3 mt-2">
@@ -367,12 +367,14 @@ const SongTransposer = ({ selectedSong, page, allowSwipe, setAllowSwipe }) => {
 													>
 														{(chordObj.left || chordObj.leftRight) && ' | '}
 														{(chordObj.leftColon) && ' |: '}
+														{(chordObj.leftParenthesis || chordObj.leftRightParenthesis) && ' ( '}
 														{chordObj.dash ? chordObj.spaceBetween ? ' - ':'-': ''}
 														{chordObj.chord}
 														{(chordObj.percentage && (chordObj.leftPercentage || chordObj.leftRightPercentage)) && ' |'}
 														{(chordObj.percentage) && ' % '} 
 														{(chordObj.percentage && chordObj.rightPercentage || chordObj.leftRightPercentage) && '| '}
 														{chordObj.forwardSlash && Array.from({ length: chordObj.forwardSlash }, () => ' /').join('')}
+														{(chordObj.rightParenthesis || chordObj.leftRightParenthesis) && ' ) '}
 														{(chordObj.rightColon) && ' :| '}
 														{(chordObj.right || chordObj.leftRight) && ' | '} 
 														{chordIndex == section.chords[lineIndex].length - 1 && section.times?.[lineIndex] ? '  (' + section.times[lineIndex] + 'x)' : ''}
