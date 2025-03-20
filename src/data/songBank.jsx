@@ -2866,6 +2866,12 @@ export default [
         originalKey: "Eb",
         chordMap: ["C", "C#", "D", "Eb", "E", "F", "F#", "G", "Ab", "A", "Bb", "B"],
         bpm: 124,
+        link: [
+            { platform: 'youtube', url: 'https://youtu.be/66H4mLGgZ54?si=FIpDN5Wa_RRzMaLj' },
+            { platform: 'spotify', url: 'https://open.spotify.com/track/7A6iCvA36tfeXuMHXa0hLD?si=4f604fabb2a94436' },
+            { platform: 'appleMusic', url: 'https://music.apple.com/us/album/tribes/1450243207?i=1450243211' },
+            { platform: 'pdf', url: 'https://www.everynationmusic.org/wp-content/uploads/2022/03/01-tribes-tribes-album-victory-worship.pdf'}
+        ],
         sections: [
             {
                 type: "INTRO:",
@@ -3017,6 +3023,12 @@ export default [
         releaseDate: "2024",
         originalKey: "Bb",
         chordMap: ["C", "C#", "D", "Eb", "E", "F", "F#", "G", "Ab", "A", "Bb", "B"],
+        link: [
+            { platform: 'youtube', url: 'https://youtu.be/eov9K7ALYKk?si=Hgrfg9COLgrow7ns' },
+            { platform: 'spotify', url: 'https://open.spotify.com/track/4yqkAXocIYQ9aSbiX5A0tr?si=72b81ebfe82d4fa7' },
+            { platform: 'appleMusic', url: 'https://music.apple.com/us/album/carry-my-cross/1735265434?i=1735265849' },
+            { platform: 'pdf', url: 'https://www.everynationmusic.org/wp-content/uploads/2024/05/carry-my-cross-chord-chart.pdf'}
+        ],
         bpm: 70,
         sections: [
             {
@@ -3166,6 +3178,12 @@ export default [
         publisher: "VICTORY",
         releaseDate: "2024",
         originalKey: "G",
+        link: [
+            { platform: 'youtube', url: 'https://www.youtube.com/watch?v=kzCrun0UXyo' },
+            { platform: 'spotify', url: 'https://open.spotify.com/track/2aUdNgK5f8D3NVVAvluZYP?si=b953145154c64b4d' },
+            { platform: 'appleMusic', url: 'https://music.apple.com/us/album/tanging-kailangan/1735265434?i=1735265642' },
+            { platform: 'pdf', url: 'https://www.everynationmusic.org/wp-content/uploads/2024/05/tanging-kailangan-chord-chart.pdf' },
+        ],
         chordMap: ["C", "C#", "D", "Eb", "E", "F", "F#", "G", "Ab", "A", "Bb", "B"],
         bpm: 63,
         sections: [
@@ -3688,6 +3706,11 @@ export default [
         releaseDate: "2004",
         originalKey: "G",
         chordMap: ["C", "C#", "D", "Eb", "E", "F", "F#", "G", "Ab", "A", "Bb", "B"],
+        link: [
+            { platform: 'youtube', url: 'https://youtu.be/KBD18rsVJHk?si=I3G4Jv9UypeboqnP' },
+            { platform: 'spotify', url: 'https://open.spotify.com/track/0jOSpB2zK2O0SNxj8ZT5lp?si=600650800801452a' },
+            { platform: 'appleMusic', url: 'https://music.apple.com/us/album/how-great-is-our-god/1440842149?i=1440842289' },
+        ],
         sections: [
             {
                 type: "VERSE 1:",
