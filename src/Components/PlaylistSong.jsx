@@ -23,6 +23,24 @@ const PlaylistSong = () => {
     }, [allowSwipe]);
 
     useEffect(() => {
+        const handleKeyDown = (event) => {
+            if (event.key === "ArrowLeft") {
+                const prevIndex = currentIndex > 0 ? currentIndex - 1 : playlistSongs.length - 1;
+                navigateToSong(prevIndex);
+            } else if (event.key === "ArrowRight") {
+                const nextIndex = currentIndex < playlistSongs.length - 1 ? currentIndex + 1 : 0;
+                navigateToSong(nextIndex);
+            }
+        };
+
+        window.addEventListener("keydown", handleKeyDown);
+
+        return () => {
+            window.removeEventListener("keydown", handleKeyDown);
+        };
+    });
+
+    useEffect(() => {
         const savedPlaylists = JSON.parse(localStorage.getItem("playlists")) || [];
         const currentPlaylist = savedPlaylists.find((p) => p.name === playlistName) || { songs: [] };
         setPlaylistSongs(currentPlaylist.songs || []);
@@ -72,7 +90,7 @@ const PlaylistSong = () => {
 
     return (
         <div
-            className="relative m-4 px-2 min-w-[350px] max-w-[600px] mx-auto overflow-hidden"
+            className="relative m-4 px-2 min-w-[350px] max-w-[600px] mx-auto min-h-screen"
             onTouchStart={allowSwipe ? handleTouchStart : undefined}
             onTouchMove={allowSwipe ? handleTouchMove : undefined}
             onTouchEnd={allowSwipe ? handleTouchEnd : undefined}

@@ -1,7 +1,7 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import PropTypes from "prop-types";
 import Url from './Url'; 
-import { ExternalLink } from "lucide-react";
+import { ExternalLink, Play, Pause, Plus, Minus } from "lucide-react";
 import Swal from "sweetalert2";
 
 const SongTransposer = ({ selectedSong, page, allowSwipe, setAllowSwipe }) => {
@@ -13,6 +13,11 @@ const SongTransposer = ({ selectedSong, page, allowSwipe, setAllowSwipe }) => {
 	const [showLyrics, setShowLyrics] = useState(savedSettings.showLyrics ?? true);
 	const [showChords, setShowChords] = useState(savedSettings.showChords ?? true);
 	const [showChordNumbers, setShowChordNumbers] = useState(savedSettings.showChordNumbers ?? false);
+	const [autoScroll, setAutoScroll] = useState(savedSettings.autoScroll ?? false)
+    const speedRef = useRef(70);
+    const animationFrameRef = useRef(null);
+    const [speed, setSpeed] = useState(savedSettings.speed ?? 70); 
+	const accumulatedScroll = useRef(0);
 
 	// Load saved settings when the song changes
 	useEffect(() => {
@@ -23,11 +28,15 @@ const SongTransposer = ({ selectedSong, page, allowSwipe, setAllowSwipe }) => {
 			setShowLyrics(savedSettings.showLyrics ?? true);
 			setShowChords(savedSettings.showChords ?? true);
 			setShowChordNumbers(savedSettings.showChordNumbers ?? false);
+			setAutoScroll(savedSettings.autoScroll ?? false);
+			setSpeed(savedSettings.speed ?? false);
 		} else {
 			setSelectedKey(selectedSong.originalKey);
 			setShowLyrics(true);
 			setShowChords(true);
 			setShowChordNumbers(false);
+			setAutoScroll(false);
+			setSpeed(70);
 		}
 	// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [selectedSong]);
@@ -36,9 +45,41 @@ const SongTransposer = ({ selectedSong, page, allowSwipe, setAllowSwipe }) => {
 	useEffect(() => {
 		localStorage.setItem(
 			storageKey,
-			JSON.stringify({ selectedKey, showLyrics, showChords, showChordNumbers })
+			JSON.stringify({ selectedKey, showLyrics, showChords, showChordNumbers, autoScroll, speed })
 		);
-	}, [selectedKey, showLyrics, showChords, showChordNumbers, storageKey]);
+	}, [selectedKey, showLyrics, showChords, showChordNumbers, storageKey, autoScroll, speed]);
+
+    useEffect(() => {
+        speedRef.current = speed;
+    }, [speed]);
+
+    useEffect(() => {
+        const scroll = () => {
+            const scrollAmount = speedRef.current / 60;
+            accumulatedScroll.current += scrollAmount;
+
+            if (accumulatedScroll.current >= 1) {
+                window.scrollBy(0, Math.floor(accumulatedScroll.current)); // Scrolls downward
+                accumulatedScroll.current %= 1;
+            }
+
+            animationFrameRef.current = requestAnimationFrame(scroll);
+        };
+
+        if (autoScroll) {
+            animationFrameRef.current = requestAnimationFrame(scroll);
+        } else if (animationFrameRef.current) {
+            cancelAnimationFrame(animationFrameRef.current);
+            animationFrameRef.current = null;
+        }
+
+        return () => {
+            if (animationFrameRef.current) {
+                cancelAnimationFrame(animationFrameRef.current);
+                animationFrameRef.current = null;
+            }
+        };
+    }, [autoScroll]);
 
 	// Calculate steps for transposing between keys
 	const calculateSteps = (fromKey, toKey) => {
@@ -304,10 +345,7 @@ const SongTransposer = ({ selectedSong, page, allowSwipe, setAllowSwipe }) => {
 												setShowChordNumbers(false);
 											}}
 							>
-								<svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-									xmlns="http://www.w3.org/2000/svg">
-								<path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 6v12M6 12h12"></path>
-								</svg>
+								<Plus className="cursor-pointer" />
 							</button>
 
 							<select
@@ -330,10 +368,7 @@ const SongTransposer = ({ selectedSong, page, allowSwipe, setAllowSwipe }) => {
 								className="btn-primary"
 								onClick={() => {setSelectedKey(chordMap[(chordMap.indexOf(selectedKey) - 1 + chordMap.length) % chordMap.length]); setShowChordNumbers(false);}}
 							>
-								<svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-									xmlns="http://www.w3.org/2000/svg">
-								<path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M20 12H4"></path>
-								</svg>
+								<Minus className="cursor-pointer" />
 							</button>
 						</div>
 					</div>
@@ -406,6 +441,24 @@ const SongTransposer = ({ selectedSong, page, allowSwipe, setAllowSwipe }) => {
 						})()}
 					</div>
 				</div>
+			</div>
+
+			<div className="sticky bottom-0 left-0 w-full p-4 flex items-center justify-center gap-4 dark:bg-gray-900 z-50">
+				<button 
+					className="btn-primary p-2 rounded-full bg-blue-500 text-white hover:bg-blue-600 transition"
+					onClick={() => setAutoScroll(prevAutoScroll => !prevAutoScroll)}
+				>
+					{autoScroll ? <Pause className="w-6 h-6" /> : <Play className="w-6 h-6" />}
+				</button>
+
+				<input 
+					type="range" 
+					min="10" 
+					max="100" 
+					value={speed} 
+					onChange={(e) => setSpeed(Number(e.target.value))} 
+					className="w-48 cursor-pointer"
+				/>
 			</div>
 		</main>
 	);

@@ -3188,7 +3188,6 @@ export default [
                     [{ chord: "G", position: 0 }, { chord: "C", position: 60 }],
                     [{ chord: "G", position: 0 }, { chord: "C", position: 70 }],
                     [{ chord: "Am", position: 0 }, { chord: "Dsus", position: 78, number: "5sus" }, { chord: "D", position: 80, dash: true, spaceBetween: true }],
-                    [{ chord: "G", position: 0 }]
                 ],
             },
             {
@@ -3197,6 +3196,7 @@ export default [
                 chords: [
                     [{ chord: "G", position: 0, forwardSlash: 3, left: true }, { chord: "Am7", position: 4, forwardSlash: 3, left: true }, { chord: "G/B", position: 8, forwardSlash: 3, left: true, number: "1/3" }, { chord: "C", position: 12, forwardSlash: 3, leftRight: true }]
                 ],
+                isNotLyric: true,
             },
             {
                 type: "VERSE 2:",

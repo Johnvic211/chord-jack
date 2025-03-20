@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 
 const MusicInformation = ({selectedSong}) => {
   return (
-    <div className="container mx-auto mt-8 px-4">
+    <div className="container mx-auto px-4">
         <div className="bg-white dark:bg-gray-900 shadow-lg rounded-2xl p-6">
             <h3 className="font-bold mb-4 dark:text-gray-300">Credits</h3>
             <div className="text-gray-700 dark:text-gray-300 space-y-2">
