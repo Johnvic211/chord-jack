@@ -2,7 +2,7 @@ import { useParams } from "react-router-dom";
 import SongTransposer from "./SongTransposer";
 import MusicInformation from "./MusicInformation";
 import SongSelector from "./SongSelector";
-import songBank from '../data/songBank';
+import songBank from '../../data/songBank';
 
 const SongPage = () => {
     const { title } = useParams();

@@ -1,10 +1,10 @@
 import { HashRouter as Router, Routes, Route } from "react-router-dom";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
-import SongPage from "./components/SongPage";
-import Playlist from "./components/PlaylistManager";
-import PlaylistSongManager from "./components/PlaylistSongManager";
-import PlaylistSong from "./components/PlaylistSong";
+import Header from "./components/app/Header";
+import Footer from "./components/app/Footer";
+import SongPage from "./components/song/SongPage";
+import Playlist from "./components/playlist/PlaylistManager";
+import PlaylistSongManager from "./components/playlist/PlaylistSongManager";
+import PlaylistSong from "./components/playlist/PlaylistSong";
 import { Navigate } from "react-router-dom";
 
 const App = () => {
@@ -23,6 +23,7 @@ const App = () => {
 						<Route path="/playlist/:playlistName" element={<PlaylistSongManager />} />
 						<Route path="/playlist/:playlistName/:title" element={<PlaylistSong />} />
 					</Routes>
+
 				</div>
 				<Footer />
 			</div>

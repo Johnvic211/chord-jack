@@ -15,6 +15,18 @@
                flex items-center justify-center 
                cursor-pointer;
     }
+
+    input[type="checkbox"] {
+        cursor: pointer;
+    }
+
+    .react-toggle--checked .react-toggle-track {
+        background-color: var(--color-blue-500) !important; /* Change to green or any color */
+    }
+
+    .react-toggle--checked .react-toggle-track:hover {
+        background-color: var(--color-blue-600) !important; /* Change to green or any color */
+    }
     
     h1 {
         @apply text-4xl font-bold;

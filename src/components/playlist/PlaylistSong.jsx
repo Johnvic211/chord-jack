@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { ArrowLeft, ChevronLeft, ChevronRight } from "lucide-react";
-import songBank from "../data/songBank";
-import SongTransposer from "./SongTransposer";
-import MusicInformation from "./MusicInformation";
+import songBank from "../../data/songBank";
+import MusicInformation from "../song/MusicInformation";
+import SongTransposer from "../song/SongTransposer";
 
 const PlaylistSong = () => {
     const { playlistName, title } = useParams();
@@ -109,7 +109,7 @@ const PlaylistSong = () => {
 
             {/* Left & Right Navigation Arrows (Fixed Position) */}
             {playlistSongs.length > 1 && (
-                <div className="fixed left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full max-w-[640px] flex justify-between px-4 z-50">
+                <div className="fixed left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full max-w-[640px] flex justify-between px-4 z-[20]">
                     <button
                         className="bg-white dark:bg-gray-800 p-2 rounded-full shadow-md 
                                 hover:bg-gray-200 dark:hover:bg-gray-600 transition opacity-80 cursor-pointer"

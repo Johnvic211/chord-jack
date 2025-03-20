@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { Plus, Trash2, Music, Upload, Download } from "lucide-react";
 import Swal from "sweetalert2";
-import YouthServicePlaylist from "./../data/youth_service.json";
+import YouthServicePlaylist from "../../data/youth_service.json";
 
 const PlaylistManager = () => {
     const [playlists, setPlaylists] = useState([]);

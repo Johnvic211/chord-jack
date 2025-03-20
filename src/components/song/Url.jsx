@@ -1,8 +1,8 @@
 import PropTypes from "prop-types";
-import spotify from "../assets/spotify.png";
-import youtube from "../assets/youtube.png";
-import appleMusic from "../assets/apple-music.svg";
-import pdf from "../assets/pdf.png";
+import spotify from "./../../assets/spotify.png";
+import youtube from "./../../assets/youtube.png";
+import appleMusic from "./../../assets/apple-music.svg";
+import pdf from "./../../assets/pdf.png";
 
 const platformIcons = {
     spotify,

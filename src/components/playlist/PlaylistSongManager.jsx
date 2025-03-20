@@ -3,7 +3,7 @@ import { useParams, useNavigate } from "react-router-dom";
 import { ArrowLeft, Plus, Trash2, Music, ChevronUp, ChevronDown, Download } from "lucide-react";
 import Select from "react-select";
 import Swal from "sweetalert2";
-import songBank from "../data/songBank";
+import songBank from "../../data/songBank";
 
 const PlaylistSongManager = () => {
     const { playlistName } = useParams();
