@@ -52,7 +52,7 @@ const SettingsModal = ({
                     onClick={() => setIsOpen(false)} 
                     className="dark:text-white hover:text-gray-400 cursor-pointer"
                 >
-                    <X />
+                    <X size={40} />
                 </button>
             </div>
 
