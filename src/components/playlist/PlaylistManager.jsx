@@ -188,7 +188,7 @@ const PlaylistManager = () => {
 
     useEffect(() => {
         importPlaylists(); // Import YouthServicePlaylist only once when the component mounts (without alert)
-    }, []);
+    });
     
     return (
         <div className="m-4 px-2 min-w-[350px] max-w-[600px] mx-auto">
