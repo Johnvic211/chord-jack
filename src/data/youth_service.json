@@ -1,39 +1,51 @@
 {
-    "playlists": [
-      {
-        "name": "Youth Service 03/19",
-        "songs": [
-          "W.O.W.",
-          "Tanging Kailangan",
-          "How Great Is Our God",
-          "Grace Abounds"
-        ]
-      }
-    ],
-    "songSettings": {
-      "Youth Service_song_settings_W.O.W.": {
-        "selectedKey": "A",
-        "showLyrics": true,
-        "showChords": true,
-        "showChordNumbers": false
-      },
-      "Youth Service_song_settings_Tanging Kailangan": {
-        "selectedKey": "G",
-        "showLyrics": true,
-        "showChords": true,
-        "showChordNumbers": false
-      },
-      "Youth Service_song_settings_How Great Is Our God": {
-        "selectedKey": "A",
-        "showLyrics": true,
-        "showChords": true,
-        "showChordNumbers": false
-      },
-      "Youth Service_song_settings_Grace Abounds": {
-        "selectedKey": "E",
-        "showLyrics": true,
-        "showChords": true,
-        "showChordNumbers": false
-      }
+  "playlists": [
+    {
+      "name": "Youth Service 04/12",
+      "songs": [
+        "Dance in Freedom",
+        "Nothing But the Blood",
+        "Everlasting Glory",
+        "Grace Abounds"
+      ]
+    }
+  ],
+  "songSettings": {
+    "Youth Service 04/12_song_settings_Dance in Freedom": {
+      "selectedKey": "D",
+      "showLyrics": true,
+      "showChords": true,
+      "showChordNumbers": false,
+      "showAutoScrollLyrics": false,
+      "autoScroll": false,
+      "speed": 70
+    },
+    "Youth Service 04/12_song_settings_Nothing But the Blood": {
+      "selectedKey": "D",
+      "showLyrics": true,
+      "showChords": true,
+      "showChordNumbers": false,
+      "showAutoScrollLyrics": false,
+      "autoScroll": false,
+      "speed": 70
+    },
+    "Youth Service 04/12_song_settings_Everlasting Glory": {
+      "selectedKey": "A",
+      "showLyrics": true,
+      "showChords": true,
+      "showChordNumbers": false,
+      "showAutoScrollLyrics": false,
+      "autoScroll": false,
+      "speed": 70
+    },
+    "Youth Service 04/12_song_settings_Grace Abounds": {
+      "selectedKey": "A",
+      "showLyrics": true,
+      "showChords": true,
+      "showChordNumbers": false,
+      "showAutoScrollLyrics": false,
+      "autoScroll": false,
+      "speed": 70
     }
   }
+}

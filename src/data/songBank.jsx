@@ -2057,6 +2057,178 @@ export default [
             },
         ],
     },
+    {
+        title: "Nothing But the Blood",
+        artist: "AWAKE84",
+        album: "Wonderstruck",
+        publisher: "VICTORY",
+        composer: "Robert Lowry",
+        releaseDate: "2023",
+        originalKey: "Eb",
+        chordMap: ["C", "C#", "D", "Eb", "E", "F", "F#", "G", "Ab", "A", "Bb", "B"],
+        timeSignature: "4/4",
+        link: [
+            { platform: 'youtube', url: 'https://youtu.be/JGiMLnikS7g?si=yhicx-4vfTW5jigh' },
+            { platform: 'spotify', url: 'https://open.spotify.com/track/2tOysk1dmAQhYdeRiOUMJY?si=3f21aa51cbf94972' },
+            { platform: 'appleMusic', url: 'https://music.apple.com/us/album/nothing-but-the-blood-live/1681953784?i=1681954109' },
+            { platform: 'pdf', url: 'https://drive.google.com/uc?export=download&id=1FLA4--oKW8qpro5NrmQT4iHESTY5ncBl'}
+        ],
+        sections: [
+            {
+                type: 'INTRO:',
+                lyrics: [''],
+                chords: [[{ chord: 'Cm7', position: 0, leftColon: true, leftRight: true }, { chord: 'Eb', position: 3, rightColon: true, right: true }]],
+                isNotLyric: true,
+            },
+            {
+                type: "VERSE 1:",
+                lyrics: [
+                    "What can wash away my sin?",
+                    "Nothing but the blood of Jesus",
+                    "What can make me whole again?",
+                    "Nothing but the blood of Jesus"
+                ],
+                chords: [
+                    [{ chord: "Cm7", position: 0 }, { chord: "Bb/D", position: 41, number: '5/7' }, { chord: "Eb", position: 44 }],
+                    [{ chord: "Ab", position: 0 }, { chord: "Fm7", position: 97 }],
+                    [{ chord: "Cm7", position: 0 }, { chord: "Bb/D", position: 44, number: '5/7' }, { chord: "Eb", position: 47 }],
+                    [{ chord: "Ab", position: 0 }, { chord: "Fm7", position: 94 }],
+                ],
+            },
+            {
+                type: "CHORUS:",
+                lyrics: [
+                    "O, precious is the flow",
+                    "That makes me white as snow",
+                    "No other fount I know",
+                    "Nothing but the blood of Jesus"
+                ],
+                chords: [
+                    [{ chord: "Ab", position: 0 }, { chord: "Eb", position: 39 }],
+                    [{ chord: "Bb", position: 0 }, { chord: "Fm7", position: 55 }],
+                    [{ chord: "Ab", position: 0 }, { chord: "Eb", position: 30 }],
+                    [{ chord: "Cm7", position: 0 }, { chord: "Bb", position: 96 }, { chord: "Fm7", position: 99 }],
+                ],
+            },
+            {
+                type: "VERSE 1:",
+                lyrics: [
+                    "What can wash away my sin?",
+                    "Nothing but the blood of Jesus",
+                    "What can make me whole again?",
+                    "Nothing but the blood of Jesus"
+                ],
+                chords: [
+                    [{ chord: "Cm7", position: 0 }, { chord: "Bb/D", position: 41, number: '5/7' }, { chord: "Eb", position: 44 }],
+                    [{ chord: "Ab", position: 0 }, { chord: "Fm7", position: 97 }],
+                    [{ chord: "Cm7", position: 0 }, { chord: "Bb/D", position: 44, number: '5/7' }, { chord: "Eb", position: 47 }],
+                    [{ chord: "Ab", position: 0 }, { chord: "Fm7", position: 94 }],
+                ],
+            },
+            {
+                type: "VERSE 2: (same verse chords)",
+                lyrics: [
+                    "For my pardon this I see",
+                    "Nothing but the blood of Jesus",
+                    "For my cleansing this my plea",
+                    "Nothing but the blood of Jesus"
+                ],
+                chords: [
+                    []
+                ],
+            },
+            {
+                type: "VERSE 2: (same verse chords)",
+                lyrics: [
+                    "For my pardon this I see",
+                    "Nothing but the blood of Jesus",
+                    "For my cleansing this my plea",
+                    "Nothing but the blood of Jesus"
+                ],
+                chords: [
+                    []
+                ],
+            },
+            {
+                type: '',
+                lyrics: ['[CHORUS] 2x'],
+                chords: [],
+                isNotLyric: true,
+            },
+            {
+                type: 'INSTRUMENTAL:',
+                lyrics: ['',''],
+                chords: [
+                    [{ chord: 'Ab', left: true, forwardSlash: 3, position: 0 }, { chord: 'Eb', left: true, forwardSlash: 3, position: 3 },{ chord: 'Bb', left: true, forwardSlash: 3, position: 6 }, { chord: 'Fm7', leftRight: true, forwardSlash: 3, position: 9 }],
+                    [{ chord: 'Ab', left: true, forwardSlash: 3, position: 0 }, { chord: 'Eb', left: true, forwardSlash: 3, position: 3 },{ chord: 'Cm', left: true, forwardSlash: 3, position: 6 }, { chord: 'Bb', leftRight: true, forwardSlash: 3, position: 9 }],
+                ],
+                isNotLyric: true,
+            },
+            {
+                type: '',
+                lyrics: ['[CHORUS] 2x'],
+                chords: [],
+                isNotLyric: true,
+            },
+            {
+                type: 'INTERLUDE:',
+                lyrics: [''],
+                chords: [[{ chord: 'Fm7', forwardSlash: 3, position: 0, leftColon: true, leftRight: true }, { chord: '', forwardSlash: 4, position: 3, rightColon: true, right: true }]],
+                isNotLyric: true,
+            },
+            {
+                type: "VERSE 3: (same verse chords)",
+                lyrics: [
+                    "This is all my hope and peace",
+                    "Nothing but the blood of Jesus",
+                    "This is all my righteousness",
+                    "Nothing but the blood of Jesus"
+                ],
+                chords: [
+                    []
+                ],
+            },
+            {
+                type: "CHORUS:",
+                lyrics: [
+                    "O, precious is the flow",
+                    "That makes me white as snow",
+                    "No other fount I know",
+                    "Nothing but the blood of Jesus",
+                ],
+                chords: [
+                    [{ chord: "Ab", position: 0 }, { chord: "Eb", position: 39 }],
+                    [{ chord: "Bb", position: 0 }, { chord: "Fm7", position: 55 }],
+                    [{ chord: "Ab", position: 0 }, { chord: "Eb", position: 30 }],
+                    [{ chord: "Cm7", position: 0 }, { chord: "Bb", position: 96 }, { chord: "Fm7", position: 99 }],
+                ],
+            },
+            {
+                type: "",
+                lyrics: [
+                    "O, precious is the flow",
+                    "That makes me white as snow",
+                    "No other fount I know",
+                    "Nothing but the blood of Jesus"
+                ],
+                chords: [
+                    [{ chord: "Ab", position: 0 }, { chord: "Eb", position: 39 }],
+                    [{ chord: "Bb", position: 0 }, { chord: "Fm7", position: 55 }],
+                    [{ chord: "Ab", position: 0 }, { chord: "Eb/G", position: 30, number: '1/3' }],
+                    [{ chord: "Cm7", position: 0 }, { chord: "Bb", position: 96 }, { chord: "Fm7", position: 99 }],
+                ],
+            },
+            {
+                type: "TAG:",
+                lyrics: [
+                    "Nothing but the blood of Jesus",
+                ],
+                chords: [
+                    [{ chord: "Cm7", position: 0 }, { chord: "Bb", position: 90 }, { chord: "Ab", position: 99 }],
+                ],
+            },
+        ],
+    },
     //VICTORY WORSHIP
     {
         title: "Beautiful Love",
@@ -3354,6 +3526,151 @@ export default [
                     [{ chord: "G", position: 23 }, { chord: "CM7", position: 76 }],
                 ]
             }
+        ],
+    },
+    {
+        title: "Everlasting Glory",
+        artist: "Victory Worship",
+        publisher: "VICTORY",
+        composer: "Victor Asuncion",
+        album: "Rise Heart",
+        releaseDate: "2015",
+        originalKey: "D",
+        chordMap: ["C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A", "Bb", "B"],
+        bpm: 68,
+        link: [
+            { platform: 'youtube', url: 'https://youtu.be/Y2iHhGKjLvY?si=uVjqAKJ7ReGtz8ql' },
+            { platform: 'spotify', url: 'https://open.spotify.com/track/0whjw1oJEZTS6T8U9W4GVy?si=a495e20ce92f485d' },
+            { platform: 'appleMusic', url: 'https://music.apple.com/us/album/everlasting-glory-feat-joe-ramos/1225095814?i=1225096494' },
+            { platform: 'pdf', url: 'https://www.everynationmusic.org/wp-content/uploads/2022/03/everlasting-glory-rise-heart-victory-worship.pdf' },
+        ],
+        sections: [
+            {
+                type: "INTRO:",
+                lyrics: [""],
+                chords: [
+                    [{ chord: "G", position: 0, left: true, forwardSlash: 3 },{ chord: "", position: 2, leftRight: true, forwardSlash: 4 }]
+                ],
+                isNotLyric: true,
+            },
+            {
+                type: "VERSE 1",
+                lyrics: [
+                    "You hold the universe in Your hands",
+                    "Yet You chose to be the One on the cross",
+                    "You created everything with Your words",
+                    "Yet You chose to be the One",
+                    "You chose to be the One"
+                ],
+                chords: [
+                    [{ chord: "G", position: 20 }, { chord: "A", position: 125 }],
+                    [{ chord: "Bm", position: 38 }],
+                    [{ chord: "G", position: 38 }, { chord: "A", position: 125 }],
+                    [{ chord: "Bm", position: 44 }],
+                ],
+            },
+            {
+                type: "PRE-CHORUS",
+                lyrics: [
+                    "Your life for all, my King and Savior", 
+                    "You took the fall so we could live", 
+                    "Your life for all, my King and Savior", 
+                    "You rose again", 
+                    "And we believe", 
+                    "That You deserve all"
+                ],
+                chords: [
+                    [{ chord: "G", position: 27 }, { chord: "A", position: 125 }],
+                    [{ chord: "Bm", position: 118 }],
+                    [{ chord: "G", position: 27 }, { chord: "A", position: 125 }],
+                    [],
+                    [{ chord: "Bm", position: 39 }],
+                ],
+            },
+            {
+                type: "CHORUS",
+                lyrics: [
+                    "Glory, everlasting glory",  
+                    "You alone are mighty",  
+                    "You alone are worthy to be praised",  
+                    "Over all creation",  
+                    "We sing of Your salvation",  
+                    "Glory to the King of heaven"
+                ],
+                chords: [
+                    [{ chord: "G", position: 0 }, { chord: "A", position: 74 }],
+                    [{ chord: "Bm", position: 57 }],
+                    [{ chord: "A/C#", position: 54, number: "5/7" }, { chord: "D", position: 68 },{ chord: "A/C#", position: 68, dash: true, number: "5/7" },{ chord: "G", position: 68, dash: true }],
+                    [{ chord: "A", position: 46 }],
+                    [{ chord: "Bm", position: 87 }],
+                    [{ chord: "A/C#", position: 54, number: "5/7" }, { chord: "D", position: 62 },{ chord: "A/C#", position: 62, dash: true, number: "5/7" },{ chord: "G", position: 62, dash: true }],
+                ],
+            },
+            {
+                type: "VERSE 2",
+                lyrics: [
+                    "The cross displayed the love You have",
+                    "for all",
+                    "Inviting sons and daughters back",
+                    "into Your home",
+                    "And every breath we breathe You provide",
+                    "And You hold all things together",
+                    "You hold me forever"
+                ],
+                chords: [
+                    [{ chord: "G", position: 20 }, { chord: "A", position: 125 }],
+                    [],
+                    [{ chord: "Bm", position: 38 }],
+                    [],
+                    [{ chord: "G", position: 38 }, { chord: "A", position: 125 }],
+                    [{ chord: "Bm", position: 44 }],
+                ],
+            },
+            {
+                type: "",
+                lyrics: ["[PRE-CHORUS]","[CHORUS]"],
+                chords: [[]],
+                isNotLyric: true,
+            },
+            {
+                type: "INSTRUMENTAL:",
+                lyrics: [""],
+                chords: [
+                    [{ chord: "G", position: 0, left: true, forwardSlash: 3 },{ chord: "A", position: 2, leftRight: true, forwardSlash: 3 },{ chord: "Bm", position: 4, right: true, forwardSlash: 3 },{ chord: "", position: 6, right: true, forwardSlash: 4 }]
+                ],
+                isNotLyric: true,
+            },
+            {
+                type: "BRIDGE (2x):",
+                lyrics: [
+                    "   We will follow You, with everything that",
+                    "we have",
+                    "   We will follow You, O there is no",
+                    "turning back",
+                    "   We will follow You, with all our lives we",
+                    "will sing",
+                    "   We will follow You",
+                    "   We will follow You",
+                    "   We will follow You"
+                ],
+                chords: [
+                    [{ chord: "G", position: 0 }, { chord: "Bm", position: 42 }, { chord: "A", position: 60 }],
+                    [{ chord: "D/F#", position: 0, number: '1/3' }],
+                    [{ chord: "G", position: 0 }, { chord: "Bm", position: 42 }, { chord: "A", position: 60 }],
+                    [{ chord: "D/F#", position: 17, number: '1/3' }],
+                    [{ chord: "G", position: 0 }, { chord: "Bm", position: 40 }, { chord: "A", position: 80 }],
+                    [{ chord: "D/F#", position: 0, number: '1/3' }],
+                    [{ chord: "G", position: 0 }, { chord: "Bm", position: 42 }, { chord: "A", position: 55 },{ chord: "D/F#", position: 65, number: '1/3' }],
+                    [{ chord: "G", position: 0 }, { chord: "A", position: 65 }],
+                    [{ chord: "Bm", position: 0 }],
+                ],
+            },
+            {
+                type: "",
+                lyrics: ["[CHORUS (2x)]"],
+                chords: [[]],
+                isNotLyric: true,
+            },
         ],
     },
     //EVERY NATION MUSIC

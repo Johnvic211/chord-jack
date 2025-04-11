@@ -18,7 +18,7 @@ const Header = () => {
     return (
         <header className="px-4 py-5 shadow-md w-full sticky top-0 bg-white dark:bg-black dark:text-gray-300 z-50">
             <div className="flex justify-between items-center">
-                <h4 className="text-lg font-semibold">🎵 Song Transposer</h4>
+                <h4 className="text-lg font-semibold">🎵 ChordJack</h4>
 
                 {/* Buttons Wrapper */}
                 <div className="flex items-center gap-2">
