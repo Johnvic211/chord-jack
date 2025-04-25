@@ -3677,12 +3677,13 @@ export default [
         title: "Unchanging God",
         artist: "Victory Worship",
         publisher: "VICTORY",
-        composer: " Lee Simon Brown, Elle Tumaliuan, Ian Tumaliuan & Jose Villanueva III",
-        album: "Beautiful Love",
+        composer: "Lee Simon Brown, Elle Tumaliuan, Ian Tumaliuan & Jose Villanueva III",
+        album: "For Your Purpose",
         releaseDate: "2017",
         originalKey: "Eb",
         chordMap: ["C", "C#", "D", "Eb", "E", "F", "F#", "G", "Ab", "A", "Bb", "B"],
         bpm: 140,
+        timeSignature: "4/4",
         link: [
             { platform: 'youtube', url: 'https://youtu.be/GRLrG6IhFw0?si=sgzeQo_K90X2p9ch' },
             { platform: 'spotify', url: 'https://open.spotify.com/track/5b12XKnp3BhpjNEKTKUDyl?si=d1c6d9c4adc040e3' },
@@ -3762,6 +3763,189 @@ export default [
                     [{ chord: "Bb", position: 0 }, { chord: "Cm", position: 10 },{ chord: "Eb/G", position: 18, number: '1/3' }, { chord: "Ab", position: 40 }],
                     [{ chord: "Bb", position: 90 }],
                     [{ chord: "Cm", position: 22 }, { chord: "Eb/G", position: 43, number: '1/3' }, { chord: "Ab", position: 51 }],
+                ],
+            },
+            {
+                type: "",
+                lyrics: [""],
+                chords: [
+                    [
+                        { chord: "Bb", position: 0, leftRight: true }, 
+                        { chord: "Cm", position: 4 }, 
+                        { chord: "Eb/G", position: 8, right: true, dash: true, spaceBetween: true }, 
+                        { chord: "Ab", position: 12 }, 
+                        { chord: "", position: 16, forwardSlash: 4, leftRight: true }, 
+                    ],
+                ],
+                isNotLyric: true,
+                times: [2]
+            },
+            {
+                type: "",
+                lyrics: ["[VERSE 1 & 2]", "[PRE-CHORUS]", "[CHORUS 1 & 2]"],
+                chords: [
+                    [],
+                ],
+                isNotLyric: true,
+                times: [2]
+            },
+            {
+                type: "BRIDGE",
+                lyrics: [
+                    "You will never fail (we trust in You)",
+                    "You will never fail (we run to You)",
+                    "You will never fail (we live for You)",
+                    "You will never fail",
+                ],
+                chords: [
+                    [{ chord: "Ab", position: 0 }, { chord: "Bb", position: 46 },{ chord: "Cm", position: 65 }, { chord: "Eb/G", position: 80, number: '1/3' }],
+                    [{ chord: "Ab", position: 0 }, { chord: "Bb", position: 46 },{ chord: "Cm", position: 65 }, { chord: "Eb/G", position: 80, number: '1/3' }],
+                    [{ chord: "Ab", position: 0 }, { chord: "Bb", position: 46 },{ chord: "Cm", position: 68 }, { chord: "Eb/G", position: 70, number: '1/3' }],
+                    [{ chord: "Ab", position: 0 }, { chord: "Bb", position: 46 },{ chord: "Cm", position: 65 }],
+                ],
+            },
+            {
+                type: "",
+                lyrics: ["[PRE-CHORUS] (2x)", "[CHORUS 1]"],
+                chords: [
+                    [],
+                ],
+                isNotLyric: true,
+                times: [2]
+            },
+            {
+                type: "CHORUS 3",
+                lyrics: [
+                    "Your will eternal",
+                    "Our lives are in your hands",
+                    "Now we will stand in victory",
+                ],
+                chords: [],
+            },
+            {
+                type: "",
+                lyrics: [""],
+                chords: [
+                    [
+                        { chord: "Bb", position: 0, leftRight: true }, 
+                        { chord: "Cm", position: 4 }, 
+                        { chord: "Eb/G", position: 8, right: true, dash: true, spaceBetween: true }, 
+                        { chord: "Ab", position: 12 }, 
+                        { chord: "", position: 16, forwardSlash: 4, leftRight: true }, 
+                    ],
+                ],
+                isNotLyric: true,
+                times: [4]
+            },
+        ],
+    },
+    {
+        title: "Blessing & Honor",
+        artist: "Victory Worship",
+        publisher: "VICTORY",
+        composer: "James Murrell, Elizabeth Owens & Rebecca Simmons",
+        album: "Rise Heart",
+        releaseDate: "2015",
+        originalKey: "A",
+        chordMap: ["C", "C#", "D", "Eb", "E", "F", "F#", "G", "G#", "A", "Bb", "B"],
+        bpm: 75,
+        link: [
+            { platform: 'youtube', url: 'https://youtu.be/sLC1YYfwqbE?si=cw1fTy8nqNPjw0gY' },
+            { platform: 'spotify', url: 'https://open.spotify.com/track/5pUDQU1FbBc2NsN5u5JBSo?si=96e284c0945245cd' },
+            { platform: 'appleMusic', url: 'https://music.apple.com/us/song/blessing-honor-feat-lee-simon-brown/1225096420' },
+            { platform: 'pdf', url: 'https://www.everynationmusic.org/wp-content/uploads/2022/03/blessing-honor-rise-heart-victory-worship.pdf' },
+        ],
+        sections: [
+            {
+                type: "VERSE 1",
+                lyrics: [
+                    "To the One",
+                    "To the Lamb",
+                    "To our King upon the throne",
+                    "To the Christ",
+                    "To our Savior",
+                    "To the risen Son of God"
+                ],
+                chords: [
+                    [{ chord: "A", position: 25 }],
+                    [{ chord: "E/G#", position: 21, number: '5/7' }],
+                    [{ chord: "F#m", position: 25 },{ chord: "D", position: 80 }],
+                    [{ chord: "A", position: 27 }],
+                    [{ chord: "E/G#", position: 25, number: '5/7' }],
+                    [{ chord: "F#m", position: 25 },{ chord: "D", position: 63 }],
+                ],
+            },
+            {
+                type: "CHORUS",
+                lyrics: [
+                    "Blessing and honor",
+                    "Glory and power",
+                    "Salvation belongs to our God",
+                    "Blessing and honor",
+                    "Now and forever",
+                    "Salvation belongs to our God"
+                ],
+                chords: [
+                    [{ chord: "A", position: 52 }],
+                    [{ chord: "E", position: 52 }],
+                    [{ chord: "F#m", position: 11 },{ chord: "E", position: 34 },{ chord: "D", position: 84 }],
+                    [{ chord: "A", position: 52 }],
+                    [{ chord: "E/G#", position: 52 }],
+                    [{ chord: "F#m", position: 11 },{ chord: "E", position: 34 },{ chord: "D", position: 84 }],
+                ],
+            },
+            {
+                type: "VERSE 2",
+                lyrics: [
+                    "To our hope, our Redeemer",
+                    "For the sacrifice You made",
+                    "From our hearts to the heavens",
+                    "For Your glory we proclaim"
+                ],
+                chords: [
+                    [{ chord: "A", position: 25 }, { chord: "E/G#", position: 60, number: '5/7' }],
+                    [{ chord: "F#m", position: 25 },{ chord: "D", position: 80 }],
+                    [{ chord: "A", position: 27 }, { chord: "E/G#", position: 80, number: '5/7' }],
+                    [{ chord: "F#m", position: 25 },{ chord: "D", position: 63 }],
+                ],
+            },
+            {
+                type: "CHORUS (2x)",
+                lyrics: [
+                    "Blessing and honor",
+                    "Blessing and honor",
+                ],
+                chords: [
+                    [{ chord: "F#m", position: 52 },{ chord: "E", position: 60 },{ chord: "D", position: 68 }],
+                    [{ chord: "F#m", position: 52 },{ chord: "E", position: 60 },{ chord: "D", position: 68 }],
+                ],
+            },
+            {
+                type: "BRIDGE",
+                lyrics: [
+                    "So holy",
+                    "So worthy",
+                    "So great is Your name",
+                    "That the earth will adore You",
+                    "And shout out Your fame"
+                ],
+                chords: [
+                    [{ chord: "F#m", position: 15 }],
+                    [{ chord: "E", position: 13 }],
+                    [{ chord: "D", position: 19 }],
+                    [{ chord: "F#m", position: 40 },{ chord: "E", position: 67 }],
+                    [{ chord: "D", position: 26 }],
+                ],
+            },
+            {
+                type: "CHORUS (2x)",
+                lyrics: [
+                    "Blessing and honor",
+                    "Blessing and honor",
+                ],
+                chords: [
+                    [{ chord: "F#m", position: 52 },{ chord: "E", position: 60 },{ chord: "D", position: 68 }],
+                    [{ chord: "F#m", position: 52 },{ chord: "E", position: 60 },{ chord: "D", position: 68 }],
                 ],
             },
         ],
@@ -4213,5 +4397,91 @@ export default [
                 isNotLyric: true,
             },
         ],
-    }
+    },
+    //HOUSEFIRES
+    {
+        title: "Build My Life",
+        artist: "Housefires",
+        composer: "Pat Barrett, Matt Redman, Brett Younker, Kirby Kaple & Karl Martin",
+        album: "Housefires III",
+        releaseDate: "2016",
+        originalKey: "A",
+        chordMap: ["C", "C#", "D", "Eb", "E", "F", "F#", "G", "G#", "A", "Bb", "B"],
+        bpm: 70,
+        link: [
+            { platform: 'youtube', url: 'https://youtu.be/FYMjO9mL0Tw?si=_YX_Rb62_R9fxNpW' },
+            { platform: 'spotify', url: 'https://open.spotify.com/track/0QatL1szZzMTAfZoJKWo0s?si=f3ecd7b4655f4942' },
+            { platform: 'appleMusic', url: 'https://music.apple.com/us/song/build-my-life/1648517528' },
+        ],
+        sections: [
+            {
+                type: "VERSE 1",
+                lyrics: [
+                    "    Worthy of every song we could ever sing",
+                    "    Worthy of all the praise we could ever bring",
+                    "    Worthy of every breath we could ever breathe",
+                    "We live for You"
+                ],
+                chords: [
+                    [{ chord: "G", position: 0 }, { chord: "C", position: 70 }],
+                    [{ chord: "G", position: 0 }, { chord: "C", position: 73 }],
+                    [{ chord: "G", position: 0 }, { chord: "C", position: 70 }],
+                    [{ chord: "Em", position: 45}, { chord: "C", position: 63 }],
+                ],
+            },
+            {
+                type: "VERSE 2",
+                lyrics: [
+                    "    Jesus the name above every other name",
+                    "    Jesus the only one that could ever save",
+                    "    Worthy of every breath we could ever breathe",
+                    "We live for You",
+                    "We live for You",
+                ],
+                chords: [
+                    [{ chord: "G", position: 0 }, { chord: "C", position: 70 }],
+                    [{ chord: "G", position: 0 }, { chord: "C", position: 62 }],
+                    [{ chord: "G", position: 0 }, { chord: "C", position: 70 }],
+                    [{ chord: "Em", position: 45 }],
+                    [{ chord: "C", position: 45 }]
+                ],
+            },
+            {
+                type: "CHORUS",
+                lyrics: [
+                    "Holy there is no one like You",
+                    "There is none beside You",
+                    "Open up my eyes in wonder",
+                    "Show me who You are",
+                    "And fill me with Your heart",
+                    "And lead me in Your love",
+                    "To those around me"
+                ],
+                chords: [
+                    [{ chord: "C", position: 0 }, { chord: "Am", position: 79 }],
+                    [{ chord: "G", position: 57 }],
+                    [{ chord: "Em", position: 53 }],
+                    [{ chord: "C", position: 0 }],
+                    [{ chord: "Am", position: 19 }],
+                    [{ chord: "G", position: 18 }],
+                    [{ chord: "Em", position: 20 }],
+                ],
+            },
+            {
+                type: "BRIDGE 1",
+                lyrics: [
+                    "I will build my life, upon Your love",
+                    "It is a firm foundation",
+                    "I will put my trust, in You alone",
+                    "And I will not be shaken"
+                ],
+                chords: [
+                    [{ chord: "C", position: 0 }, { chord: "D", position: 55 }, { chord: "Em", position: 109 }],
+                    [{ chord: "G", position: 27 }],
+                    [{ chord: "C", position: 0 }, { chord: "D", position: 49 }, { chord: "Em", position: 96 }],
+                    [{ chord: "G", position: 45 }],
+                ],
+            },
+        ],
+    },
 ]

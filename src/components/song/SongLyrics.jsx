@@ -23,14 +23,15 @@ const SongLyrics = ({ transposedSections, showLyrics, showChords }) => {
                             <h5 className="text-lg text-blue-600 dark:text-blue-700 font-semibold">{section.type}</h5>
                             {section.lyrics.map((line, lineIndex) => (
                                 <div key={lineIndex}>
-                                    <div className="flex mt-1">
+                                    <div className="flex mt-1 overflow-auto text-base">
                                         {showChords && section.chords[lineIndex]?.map((chordObj, chordIndex) => (
                                             <span
                                                 key={chordIndex}
-                                                className="text-base dark:text-gray-300 font-semibold"
+                                                className="dark:text-gray-300 font-semibold"
                                                 style={{
                                                     position: "relative",
                                                     left: showLyrics ? `${chordObj.position / 2}%` : 0,
+                                                    marginRight: showLyrics ? 0 : '15px',
                                                     marginLeft: showLyrics || chordObj.dash ? "0px" : "5px",
                                                 }}
                                             >
@@ -51,7 +52,7 @@ const SongLyrics = ({ transposedSections, showLyrics, showChords }) => {
                                         ))}
                                     </div>
                                     {showLyrics && (
-                                        <span className="text-base dark:text-gray-300 whitespace-pre-wrap">
+                                        <span className="dark:text-gray-300 whitespace-pre-wrap text-base">
                                             {section?.italize && section.italize[lineIndex] === true
                                                 ? italizeText(showChords ? line : line.trim())
                                                 : (showChords ? line : line.trim())

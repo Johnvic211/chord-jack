@@ -1,17 +1,17 @@
 {
   "playlists": [
     {
-      "name": "Youth Service 04/12",
+      "name": "Youth Service 04/26",
       "songs": [
-        "Dance in Freedom",
-        "Nothing But the Blood",
-        "Everlasting Glory",
-        "Grace Abounds"
+        "Unchanging God",
+        "Build My Life",
+        "Blessing & Honor",
+        "Wonderstruck"
       ]
     }
   ],
   "songSettings": {
-    "Youth Service 04/12_song_settings_Dance in Freedom": {
+    "Youth Service 04/26_song_settings_Unchanging God": {
       "selectedKey": "D",
       "showLyrics": true,
       "showChords": true,
@@ -20,7 +20,7 @@
       "autoScroll": false,
       "speed": 70
     },
-    "Youth Service 04/12_song_settings_Nothing But the Blood": {
+    "Youth Service 04/26_song_settings_Build My Life": {
       "selectedKey": "D",
       "showLyrics": true,
       "showChords": true,
@@ -29,7 +29,7 @@
       "autoScroll": false,
       "speed": 70
     },
-    "Youth Service 04/12_song_settings_Everlasting Glory": {
+    "Youth Service 04/26_song_settings_Blessing & Honor": {
       "selectedKey": "A",
       "showLyrics": true,
       "showChords": true,
@@ -38,7 +38,7 @@
       "autoScroll": false,
       "speed": 70
     },
-    "Youth Service 04/12_song_settings_Grace Abounds": {
+    "Youth Service 04/26_song_settings_Wonderstruck": {
       "selectedKey": "A",
       "showLyrics": true,
       "showChords": true,
