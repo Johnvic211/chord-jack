@@ -5,7 +5,10 @@ import PropTypes from "prop-types";
 const SongSelector = ({ songBank }) => {
 	const [searchTerm, setSearchTerm] = useState("");
 	const [isFocused, setIsFocused] = useState(false);
+	const [focusedIndex, setFocusedIndex] = useState(-1);
 	const dropdownRef = useRef(null);
+	const inputRef = useRef(null);
+	const itemRefs = useRef([]);
 	const navigate = useNavigate();
 
 	// Filter songs based on search term
@@ -30,6 +33,41 @@ const SongSelector = ({ songBank }) => {
 		return () => document.removeEventListener("mousedown", handleClickOutside);
 	}, [isFocused]);
 
+	useEffect(() => {
+		const handleKeyDown = (e) => {
+			if (!isFocused || filteredSongs.length === 0) return;
+
+			if (e.key === 'ArrowDown') {
+				e.preventDefault();
+				setFocusedIndex((prev) => (prev + 1) % filteredSongs.length);
+			} else if (e.key === 'ArrowUp') {
+				e.preventDefault();
+				setFocusedIndex((prev) => (prev - 1 + filteredSongs.length) % filteredSongs.length);
+			} else if (e.key === 'Enter' && focusedIndex >= 0) {
+				e.preventDefault();
+				const selectedSong = filteredSongs[focusedIndex];
+				if (selectedSong) {
+					const encodedTitle = encodeURIComponent(selectedSong.title);
+					navigate(`/song/${encodedTitle}`);
+					setSearchTerm('');
+					setIsFocused(false);
+					setFocusedIndex(-1);
+				}
+			}
+		};
+
+		window.addEventListener('keydown', handleKeyDown);
+
+		if (focusedIndex >= 0 && itemRefs.current[focusedIndex]) {
+			itemRefs.current[focusedIndex].scrollIntoView({
+			behavior: 'smooth',
+			block: 'nearest',
+			});
+		}
+
+		return () => window.removeEventListener('keydown', handleKeyDown);
+	}, [focusedIndex, filteredSongs, isFocused]);
+
 	return (
 		<div className="flex justify-center">
 			<div className="relative p-3 w-full max-w-[400px]" ref={dropdownRef}>
@@ -41,48 +79,39 @@ const SongSelector = ({ songBank }) => {
 					<input
 						type="text"
 						id="songSearch"
+						ref={inputRef}
 						className="block w-full px-4 py-2 border border-gray-500 dark:border-white rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition-all duration-200 sm:text-sm bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-200"
 						placeholder="ex. Grace Abounds"
 						value={searchTerm}
-						onChange={(e) => setSearchTerm(e.target.value)}
+						onChange={(e) => {
+							setSearchTerm(e.target.value);
+							setFocusedIndex(-1); // Reset on change
+						}}
 						onFocus={() => setIsFocused(true)}
 					/>
 
-					{/* Reset button (X icon) */}
-					{searchTerm && (
-						<button
-							type="button"
-							onClick={() => setSearchTerm('')}
-							className="absolute right-4 top-1/2 transform -translate-y-1/2 text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200"
-						>
-							<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-5 h-5">
-								<path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
-							</svg>
-						</button>
+					{isFocused && filteredSongs.length > 0 && (
+						<ul className="absolute z-10 mt-2 w-full max-w-[375px] bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-900 rounded-lg shadow-lg max-h-48 overflow-y-auto">
+							{filteredSongs.map((song, index) => (
+							<li
+								key={song.title}
+								ref={(el) => (itemRefs.current[index] = el)}
+								className={`px-4 py-2 text-gray-800 dark:text-gray-200 hover:bg-indigo-100 dark:hover:bg-indigo-700 hover:text-indigo-600 dark:hover:text-white cursor-pointer transition-colors duration-200 
+									${index === focusedIndex ? 'bg-indigo-100 dark:bg-indigo-700 text-indigo-600 dark:text-white' : ''}`}
+								onMouseDown={() => {
+								const encodedTitle = encodeURIComponent(song.title);
+								navigate(`/song/${encodedTitle}`);
+								setSearchTerm('');
+								setIsFocused(false);
+								setFocusedIndex(-1);
+								}}
+							>
+								{song.title}
+							</li>
+							))}
+						</ul>
 					)}
 				</div>
-
-				{/* Dropdown menu */}
-				{isFocused && filteredSongs.length > 0 && (
-					<ul className="absolute z-10 mt-2 w-full max-w-[375px] bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-900 rounded-lg shadow-lg max-h-48 overflow-auto">
-						{filteredSongs.map((song) => {
-							return (
-								<li
-									key={song.title} // ✅ Use title as key
-									className="px-4 py-2 text-gray-800 dark:text-gray-200 hover:bg-indigo-100 dark:hover:bg-indigo-700 hover:text-indigo-600 dark:hover:text-white cursor-pointer transition-colors duration-200"
-									onMouseDown={() => {
-										const encodedTitle = encodeURIComponent(song.title); // ✅ Encode title for URL safety
-										navigate(`/song/${encodedTitle}`); // ✅ Navigate using title
-										setSearchTerm('');
-										setIsFocused(false);
-									}}
-								>
-									{song.title}
-								</li>
-							);
-						})}
-					</ul>
-				)}
 
 				{/* No results message */}
 				{isFocused && searchTerm && filteredSongs.length === 0 && (

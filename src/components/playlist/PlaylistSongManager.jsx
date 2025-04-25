@@ -211,7 +211,7 @@ const PlaylistSongManager = () => {
                         onChange={(option) => setSelectedSong(option)}
                         value={selectedSong}
                         placeholder="Search song..."
-                        className="flex-1 dark:text-gray-300 dark:bg-gray-900"
+                        className="flex-1 text-dark"
                         classNamePrefix="react-select"
                         autoFocus
                         isSearchable
@@ -235,7 +235,7 @@ const PlaylistSongManager = () => {
                         );
 
                         return (
-                            <tr key={index} className="hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors">
+                            <tr key={index} className="hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors ">
                                 <td className="px-4 py-2 dark:text-gray-300 w-12 text-center font-medium">
                                     {index + 1}
                                 </td>
