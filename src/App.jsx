@@ -1,11 +1,10 @@
-import { HashRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import Header from "./components/app/Header";
 import Footer from "./components/app/Footer";
 import SongPage from "./components/song/SongPage";
 import Playlist from "./components/playlist/PlaylistManager";
 import PlaylistSongManager from "./components/playlist/PlaylistSongManager";
 import PlaylistSong from "./components/playlist/PlaylistSong";
-import { Navigate } from "react-router-dom";
 
 const App = () => {
 	return (

@@ -3673,6 +3673,99 @@ export default [
             },
         ],
     },
+    {
+        title: "Unchanging God",
+        artist: "Victory Worship",
+        publisher: "VICTORY",
+        composer: " Lee Simon Brown, Elle Tumaliuan, Ian Tumaliuan & Jose Villanueva III",
+        album: "Beautiful Love",
+        releaseDate: "2017",
+        originalKey: "Eb",
+        chordMap: ["C", "C#", "D", "Eb", "E", "F", "F#", "G", "Ab", "A", "Bb", "B"],
+        bpm: 140,
+        link: [
+            { platform: 'youtube', url: 'https://youtu.be/GRLrG6IhFw0?si=sgzeQo_K90X2p9ch' },
+            { platform: 'spotify', url: 'https://open.spotify.com/track/5b12XKnp3BhpjNEKTKUDyl?si=d1c6d9c4adc040e3' },
+            { platform: 'appleMusic', url: 'https://music.apple.com/us/song/unchanging-god-feat-cathy-go/1326094617' },
+            { platform: 'pdf', url: 'https://www.everynationmusic.org/wp-content/uploads/2022/03/unchanging-god-for-your-purpose-victory-worship.pdf' },
+        ],
+        sections: [
+            {
+                type: "INTRO:",
+                lyrics: ["",""],
+                chords: [
+                    [{ chord: "Eb/G", position: 0, left: true, number: '1/3' }, { chord: "Ab", position: 4, right: true,dash: true, spaceBetween: true }, { chord: "Bb", position: 8 }, { chord: "Cm7", position: 12, right: true, dash: true, spaceBetween: true }, { chord: "Eb/G", position: 16, number: '1/3' }, { chord: "Ab", position: 20, right: true,dash: true, spaceBetween: true }],
+                    [{ chord: "Eb/G", position: 0, number: '1/3' }, { chord: "Ab", position: 4, right: true,dash: true, spaceBetween: true }]
+                ],
+                isNotLyric: true,
+            },
+            {
+                type: "VERSE 1",
+                lyrics: [
+                    "    Your word is true",
+                    "It will never fail",
+                    "Our souls secure",
+                    "That You will carry us through",
+                ],
+                chords: [
+                    [{ chord: "Eb/G", position: 0, number: '1/3' }, { chord: "Ab", position: 2, dash: true, spaceBetween: true }],
+                    [{ chord: "Bb", position: 0 }, { chord: "Cm7", position: 2, dash: true, spaceBetween: true }],
+                    [{ chord: "Eb/G", position: 0, number: '1/3' }, { chord: "Ab", position: 2, dash: true, spaceBetween: true }],
+                    [{ chord: "Eb/G", position: 63, number: '1/3' }, { chord: "Ab", position: 65, dash: true, spaceBetween: true }],
+                ],
+            },
+            {
+                type: "VERSE 2",
+                lyrics: [
+                    "Seasons will change",
+                    "Sun and moon will fade away",
+                    "But our hope is sure",
+                    "That forever You reign",
+                ],
+                chords: [
+                    [{ chord: "Eb/G", position: 0, number: '1/3' }, { chord: "Ab", position: 2, dash: true, spaceBetween: true }],
+                    [{ chord: "Bb", position: 0 }, { chord: "Cm7", position: 2, dash: true, spaceBetween: true }],
+                    [{ chord: "Eb/G", position: 0, number: '1/3' }, { chord: "Ab", position: 2, dash: true, spaceBetween: true }],
+                    [{ chord: "Eb/G", position: 51, number: '1/3' }, { chord: "Ab", position: 53, dash: true, spaceBetween: true }],
+                ],
+            },
+            {
+                type: "PRE-CHORUS",
+                lyrics: [
+                    "  Let it be as You have said",
+                ],
+                chords: [
+                    [{ chord: "Bb", position: 0 }, { chord: "Cm", position: 22 },{ chord: "Eb/G", position: 34, number: '1/3' }, { chord: "Ab", position: 50 }],
+                ],
+            },
+            {
+                type: "CHORUS 1",
+                lyrics: [
+                    "Your ways are higher",
+                    "You’ve gone ahead of us",
+                    "Now we will trust in our unchanging God",
+                ],
+                chords: [
+                    [{ chord: "Bb", position: 0 }, { chord: "Cm", position: 10 },{ chord: "Eb/G", position: 18, number: '1/3' }, { chord: "Ab", position: 40 }],
+                    [{ chord: "Bb", position: 90 }],
+                    [{ chord: "Cm", position: 22 }, { chord: "Eb/G", position: 43, number: '1/3' }, { chord: "Ab", position: 51 }],
+                ],
+            },
+            {
+                type: "",
+                lyrics: [
+                    "Your word unshaken",
+                    "Your truth will be our light",
+                    "Now we will trust in our unfailing God",
+                ],
+                chords: [
+                    [{ chord: "Bb", position: 0 }, { chord: "Cm", position: 10 },{ chord: "Eb/G", position: 18, number: '1/3' }, { chord: "Ab", position: 40 }],
+                    [{ chord: "Bb", position: 90 }],
+                    [{ chord: "Cm", position: 22 }, { chord: "Eb/G", position: 43, number: '1/3' }, { chord: "Ab", position: 51 }],
+                ],
+            },
+        ],
+    },
     //EVERY NATION MUSIC
     {
         title: "The Beat",
