@@ -3695,7 +3695,7 @@ export default [
                 type: "INTRO:",
                 lyrics: ["",""],
                 chords: [
-                    [{ chord: "Eb/G", position: 0, left: true, number: '1/3' }, { chord: "Ab", position: 4, right: true,dash: true, spaceBetween: true }, { chord: "Bb", position: 8 }, { chord: "Cm7", position: 12, right: true, dash: true, spaceBetween: true }, { chord: "Eb/G", position: 16, number: '1/3' }, { chord: "Ab", position: 20, right: true,dash: true, spaceBetween: true }],
+                    [{ chord: "Eb/G", position: 0, left: true, number: '1/3' }, { chord: "Ab", position: 4, right: true, dash: true, spaceBetween: true }, { chord: "Bb", position: 8 }, { chord: "Cm7", position: 12, right: true, dash: true, spaceBetween: true }, { chord: "Eb/G", position: 16, number: '1/3' }, { chord: "Ab", position: 20, right: true,dash: true, spaceBetween: true }],
                     [{ chord: "Eb/G", position: 0, number: '1/3' }, { chord: "Ab", position: 4, right: true,dash: true, spaceBetween: true }]
                 ],
                 isNotLyric: true,
@@ -4405,7 +4405,7 @@ export default [
         composer: "Pat Barrett, Matt Redman, Brett Younker, Kirby Kaple & Karl Martin",
         album: "Housefires III",
         releaseDate: "2016",
-        originalKey: "A",
+        originalKey: "G",
         chordMap: ["C", "C#", "D", "Eb", "E", "F", "F#", "G", "G#", "A", "Bb", "B"],
         bpm: 70,
         link: [

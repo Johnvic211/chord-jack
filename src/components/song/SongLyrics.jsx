@@ -31,14 +31,12 @@ const SongLyrics = ({ transposedSections, showLyrics, showChords }) => {
                                                 style={{
                                                     position: "relative",
                                                     left: showLyrics ? `${chordObj.position / 2}%` : 0,
-                                                    marginRight: showLyrics ? 0 : '15px',
-                                                    marginLeft: showLyrics || chordObj.dash ? "0px" : "5px",
                                                 }}
                                             >
                                                 {(chordObj.left || chordObj.leftRight) && ' | '}
                                                 {(chordObj.leftColon) && ' |: '}
                                                 {(chordObj.leftParenthesis || chordObj.leftRightParenthesis) && ' ( '}
-                                                {chordObj.dash ? (chordObj.spaceBetween ? ' - ' : '-') : ''}
+                                                {chordObj.dash ? (chordObj.spaceBetween ? (!showLyrics?'\u00A0-\u00A0':' - ') : '-') : ''}
                                                 {chordObj.chord}
                                                 {(chordObj.percentage && (chordObj.leftPercentage || chordObj.leftRightPercentage)) && ' |'}
                                                 {(chordObj.percentage) && ' % '}
