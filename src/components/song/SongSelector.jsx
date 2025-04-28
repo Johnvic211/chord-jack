@@ -60,13 +60,13 @@ const SongSelector = ({ songBank }) => {
 
 		if (focusedIndex >= 0 && itemRefs.current[focusedIndex]) {
 			itemRefs.current[focusedIndex].scrollIntoView({
-			behavior: 'smooth',
-			block: 'nearest',
+				behavior: 'smooth',
+				block: 'nearest',
 			});
 		}
 
 		return () => window.removeEventListener('keydown', handleKeyDown);
-	}, [focusedIndex, filteredSongs, isFocused]);
+	}, [focusedIndex, filteredSongs, isFocused, navigate]);
 
 	return (
 		<div className="flex justify-center">
@@ -99,11 +99,11 @@ const SongSelector = ({ songBank }) => {
 								className={`px-4 py-2 text-gray-800 dark:text-gray-200 hover:bg-indigo-100 dark:hover:bg-indigo-700 hover:text-indigo-600 dark:hover:text-white cursor-pointer transition-colors duration-200 
 									${index === focusedIndex ? 'bg-indigo-100 dark:bg-indigo-700 text-indigo-600 dark:text-white' : ''}`}
 								onMouseDown={() => {
-								const encodedTitle = encodeURIComponent(song.title);
-								navigate(`/song/${encodedTitle}`);
-								setSearchTerm('');
-								setIsFocused(false);
-								setFocusedIndex(-1);
+									const encodedTitle = encodeURIComponent(song.title);
+									navigate(`/song/${encodedTitle}`);
+									setSearchTerm('');
+									setIsFocused(false);
+									setFocusedIndex(-1);
 								}}
 							>
 								{song.title}

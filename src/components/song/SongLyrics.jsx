@@ -24,19 +24,23 @@ const SongLyrics = ({ transposedSections, showLyrics, showChords }) => {
                             {section.lyrics.map((line, lineIndex) => (
                                 <div key={lineIndex}>
                                     <div className="flex mt-1 overflow-auto text-base">
-                                        {showChords && section.chords[lineIndex]?.map((chordObj, chordIndex) => (
+                                    {showChords && section.chords[lineIndex]?.map((chordObj, chordIndex) => {
+                                        const nextChord = section.chords[lineIndex]?.[chordIndex+1];
+                                        
+                                        return (
                                             <span
                                                 key={chordIndex}
                                                 className="dark:text-gray-300 font-semibold"
                                                 style={{
                                                     position: "relative",
                                                     left: showLyrics ? `${chordObj.position / 2}%` : 0,
+                                                    marginRight: !showLyrics && nextChord && !nextChord.dash && '5px', // Using previousChord here
                                                 }}
                                             >
                                                 {(chordObj.left || chordObj.leftRight) && ' | '}
                                                 {(chordObj.leftColon) && ' |: '}
                                                 {(chordObj.leftParenthesis || chordObj.leftRightParenthesis) && ' ( '}
-                                                {chordObj.dash ? (chordObj.spaceBetween ? (!showLyrics?'\u00A0-\u00A0':' - ') : '-') : ''}
+                                                {chordObj.dash ? (chordObj.spaceBetween ? (!showLyrics ? '\u00A0-\u00A0' : ' - ') : '-') : ''}
                                                 {chordObj.chord}
                                                 {(chordObj.percentage && (chordObj.leftPercentage || chordObj.leftRightPercentage)) && ' |'}
                                                 {(chordObj.percentage) && ' % '}
@@ -47,7 +51,9 @@ const SongLyrics = ({ transposedSections, showLyrics, showChords }) => {
                                                 {(chordObj.right || chordObj.leftRight) && ' | '}
                                                 {chordIndex === section.chords[lineIndex].length - 1 && section.times?.[lineIndex] ? ` (${section.times[lineIndex]}x)` : ''}
                                             </span>
-                                        ))}
+                                        );
+                                    })}
+
                                     </div>
                                     {showLyrics && (
                                         <span className="dark:text-gray-300 whitespace-pre-wrap text-base">
