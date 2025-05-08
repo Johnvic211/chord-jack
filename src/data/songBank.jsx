@@ -3950,6 +3950,288 @@ export default [
             },
         ],
     },
+    {
+        title: "Anchor of our Hearts",
+        artist: "Victory Worship",
+        publisher: "VICTORY",
+        composer: " Lee Simon Brown, Isa Fabregas-Cuna, David Menezes",
+        album: "Here With Us",
+        releaseDate: "2021",
+        originalKey: "E",
+        chordMap: ["C", "C#", "D", "Eb", "E", "F", "F#", "G", "G#", "A", "Bb", "B"],
+        bpm: 75,
+        timeSignature: '6-8',
+        link: [
+            { platform: 'youtube', url: 'https://youtu.be/YwzEHnpZGfg?si=SJpPIHfPMnE73YVu' },
+            { platform: 'spotify', url: 'https://open.spotify.com/track/5Ay9K9Pzf69aVq3SRFPT8A?si=d2eca58eb8404aa8' },
+            { platform: 'appleMusic', url: 'https://music.apple.com/us/song/anchor-of-our-hearts/1594328889' },
+            { platform: 'pdf', url: 'https://www.everynationmusic.org/wp-content/uploads/2022/03/Anchor-of-Our-Hearts-Song-Chart-Victory-Worship.pdf' },
+        ],
+        sections: [
+            {
+                type: "VERSE 1",
+                lyrics: [
+                    "Hope for the weary",  
+                    "Strength for the faint",  
+                    "Fountain of mercy",  
+                    "Peace to the restless",  
+                    "Breath in our lungs",  
+                    "Lover and friend",
+                ],
+                chords: [
+                    [{ chord: "E/G#", position: 57, number: '5/7' }],
+                    [{ chord: "A", position: 70 }],
+                    [{ chord: "B", position: 50, }],
+                    [{ chord: "C#m", position: 0 }, { chord: "E/G#", position: 34, number: '5/7' }],
+                    [{ chord: "A", position: 56 }],
+                    [{ chord: "B", position: 45, }],
+                ],
+            },
+            {
+                type: "PRE-CHORUS",
+                lyrics: [
+                    "Immanuel,     God with us",  
+                    "Immanuel,     Here with us",  
+                ],
+                chords: [
+                    [{ chord: "E/G#", position: 30, number: '5/7' }, { chord: "A", position: 36 }, { chord: "B", position: 68 }],
+                    [{ chord: "E/G#", position: 30, number: '5/7' }, { chord: "A", position: 36 }, { chord: "B", position: 70 }],
+                ],
+            },
+            {
+                type: "CHORUS",
+                lyrics: [
+                    "Our hiding place",  
+                    "Our safe refuge",  
+                    "The name above all names",  
+                    "In boundless love",  
+                    "You cover us",  
+                    "You’re the anchor of our hearts",
+                ],
+                chords: [
+                    [{ chord: "E", position: 20 }],
+                    [{ chord: "B", position: 18 }],
+                    [{ chord: "A", position: 18 },{ chord: "B", position: 77 }],
+                    [{ chord: "E/G#", position: 10 }],
+                    [{ chord: "B", position: 18 },{ chord: "C#m", position: 38 }],
+                    [{ chord: "A", position: 47.5 },{ chord: "B", position: 68 },{ chord: "E", position: 89 }],
+                ],
+            },
+            {
+                type: "VERSE 2",
+                lyrics: [
+                    "Peace in the sorrow",  
+                    "Rest for our souls",  
+                    "Faithful and true",  
+                    "Home for the stranger",  
+                    "Light for the lost",  
+                    "God of the ages",
+                ],
+                chords: [
+                    [{ chord: "E/G#", position: 53, number: '5/7' }],
+                    [{ chord: "A", position: 53 }],
+                    [{ chord: "B", position: 52, }],
+                    [{ chord: "C#m", position: 0 }, { chord: "E/G#", position: 40, number: '5/7' }],
+                    [{ chord: "A", position: 54 }],
+                    [{ chord: "B", position: 49, }],
+                ],
+            },
+            {
+                type: "",
+                lyrics: ["[CHORUS]"],
+                chords: [
+                    [],
+                ],
+                isNotLyric: true
+            },
+            {
+                type: "INSTRUMENTAL",
+                lyrics: ["", ""],
+                chords: [
+                    [{ chord: "E/G#", position: 0, number: '5/7', left: true },{ chord: "A", position: 4, left: true },{ chord: "B", position: 8, left: true }, { chord: "C#m", position: 12, leftRight: true }],
+                    [{ chord: "A", position: 0, left: true },{ chord: "A", position: 4, left: true },{ chord: "B", position: 8, left: true }, { chord: "B", position: 12, leftRight: true }],
+                ],
+                isNotLyric: true
+            },
+            {
+                type: "BRIDGE",
+                lyrics: [
+                    "  Jesus,    Jesus",  
+                    "You’re the anchor of our hearts",  
+                    "  Jesus,    Jesus",  
+                    "You’re the anchor of our hearts",
+                ],
+                chords: [
+                    [{ chord: "E/G#", position: 0, number: '5/7' },{ chord: "A", position: 3 }, { chord: "B", position: 11 },{ chord: "C#m", position: 15 }],
+                    [{ chord: "A", position: 47 },{ chord: "B", position: 97 }],
+                    [{ chord: "E/G#", position: 0, number: '5/7' },{ chord: "A", position: 3 }, { chord: "B", position: 11 },{ chord: "C#m", position: 15 }],
+                    [{ chord: "A", position: 47 },{ chord: "B", position: 70 },{ chord: "E", position: 90 }],
+                ],
+            },
+            {
+                type: "CHORUS",
+                lyrics: [
+                    "Our hiding place",  
+                    "Our safe refuge",  
+                    "The name above all names",  
+                    "In boundless love",  
+                    "You cover us",  
+                    "You’re the anchor",
+                    "You’re the anchor",
+                    "You’re the anchor of our hearts",
+                ],
+                chords: [
+                    [{ chord: "E", position: 20 }],
+                    [{ chord: "B", position: 18 }],
+                    [{ chord: "A", position: 18 },{ chord: "B", position: 77 }],
+                    [{ chord: "E/G#", position: 10 }],
+                    [{ chord: "B", position: 18 },{ chord: "C#m", position: 36 }],
+                    [{ chord: "A", position: 47.5 }],
+                    [{ chord: 'E/G#', position: 43 },{ chord: "B", position: 48 },{ chord: "C#m", position: 55 }],
+                    [{ chord: "A", position: 47.5 },{ chord: "B", position: 68 },{ chord: "E", position: 89 }],
+                ],
+            },
+        ],
+    },
+    {
+        title: "Safe",
+        artist: "Victory Worship",
+        publisher: "VICTORY",
+        composer: "Lee Brown, Moira dela Torre, Justin Gray, and Juan Winans",
+        album: "Safe",
+        releaseDate: "2017",
+        originalKey: "A",
+        chordMap: ["C", "C#", "D", "Eb", "E", "F", "F#", "G", "G#", "A", "Bb", "B"],
+        link: [
+            { platform: 'youtube', url: 'https://youtu.be/_r_O6COF7GI?si=AHNXp2XQdVnP2ynB' },
+            { platform: 'spotify', url: 'https://open.spotify.com/track/43IbCqMcMvZi1v16LFAE3n?si=27ec9d4fd60647af' },
+            { platform: 'appleMusic', url: 'https://music.apple.com/us/song/safe-feat-isa-fabregas/1241614549' },
+        ],
+        sections: [
+            {
+                type: "INTRO",
+                lyrics: [""],
+                chords: [
+                    [{ chord: "A", position: 0 }, { chord: "F#m", position: 4 }, { chord: "D", position: 8 }, { chord: "E", position: 12 }, { chord: "D", position: 16 }],
+                ],
+                isNotLyric: true
+            },
+            {
+                type: "VERSE 1",
+                lyrics: [
+                    "Under Your grace",  
+                    "Your mercy amazes me",  
+                    "Under Your wings",  
+                    "Your shadow covers me",  
+                    "Your promise of love",  
+                    "Where my heart is safely undone",
+                ],
+                chords: [
+                    [{ chord: "A", position: 0 }],
+                    [],
+                    [{ chord: "F#m", position: 0 }],
+                    [],
+                    [{ chord: "D", position: 0 }],
+                    [{ chord: "E", position: 0 }, { chord: "D", position: 101 }],
+                ],
+            },
+            {
+                type: "VERSE 2",
+                lyrics: [
+                    "Speak to me, Lord",  
+                    "Your servant is listening",  
+                    "Over the noise",  
+                    "I hear You whispering",  
+                    "My hope has come",  
+                    "And my heart is safely undone",
+                ],
+                chords: [
+                    [{ chord: "A", position: 0 }],
+                    [],
+                    [{ chord: "F#m", position: 0 }],
+                    [],
+                    [{ chord: "D", position: 0 }],
+                    [{ chord: "E", position: 20 }, { chord: "D", position: 91 }],
+                ],
+            },
+            {
+                type: "CHORUS",
+                lyrics: [
+                    "I found my fortress in You",  
+                    "And my soul is anchored with You",  
+                    "My resting place is in Your name",  
+                    "Forever safe",
+                ],
+                chords: [
+                    [{ chord: "A", position: 5 }],
+                    [{ chord: "F#m", position: 34 }],
+                    [{ chord: "D", position: 46 }, { chord: "E", position: 102 }],
+                    [{ chord: "D", position: 33 }],
+                ],
+            },
+            {
+                type: "VERSE 2",
+                lyrics: [
+                    "Speak to me, Lord",  
+                    "Your servant is listening",  
+                    "Over the noise",  
+                    "I hear You whispering",  
+                    "My hope has come",  
+                    "And my heart is safely undone",
+                ],
+                chords: [
+                    [{ chord: "A", position: 0 }],
+                    [],
+                    [{ chord: "F#m", position: 0 }],
+                    [],
+                    [{ chord: "D", position: 0 }],
+                    [{ chord: "E", position: 20 }, { chord: "D", position: 91 }],
+                ],
+            },
+            {
+                type: "CHORUS",
+                lyrics: [
+                    "I found my fortress in You",  
+                    "And my soul is anchored with You",  
+                    "My resting place is in Your name",  
+                    "Forever safe",
+                ],
+                chords: [
+                    [{ chord: "A", position: 5 }],
+                    [{ chord: "F#m", position: 34 }],
+                    [{ chord: "D", position: 46 }, { chord: "E", position: 102 }],
+                    [{ chord: "D", position: 33 }],
+                ],
+            },
+            {
+                type: "INSTRUMENTAL",
+                lyrics: [
+                    "Forever safe, forever safe",  
+                    "Forever safe",
+                ],
+                chords: [
+                    [{ chord: "A", position: 34 }, { chord: "Bm", position: 78 }],
+                    [{ chord: "A", position: 34 }],
+                ],
+            },
+            {
+                type: "BRIDGE",
+                lyrics: [
+                    "You are never far away",  
+                    "Always reaching out to save",  
+                    "My weakness covered by Your strength",  
+                    "And I am found forever safe",
+                ],
+                chords: [
+                    [{ chord: "D", position: 33 }],
+                    [{ chord: "A/C#", position: 32, number: '1/3' }],
+                    [{ chord: "Bm", position: 56.5 }],
+                    [{ chord: "A", position: 40 }],
+                ],
+            },
+
+        ],
+    },
     //EVERY NATION MUSIC
     {
         title: "The Beat",

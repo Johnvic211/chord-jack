@@ -91,27 +91,22 @@ const SongTransposer = ({ selectedSong, page, allowSwipe, setAllowSwipe }) => {
 
 	// Transpose a chord with steps
 	const transposeChord = (chord, steps) => {
-		// Check if the chord has a slash (e.g., D/F#)
 		const [baseChord, afterSlash] = chord.split('/');
 
-		// Handle chord with modifiers (e.g., C#m)
-		const chordMatch = baseChord.match(/^([A-G#b]+)(.*)$/); // Match base chord + modifiers
-		if (!chordMatch) return chord; // Return original if no match
+		const chordMatch = baseChord.match(/^([A-G#b]+)(.*)$/);
+		if (!chordMatch) return chord;
 
-		const baseChordName = chordMatch[1]; // Extract base chord name (e.g., "C#")
-		const modifier = chordMatch[2] || ''; // Extract modifier (e.g., "m")
+		const baseChordName = chordMatch[1];
+		const modifier = chordMatch[2] || '';
 
-		// Standardize the base chord and find its index
 		const baseChordStandardized = baseChordName;
 		let baseChordIndex = chordMap.indexOf(baseChordStandardized);
-		if (baseChordIndex === -1) return chord; // Return the chord if not found
+		if (baseChordIndex === -1) return chord;
 
-		// Transpose the base chord
 		let newBaseChordIndex = (baseChordIndex + steps + chordMap.length) % chordMap.length;
 		const newBaseChord = chordMap[newBaseChordIndex];
 
-		// If there's an afterslash part (e.g., "D/F#"), handle it similarly
-		let newAfterSlash = afterSlash || ''; // Default to empty string if no afterslash
+		let newAfterSlash = afterSlash || '';
 
 		if (afterSlash) {
 			const afterSlashStandardized = afterSlash;
@@ -123,11 +118,9 @@ const SongTransposer = ({ selectedSong, page, allowSwipe, setAllowSwipe }) => {
 			}
 		}
 
-		// Return the transposed chord, keeping the afterslash if it exists
 		return newAfterSlash ? `${newBaseChord}/${newAfterSlash}${modifier}` : `${newBaseChord}${modifier}`;
 	};
 
-	// Generate scale chords for the selected key
 	const majorScaleDegrees = [0, 2, 4, 5, 7, 9, 11];
 	const generateScaleChords = (key) => {
 		const rootIndex = chordMap.indexOf(key);
@@ -137,7 +130,6 @@ const SongTransposer = ({ selectedSong, page, allowSwipe, setAllowSwipe }) => {
 
 	const scaleChords = generateScaleChords(selectedKey);
 
-	// Function to convert chord to its scale degree (1-7)
 	const getChordNumber = (chord) => {
 		const [baseChord, afterSlash] = chord.split('/');
 		
@@ -163,27 +155,21 @@ const SongTransposer = ({ selectedSong, page, allowSwipe, setAllowSwipe }) => {
 				if(scaleChords.includes(chordMap[degreeInScale])) {
 					afterSlashNumber = `${scaleChords.indexOf(chordMap[degreeInScale]) + 1}`;
 				} else {
-					// If the chord isn't in the natural scale, check for sharps or flats:
 					if (afterSlashChord.includes('#')) {
-						// Find the natural note below the sharp
 						const naturalNote = afterSlashChord.replace('#', '');
 						const naturalPosition = chordMap.indexOf(naturalNote) - chordMap.indexOf('C');
 						const naturalDegree = (naturalPosition + chordMap.length) % chordMap.length;
 
 						if(scaleChords.includes(chordMap[naturalDegree])) {
-							// If the natural note is in the scale, we add sharp to its degree
 							afterSlashNumber = `${scaleChords.indexOf(chordMap[naturalDegree]) + 1}#`;
 						} else {
-							// Here you might decide to just use the sharp notation or another convention
 							afterSlashNumber = `${scaleChords.indexOf(chordMap[naturalDegree]) + 1}#`;
 						}
 					} else if (afterSlashChord.includes('b')) {
-						// For flat chords, calculate similarly to sharp but adjust for flat degree
 						const naturalNote = afterSlashChord.replace('b', '');
 						const naturalPosition = chordMap.indexOf(naturalNote) - chordMap.indexOf('C');
 						const naturalDegree = (naturalPosition + chordMap.length) % chordMap.length;
 
-						// Check if the flat note is part of the scale and assign flat notation
 						if (scaleChords.includes(chordMap[naturalDegree])) {
 							afterSlashNumber = `${scaleChords.indexOf(chordMap[naturalDegree]) + 1}b`;
 						} else {
@@ -191,7 +177,7 @@ const SongTransposer = ({ selectedSong, page, allowSwipe, setAllowSwipe }) => {
 						}
 					} else {
 						if (scaleChords.includes(chordMap)) {
-							afterSlashNumber = afterSlashChord; // Keep as-is if not in scale
+							afterSlashNumber = afterSlashChord;
 						}
 					}
 				}
@@ -288,10 +274,10 @@ const SongTransposer = ({ selectedSong, page, allowSwipe, setAllowSwipe }) => {
                             setAllowSwipe={setAllowSwipe}
                             showAutoScrollLyrics={showAutoScrollLyrics}
                             setShowAutoScrollLyrics={setShowAutoScrollLyrics}
-							autoScroll={autoScroll}
+														autoScroll={autoScroll}
                             setAutoScroll={setAutoScroll}
-							speed={speed}
-							setSpeed={setSpeed}
+														speed={speed}
+														setSpeed={setSpeed}
                             page={page}
                         />
                     )}
@@ -306,24 +292,24 @@ const SongTransposer = ({ selectedSong, page, allowSwipe, setAllowSwipe }) => {
 
                     {/* Lyrics & Chords Display */}
                     <SongLyrics 
-						transposedSections={transposedSections} 
-						showLyrics={showLyrics} 
-						showChords={showChords} 
-					/>
-                </div>
-            </div>
+											transposedSections={transposedSections} 
+											showLyrics={showLyrics} 
+											showChords={showChords} 
+										/>
+													</div>
+											</div>
 
             {/* Auto Scroll Component */}
             {showAutoScrollLyrics && !isOpen && (
                 <AutoScrollLyrics 
-					autoScroll={autoScroll} 
-					setAutoScroll={setAutoScroll} 
-					speed={speed} 
-					setSpeed={setSpeed} 
-					showAutoScrollLyrics={showAutoScrollLyrics}
-				/>
-            )}
-        </main>
+									autoScroll={autoScroll} 
+									setAutoScroll={setAutoScroll} 
+									speed={speed} 
+									setSpeed={setSpeed} 
+									showAutoScrollLyrics={showAutoScrollLyrics}
+								/>
+										)}
+								</main>
     );
 
 };
