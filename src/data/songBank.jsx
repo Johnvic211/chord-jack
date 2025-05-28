@@ -4232,6 +4232,284 @@ export default [
 
         ],
     },
+    {
+        title: "This Is Your Church",
+        artist: "Victory Worship",
+        publisher: "VICTORY",
+        composer: "Charles Bautista, Bryson Breakey, Elle Cabiling-Tumaliuan and Langelihle Mbonambi",
+        album: "Yahweh",
+        releaseDate: "2022",
+        originalKey: "A",
+        bpm: 73,
+        chordMap: ["C", "C#", "D", "Eb", "E", "F", "F#", "G", "G#", "A", "Bb", "B"],
+        link: [
+            { platform: 'youtube', url: 'https://youtu.be/QZspQBJf0-Y?si=3gZlySCRcFSKBmsd' },
+            { platform: 'spotify', url: 'https://open.spotify.com/track/16AVaYtMQdYJ1XcYerRU7C?si=5acfd5d1103541ec' },
+            { platform: 'appleMusic', url: 'https://music.apple.com/us/song/this-is-your-church-live/1633605305' },
+            { platform: 'pdf', url: 'https://www.everynationmusic.org/wp-content/uploads/2022/07/this-is-your-church-chord-chart.pdf' },
+        ],
+        sections: [
+            {
+                type: "INTRO",
+                lyrics: [""],
+                chords: [
+                    [{ chord: "A", position: 0, leftRight: true }, { chord: "A", position: 4, right: true }, { chord: "D", position: 8, right: true }, { chord: "D", position: 12, right: true }],
+                ],
+                isNotLyric: true
+            },
+            {
+                type: "VERSE 1",
+                lyrics: [
+                    "We, Your people, all together",
+                    "Bring You honor, give You reverence",
+                    "Standing as one in Your presence",
+                ],
+                chords: [
+                    [{ chord: "A", position: 0 }],
+                    [{ chord: "D", position: 0 }],
+                    [{ chord: "F#m", position: 0 }, { chord: "E", position: 90 }],
+                ],
+            },
+            {
+                type: "VERSE 2",
+                lyrics: [
+                    "By Your Spirit, You have called us",
+                    "A chosen people, sons and daughters",
+                    "Standing as one in Your presence",
+                ],
+                chords: [
+                    [{ chord: "A", position: 0 }],
+                    [{ chord: "D", position: 0 }],
+                    [{ chord: "F#m", position: 0 }, { chord: "E", position: 90 }],
+                ],
+            },
+            {
+                type: "CHORUS",
+                lyrics: [
+                    "This is Your church God build it",
+                    "This Your church God build it",
+                    "Jesus, Cornerstone, God build it",
+                ],
+                chords: [
+                    [{ chord: "A", position: 50 }],
+                    [{ chord: "D", position: 40 }, { chord: "E/G#", position: 105, number: '5/7', leftParenthesis: true }, { chord: "A", position: 110, rightParenthesis: true }],
+                    [{ chord: "F#m", position: 25 }, { chord: "E", position: 42 }],
+                ],
+            },
+            {
+                type: "INTERLUDE",
+                lyrics: [""],
+                chords: [
+                    [{ chord: "A", position: 0, leftRight: true }, { chord: "A", position: 4, right: true }, { chord: "D", position: 8, right: true }, { chord: "D", position: 12, right: true }],
+                ],
+                isNotLyric: true
+            },
+            {
+                type: "VERSE 3",
+                lyrics: [
+                    "Help us stay true to our purpose",
+                    "Let our light shine in the darkness",
+                    "Going as one with Your presence",
+                ],
+                chords: [
+                    [{ chord: "A", position: 0 }],
+                    [{ chord: "D", position: 0 }],
+                    [{ chord: "F#m", position: 0 }, { chord: "E", position: 90 }],
+                ],
+            },
+            {
+                type: "VERSE 4",
+                lyrics: [
+                    "Let the gospel, alive within us",
+                    "Shake our cities, shake the nations",
+                    "Send us as one with Your presence",
+                ],
+                chords: [
+                    [{ chord: "A", position: 0 }],
+                    [{ chord: "D", position: 0 }, { chord: "E/G#", position: 102, number: '5/7' }, { chord: "A", position: 108 }],
+                    [{ chord: "F#m", position: 0 }, { chord: "E", position: 90 }],
+                ],
+            },
+            {
+                type: "",
+                lyrics: ["[CHORUS]"],
+                chords: [],
+                isNotLyric: true
+            },
+            {
+                type: "INTERLUDE",
+                lyrics: ["",""],
+                chords: [
+                    [{ chord: "D", position: 0, leftRight: true }, { chord: "D", position: 4, right: true }, { chord: "E", position: 8, right: true }, { chord: "E", position: 12, right: true }],
+                    [{ chord: "F#m", position: 0, leftRight: true }, { chord: "F#m", position: 4, right: true }, { chord: "E/G#", position: 8, right: true, number: '5/7' }, { chord: "E/G#", position: 12, right: true, number: '5/7' }],
+                ],
+                isNotLyric: true
+            },
+            {
+                type: "BRIDGE",
+                lyrics: [
+                    "We stand secure upon the rock of Jesus Christ",
+                    "A firm foundation that can never be denied",
+                    "Against His church no power of hell could",
+                    "overcome",
+                    "Our God is on our side",
+                ],
+                chords: [
+                    [{ chord: "D", position: 0 }, { chord: "E", position: 102 }],
+                    [{ chord: "F#m", position: 0 }, { chord: "E/G#", position: 90, number: '5/7' }, { chord: "A", position: 120, number: '5/7' }],
+                    [{ chord: "D", position: 0 }, { chord: "E", position: 123 }],
+                    [],
+                    [{ chord: "D/F#", position: 20, number: '1/3' }, { chord: "E/G#", position: 30, number: '5/7' }, { chord: "A/C#", position: 40, number: '1/3' }],
+                ],
+            },
+            {
+                type: "TAG",
+                lyrics: [
+                    "Yes, He is always on our side",
+                ],
+                chords: [
+                    [{ chord: "F#m", position: 40, number: '1/3' }, { chord: "E/G#", position: 50, number: '5/7' }, { chord: "A", position: 60, number: '1/3' }],
+                ],
+            },
+            {
+                type: "CODA",
+                lyrics: ["",""],
+                chords: [
+                    [{ chord: "D", position: 0, leftRight: true }, { chord: "D", position: 4, right: true }, { chord: "E", position: 8, right: true }, { chord: "E", position: 12, right: true }],
+                    [{ chord: "F#m", position: 0, leftRight: true }, { chord: "F#m", position: 4, right: true }, { chord: "E/G#", position: 8, right: true, number: '5/7' }, { chord: "E/G#", position: 12, right: true, number: '5/7' }],
+                ],
+                isNotLyric: true
+            },
+            {
+                type: "",
+                lyrics: ["(Oh oh oh oooh!)"],
+                chords: [],
+                isNotLyric: true,
+                italize: [true],
+            },
+            {
+                type: "FINAL CHORUS: coda chords",
+                lyrics: [
+                    "Kami’y Sa’Yo , O Kristo",
+                    "Kami’y Sa’Yo , O Kristo",
+                    "Panginoon, Aming Diyos",
+                    "O Kristo",
+                ],
+                chords: [
+                    [],
+                    [],
+                    [],
+                    [{ chord: "D", position: 32 }],
+                ],
+            },
+        ],
+    },
+    {
+        title: "Many Waters",
+        artist: "Victory Worship",
+        publisher: "VICTORY",
+        composer: "Chris Davis, Robert Ellis Jr. & Jon Owens",
+        album: "Rise Heart",
+        releaseDate: "2015",
+        originalKey: "C",
+        bpm: 128,
+        chordMap: ["C", "C#", "D", "Eb", "E", "F", "F#", "G", "G#", "A", "Bb", "B"],
+        link: [
+            { platform: 'youtube', url: 'https://youtu.be/Yr-L1hLn6hs?si=-DrMDU5nXai4QZjP' },
+            { platform: 'spotify', url: 'https://open.spotify.com/track/0hhsNl9yJlUvNUJdG7ktGl?si=03f23fa631ed4e9c' },
+            { platform: 'appleMusic', url: 'https://music.apple.com/us/song/many-waters-feat-lee-simon-brown/1225096413' },
+            { platform: 'pdf', url: 'https://www.everynationmusic.org/wp-content/uploads/2022/07/this-is-your-church-chord-chart.pdf' },
+        ],
+        sections: [
+            {
+                type: "CHORUS (2x)",
+                lyrics: [
+                    "Hallelujah, Hallelujah",
+                    "For the Lord Almighty reigns",
+                    "Hallelujah, Hallelujah",
+                    "For the Lord Almighty reigns",
+                ],
+                chords: [
+                ],
+            },
+            {
+                type: "VERSE",
+                lyrics: [
+                    "I hear the sound of many waters",
+                    "Thundering now",
+                    "The song of hope",
+                    "Of sons and daughters crying out",
+                    "I hear the sound of many nations",
+                    "Thundering now",
+                    "The song of hope, of celebration",
+                    "Crying out",
+                ],
+                chords: [
+                ],
+            },
+            {
+                type: "CHORUS",
+                lyrics: [
+                    "Hallelujah, Hallelujah",
+                    "For the Lord Almighty reigns",
+                    "Hallelujah, Hallelujah",
+                    "For the Lord Almighty reigns",
+                ],
+                chords: [
+                ],
+            },
+            {
+                type: "VERSE",
+                lyrics: [
+                    "I hear the sound of many waters",
+                    "Thundering now",
+                    "The song of hope",
+                    "Of sons and daughters crying out",
+                    "I hear the sound of many nations",
+                    "Thundering now",
+                    "The song of hope, of celebration",
+                    "Crying out",
+                ],
+                chords: [
+                ],
+            },
+            {
+                type: "CHORUS (2x)",
+                lyrics: [
+                    "Hallelujah, Hallelujah",
+                    "For the Lord Almighty reigns",
+                    "Hallelujah, Hallelujah",
+                    "For the Lord Almighty reigns",
+                ],
+                chords: [
+                ],
+            },
+            {
+                type: "BRIDGE (2x)",
+                lyrics: [
+                    "Can you hear the sound",
+                    "The sound of the Lion",
+                    "Gathering His people",
+                    "Can you hear the sound",
+                    "The sound of the nations",
+                    "Worshiping together",
+                ],
+                chords: [
+                ],
+            },
+            {
+                type: "CHORUS (2x)",
+                lyrics: [
+                    "Hallelujah, Hallelujah",
+                    "For the Lord Almighty reigns",
+                    "Hallelujah, Hallelujah",
+                    "For the Lord Almighty reigns",
+                ],
+                chords: [
+                ],
+            },
+        ],
+    },
     //EVERY NATION MUSIC
     {
         title: "The Beat",
@@ -4762,6 +5040,171 @@ export default [
                     [{ chord: "G", position: 27 }],
                     [{ chord: "C", position: 0 }, { chord: "D", position: 49 }, { chord: "Em", position: 96 }],
                     [{ chord: "G", position: 45 }],
+                ],
+            },
+        ],
+    },
+    //Hillsong Worship
+    {
+        title: "For Who You Are",
+        artist: "Hillsong Worship",
+        composer: "Marty Sampson",
+        album: "Mighty To Save",
+        releaseDate: "2006",
+        originalKey: "B",
+        chordMap: ["C", "C#", "D", "Eb", "E", "F", "F#", "G", "G#", "A", "Bb", "B"],
+        bpm: 118,
+        timeSignature: '4/4',
+        link: [
+            { platform: 'youtube', url: 'https://youtu.be/bjxkxJnases?si=CFTBgLYRb6w5d3rT' },
+            { platform: 'spotify', url: 'https://open.spotify.com/track/6jL4jgv0WZpQCX4h6xMFik?si=74c16a9765e84c8b' },
+            { platform: 'appleMusic', url: 'https://music.apple.com/us/song/for-who-you-are-live/1785661844' },
+        ],
+        sections: [
+            {
+                type: "VERSE",
+                lyrics: [
+                    "Standing here in Your presence",
+                    "Thinking of the good things You have done",
+                    "Waiting here patiently",
+                    "Just to hear Your still small voice again",
+                ],
+                chords: [
+                    [{ chord: "B", position: 0 }],
+                    [{ chord: "E", position: 0 }],
+                    [{ chord: "B", position: 0 }],
+                    [{ chord: "E", position: 0 }],
+                ],
+            },
+            {
+                type: "PRE-CHORUS",
+                lyrics: [
+                    "   Holy,  righteous,  faithful to the end",
+                    "   Saviour,  healer,  redeemer and friend",
+                ],
+                chords: [
+                    [{ chord: "G#m", position: 0 }, { chord: "F#", position: 15 }, { chord: "E", position: 43 }, { chord: "F#", position: 80 }],
+                    [{ chord: "G#m", position: 0 }, { chord: "F#", position: 15 }, { chord: "E", position: 60 }],
+                ],
+            },
+            {
+                type: "CHORUS",
+                lyrics: [
+                    "I will worship You for who You are",
+                    "I will worship You for who You are",
+                    "I will worship You for who You are",
+                    "Jesus",
+                ],
+                chords: [
+                    [{ chord: "B", position: 55 }],
+                    [{ chord: "G#m", position: 55 }],
+                    [{ chord: "F#", position: 55 }],
+                    [{ chord: "E", position: 12 }],
+                ],
+            },
+            {
+                type: "INSTRUMENTAL",
+                lyrics: [
+                    "",
+                ],
+                chords: [
+                    [{ chord: "B", position: 0 }, { chord: "E", position: 12 }],
+                ],
+            },
+            {
+                type: "VERSE",
+                lyrics: [
+                    "Standing here in Your presence",
+                    "Thinking of the good things You have done",
+                    "Waiting here patiently",
+                    "Just to hear Your still small voice again",
+                ],
+                chords: [
+                    [{ chord: "B", position: 0 }],
+                    [{ chord: "E", position: 0 }],
+                    [{ chord: "B", position: 0 }],
+                    [{ chord: "E", position: 0 }],
+                ],
+            },
+            {
+                type: "PRE-CHORUS",
+                lyrics: [
+                    "   Holy,  righteous,  faithful to the end",
+                    "   Saviour,  healer,  redeemer and friend",
+                ],
+                chords: [
+                    [{ chord: "G#m", position: 0 }, { chord: "F#", position: 15 }, { chord: "E", position: 43 }, { chord: "F#", position: 80 }],
+                    [{ chord: "G#m", position: 0 }, { chord: "F#", position: 15 }, { chord: "E", position: 60 }],
+                ],
+            },
+            {
+                type: "CHORUS",
+                lyrics: [
+                    "I will worship You for who You are",
+                    "I will worship You for who You are",
+                    "I will worship You for who You are",
+                    "Jesus",
+                ],
+                chords: [
+                    [{ chord: "B", position: 55 }],
+                    [{ chord: "G#m", position: 55 }],
+                    [{ chord: "F#", position: 55 }],
+                    [{ chord: "E", position: 12 }],
+                ],
+            },
+            {
+                type: "INSTRUMENTAL",
+                lyrics: [
+                    "",
+                ],
+                chords: [
+                    [{ chord: "B", position: 0 }, { chord: "G#m", position: 12 }, { chord: "F#", position: 24 }, { chord: "E", position: 36 }],
+                ],
+            },
+            {
+                type: "BRIDGE",
+                lyrics: [
+                    "My soul secure, Your promise sure",
+                    "Your love endures always",
+                    "My soul secure, Your promise sure",
+                    "Your love endures always",
+
+                ],
+                chords: [
+                    [{ chord: "B", position: 20 }, { chord: "G#m", position: 90 }],
+                    [{ chord: "F#", position: 20 }, { chord: "E", position: 80 }],
+                    [{ chord: "B", position: 22 }, { chord: "G#m", position: 90 }],
+                    [{ chord: "F#", position: 22 }, { chord: "E", position: 80 }],
+                ],
+            },
+            {
+                type: "CHORUS",
+                lyrics: [
+                    "I will worship You for who You are",
+                    "I will worship You for who You are",
+                    "I will worship You for who You are",
+                    "Jesus",
+                ],
+                chords: [
+                    [{ chord: "B", position: 55 }],
+                    [{ chord: "G#m", position: 55 }],
+                    [{ chord: "F#", position: 55 }],
+                    [{ chord: "E", position: 12 }],
+                ],
+            },
+            {
+                type: "",
+                lyrics: [
+                    "I will worship You for who You are",
+                    "I will worship You for who You are",
+                    "I will worship You for who You are",
+                    "Jesus",
+                ],
+                chords: [
+                    [{ chord: "B", position: 55 }],
+                    [{ chord: "G#m", position: 55 }],
+                    [{ chord: "F#", position: 55 }],
+                    [{ chord: "E", position: 12 }, { chord: "B", position: 24 }],
                 ],
             },
         ],

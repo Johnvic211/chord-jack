@@ -4,9 +4,9 @@ import PropTypes from "prop-types";
 import Url from './Url'; 
 import { ExternalLink, Settings } from "lucide-react";
 import Swal from "sweetalert2";
-import AutoScrollLyrics from "./AutoScrollLyrics"
 import SongLyrics from "./SongLyrics"
 import SettingsModal from "./SettingsModal"
+import AutoScrollLyrics from './AutoScrollLyrics';
 
 const SongTransposer = ({ selectedSong, page, allowSwipe, setAllowSwipe }) => {
 	const chordMap = selectedSong.chordMap; 
