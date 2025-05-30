@@ -4408,7 +4408,7 @@ export default [
         title: "Many Waters",
         artist: "Victory Worship",
         publisher: "VICTORY",
-        composer: "Chris Davis, Robert Ellis Jr. & Jon Owens",
+        composer: "Chris Davis, Robert Ellis Jr. and Jon Owens",
         album: "Rise Heart",
         releaseDate: "2015",
         originalKey: "C",
@@ -4430,21 +4430,33 @@ export default [
                     "For the Lord Almighty reigns",
                 ],
                 chords: [
+                    [{ chord: 'Am', position: 22 }, { chord: 'C', position: 52 }],
+                    [{ chord: 'F', position: 37 }],
+                    [{ chord: 'Am', position: 22 }, { chord: 'C', position: 52 }],
+                    [{ chord: 'G', position: 37 }, { chord: 'F', position: 90 }],
                 ],
             },
             {
-                type: "VERSE",
+                type: "VERSE 1",
                 lyrics: [
-                    "I hear the sound of many waters",
+                    "   I hear the sound of many waters",
                     "Thundering now",
-                    "The song of hope",
+                    "   The song of hope",
                     "Of sons and daughters crying out",
-                    "I hear the sound of many nations",
+                    "   I hear the sound of many nations",
                     "Thundering now",
-                    "The song of hope, of celebration",
+                    "   The song of hope, of celebration",
                     "Crying out",
                 ],
                 chords: [
+                    [{ chord: 'Am', position: 0 }, { chord: 'C', position: 58 }, { chord: 'G', position: 115 }],
+                    [{ chord: 'F', position: 41 }],
+                    [{ chord: 'Am', position: 0 }, { chord: 'C', position: 68 }],
+                    [{ chord: 'G', position: 90 }, { chord: 'F', position: 124 }],
+                    [{ chord: 'Am', position: 0 }, { chord: 'C', position: 58 }, { chord: 'G', position: 120 }],
+                    [{ chord: 'F', position: 55 }],
+                    [{ chord: 'Am', position: 0 }, { chord: 'C', position: 58 }, { chord: 'G', position: 115 }],
+                    [{ chord: 'F', position: 29 }],
                 ],
             },
             {
@@ -4456,21 +4468,33 @@ export default [
                     "For the Lord Almighty reigns",
                 ],
                 chords: [
+                    [{ chord: 'Am', position: 22 }, { chord: 'C', position: 52 }],
+                    [{ chord: 'F', position: 37 }],
+                    [{ chord: 'Am', position: 22 }, { chord: 'C', position: 52 }],
+                    [{ chord: 'G', position: 37 }, { chord: 'F', position: 90 }],
                 ],
             },
             {
-                type: "VERSE",
+                type: "VERSE 2",
                 lyrics: [
-                    "I hear the sound of many waters",
+                    "   I hear the sound of many waters",
                     "Thundering now",
-                    "The song of hope",
+                    "   The song of hope",
                     "Of sons and daughters crying out",
-                    "I hear the sound of many nations",
+                    "   I hear the sound of many nations",
                     "Thundering now",
-                    "The song of hope, of celebration",
+                    "   The song of hope, of celebration",
                     "Crying out",
                 ],
                 chords: [
+                    [{ chord: 'Am', position: 0 }, { chord: 'C', position: 58 }, { chord: 'G', position: 115 }],
+                    [{ chord: 'F', position: 41 }],
+                    [{ chord: 'Am', position: 0 }, { chord: 'C', position: 68 }],
+                    [{ chord: 'G', position: 90 }, { chord: 'Dm', position: 124 }],
+                    [{ chord: 'Am', position: 0 }, { chord: 'C', position: 58 }, { chord: 'G', position: 120 }],
+                    [{ chord: 'F', position: 55 }],
+                    [{ chord: 'Am', position: 0 }, { chord: 'C', position: 58 }, { chord: 'G', position: 115 }],
+                    [{ chord: 'Dm', position: 29 }],
                 ],
             },
             {
@@ -4482,30 +4506,356 @@ export default [
                     "For the Lord Almighty reigns",
                 ],
                 chords: [
+                    [{ chord: 'Am', position: 22 }, { chord: 'C', position: 52 }],
+                    [{ chord: 'F', position: 37 }],
+                    [{ chord: 'Am', position: 22 }, { chord: 'C', position: 52 }],
+                    [{ chord: 'G', position: 37 }, { chord: 'F', position: 90 }],
+                ],
+            },
+            {
+                type: "INTERLUDE",
+                lyrics: [
+                    "",
+                ],
+                chords: [
+                    [{ chord: 'Am', position: 0, forwardSlash: 3, leftColon: true, leftRight: true }, { chord: '', position: 4, forwardSlash: 4, right: true }, { chord: 'G', position: 8, forwardSlash: 3, right: true }, { chord: 'F', position: 12, forwardSlash: 3, right: true, rightColon: true }],
                 ],
             },
             {
                 type: "BRIDGE (2x)",
                 lyrics: [
-                    "Can you hear the sound",
+                    "   Can you hear the sound",
                     "The sound of the Lion",
                     "Gathering His people",
-                    "Can you hear the sound",
+                    "", "", "",
+                    "  Can you hear the sound",
                     "The sound of the nations",
                     "Worshiping together",
                 ],
                 chords: [
+                    [{ chord: 'Am', position: 0 } ,{ chord: 'G', position: 77 }, { chord: 'C', position: 87 }],
+                    [{ chord: 'G', position: 25 }],
+                    [{ chord: 'F', position: 0 }, { chord: 'Dm', position: 50 }],
+                    [], [], [],
+                    [{ chord: 'Am', position: 0 } ,{ chord: 'G', position: 77 }, { chord: 'C', position: 87 }],
+                    [{ chord: 'G', position: 25 }],
+                    [{ chord: 'F', position: 0 }, { chord: 'Dm', position: 27 }],
+                ],
+            },
+            {
+                type: "CHORUS",
+                lyrics: [
+                    "Hallelujah, Hallelujah",
+                    "For the Lord Almighty reigns",
+                    "Hallelujah, Hallelujah",
+                ],
+                chords: [
+                    [{ chord: 'Am', position: 22 }, { chord: 'G', position: 52 }],
+                    [{ chord: 'G', position: 37 }, { chord: 'Dm', position: 90 }],
+                    [{ chord: 'C', position: 29 }, { chord: 'Dm', position: 57 }],
+                ],
+            },
+            {
+                type: "CHORUS (4x)",
+                lyrics: [
+                    "For the Lord Almighty reigns",
+                    "Hallelujah, Hallelujah",
+                ],
+                chords: [
+                    [{ chord: 'Am', position: 33 }, { chord: 'G', position: 80 }],
+                    [{ chord: 'C', position: 29 }, { chord: 'Dm', position: 57 }],
+                ],
+            },
+            {
+                type: "",
+                lyrics: [
+                    "For the Lord Almighty reigns",
+                ],
+                chords: [
+                    [{ chord: 'Am', position: 33 }, { chord: 'G', position: 88 }, { chord: 'Dm', position: 95 }, { chord: 'F', position: 105 }],
+                ],
+            },
+        ],
+    },
+    {
+        title: "Lord of All",
+        artist: "Victory Worship",
+        publisher: "VICTORY",
+        composer: "Jose Villanueva III",
+        album: "Radical Love",
+        releaseDate: "2014",
+        originalKey: "E",
+        bpm: 63,
+        chordMap: ["C", "C#", "D", "Eb", "E", "F", "F#", "G", "G#", "A", "Bb", "B"],
+        link: [
+            { platform: 'youtube', url: 'https://youtu.be/dnqAKt3gQfY?si=St-Ai-O4yp1n3-Oy' },
+            { platform: 'spotify', url: 'https://open.spotify.com/track/2NGFMaWaUdVcrVDnK3NkMq?si=34c2f0cb5e384788' },
+            { platform: 'appleMusic', url: 'https://music.apple.com/us/song/lord-of-all-feat-teri-sambajon-ho/1225096263' },
+            { platform: 'pdf', url: 'https://www.everynationmusic.org/wp-content/uploads/2022/03/lord-of-all-radical-love-victory-worship.pdf' },
+        ],
+        sections: [
+            {
+                type: "INTRO:",
+                lyrics: [
+                   "",  
+                ],
+                chords: [
+                    [{ chord: 'E', position: 0, forwardSlash: 3, left: true }, { chord: 'A', position: 4, forwardSlash: 3, left: true },{ chord: 'E', position: 8, forwardSlash: 3, left: true }, { chord: 'A', position: 12, forwardSlash: 3, leftRight: true }],
+                ],
+                isNotLyric: true
+            },
+            {
+                type: "VERSE 1",
+                lyrics: [
+                   "I surrender, I will yield",  
+                    "I will bow down, I will live",  
+                    "I will seek You, all my days",  
+                    "I will follow, all Your ways",
+                ],
+                chords: [
+                    [{ chord: 'E', position: 0 }, { chord: 'A', position: 45 }],
+                    [{ chord: 'C#m', position: 0 }, { chord: 'B', position: 52 }],
+                    [{ chord: 'E', position: 0 }, { chord: 'A', position: 52 }],
+                    [{ chord: 'C#m', position: 0 }, { chord: 'B', position: 32 }],
+                ],
+            },
+            {
+                type: "PRE-CHORUS",
+                lyrics: [
+                   "Cause You are my only one",  
+                    "You are my only one",
+                ],
+                chords: [
+                    [{ chord: 'A', position: 65 }, { chord: 'E', position: 90 }, { chord: 'B', position: 110 }],
+                    [{ chord: 'A', position: 33 }, { chord: 'E', position: 47 }, { chord: 'B', position: 60 }],
+                ],
+            },
+            {
+                type: "CHORUS",
+                lyrics: [
+                    "I want to live for You",  
+                    "Be glorified forever",  
+                    "My life will declare",  
+                    "You alone are Lord",  
+                    "Everything of me",  
+                    "Use it for Your glory",  
+                    "That everyone will see",  
+                    "Will hear, will know",  
+                    "You are Lord of all",
+                ],
+                chords: [
+                    [{ chord: 'E', position: 100 }],
+                    [{ chord: 'A', position: 55 }],
+                    [{ chord: 'C#m', position: 50 }],
+                    [{ chord: 'B', position: 80 }],
+                    [{ chord: 'E', position: 75 }],
+                    [{ chord: 'A', position: 65 }],
+                    [{ chord: 'C#m', position: 100 }],
+                    [{ chord: 'B', position: 20 }, { chord: 'A', position: 58 }],
+                    [{ chord: 'E', position: 80 }],
+                ],
+            },
+            {
+                type: "VERSE 2",
+                lyrics: [
+                   "I will worship, I will praise",  
+                    "I will lift up Your holy name",  
+                    "I will give You all the glory",  
+                    "All the honor due Your name",
+                ],
+                chords: [
+                    [{ chord: 'E', position: 0 }, { chord: 'A', position: 54 }],
+                    [{ chord: 'C#m', position: 0 }, { chord: 'B', position: 33 }],
+                    [{ chord: 'E', position: 0 }, { chord: 'A', position: 52 }],
+                    [{ chord: 'C#m', position: 0 }, { chord: 'B', position: 37 }],
+                ],
+            },
+            {
+                type: "",
+                lyrics: [
+                   "(PRE-CHORUS)", "(CHORUS)"  
+                ],
+                chords: [],
+                isNotLyric: true,
+            },
+            {
+                type: "INSTRUMENTAL:",
+                lyrics: [
+                   "",  
+                ],
+                chords: [
+                    [{ chord: 'A', position: 0, forwardSlash: 3, left: true }, { chord: 'C#m', position: 4, forwardSlash: 3, left: true },{ chord: 'E', position: 8, forwardSlash: 3, left: true }, { chord: 'G#m', position: 12, forwardSlash: 3, leftRight: true }],
+                ],
+                isNotLyric: true
+            },
+            {
+                type: "BRIDGE 1",
+                lyrics: [
+                    "Here I am, Lord, mold me",  
+                    "Here I am, Lord, use me",  
+                    "Here I am, Lord, send me",  
+                    "For Your glory",
+                ],
+                chords: [
+                    [{ chord: 'A', position: 0 }],
+                    [{ chord: 'C#m', position: 0 }],
+                    [{ chord: 'E', position: 0 },],
+                    [{ chord: 'G#m', position: 40 }],
+                ],
+            },
+            {
+                type: "BRIDGE 2",
+                lyrics: [
+                    "Here I am, Lord, mold me",  
+                    "Here I am, Lord, use me",  
+                    "Here I am, Lord, send me",  
+                    "For Your glory",
+                ],
+                chords: [
+                    [{ chord: 'A', position: 0 }],
+                    [{ chord: 'C#m', position: 0 }],
+                    [{ chord: 'E', position: 0 },],
+                    [{ chord: 'B', position: 40 }],
+                ],
+            },
+            {
+                type: "",
+                lyrics: [
+                   "(CHORUS) (2x)"  
+                ],
+                chords: [],
+            },
+            {
+                type: "OUTRO:",
+                lyrics: [
+                   "",  
+                ],
+                chords: [
+                    [{ chord: 'A', position: 0, forwardSlash: 1, left: true }, { chord: 'E', position: 4, forwardSlash: 1, left: true },{ chord: 'B', position: 8, forwardSlash: 3, leftRight: true }],
+                ],
+                isNotLyric: true,
+                times: [4],
+            }
+        ],
+    },{
+        title: "Pour us out",
+        artist: "Victory Worship",
+        publisher: "VICTORY",
+        composer: "James Murrell, Justin Chapman, Kristin Hill & Shayne Hill",
+        album: "Rise Heart",
+        releaseDate: "2015",
+        originalKey: "C",
+        bpm: 73,
+        chordMap: ["C", "C#", "D", "Eb", "E", "F", "F#", "G", "G#", "A", "Bb", "B"],
+        link: [
+            { platform: 'youtube', url: 'https://youtu.be/pbN3z_E9pcI?si=109J_W3_961cNCGz' },
+            { platform: 'spotify', url: 'https://open.spotify.com/track/1vpOfwQXCsTs5wGiTPiE2p?si=724720ca965d428c' },
+            { platform: 'appleMusic', url: 'https://music.apple.com/us/song/pour-us-out-feat-cathy-go/1225096486' },
+            { platform: 'pdf', url: 'https://www.everynationmusic.org/wp-content/uploads/2022/03/Pour-Us-Out-C.pdf' },
+        ],
+        sections: [
+            {
+                type: "INTRO:",
+                lyrics: [
+                   "",  
+                ],
+                chords: [
+                    [{ chord: 'Am', position: 0 }, { chord: 'G', position: 4 }, { chord: 'F', position: 8 }, { chord: 'G', position: 12 }],
+                ],
+                isNotLyric: true
+            },
+            {
+                type: "VERSE",
+                lyrics: [
+                    "Fill us up, pour us out",  
+                    "For a broken world that is far from you",  
+                    "Fill us up, pour us out",  
+                    "To be your hands and feet oh Lord",  
+                ],
+                chords: [
+                    [{ chord: 'Am', position: 22 }, { chord: 'G', position: 60 }],
+                    [{ chord: 'F', position: 31 }, { chord: 'G', position: 103 }],
+                    [{ chord: 'Am', position: 22 }, { chord: 'G', position: 60 }],
+                    [{ chord: 'F', position: 56 }, { chord: 'G', position: 115 }],
+                ],
+            },
+            {
+                type: "CHORUS",
+                lyrics: [
+                    "Holy Spirit draw me near",
+                    "Holy Spirit we are here",
+                    "To seek Your face",
+                    "To know Your ways",
+                ],
+                chords: [
+                    [{ chord: 'C', position: 0 }, { chord: 'F', position: 24 }, { chord: 'G', position: 40 }, { chord: 'Am', position: 65 }],
+                    [{ chord: 'C', position: 0 }, { chord: 'F', position: 24 }, { chord: 'G', position: 34 }, { chord: 'Am', position: 58 }],
+                    [{ chord: 'F', position: 17 }, { chord: 'C', position: 34 }, { chord: 'G', position: 47 }],
+                    [{ chord: 'F', position: 18 }, { chord: 'C', position: 35 }, { chord: 'G', position: 52 }],
+                ],
+            },
+            {
+                type: "VERSE",
+                lyrics: [
+                    "Fill us up, pour us out",  
+                    "For a broken world that is far from you",  
+                    "Fill us up, pour us out",  
+                    "To be your hands and feet oh Lord",  
+                ],
+                chords: [
+                    [{ chord: 'Am', position: 22 }, { chord: 'G', position: 60 }],
+                    [{ chord: 'F', position: 31 }, { chord: 'G', position: 103 }],
+                    [{ chord: 'Am', position: 22 }, { chord: 'G', position: 60 }],
+                    [{ chord: 'F', position: 56 }, { chord: 'G', position: 115 }],
                 ],
             },
             {
                 type: "CHORUS (2x)",
                 lyrics: [
-                    "Hallelujah, Hallelujah",
-                    "For the Lord Almighty reigns",
-                    "Hallelujah, Hallelujah",
-                    "For the Lord Almighty reigns",
+                    "Holy Spirit draw me near",
+                    "Holy Spirit we are here",
+                    "To seek Your face",
+                    "To know Your ways",
                 ],
                 chords: [
+                    [{ chord: 'C', position: 0 }, { chord: 'F', position: 24 }, { chord: 'G', position: 40 }, { chord: 'Am', position: 65 }],
+                    [{ chord: 'C', position: 0 }, { chord: 'F', position: 24 }, { chord: 'G', position: 34 }, { chord: 'Am', position: 58 }],
+                    [{ chord: 'F', position: 17 }, { chord: 'C', position: 34 }, { chord: 'G', position: 47 }],
+                    [{ chord: 'F', position: 18 }, { chord: 'C', position: 35 }, { chord: 'G', position: 52 }],
+                ],
+            },
+            {
+                type: "BRIDGE",
+                lyrics: [
+                    "With Your power Your presence",
+                    "We will go to the ends of the earth",
+                    "With Your power Your presence",
+                    "They will know You’re the light of the worlds",
+                ],
+                chords: [
+                    [{ chord: 'F', position: 46 }, { chord: 'C', position: 90 }],
+                    [{ chord: 'Am', position: 30 }, { chord: 'G', position: 60 }],
+                    [{ chord: 'F', position: 46 }, { chord: 'C', position: 90 }],
+                    [{ chord: 'Am', position: 39 }, { chord: 'G', position: 92 }],
+                ],
+            },
+            {
+                type: "CHORUS",
+                lyrics: [
+                    "Holy Spirit draw me near",
+                    "Holy Spirit we are here",
+                    "To seek Your face",
+                    "To know Your ways",
+                    "To seek Your face",
+                    "To know Your ways",
+                ],
+                chords: [
+                    [{ chord: 'C', position: 0 }, { chord: 'F', position: 24 }, { chord: 'G', position: 40 }, { chord: 'Am', position: 65 }],
+                    [{ chord: 'C', position: 0 }, { chord: 'F', position: 24 }, { chord: 'G', position: 34 }, { chord: 'Am', position: 58 }],
+                    [{ chord: 'F', position: 17 }, { chord: 'C', position: 34 }, { chord: 'G', position: 47 }],
+                    [{ chord: 'F', position: 18 }, { chord: 'C', position: 35 }, { chord: 'G', position: 52 }],
+                    [{ chord: 'F', position: 17 }, { chord: 'C', position: 34 }, { chord: 'G', position: 47 }],
+                    [{ chord: 'F', position: 18 }, { chord: 'C', position: 35 }, { chord: 'G', position: 52 }],
                 ],
             },
         ],
@@ -5206,6 +5556,372 @@ export default [
                     [{ chord: "F#", position: 55 }],
                     [{ chord: "E", position: 12 }, { chord: "B", position: 24 }],
                 ],
+            },
+        ],
+    },
+    //Hillsong UNITED
+    {
+        title: "Go",
+        artist: "Hillsong UNITED",
+        composer: "Matt Crocker",
+        album: "God Is Able",
+        releaseDate: "2011",
+        originalKey: "B",
+        chordMap: ["C", "C#", "D", "Eb", "E", "F", "F#", "G", "G#", "A", "Bb", "B"],
+        bpm: 147,
+        link: [
+            { platform: 'youtube', url: 'https://youtu.be/1R_qDds8gIE?si=C4an4hYmQZYsHiat' },
+            { platform: 'spotify', url: 'https://open.spotify.com/track/41gCTHPWSsU2gCn4nqgcYV?si=ef5483dbcefa4831' },
+            { platform: 'appleMusic', url: 'https://music.apple.com/us/song/go-live/716419909' },
+        ],
+        sections: [
+            {
+                type: "INTRO",
+                lyrics: [
+                    "",
+                ],
+                chords: [
+                    [{ chord: "B", position: 0 }],
+                ],
+            },
+            {
+                type: "CHORUS",
+                lyrics: [
+                    "We're giving it all away, away",
+                    "We're giving it all to go Your way",
+                ],
+                chords: [
+                    [{ chord: "B", position: 0 }],
+                    [{ chord: "B", position: 0 }],
+                ],
+            },
+            {
+                type: "VERSE 1",
+                lyrics: [
+                    "In the Father there is freedom",
+                    "There is hope in the Name that is Jesus",
+                    "Lay your life down give it all now",
+                    "We are found in the love of the Saviour",
+                ],
+                chords: [
+                    [{ chord: "B", position: 0 }],
+                    [{ chord: "B", position: 0 }],
+                    [{ chord: "B", position: 0 }],
+                    [{ chord: "B", position: 0 }],
+                ],
+            },
+            {
+                type: "PRE-CHORUS",
+                lyrics: [
+                    "We've come alive in You",
+                    "Set free to show the truth",
+                    "Our lives will never be the same",
+                ],
+                chords: [
+                    [{ chord: "E", position: 0 }, { chord: "G#m", position: 45 }],
+                    [{ chord: "B", position: 0 }, { chord: "G#m", position: 38 }],
+                    [{ chord: "E", position: 20 }, { chord: "G#m", position: 50 }, { chord: "F#", position: 85 }],
+                ],
+            },
+            {
+                type: "CHORUS",
+                lyrics: [
+                    "We're giving it all away, away",
+                    "We're giving it all to go Your way",
+                    "We're giving it all away, away",
+                    "We're giving it all to go Your way",
+                    "(Away we're singing)"
+                ],
+                chords: [
+                    [{ chord: "B", position: 9 }],
+                    [{ chord: "E", position: 62 }, { chord: "G#m", position: 72 }, { chord: "E", position: 96 }],
+                    [{ chord: "B", position: 9 }],
+                    [{ chord: "E", position: 62 }, { chord: "G#m", position: 72 }, { chord: "E", position: 96 }],
+                ],
+            },
+            {
+                type: "VERSE 2",
+                lyrics: [
+                    "We are sold out to Your calling",
+                    "Everything that we are for Your glory",
+                    "Take our hearts now, have it all now",
+                    "Let our lives shine Your light like the morning",
+                ],
+                chords: [
+                    [{ chord: "B", position: 0 }],
+                    [{ chord: "B", position: 0 }],
+                    [{ chord: "B", position: 0 }],
+                    [{ chord: "B", position: 0 }],
+                ],
+            },
+            {
+                type: "BRIDGE",
+                lyrics: [
+                    "You rolled back the curtains from our eyes",
+                    "And now we can see You",
+                    "You've shown us Your way Your truth and life",
+                    "We offer our lives to bring You fame",
+                    "We're caught in Your freedom",
+                    "We're caught in Your freedom",
+                ],
+                chords: [
+                    [{ chord: "C#m", position: 0 }, { chord: "E", position: 65 }, { chord: "B", position: 90 }, { chord: "F#", position: 130 }],
+                    [],
+                    [{ chord: "C#m", position: 0 }, { chord: "E", position: 75 }, { chord: "B", position: 100 }, { chord: "F#", position: 140 }],
+                    [{ chord: "C#m", position: 0 }, { chord: "E", position: 35 }, { chord: "B", position: 65 }, { chord: "F#", position: 99 }],
+                    [{ chord: "E", position: 106 }],
+                    [{ chord: "E", position: 0 }, { chord: "C#m", position: 103 }],
+                ],
+            },
+            {
+                type: "CHORUS",
+                lyrics: [
+                    "We're giving it all away, away",
+                    "We're giving it all to go Your way",
+                    "We're giving it all away, away",
+                    "We're giving it all to go Your way",
+                    "(Away we're singing)"
+                ],
+                chords: [
+                    [{ chord: "B", position: 9 }],
+                    [{ chord: "E", position: 62 }, { chord: "G#m", position: 72 }, { chord: "E", position: 96 }],
+                    [{ chord: "B", position: 9 }],
+                    [{ chord: "E", position: 62 }, { chord: "G#m", position: 72 }, { chord: "E", position: 96 }],
+                ],
+            },
+        ],
+    },
+    //Elevation Worship
+    {
+        title: "Praise",
+        artist: "Elevation Worship",
+        composer: "Lake, Moore, Brown, Cody Carnes, Pat Barrett, and Steven Furtick",
+        album: "Radical Love",
+        releaseDate: "2023",
+        originalKey: "A",
+        bpm: 127,
+        chordMap: ["C", "C#", "D", "Eb", "E", "F", "F#", "G", "G#", "A", "Bb", "B"],
+        link: [
+            { platform: 'youtube', url: 'https://youtu.be/f2oxGYpuLkw?si=KR7haZD-DHG03Gt0' },
+            { platform: 'spotify', url: 'https://open.spotify.com/track/7Ee6XgP8EHKDhTMYLIndu9?si=e6f216ee82ab4011' },
+            { platform: 'appleMusic', url: 'https://music.apple.com/us/song/praise-feat-brandon-lake-chris-brown-chandler-moore/1680569035' },
+        ],
+        sections: [
+            {
+                type: "INTRO (2x)",
+                lyrics: [
+                   "Let everything that has breath",
+                    "Praise the Lord",
+                    "Praise the Lord",
+                ],
+                chords: [],
+            },
+            {
+                type: "VERSE 1",
+                lyrics: [
+                    "I’ll praise in the valley",
+                    "Praise on the mountain",
+                    "I’ll praise when I’m sure",
+                    "Praise when I’m doubting",
+                    "I’ll praise when outnumbered",
+                    "Praise when surrounded",
+                    "Cause praise is the waters",
+                    "My enemies drown in"
+                ],
+                chords: [
+                    [{ chord: 'A', position: 18 }],
+                    [{ chord: 'D', position: 0 }, { chord: 'A', position: 50 }],
+                    [{ chord: 'E', position: 18 }, { chord: 'D', position: 85 }],
+                    [{ chord: 'A', position: 70 }],
+                    [{ chord: 'A', position: 20 }],
+                    [{ chord: 'D', position: 0 }, { chord: 'A', position: 60 }],
+                    [{ chord: 'E/G#', position: 0, number: '5/7'  }, { chord: 'D', position: 60 }],
+                    [{ chord: 'A', position: 60 }],
+                ],
+            },
+            {
+                type: "PRE-CHORUS",
+                lyrics: [
+                    "As long as I’m breathing",
+                    "I’ve got a reason to",
+                ],
+                chords: [
+                    [{ chord: 'E', position: 15 }],
+                    [{ chord: 'D', position: 0 }],
+                ],
+            },
+            {
+                type: "CHORUS",
+                lyrics: [
+                    "Praise the Lord",
+                    "Oh my soul",
+                    "Praise the Lord",
+                    "Oh my soul",
+                ],
+                chords: [
+                    [{ chord: 'F#m', position: 0 }, { chord: 'D', position: 8 }, { chord: 'A', position: 20 }],
+                    [{ chord: 'E', position: 35 }],
+                    [{ chord: 'F#m', position: 0 }, { chord: 'D', position: 8 }, { chord: 'A', position: 20 }],
+                    [{ chord: 'E', position: 35 }],
+                ],
+            },
+            {
+                type: "VERSE 2",
+                lyrics: [
+                    "I’ll praise when I feel it",
+                    "I’ll praise when I don’t",
+                    "I’ll praise cause I know",
+                    "You’re still in control",
+                    "My praise is a weapon",
+                    "It’s more than a sound",
+                    "My praise is the shout",
+                    "That brings Jericho down",
+                ],
+                chords: [
+                    [{ chord: 'A', position: 18 }],
+                    [{ chord: 'D', position: 18 }, { chord: 'A', position: 68 }],
+                    [{ chord: 'E', position: 18 }],
+                    [{ chord: 'D', position: 0 }, { chord: 'A', position: 70 }],
+                    [{ chord: 'A', position: 20 }],
+                    [{ chord: 'D', position: 15 }, { chord: 'A', position: 63 }],
+                    [{ chord: 'E/G#', position: 5, number: '5/7'  }, { chord: 'D', position: 68 }],
+                    [{ chord: 'A', position: 83 }],
+                ],
+            },
+            {
+                type: "PRE-CHORUS",
+                lyrics: [
+                    "As long as I’m breathing",
+                    "I’ve got a reason to",
+                ],
+                chords: [
+                    [{ chord: 'E', position: 15 }],
+                    [{ chord: 'D', position: 0 }],
+                ],
+            },
+            {
+                type: "CHORUS",
+                lyrics: [
+                    "Praise the Lord",
+                    "Oh my soul",
+                    "Praise the Lord",
+                    "Oh my soul",
+                    "I won’t be quiet",
+                    "My God is alive",
+                    "How could I keep it inside",
+                    "Praise the Lord",
+                    "Oh my soul",
+                ],
+                chords: [
+                    [{ chord: 'F#m', position: 0 }, { chord: 'D', position: 8 }, { chord: 'A', position: 25 }],
+                    [{ chord: 'E', position: 35 }],
+                    [{ chord: 'F#m', position: 0 }, { chord: 'D', position: 8 }, { chord: 'A', position: 25 }],
+                    [{ chord: 'E', position: 35 }],
+                    [{ chord: 'F#m', position: 0 }],
+                    [{ chord: 'D', position: 21 }],
+                    [{ chord: 'A', position: 6 }, { chord: 'E', position: 84 }],
+                    [{ chord: 'F#m', position: 0 }, { chord: 'D', position: 8 }, { chord: 'A', position: 26 }],
+                    [{ chord: 'E', position: 35 }],
+                ],
+            },
+            {
+                type: "INTERLUDE",
+                lyrics: [''],
+                chords: [
+                    [{ chord: 'A', position: 0 }],
+                ],
+            },
+            {
+                type: "BRIDGE",
+                lyrics: [
+                    "I’ll praise cause You’re sovereign",
+                    "Praise cause You reign",
+                    "Praise cause You rose and defeated the grave",
+                    "I’ll praise cause You’re faithful",
+                    "Praise cause You’re true",
+                    "Praise cause there’s nobody greater than You",
+                    "I’ll praise cause You’re sovereign",
+                    "Praise cause You reign",
+                    "Praise cause You rose and defeated the grave",
+                    "I’ll praise cause You’re faithful",
+                    "Praise cause You’re true",
+                    "Praise cause there’s nobody greater than You",
+                ],
+                chords: [
+                    [{ chord: 'A', position: 0 }],
+                    [{ chord: 'A', position: 0 }],
+                    [{ chord: 'A', position: 0 }],
+                    [{ chord: 'A', position: 0 }],
+                    [{ chord: 'A', position: 0 }],
+                    [{ chord: 'A', position: 0 }],
+                    [{ chord: 'A', position: 18 }],
+                    [{ chord: 'Bm', position: 0 }],
+                    [{ chord: 'A/C#', position: 0, number: '1/3' }, { chord: 'D', position: 103 }],
+                    [{ chord: 'A', position: 18 }],
+                    [{ chord: 'Bm', position: 0 }],
+                    [{ chord: 'A/C#', position: 0, number: '1/3' }, { chord: 'D', position: 103 }],
+                ],
+            },
+            {
+                type: "CHORUS (2x)",
+                lyrics: [
+                    "Praise the Lord",
+                    "Oh my soul",
+                    "Praise the Lord",
+                    "Oh my soul",
+                ],
+                chords: [
+                    [{ chord: 'F#m', position: 0 }, { chord: 'D', position: 8 }, { chord: 'A', position: 20 }],
+                    [{ chord: 'E', position: 35 }],
+                    [{ chord: 'F#m', position: 0 }, { chord: 'D', position: 8 }, { chord: 'A', position: 20 }],
+                    [{ chord: 'E', position: 35 }],
+                ],
+            },
+            {
+                type: "",
+                lyrics: [
+                    "I won’t be quiet",
+                    "My God is alive",
+                    "How could I keep it inside",
+                    "I won’t be quiet",
+                    "My God is alive",
+                    "How could I keep it inside",
+                    "I won’t be quiet",
+                    "My God is alive",
+                    "How could I keep it inside",
+                    "Praise the Lord",
+                    "Oh my soul",
+                ],
+                chords: [
+                    [{ chord: 'F#m', position: 0 }],
+                    [{ chord: 'D', position: 21 }],
+                    [{ chord: 'A', position: 6 }, { chord: 'E', position: 84 }],
+                    [{ chord: 'F#m', position: 0 }],
+                    [{ chord: 'D', position: 21 }],
+                    [{ chord: 'A', position: 6 }, { chord: 'E', position: 84 }],
+                    [{ chord: 'F#m', position: 0 }],
+                    [{ chord: 'D', position: 21 }],
+                    [{ chord: 'A', position: 6 }, { chord: 'E', position: 84 }],
+                    [{ chord: 'F#m', position: 0 }, { chord: 'D', position: 8 }, { chord: 'A', position: 26 }],
+                    [{ chord: 'E', position: 35 }],
+                ],
+            },
+            {
+                type: "INTERLUDE",
+                lyrics: ['', ''],
+                chords: [
+                    [{ chord: 'F#m', position: 0 }, { chord: 'D', position: 4 }, { chord: 'A', position: 8 }, { chord: 'E', position: 12 }],
+                    [{ chord: 'F#m', position: 0 }, { chord: 'D', position: 4 }, { chord: 'A', position: 8 }, { chord: 'E', position: 12 }],
+                ],
+            },
+            {
+                type: "OUTRO (3x)",
+                lyrics: [
+                   "Let everything that has breath",
+                    "Praise the Lord",
+                    "Praise the Lord",
+                ],
+                chords: [],
             },
         ],
     },

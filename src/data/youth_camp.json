@@ -1,0 +1,41 @@
+{
+  "playlists": [
+    {
+      "name": "Youth Camp Playlist",
+      "songs": [
+        "For Who You Are",
+        "Have All of Me (Live)",
+        "Everlasting Glory",
+        "New Gen",
+        "This Is Your Church",
+        "Dwelling Place",
+        "This Is Who You Are",
+        "Carry My Cross",
+        "Grace Abounds",
+        "Go",
+        "Praise"
+      ]
+    }
+  ],
+  "songSettings": {
+    "Youth Camp Playlist_song_settings_For Who You Are": {
+      "selectedKey": "B",
+      "showLyrics": true,
+      "showChords": true,
+      "showChordNumbers": false,
+      "showAutoScrollLyrics": false,
+      "autoScroll": false,
+      "speed": 70
+    },
+    "Youth Camp Playlist_song_settings_Have All of Me (Live)": null,
+    "Youth Camp Playlist_song_settings_Everlasting Glory": null,
+    "Youth Camp Playlist_song_settings_New Gen": null,
+    "Youth Camp Playlist_song_settings_This Is Your Church": null,
+    "Youth Camp Playlist_song_settings_Dwelling Place": null,
+    "Youth Camp Playlist_song_settings_This Is Who You Are": null,
+    "Youth Camp Playlist_song_settings_Carry My Cross": null,
+    "Youth Camp Playlist_song_settings_Grace Abounds": null,
+    "Youth Camp Playlist_song_settings_Go": null,
+    "Youth Camp Playlist_song_settings_Praise": null
+  }
+}

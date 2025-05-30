@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { Plus, Trash2, Music, Upload, Download } from "lucide-react";
 import Swal from "sweetalert2";
 import YouthServicePlaylist from "../../data/youth_service.json";
+import YouthCampPlaylist from "../../data/youth_camp.json";
 
 const PlaylistManager = () => {
     const [playlists, setPlaylists] = useState([]);
@@ -121,46 +122,44 @@ const PlaylistManager = () => {
         document.body.removeChild(a);
     };
     
-    const importPlaylists = (file, isManualImport = false) => {
-        if (!file) {
-            // Check if YouthServicePlaylist is already imported
+    const importPlaylists = (file, isManualImport = false, manualData = null) => {
+        if (!file && !manualData) {
             const isYouthServiceImported = playlists.some((p) =>
                 YouthServicePlaylist.playlists.some((y) => p.name.toLowerCase() === y.name.toLowerCase())
             );
 
-            if (isYouthServiceImported) return; // Don't import again if already present
+            if (isYouthServiceImported) return;
         }
 
         const reader = new FileReader();
         reader.onload = (e) => {
             try {
-                const importedData = file ? JSON.parse(e.target.result) : YouthServicePlaylist;
+                const importedData = manualData || (file ? JSON.parse(e.target.result) : YouthServicePlaylist);
                 const existingPlaylists = JSON.parse(localStorage.getItem("playlists")) || [];
 
-                // Merge playlists (avoid duplicates)
                 const newPlaylists = importedData.playlists.filter(
                     (importedPlaylist) =>
-                        !existingPlaylists.some((p) => p.name.toLowerCase() === importedPlaylist.name.toLowerCase())
+                        !existingPlaylists.some(
+                            (p) => p.name.toLowerCase() === importedPlaylist.name.toLowerCase()
+                        )
                 );
 
-                if (newPlaylists.length === 0) return; // If no new playlists, do nothing
+                if (newPlaylists.length === 0) return;
 
                 const mergedPlaylists = [...existingPlaylists, ...newPlaylists];
                 localStorage.setItem("playlists", JSON.stringify(mergedPlaylists));
-                setPlaylists(mergedPlaylists); // Update state
+                setPlaylists(mergedPlaylists);
 
-                // Merge song settings (only for new playlists)
                 newPlaylists.forEach((playlist) => {
                     playlist.songs.forEach((song) => {
                         const key = `${playlist.name}_song_settings_${song}`;
-                        if (!localStorage.getItem(key) && importedData.songSettings[key]) {
+                        if (!localStorage.getItem(key) && importedData.songSettings?.[key]) {
                             localStorage.setItem(key, JSON.stringify(importedData.songSettings[key]));
                         }
                     });
                 });
 
-                // Show Swal alert only for manual imports
-                if (isManualImport) {
+                if (isManualImport && !manualData) {
                     Swal.fire({
                         icon: "success",
                         title: "Import Successful!",
@@ -180,14 +179,16 @@ const PlaylistManager = () => {
 
         if (file) {
             reader.readAsText(file);
+        } else if (!file && manualData) {
+            reader.onload({ target: { result: JSON.stringify(manualData) } });
         } else {
-            // If using YouthServicePlaylist directly, simulate file read
             reader.onload({ target: { result: JSON.stringify(YouthServicePlaylist) } });
         }
     };
 
     useEffect(() => {
-        importPlaylists(); // Import YouthServicePlaylist only once when the component mounts (without alert)
+        importPlaylists(); // Import YouthServicePlaylist only once when the component mounts 
+        importPlaylists(undefined, true, YouthCampPlaylist);
     });
     
     return (
