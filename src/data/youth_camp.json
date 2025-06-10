@@ -3,22 +3,87 @@
     {
       "name": "Youth Camp Playlist",
       "songs": [
+        "You Are With Me",
         "For Who You Are",
         "Have All of Me (Live)",
         "Everlasting Glory",
         "New Gen",
         "This Is Your Church",
         "Dwelling Place",
-        "This Is Who You Are",
-        "Carry My Cross",
-        "Grace Abounds",
         "Go",
-        "Praise"
+        "Many Waters",
+        "Carry My Cross",
+        "With Everything",
+        "Praise",
+        "Grace Abounds"
       ]
     }
   ],
   "songSettings": {
+    "Youth Camp Playlist_song_settings_You Are With Me": {
+      "selectedKey": "D",
+      "showLyrics": true,
+      "showChords": true,
+      "showChordNumbers": false,
+      "showAutoScrollLyrics": false,
+      "autoScroll": false,
+      "speed": 70
+    },
     "Youth Camp Playlist_song_settings_For Who You Are": {
+      "selectedKey": "A",
+      "showLyrics": true,
+      "showChords": true,
+      "showChordNumbers": false,
+      "showAutoScrollLyrics": false,
+      "autoScroll": false,
+      "speed": 70
+    },
+    "Youth Camp Playlist_song_settings_Have All of Me (Live)": {
+      "selectedKey": "A",
+      "showLyrics": true,
+      "showChords": true,
+      "showChordNumbers": false,
+      "showAutoScrollLyrics": false,
+      "autoScroll": false,
+      "speed": 70
+    },
+    "Youth Camp Playlist_song_settings_Everlasting Glory": {
+      "selectedKey": "F",
+      "showLyrics": true,
+      "showChords": true,
+      "showChordNumbers": false,
+      "showAutoScrollLyrics": false,
+      "autoScroll": false,
+      "speed": 70
+    },
+    "Youth Camp Playlist_song_settings_New Gen": {
+      "selectedKey": "D",
+      "showLyrics": true,
+      "showChords": true,
+      "showChordNumbers": false,
+      "showAutoScrollLyrics": false,
+      "autoScroll": false,
+      "speed": 70
+    },
+    "Youth Camp Playlist_song_settings_This Is Your Church": {
+      "selectedKey": "D",
+      "showLyrics": true,
+      "showChords": true,
+      "showChordNumbers": false,
+      "showAutoScrollLyrics": false,
+      "autoScroll": false,
+      "speed": 70
+    },
+    "Youth Camp Playlist_song_settings_Dwelling Place": {
+      "selectedKey": "E",
+      "showLyrics": true,
+      "showChords": true,
+      "showChordNumbers": false,
+      "showAutoScrollLyrics": false,
+      "autoScroll": false,
+      "speed": 70
+    },
+    "Youth Camp Playlist_song_settings_Go": {
       "selectedKey": "B",
       "showLyrics": true,
       "showChords": true,
@@ -27,15 +92,50 @@
       "autoScroll": false,
       "speed": 70
     },
-    "Youth Camp Playlist_song_settings_Have All of Me (Live)": null,
-    "Youth Camp Playlist_song_settings_Everlasting Glory": null,
-    "Youth Camp Playlist_song_settings_New Gen": null,
-    "Youth Camp Playlist_song_settings_This Is Your Church": null,
-    "Youth Camp Playlist_song_settings_Dwelling Place": null,
-    "Youth Camp Playlist_song_settings_This Is Who You Are": null,
-    "Youth Camp Playlist_song_settings_Carry My Cross": null,
-    "Youth Camp Playlist_song_settings_Grace Abounds": null,
-    "Youth Camp Playlist_song_settings_Go": null,
-    "Youth Camp Playlist_song_settings_Praise": null
+    "Youth Camp Playlist_song_settings_Many Waters": {
+      "selectedKey": "D",
+      "showLyrics": true,
+      "showChords": true,
+      "showChordNumbers": false,
+      "showAutoScrollLyrics": false,
+      "autoScroll": false,
+      "speed": 70
+    },
+    "Youth Camp Playlist_song_settings_Carry My Cross": {
+      "selectedKey": "D",
+      "showLyrics": true,
+      "showChords": true,
+      "showChordNumbers": false,
+      "showAutoScrollLyrics": false,
+      "autoScroll": false,
+      "speed": 70
+    },
+    "Youth Camp Playlist_song_settings_With Everything": {
+      "selectedKey": "G",
+      "showLyrics": true,
+      "showChords": true,
+      "showChordNumbers": false,
+      "showAutoScrollLyrics": false,
+      "autoScroll": false,
+      "speed": 70
+    },
+    "Youth Camp Playlist_song_settings_Praise": {
+      "selectedKey": "A",
+      "showLyrics": true,
+      "showChords": true,
+      "showChordNumbers": false,
+      "showAutoScrollLyrics": false,
+      "autoScroll": false,
+      "speed": 70
+    },
+    "Youth Camp Playlist_song_settings_Grace Abounds": {
+      "selectedKey": "D",
+      "showLyrics": true,
+      "showChords": true,
+      "showChordNumbers": false,
+      "showAutoScrollLyrics": false,
+      "autoScroll": false,
+      "speed": 70
+    }
   }
 }

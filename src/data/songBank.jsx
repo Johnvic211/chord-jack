@@ -5691,6 +5691,160 @@ export default [
             },
         ],
     },
+    {
+        title: "With Everything",
+        artist: "Hillsong UNITED",
+        composer: "Joel Houston",
+        album: "This is our God",
+        releaseDate: "2011",
+        originalKey: "G",
+        chordMap: ["C", "C#", "D", "Eb", "E", "F", "F#", "G", "G#", "A", "Bb", "B"],
+        bpm: 147,
+        link: [
+            { platform: 'youtube', url: 'https://youtu.be/5M4zme84ISY?si=WeYwHEZf-T7c3YDi' },
+            { platform: 'spotify', url: 'https://open.spotify.com/track/3L6Pbo6qv2F9cWSOCjRHHM?si=dc8cfdb2c52d4e34' },
+        ],
+        sections: [
+            {
+                type: "VERSE 1",
+                lyrics: [
+                    "Open our eyes",
+                    "To see the things that make Your heart cry",
+                    "To be the church that You would desire",
+                    "Your light to be seen"
+                ],
+                chords: [
+                    [{ chord: "G", position: 0 }],
+                    [{ chord: "D", position: 12 }, { chord: "Em", position: 107 }],
+                    [{ chord: "C", position: 12 }, { chord: "G", position: 83 }],
+                    [{ chord: "D", position: 21 }, { chord: "Em", position: 58 }, { chord: "C", position: 80 }],
+                ],
+            },
+            {
+                type: "VERSE 2",
+                lyrics: [
+                    "Break down our pride",
+                    "And all the walls we’ve built up inside",
+                    "Our earthly crowns and all our desires",
+                    "We lay at Your feet",
+                ],
+                chords: [
+                    [{ chord: "G", position: 0 }],
+                    [{ chord: "D", position: 12 }, { chord: "Em", position: 107 }],
+                    [{ chord: "C", position: 12 }, { chord: "G", position: 83 }],
+                    [{ chord: "D", position: 21 }, { chord: "Em", position: 58 }, { chord: "C", position: 80 }],
+                ],
+            },
+            {
+                type: "PRE-CHORUS",
+                lyrics: [
+                    "Let hope rise",
+                    "     And darkness tremble",
+                    "In Your holy light",
+                    "     That every eye will see",
+                    "Jesus our God",
+                    "Great and mighty to be praised"
+                ],
+                chords: [
+                    [{ chord: "Em", position: 15 }, { chord: "C", position: 25 }],
+                    [{ chord: "G", position: 0 }, { chord: "D", position: 64 }],
+                    [{ chord: "Em", position: 30 }, { chord: "C", position: 40 }],
+                    [{ chord: "G", position: 0 }, { chord: "D", position: 64 }],
+                    [{ chord: "C", position: 0 }, { chord: "Em", position: 34 }, { chord: "D", position: 50 }],
+                    [{ chord: "Am", position: 44 }, { chord: "C", position: 82 }, { chord: "D", position: 105 }],
+                ],
+            },
+            {
+                type: "CHORUS",
+                lyrics: [
+                    "God of all days",
+                    "Glorious in all of Your ways",
+                    "Oh the majesty the wonder and grace",
+                    "In the light of Your name",
+                ],
+                chords: [
+                    [{ chord: "G", position: 0 }],
+                    [{ chord: "D", position: 0 }, { chord: "Em", position: 37 }],
+                    [{ chord: "C", position: 30 }, { chord: "G", position: 73 }],
+                    [{ chord: "D", position: 25 }, { chord: "Em", position: 71 }, { chord: "C", position: 82 }],
+                ],
+            },
+            {
+                type: "PRE-CHORUS",
+                lyrics: [
+                    "Let hope rise",
+                    "     And darkness tremble",
+                    "In Your holy light",
+                    "     That every eye will see",
+                    "Jesus our God",
+                    "Great and mighty to be praised"
+                ],
+                chords: [
+                    [{ chord: "Em", position: 15 }, { chord: "C", position: 25 }],
+                    [{ chord: "G", position: 0 }, { chord: "D", position: 64 }],
+                    [{ chord: "Em", position: 30 }, { chord: "C", position: 40 }],
+                    [{ chord: "G", position: 0 }, { chord: "D", position: 64 }],
+                    [{ chord: "C", position: 0 }, { chord: "Em", position: 34 }, { chord: "D", position: 50 }],
+                    [{ chord: "Am", position: 44 }, { chord: "C", position: 82 }, { chord: "D", position: 105 }],
+                ],
+            },
+            {
+                type: "INSTRUMENTAL",
+                lyrics: [''],
+                chords: [
+                    [{ chord: 'C', position: 0 }, { chord: 'Em', position: 4 }, { chord: 'G', position: 8 }, { chord: 'D', position: 12 }]
+                ],
+                isNotLyric: true,
+                times: [2],
+            },
+            {
+                type: "BRIDGE 1 (2x)",
+                lyrics: [
+                    "With everything",
+                    "With everything",
+                    "We will shout for Your glory",
+                    "With everything",
+                    "With everything",
+                    "We will shout forth Your praise",
+                ],
+                chords: [
+                    [{ chord: 'C', position: 21 }],
+                    [{ chord: 'Em', position: 21 }],
+                    [{ chord: 'G', position: 33 }, { chord: 'D', position: 85 }],
+                    [{ chord: 'C', position: 21 }],
+                    [{ chord: 'Em', position: 21 }],
+                    [{ chord: 'G', position: 33 }, { chord: 'D', position: 85 }],
+                ],
+            },
+            {
+                type: "BRIDGE 2",
+                lyrics: [
+                    "Our hearts they cry",
+                    "Be glorified",
+                    "Be lifted high above all names",
+                    "For You our King",
+                    "With everything",
+                    "We will shout forth Your praise",
+                ],
+                chords: [
+                    [{ chord: 'C', position: 21 }],
+                    [{ chord: 'Em', position: 21 }],
+                    [{ chord: 'G', position: 33 }, { chord: 'D', position: 85 }],
+                    [{ chord: 'C', position: 21 }],
+                    [{ chord: 'Em', position: 21 }],
+                    [{ chord: 'G', position: 33 }, { chord: 'D', position: 85 }],
+                ],
+            },
+            {
+                type: "INSTRUMENTAL",
+                lyrics: ["OH! OHHHH! CHANT"],
+                chords: [
+                    [{ chord: 'C', position: 0 }, { chord: 'Em', position: 4 }, { chord: 'G', position: 8 }, { chord: 'D', position: 12 }]
+                ],
+                times: [2],
+            },
+        ],
+    },
     //Elevation Worship
     {
         title: "Praise",
