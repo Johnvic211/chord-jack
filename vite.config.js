@@ -10,5 +10,5 @@ export default defineConfig({
     port: 5173, // Default Vite port
     hmr: true,
   },
-  base: "/song-chords",
+  base: "/chord-jack",
 })
